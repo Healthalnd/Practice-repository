@@ -7,10 +7,10 @@ import java.util.*;
 public class InjectedTest extends junit.framework.TestCase {
   public static junit.framework.Test suite() throws Exception {
     Map parameters = new HashMap();
-    parameters.put("basedir","Q:\\ComplatsTestAutomation\\seleniumframeworkplugin");
+    parameters.put("basedir","H:\\git\\Practice-repository");
     parameters.put("artifactId","SeleniumFrameworkPlugin");
-    parameters.put("outputDirectory","Q:\\ComplatsTestAutomation\\seleniumframeworkplugin\\target\\classes");
-    parameters.put("testOutputDirectory","Q:\\ComplatsTestAutomation\\seleniumframeworkplugin\\target\\test-classes");
+    parameters.put("outputDirectory","H:\\git\\Practice-repository\\target\\classes");
+    parameters.put("testOutputDirectory","H:\\git\\Practice-repository\\target\\test-classes");
     parameters.put("requirePI","false");
     return new org.jvnet.hudson.test.PluginAutomaticTestBuilder().build(parameters);
   }
