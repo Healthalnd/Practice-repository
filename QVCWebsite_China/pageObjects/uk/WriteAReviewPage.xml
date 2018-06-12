@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="WriteAReviewPage" include="MastheadMain">
+<TestObject name="overallRatingTitle">
+	<Properties>
+		<id>BVRRCustomOverallRatingHelpID</id>
+	</Properties>
+</TestObject>
+<TestObject name="OverallRatingText">
+	<Properties>
+		<id>BVRRFieldLabelReviewRatingID</id>
+	</Properties>
+</TestObject>	
+<TestObject name="reviewHintDescription">
+	<Properties>
+		<class>BVRRCustomRatingHint</class>
+	</Properties>
+</TestObject>
+<TestObject name="nickNameTitle">
+	<Properties>
+		<id>lblNickname</id>
+	</Properties>
+</TestObject>
+<TestObject name="nickNameText">
+	<Properties>
+		<id>txtNickname</id>
+	</Properties>
+</TestObject>
+<TestObject name="continueBtn">
+	<Properties>
+		<xpath>//*[@id='divFormButtons']//input[@class='primaryButton']</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="productRatingsTitle">
+	<Properties>
+		<id>BVRRSubmissionFormTitle</id>
+	</Properties>
+</TestObject>
+<TestObject name="pageTitle">
+	<Properties>
+		<id>divPageTitle</id>
+	</Properties>
+</TestObject>
+<TestObject name="productImage">
+	<Properties>
+		<id>BVRRProductDetailsImageID</id>
+	</Properties>
+</TestObject>
+<TestObject name="productShortDes">
+	<Properties>
+		<id>BVRRProductDetailsNameID</id>
+	</Properties>
+</TestObject>
+
+
+<TestObject name="firstRateStar">
+	<Properties>
+		<id>star_link_rating_1</id>
+	</Properties>
+</TestObject>
+<TestObject name="secondRateStar">
+	<Properties>
+		<id>star_link_rating_2</id>
+	</Properties>
+</TestObject>
+<TestObject name="thirdRateStar">
+	<Properties>
+		<id>star_link_rating_3</id>
+	</Properties>
+</TestObject>
+<TestObject name="fourthRateStar">
+	<Properties>
+		<id>star_link_rating_4</id>
+	</Properties>
+</TestObject>
+<TestObject name="fifthRateStar">
+	<Properties>
+		<id>star_link_rating_5</id>
+	</Properties>
+</TestObject>
+<TestObject name="RateStar">
+	<Properties>
+		<id>star_link_rating_&lt;RateStar&gt;</id>
+	</Properties>
+</TestObject>
+<TestObject name="requiredContext">
+	<Properties>
+		<xpath>//*[@class="BVRRRequiredFieldIndicatorSuffix"]</xpath>
+		<id>BVRRSectionHeaderContainerRatingsID</id>
+	</Properties>
+</TestObject>
+<TestObject name="recommendToFriendTitle">
+	<Properties>
+		<id>BVRRFieldLabelReviewRecommendID</id>
+	</Properties>
+</TestObject>
+<TestObject name="recommendToFriendYesRadioBtn">
+	<Properties>
+		<id>BVRRRecommendToFriendYesID</id>
+	</Properties>
+</TestObject>
+<TestObject name="recommendToFriendNoRadioBtn">
+	<Properties>
+		<id>BVRRRecommendToFriendRadioLabelNoID</id>
+	</Properties>
+</TestObject>
+<TestObject name="reviewTitle">
+	<Properties>
+		<id>BVRRFieldLabelReviewTitleID</id>
+	</Properties>
+</TestObject>
+<TestObject name="reviewTitleText">
+	<Properties>
+		<id>BVRRFieldTextReviewTitleID</id>
+	</Properties>
+</TestObject>
+<TestObject name="reviewExample">
+	<Properties>
+		<id>BVRRFieldHelperReviewTitleID</id>
+	</Properties>
+</TestObject>
+<TestObject name="reviewContentTitle">
+	<Properties>
+		<id>BVRRFieldLabelReviewReviewtextID</id>
+	</Properties>
+</TestObject>
+<TestObject name="reviewContentTextBox">
+	<Properties>
+		<id>BVRRFieldTextAreaReviewTextID</id>
+	</Properties>
+</TestObject>
+<TestObject name="reviewTextWarningMsg">
+	<Properties>
+		<id>BVRRFieldHelperReviewReviewtextID</id>
+	</Properties>
+</TestObject>
+
+<TestObject name="helpfulTipsTitle">
+	<Properties>
+		<id>BVRRReviewTipsHeaderID</id>
+	</Properties>
+</TestObject>
+<TestObject name="helpfulTipsContent">
+	<Properties>
+		<id>BVRRReviewTipsContentDiv</id>
+	</Properties>
+</TestObject>
+
+<TestObject name="chooseNickNameTitle">
+	<Properties>
+		<id>BVRRFieldLabelReviewUsernicknameID</id>
+	</Properties>
+</TestObject>
+<TestObject name="chooseNickNameTextBox">
+	<Properties>
+		<id>BVRRFieldTextReviewUsernicknameID</id>
+	</Properties>
+</TestObject>
+<TestObject name="chooseNickNameWarning">
+	<Properties>
+		<id>BVRRFieldHelperReviewUsernicknameID</id>
+	</Properties>
+</TestObject>
+<TestObject name="PackagingRequirementTitle">
+	<Properties>
+		<id>BVRRFieldLabelReviewPackagingID</id>
+	</Properties>
+</TestObject>
+<TestObject name="PackagingRequirementTextBox">
+	<Properties>
+		<id>BVRRFieldTextAreaReviewPackagingID</id>
+	</Properties>
+</TestObject>
+
+<TestObject name="userLocationTitle">
+	<Properties>
+		<id>BVRRFieldLabelReviewUserlocationID</id>
+	</Properties>
+</TestObject>
+<TestObject name="userLocationTextBox">
+	<Properties>
+		<id>BVRRFieldTextReviewUserlocationID</id>
+	</Properties>
+</TestObject>
+<TestObject name="userLocationExample">
+	<Properties>
+		<id>BVRRFieldHelperReviewUserlocationID</id>
+	</Properties>
+</TestObject>
+<TestObject name="emailContext">
+	<Properties>
+		<id>BVRRFieldLabelReviewUseremailID</id>
+	</Properties>
+</TestObject>
+<TestObject name="emailTextbox">
+	<Properties>
+		<id>BVRRFieldTextReviewUseremailID</id>
+	</Properties>
+</TestObject>
+<TestObject name="emailWarningMsg">
+	<Properties>
+		<id>BVRRReviewEditEmailDisclaimerID</id>
+	</Properties>
+</TestObject>
+<TestObject name="sendMeEmailText">
+	<Properties>
+		<xpath>//*[@id='BVRRFieldContainerReviewUseremailalertsID']//span[@class='BVRRFieldFollowingText']</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="sendMeEmailCheckbox">
+	<Properties>
+		<id>BVRRFieldCheckboxReviewUseremailalertsID</id>
+	</Properties>
+</TestObject>
+
+<TestObject name="ageContext">
+	<Properties>
+		<id>BVRRFieldLabelReviewContextualDataFieldAgeID</id>
+	</Properties>
+</TestObject>
+<TestObject name="ageSelection">
+	<Properties>
+		<id>BVRRFieldSelectReviewContextualDataFieldAgeID</id>
+	</Properties>
+</TestObject>
+<TestObject name="shopTimeContext">
+	<Properties>
+		<id>BVRRFieldLabelReviewContextualDataFieldHowLongShoppingID</id>
+	</Properties>
+</TestObject>
+<TestObject name="shopTimeSelection">
+	<Properties>
+		<id>BVRRFieldSelectReviewContextualDataFieldHowLongShoppingID</id>
+	</Properties>
+</TestObject>
+<TestObject name="recommendThisProductContext">
+	<Properties>
+		<id>BVRRFieldLabelReviewContextualDataFieldWouldRecommendID</id>
+	</Properties>
+</TestObject>
+<TestObject name="recommendThisProductSelection">
+	<Properties>
+		<id>BVRRFieldSelectReviewContextualDataFieldWouldRecommendID</id>
+	</Properties>
+</TestObject>
+<TestObject name="perfectGiftContext">
+	<Properties>
+		<id>BVRRFieldLabelReviewContextualDataFieldPerfectGiftForID</id>
+	</Properties>
+</TestObject>
+<TestObject name="perfectGiftSelection">
+	<Properties>
+		<id>BVRRFieldSelectReviewContextualDataFieldPerfectGiftForID</id>
+	</Properties>
+</TestObject>
+<TestObject name="recommendTip">
+	<Properties>
+		<id>BVRRCustomLabelInputHelperID</id>
+	</Properties>
+</TestObject>
+
+<TestObject name="optionalInvestTitle">
+	<Properties>
+		<id>BVRRPromoterHeaderID</id>
+	</Properties>
+</TestObject>
+<TestObject name="optionalInvestSelection">
+	<Properties>
+		<id>BVRRFieldContainerReviewNetPromoterScoreID</id>
+	</Properties>
+</TestObject>
+<TestObject name="optionalInvestSubTitle">
+	<Properties>
+		<id>BVRRFieldLabelReviewNetpromotercommentID</id>
+	</Properties>
+</TestObject>
+<TestObject name="optionalInvestContentTextBox">
+	<Properties>
+		<id>BVRRFieldTextNetPromoterCommentID</id>
+	</Properties>
+</TestObject>
+<TestObject name="optionalInvestWarning">
+	<Properties>
+		<id>BVRRFieldHelperReviewNetpromotercommentID</id>
+	</Properties>
+</TestObject>
+<TestObject name="topTipTitle">
+	<Properties>
+		<xpath>//*[@class="BVRRSubmissionLabels BVRRTopTipText"]</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="topTipContent">
+	<Properties>
+		<xpath>//*[@class="BVRRTopTipTextContent"]</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="reviewGuidelineLink">
+	<Properties>
+		<xpath>//*[@class="BVRRTopTipTextContent"]/a</xpath>
+	</Properties>
+</TestObject>
+
+<TestObject name="agreeTermText">
+	<Properties>
+		<id>BVRRFieldLabelReviewAgreedtotermsandconditionsID</id>
+	</Properties>
+</TestObject>
+<TestObject name="agreeTermCheckBox">
+	<Properties>
+		<id>BVRRFieldCheckboxReviewAgreedToTermsAndConditionsID</id>
+	</Properties>
+</TestObject>
+<TestObject name="TermsOfUseLink">
+	<Properties>
+		<linkText>Terms of Use</linkText>
+	</Properties>
+</TestObject>
+
+<TestObject name="reviewGuidelinesDocumentTitle">
+	<Properties>
+		<id>BVRRGuidelinesDocumentationHeaderID</id>
+	</Properties>
+</TestObject>
+<TestObject name="termsOfUseDocumentTitle">
+	<Properties>
+		<id>BVRRTermsAndConditionsDocumentationHeaderID</id>
+	</Properties>
+</TestObject>
+
+<TestObject name="previewBtn">
+	<Properties>
+		<id>BVRRPreviewReviewButtonID</id>
+	</Properties>
+</TestObject>
+
+
+</Page>

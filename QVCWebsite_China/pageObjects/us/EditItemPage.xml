@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="EditItemPage" include="MastheadMain">
+	<TestObject name="shippingMethodList"> 
+		<properties>   
+			<id>selOrderDetailItemShippingMethod</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="standardDelivery">
+		<Properties>
+		    <xpath>//select[@id='selOrderDetailItemShippingMethod']/option[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="expressDelivery">
+		<Properties>
+		    <xpath>//select[@id='selOrderDetailItemShippingMethod']/option[2]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="premiumDelivery">
+		<Properties>
+		    <xpath>//select[@id='selOrderDetailItemShippingMethod']/option[3]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="editItemNote"> 
+			<properties>   
+				<id>divEditItemNote</id>
+			</properties> 
+	</TestObject>	
+	<TestObject name="shippingInfoLink">
+		<Properties>
+			<linkText>Shipping Information</linkText>	
+		</Properties>
+	</TestObject>
+	<TestObject name="shippingInfoOverlayHeader">
+		<Properties>
+			<css>#TB_ajaxContent h1</css>	
+		</Properties>
+	</TestObject>
+	<TestObject name="closeOverlay">
+		<Properties>
+			<id>TB_closeAjaxWindow</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="submitChangesBtn"> 
+		<properties>   
+			<id>btnSubmitChanges</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="EditItemHeader"> 
+		<properties>   
+			<xpath>//h1[.='Edit Item']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="editItemLink">
+		<Properties>
+		    <xpath>//*[@id='divOrderDetailItemInformation']//p[1]/a</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="cancelLink">
+		<Properties>
+			<linkText>Cancel Item</linkText>	
+		</Properties>
+	</TestObject>
+</Page>

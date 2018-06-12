@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="PrivacyStatementPage" include="MastheadMain">
+
+	<TestObject name="PageTitle"> 
+		<properties>   
+			<xpath>//*[@class='active']/h1</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="fisrtTitle"> 
+		<properties>   
+			<xpath>//*[@id="flex_text_full_12"]//*[@class="qComponent"][1]/h1</xpath>
+		</properties> 
+	</TestObject>
+
+	<TestObject name="richText"> 
+		<properties>   
+			<xpath>//*[@data-component-type='RICH_TEXT']/p/a[1]</xpath>
+		</properties> 
+	</TestObject>	
+	
+	
+</Page>
+

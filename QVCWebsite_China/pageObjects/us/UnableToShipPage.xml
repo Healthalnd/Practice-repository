@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="UnableToShipPage" include="MastheadMain">
+	
+	<TestObject name="unableToShipContent">
+		<Properties>
+			<id>divContent</id>
+		</Properties>
+	</TestObject>
+	
+</Page>

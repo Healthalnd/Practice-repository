@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="OrderStatusPage" include="MastheadMain">
+	<TestObject name="orderSearchWebEdit"> 
+		<properties>   
+			<id>txtOrderSearch</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="GOBtn"> 
+		<properties>   
+			<css>input.primaryButton[value='Go'][id='btnSearch']</css>
+		</properties> 
+	</TestObject>
+	<TestObject name="orderStatusTableTitle">
+		<properties>
+			<id>h2OrderStatusTableTitle</id>
+		</properties>
+	</TestObject>
+	<TestObject name="allOrdersLink"> 
+		<properties>   
+			<id>orderStatusTab0</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="autoDeliveryPalnsLink"> 
+		<properties>   
+			<id>orderStatusTab1</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="easyPayLink"> 
+		<properties>   
+			<id>orderStatusTab2</id>
+		</properties> 
+	</TestObject>	
+	<TestObject name="advanceWLLink"> 
+		<properties>   
+			<id>orderStatusTab3</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="returnedLink"> 
+		<properties>   
+			<id>orderStatusTab4</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="easyPayIntallmentsLink"> 
+		<properties>   
+			<id>ancViewInstallment</id>
+		</properties> 
+	</TestObject>	
+	<TestObject name="easyPayCreditTermText"> 
+		<properties>   
+			<xpath>//*[@id="divOrder1"]//*[@class="productEasyPayments"][1]</xpath>
+		</properties> 
+	</TestObject>	
+	<TestObject name="autoDeliveryPlansLink">
+		<Properties>
+			<linkText>Auto-Delivery Plans</linkText>	
+		</Properties>
+	</TestObject>
+	<TestObject name="viewEditMyPlanLink">
+		<Properties>
+			<linkText>View / Edit My Plan</linkText>	
+		</Properties>
+	</TestObject>
+	<TestObject name="viewEditMyOrderLink">
+		<Properties>
+			<linkText>View / Edit My Order</linkText>	
+		</Properties>
+	</TestObject>
+	<TestObject name="viewByOrderEZPayLink">
+		<Properties>
+			<id>ancViewByOrder</id>	
+		</Properties>
+	</TestObject>
+	<TestObject name="viewEasyPayInstallmentsByMonthTab">
+		<Properties>
+			<id>ancViewInstallment</id>	
+		</Properties>
+	</TestObject>
+	<TestObject name="eZPayBillDateText">
+		<Properties>
+			<xpath>(//*[@class='easyColumn easyDate'])[1]</xpath>	
+		</Properties>
+	</TestObject>
+	<TestObject name="eZPayTableBillDateText">
+		<Properties>
+			<xpath>(//*[@class='easyColumn easyDate'])[2]</xpath>	
+		</Properties>
+	</TestObject>
+	<TestObject name="eZPayOrderNumberText">
+		<Properties>
+			<xpath>(//*[@class='easyColumn easyNumber'])[1]</xpath>	
+		</Properties>
+	</TestObject>
+	<TestObject name="eZPayTableOrderNumberText">
+		<Properties>
+			<xpath>(//*[@class='easyColumn easyNumber'])[2]</xpath>	
+		</Properties>
+	</TestObject>
+	<TestObject name="eZPayQtyText">
+		<Properties>
+			<xpath>(//*[@class='easyColumn easyQuantity'])[1]</xpath>	
+		</Properties>
+	</TestObject>
+	<TestObject name="eZPayTableQtyText">
+		<Properties>
+			<xpath>//*[@class='easyColumn easyQuantity easyQuantityAmt1']</xpath>	
+		</Properties>
+	</TestObject>
+	<TestObject name="eZPayItemsText">
+		<Properties>
+			<xpath>(//*[@class='easyColumn easyItem'])[1]</xpath>	
+		</Properties>
+	</TestObject>
+	<TestObject name="eZPayTableItemsText">
+		<Properties>
+			<xpath>(//*[@class='easyColumn easyItem'])[2]</xpath>	
+		</Properties>
+	</TestObject>
+	<TestObject name="eZPayInstallmentInformationText">
+		<Properties>
+			<xpath>//*[@class='easyColumn easyInformation']</xpath>	
+		</Properties>
+	</TestObject>
+	<TestObject name="eZPayPaymentNumberText">
+		<Properties>
+			<xpath>(//*[@class='easyColumn easyInstallment'])[1]</xpath>	
+		</Properties>
+	</TestObject>
+	<TestObject name="eZPayPriceText">
+		<Properties>
+			<xpath>(//*[@class='easyColumn easyPrice'])[1]</xpath>	
+		</Properties>
+	</TestObject>
+	<TestObject name="eZPayviewEditEasyPayLink">
+		<Properties>
+			<xpath>(//*[@class='easyColumn easyLink'])[1]</xpath>	
+		</Properties>
+	</TestObject>
+	<TestObject name="eZPaySubTotalText">
+		<Properties>
+			<xpath>(//*[@class='easyRow easyRowSubTotal'])[1]</xpath>	
+		</Properties>
+	</TestObject>
+	<TestObject name="eZPayTotalText">
+		<Properties>
+			<xpath>(//*[@class='easyRow easyRowTotal'])[1]</xpath>	
+		</Properties>
+	</TestObject>
+	<TestObject name="orderStatus">
+		<Properties>
+			<xpath>//*[@id='divOrder1']//*[@class="itemStatus"]/span</xpath>	
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="advanceOrderStatus">
+		<Properties>
+			<xpath>//*[@id='divContent']//*[@class='itemStatus']//span[contains(text(),'ADVANCE ORDER')]</xpath>	
+			<xpath>//*[@id='divContent']//*[@class='itemStatus']//span[contains(text(),'IN PROCESS')]</xpath>
+		</Properties>
+	</TestObject>
+</Page>

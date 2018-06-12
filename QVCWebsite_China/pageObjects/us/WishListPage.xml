@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="WishListPage" include="MastheadMain">
+	
+	<TestObject name="pageTitle">
+		<Properties>
+			<xpath>//h1[.='Wish List']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="pleaseNoteMessage">
+		<Properties>
+			<css>p.phone-hidden</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="itemNumber">
+		<Properties>
+			<xpath>//*[@class='divItemNumber'][1]</xpath>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,'wishListCardWrapper')][1]//img[contains(@title,'&lt;text&gt;')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="removeBtn">
+		<Properties>
+			<xpath>//*[@class="wishListCard"][1]//*[@class="removeItemWL"]</xpath>
+			<xpath>//*[@class="divButtons divButtonWishList"]//*[@class='secondaryWrapBtn wrapBtnremove'][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="ColorOption">
+		<Properties>
+			<xpath>//*[@class="selectColor"][contains(@content,"&lt;Color&gt;")]</xpath>
+			<xpath>//*[@class='productOption'][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="SizeOption">
+		<Properties>
+			<xpath>//*[contains(@class, 'wishlSize')]//*[.='&lt;Size&gt;']</xpath>
+			<xpath>//*[@class='productOption'][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="addToCartBtn">
+		<Properties>
+			<xpath>//div[@class='divProduct'][1]//span[@class='primaryWrapBtn wrapBtnaddtocart']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="speedBuyBtn">
+		<Properties>
+			<xpath>//div[@class='divProduct'][1]//span[@class='primaryWrapBtn wrapBtnspeedbuy']</xpath>
+		</Properties>
+	</TestObject>
+</Page>

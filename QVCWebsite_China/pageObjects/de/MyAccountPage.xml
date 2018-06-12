@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="MyAccountPage" include="MastheadMain">
+	<TestObject name="bckHomePageLink">
+		<Properties>
+			<id>ancTop</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="AddressBookLink">
+		<Properties>
+			<xpath>//*[text()="Adressbuch"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="QVCAddressBookHeader">
+		<Properties>
+			<id>lastBCNode</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="AddNewAddressbtn">
+		<Properties>
+			<id>btnAddNewAddress</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="firstNameTextbox"> 
+		<properties>   
+			<id>txtFirstName</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="lastNameTextbox"> 
+		<properties>   
+			<id>txtLastName</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="streetNameTextbox"> 
+		<properties>   
+			<id>txtStreetName</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="houseNoTextBox"> 
+		<properties>   
+			<id>txtHouseNo</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="postalCodeTextbox"> 
+		<properties>   
+			<id>txtZipPostalCode</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="cityTextBox"> 
+		<properties>   
+			<id>txtCity</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="SubmitChangesbtn"> 
+		<properties>   
+			<id>btnSubmitChanges</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="deleteSuccessMsg"> 
+		<properties>   
+			<id>delConfirmConsole</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="SetAsPermanentShiplink"> 
+		<properties>   
+			<xpath>//*[text()="Set as Permanent Ship To"]</xpath>
+		</properties> 
+	</TestObject>
+
+	<TestObject name="creditCardLink"> 
+		<properties>   
+			<linkText>Kreditkarte</linkText>
+		</properties> 
+	</TestObject>
+	
+	
+	
+	<TestObject name="BillAddressLink"> 
+		<properties>   
+			<linkText>Billing Address &amp; Phone Number</linkText>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="pinLink"> 
+		<properties>   
+			<linkText>PIN</linkText>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="autoDeliveryPlansLink"> 
+		<properties>   
+			<linkText>Auto-Delivery Plans</linkText>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="allOrdersSection">
+		<properties>
+			<id>divMyAcctMenuTop</id>
+		</properties>
+	</TestObject>
+	
+	<TestObject name="orderStatusLink">
+		<properties>
+			<linkText>Order Status</linkText>
+		</properties>
+	</TestObject>
+	
+	<TestObject name="easyPayOrdersLink"> 
+		<properties>
+			<linkText>Easy Pay Orders</linkText>
+		</properties>
+	</TestObject>
+	
+	<TestObject name="advancedWaitlistOrdersLink">
+		<properties>
+			<linkText>Advance &amp; Waitlist Orders</linkText>
+		</properties>
+	</TestObject>
+	
+	<TestObject name="returnOrdersLink">
+		<properties>
+			<linkText>Returned Orders</linkText>
+		</properties>
+	</TestObject>
+	
+	<TestObject name="writeReviewLink">
+		<properties>
+			<xpath>//*[@id='divMyAcctMenuTop']//*[text()="Write A Review"]</xpath>
+		</properties>
+	</TestObject>
+	
+	<TestObject name="myQCardTxt"> 
+		<properties>   
+			<xpath>//div[@id='divNavBottom']/div[@class='h2RoundedBorderAll']/h2</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="applyForQCardLink">
+		<properties>
+			<linkText>Apply for QCard®</linkText>
+		</properties>
+	</TestObject>
+	
+	<TestObject name="manageYourQCardLink">
+		<properties>
+			<linkText>Manage your QCard®</linkText>
+		</properties>
+	</TestObject>
+	
+	<TestObject name="payQCardBillOnlineLink">
+		<properties>
+			<linkText>Pay QCard® bill online</linkText>
+		</properties>
+	</TestObject>
+	
+	<TestObject name="learnMoreAboutQCardLink">
+		<properties>
+			<linkText>Learn more about QCard®</linkText>
+		</properties>
+	</TestObject>
+	
+	<TestObject name="ContactUsText_Left">
+		<properties>
+			<xpath>//*[@id='divMyAcctMenuBottom']//*[text()="Contact Us"]</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="PhoneNumberLink_Left">
+		<properties>
+			<xpath>//*[@id='divMyAcctMenuBottom']//*[text()="888-345-5788"]</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="EmailLink_Left">
+		<properties>
+			<xpath>//*[@id='divMyAcctMenuBottom']//*[text()="Email"]</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="ChatLink_Left">
+		<properties>
+			<xpath>//*[@id='divMyAcctMenuBottom']//*[text()="Chat"]</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="CustomerServiceLink_Left">
+		<properties>
+			<xpath>//*[@id='divMyAcctMenuBottom']//*[text()="Customer Service"]</xpath>
+		</properties>
+	</TestObject>
+	
+	<TestObject name="allOrdersTxt">
+		<properties>
+			<xpath>//div[@class="h2RoundedBorderAll desktopOnly"]</xpath>
+		</properties>
+	</TestObject>
+	
+	<TestObject name="newArrivalMoudle">
+		<properties>
+			<id>newArrivalsModule</id>
+		</properties>
+	</TestObject>
+	<TestObject name="newArriivalTxt">
+		<properties>
+			<xpath>//*[@id='newArrivalsHeader']//*[text()="New Arrivals"]</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="newArriivalExpandHearder">
+		<properties>
+			<xpath>//*[@id='newArrivalsHeader']//*[@class='expanded']</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="newArriivalCloseHearder">
+		<properties>
+			<xpath>//*[@id='newArrivalsHeader']//*[@class='']</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="ViewMoreNewArrivalsLink">
+		<properties>
+			<xpath>//*[@id='newArrivalStage']//*[text()="View More New Arrivals"]</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="newArrivalItemPicture1">
+		<properties>
+			<xpath>//*[@class='divProdContainer']//*[@class='prodInfo'][1]//*[@class='prodIMG']</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="newArrivalItemPicture2">
+		<properties>
+			<xpath>//*[@class='divProdContainer']//*[@class='prodInfo'][2]//*[@class='prodIMG']</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="newArrivalItemPicture3">
+		<properties>
+			<xpath>//*[@class='divProdContainer']//*[@class='prodInfo'][3]//*[@class='prodIMG']</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="newArrivalItemPicture4">
+		<properties>
+			<xpath>//*[@class='divProdContainer']//*[@class='prodInfo'][4]//*[@class='prodIMG']</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="newArrivalItemDes1">
+		<properties>
+			<xpath>//*[@class='divProdContainer']//*[@class='prodInfo'][1]//*[@class='prodShortDesc']/a</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="newArrivalItemDes2">
+		<properties>
+			<xpath>//*[@class='divProdContainer']//*[@class='prodInfo'][2]//*[@class='prodShortDesc']/a</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="newArrivalItemDes3">
+		<properties>
+			<xpath>//*[@class='divProdContainer']//*[@class='prodInfo'][3]//*[@class='prodShortDesc']/a</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="newArrivalItemDes4">
+		<properties>
+			<xpath>//*[@class='divProdContainer']//*[@class='prodInfo'][4]//*[@class='prodShortDesc']/a</xpath>
+		</properties>
+	</TestObject>
+	
+	<TestObject name="personalInformationTxt">
+		<properties>
+			<xpath>//*[text()="Personal Information"]</xpath>
+		</properties>
+	</TestObject>
+	
+	<TestObject name="emailAddressLink">
+		<properties>
+			<linkText>Email Address</linkText>
+		</properties>
+	</TestObject>
+	
+	<TestObject name="passwordLink">
+		<properties>
+			<linkText>Password</linkText>
+		</properties>
+	</TestObject>
+	
+	<TestObject name="securityQuestionsLink">
+		<properties>
+			<linkText>Security Questions</linkText>
+		</properties>
+	</TestObject>
+	
+	<TestObject name="permanentShippingAddressLink">
+		<properties>
+			<linkText>Permanent Shipping Address</linkText>
+		</properties>
+	</TestObject>
+	
+	<TestObject name="myNicknameLink">
+		<properties>
+			<linkText>My Nickname</linkText>
+		</properties>
+	</TestObject>
+	
+	<TestObject name="wishListLink">
+		<properties>
+			<linkText>Wish List</linkText>
+		</properties>
+	</TestObject>
+	<TestObject name="MyRecentOrderMoudle">
+		<properties>
+			<id>orderSnapshotModule</id>
+		</properties>
+	</TestObject>
+	<TestObject name="MyRecentOrderExpandHearder">
+		<properties>
+			<xpath>//*[@id='orderSnapshotHeader']//*[@class='expanded']</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="MyRecentOrderCloseHearder">
+		<properties>
+			<xpath>//*[@id='orderSnapshotHeader']//*[@class='']</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="MyRecentOrderContent">
+		<properties>
+			<xpath>//*[@id='orderSnapshotModule']//*[@class='moduleContent']//*[@class='anonCopy']</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="MyRecentOrderSignInLink">
+		<properties>
+			<xpath>//*[@id='orderSnapshotModule']//*[@class='moduleContent']//a[text()="Sign In "]</xpath>
+		</properties>
+	</TestObject>
+	
+	<TestObject name="MyWishListMoudle">
+		<properties>
+			<id>wishlistModule</id>
+		</properties>
+	</TestObject>
+	<TestObject name="MyWishListExpandHearder">
+		<properties>
+			<xpath>//*[@id='wishlistHeader']//*[@class='expanded']</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="MyWishListCloseHearder">
+		<properties>
+			<xpath>//*[@id='wishlistHeader']//*[@class='']</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="MyWishListContent">
+		<properties>
+			<xpath>//*[@id='wishlistModule']//*[@class='moduleContent']//*[@class='containerHead']</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="MyWishListSignInLink">
+		<properties>
+			<xpath>//*[@id='wishlistModule']//*[@class='moduleContent']//a[text()="Sign In "]</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="MyWishListCollectionsLink">
+		<properties>
+			<xpath>//*[@id='wishlistModule']//*[@class='wishlistCollections']//*[text()="Collections"]</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="WishListFavoritesLink">
+		<properties>
+			<xpath>//*[@id='wishlistModule']//*[text()="Wish List Favorites"]</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="ViewWishListLink">
+		<properties>
+			<xpath>//*[@id='wishlistModule']//*[text()="View Wish List"]</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="myWishListItemImg1">
+		<properties>
+			<xpath>//*[@id='wishlistModule']//*[@class='prodInfo'][1]//*[@class='prodIMG']</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="myWishListItemImg2">
+		<properties>
+			<xpath>//*[@id='wishlistModule']//*[@class='prodInfo'][2]//*[@class='prodIMG']</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="myWishListItemImg3">
+		<properties>
+			<xpath>//*[@id='wishlistModule']//*[@class='prodInfo'][3]//*[@class='prodIMG']</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="myWishListItemImg4">
+		<properties>
+			<xpath>//*[@id='wishlistModule']//*[@class='prodInfo'][4]//*[@class='prodIMG']</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="myWishListItemDes1">
+		<properties>
+			<xpath>//*[@id='wishlistModule']//*[@class='prodInfo'][1]//*[@class='prodShortDesc']/a</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="myWishListItemDes2">
+		<properties>
+			<xpath>//*[@id='wishlistModule']//*[@class='prodInfo'][2]//*[@class='prodShortDesc']/a</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="myWishListItemDes3">
+		<properties>
+			<xpath>//*[@id='wishlistModule']//*[@class='prodInfo'][3]//*[@class='prodShortDesc']/a</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="myWishListItemDes4">
+		<properties>
+			<xpath>//*[@id='wishlistModule']//*[@class='prodInfo'][4]//*[@class='prodShortDesc']/a</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="myWishListAddToCart1">
+		<properties>
+			<xpath>//*[@id='wishlistModule']//*[@class='prodInfo'][1]//*[@class='prodButton']</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="myWishListAddToCart2">
+		<properties>
+			<xpath>//*[@id='wishlistModule']//*[@class='prodInfo'][2]//*[@class='prodButton']</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="myWishListAddToCart3">
+		<properties>
+			<xpath>//*[@id='wishlistModule']//*[@class='prodInfo'][3]//*[@class='prodButton']</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="myWishListAddToCart4">
+		<properties>
+			<xpath>//*[@id='wishlistModule']//*[@class='prodInfo'][4]//*[@class='prodButton']</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="MostWishForImg">
+		<properties>
+			<id>MyAccountMostWishedFor</id>
+		</properties>
+	</TestObject>
+	
+	<TestObject name="latestSocialPostsTxt">
+		<properties>
+			<xpath>//div[@id="socialFeedHeader"]/h2</xpath>
+		</properties>
+	</TestObject>
+	
+	<TestObject name="latestSocialPostsExpandedView">
+		<properties>
+			<id>socialFeedContent</id>
+		</properties>
+	</TestObject>
+	
+	<TestObject name="myOrderLink">
+		<properties>
+			<xpath>//*[@class='outline']//a[.='Bestellstatus']</xpath>
+		</properties>
+	</TestObject>
+</Page>

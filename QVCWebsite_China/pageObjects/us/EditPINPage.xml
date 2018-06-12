@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="EditPINPage" include="MastheadMain">
+	<TestObject name="editPinPageTitle">
+		<Properties>
+			<id>divPageTitle</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="currentPIN">
+		<Properties>
+			<id>txtPinOld</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="newPIN">
+		<Properties>
+			<id>txtPin</id>
+		</Properties>
+	</TestObject>	
+	<TestObject name="verifyPIN">
+		<Properties>
+			<id>txtVerifyPin</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="submitChangesBtn">
+		<Properties>
+			<css>input.primaryButton[value='Submit Changes']</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="cancelBtn">
+		<Properties>
+			<css>input.secondaryButton[value='Cancel']</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="errMsgHeader">
+		<Properties>
+			<id>errConsole</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="errMsgPinUse">
+		<Properties>
+			<id>errPin</id>
+		</Properties>
+	</TestObject>
+	
+</Page>

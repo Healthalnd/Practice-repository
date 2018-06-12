@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="GoodValuePage" include="MastheadMain">
+	
+	
+	<TestObject name="ToolLeftDown">
+			<Properties>
+				<xpath>//*[@class="lmenu"][1]</xpath>
+			</Properties>
+	</TestObject>
+	
+</Page>

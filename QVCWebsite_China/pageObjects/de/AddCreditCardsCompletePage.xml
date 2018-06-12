@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="SignupCompletePage" include="MastheadMain">
+
+	<TestObject name="returnToMyAccountBtn">
+		<Properties>
+          	<css>input.primaryButton[value='Zurück zu "Mein QVC"']</css>          		 
+		</Properties>
+	</TestObject>
+
+</Page>

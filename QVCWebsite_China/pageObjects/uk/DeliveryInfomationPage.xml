@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="DeliveryInfomationPage" include="MastheadMain">
+
+	<TestObject name="deliveryInfoHeader"> 
+		<properties>   
+			<id>divPageTitle</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="ageRestrictedCheckBox">
+		<Properties>
+			<xpath>//*[@class="cb ws_required"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="continueBtn">
+		<Properties>
+			<xpath>//*[@class="primaryButton" and @value="Continue"]</xpath>
+		</Properties>
+	</TestObject>
+	
+</Page>
+

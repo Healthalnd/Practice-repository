@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="QVCInternationalPage" include="MastheadMain">
+	
+	<TestObject name="QVCInternationalUSURL">
+		<Properties>
+			<xpath>//*[@id="divMastheadLogo"]//*[@href="http://www.qvc.com/"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="QVCInternationalUKURL">
+		<Properties>
+			<xpath>//*[@id="divMastheadLogo"]//*[@href="http://www.qvcuk.com/"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="QVCInternationalGermanyURL">
+		<Properties>
+			<xpath>//*[@id="divMastheadLogo"]//*[@href="http://www.qvc.de/"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="QVCInternationalItalyURL">
+		<Properties>
+			<xpath>//*[@class="navbar-header text-uppercase"]//*[@href='https://www.qvc.it/']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="QVCInternationalFranceURL">
+		<Properties>
+			<xpath>//*[@class="navbar-header text-uppercase"]//*[@href="https://www.qvc.fr/"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="QVCInternationalChinaURL">
+		<Properties>
+			<xpath>//*[@class="N_logo"]//*[@href="http://www.cnrmall.com"]</xpath>
+		</Properties>
+	</TestObject>
+</Page>

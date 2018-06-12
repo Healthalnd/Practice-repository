@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="NewAccountPage" include="MastheadMain">
+	<TestObject name="emailAddressTextbox">
+		<Properties>
+			<id>txtEmailAddress</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="confEmailWebEdit">
+		<Properties>
+			<id>txtEmailAddressConf</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="passwordTxt">
+		<Properties>
+			<id>lblPassword</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="passwordTextbox">
+		<Properties>
+			<id>txtPassword</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="confirmPasswordTextbox">
+		<Properties>
+			<id>txtVerifyPassword</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="securityQuestionList">
+		<Properties>
+			<id>txtSecQuestion1</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="securityAnswerTextbox">
+		<Properties>
+			<id>txtSecAnswer1</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstNameWebEdit">
+		<Properties>
+			<id>txtFirstName</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="lastNameWebEdit">
+		<Properties>
+			<id>txtLastName</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="houseNumWebEdit">
+		<Properties>
+			<id>txtAddress1</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="addressWebEdit">
+		<Properties>
+			<id>txtAddress2</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="cityWebEdit">
+		<Properties>
+			<id>txtCity</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="dateOfBirthWebEdit">
+		<Properties>
+			<id>txtDateOfBirth</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="pinWebEdit">
+		<Properties>
+			<id>txtPin</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="zipCodeWebEdit">
+		<Properties>
+			<id>txtZipPostalCode</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="continueCheckoutBtn">
+		<Properties>
+			<xpath>//*[@id='btnContinueCheckout']</xpath>
+			<xpath>//*[@class="primaryButton"]</xpath>	
+		</Properties>
+	</TestObject>
+	<TestObject name="phoneWebEdit">
+		<Properties>
+			<id>txtphone1</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="signUpBtn">
+		<Properties>
+			<xpath>//*[@id='btnContinue'and @value='Sign Up']</xpath>
+			<xpath>//*[@id='btnContinue'and @value='Continue']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="returnToHomepageBtn">
+		<Properties>
+			<id>btnTakeMeShopping</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="footerBtnLinkIcon">
+		<Properties>
+			<xpath>//*[@class="footerBtnLink"]/*[@class="icon"]/img</xpath>
+		</Properties>
+	</TestObject>
+</Page>

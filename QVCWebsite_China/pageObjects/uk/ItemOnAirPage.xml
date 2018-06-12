@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ItemOnAirPage" include="MastheadMain">
+	<TestObject name="itemOnAirHeader">
+			<Properties>
+				<xpath>//*[@class="itemOnAir"]/h3</xpath>
+			</Properties>
+	</TestObject>	
+	<TestObject name="selectedChannelBtn"> 
+        <properties>   
+          	<xpath>//button[contains(@class,'selectedChannel')]</xpath>       		
+        </properties> 
+     </TestObject>	 
+</Page>

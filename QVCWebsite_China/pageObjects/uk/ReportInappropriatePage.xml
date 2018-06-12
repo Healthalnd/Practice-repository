@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ReportInappropriatePage" include="MastheadMain">
+	
+	<TestObject name="ReportInappropriateTitle">
+		<Properties>
+			<id>BVQAInappropriateFeedbackFormTitleID</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="InappropriatePerson">
+		<Properties>
+			<class>BVQANickname</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="InappropriateTitle">
+		<Properties>
+			<class>BVQAQuestionSummary</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="InappropriateContent">
+		<Properties>
+			<xpath>//*[@class="BVQAContentText BVQAAnswerText"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="InappropriateLocation">
+		<Properties>
+			<class>BVQALocation</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="InappropriateDate">
+		<Properties>
+			<class>BVQAElapsedTime</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="ageText">
+		<Properties>
+			<xpath>//*[contains(@class,'BVQAContextDataValueagePrefix')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="shopTimeText">
+		<Properties>
+			<xpath>//*[contains(@class,'BVQAContextDataValuehowLongShoppingPrefix')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="recommendText">
+		<Properties>
+			<xpath>//*[contains(@class,'BVQAContextDataValuewouldRecommendPrefix')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="giftOptionText">
+		<Properties>
+			<xpath>//*[contains(@class,'BVQAContextDataValueperfectGiftForPrefix')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="ageContent">
+		<Properties>
+			<xpath>//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValueage"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="shopTimeContent">
+		<Properties>
+			<xpath>//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValuehowLongShopping"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="recommendContent">
+		<Properties>
+			<xpath>//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValuewouldRecommend"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="giftOptionContent">
+		<Properties>
+			<xpath>//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValueperfectGiftFor"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="reportReasonTitle">
+		<Properties>
+			<class>BVQAFieldHeader</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="reportReasonInputBox">
+		<Properties>
+			<id>BVQAFieldTextAreaQuestionInappropriateReasontextID</id>
+			<id>BVQAFieldTextAreaAnswerInappropriateReasontextID</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="reportTips">
+		<Properties>
+			<id>BVQAInappropriateFeedbackProcessingDelayID</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="submitBtn">
+		<Properties>
+			<id>BVQASubmitInappropriateFeedbackButtonID</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="cancelBtn">
+		<Properties>
+			<id>BVQACancelInappropriateFeedbackButtonID</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="returnToProductLink">
+		<Properties>
+			<linkText>Return to product</linkText>
+		</Properties>
+	</TestObject>
+	
+</Page>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="UpdateOpenOrders" include="MastheadMain">		
+	<TestObject name="updateMyOrdersBtn">
+		<Properties>
+			<id>btnContinueUpdateOpenOrders</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="pageTitle"> 
+		<properties>   
+			<id>divPageTitle</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="openOrderMsg"> 
+		<properties>   
+			<xpath>//*[@id='divContent']/div[1]/p</xpath>			
+		</properties> 
+	</TestObject>
+	
+</Page>

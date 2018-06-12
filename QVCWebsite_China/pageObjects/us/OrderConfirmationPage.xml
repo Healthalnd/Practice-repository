@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="Order Confirmation"  include="MastheadMain">
+	<TestObject name="orderNumberText"> 
+		<properties>   
+			<xpath>//p[@id='parCheckoutOrderNumbers']/strong</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="viewReceiptBtn"> 
+		<properties>   
+			<css>input[value='View Receipt']</css>
+		</properties> 
+	</TestObject>
+	
+	 <TestObject name="passwordWebEdit"> 
+		<properties>   
+			<id>txtPassword</id>			
+		</properties> 
+	</TestObject>
+	 <TestObject name="confirmPasswordWebEdit"> 
+		<properties>
+			<id>txtVerifyPassword</id>			
+		</properties> 
+	</TestObject>
+	 <TestObject name="SubmitButtom"> 
+		<properties>   
+			<id>btnContinue</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="passWordMatch"> 
+		<properties>   
+			<id>pwMatch</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="passWordStrength"> 
+		<properties>   
+			<id>pwStrength</id>			
+		</properties> 
+	</TestObject>	
+	<TestObject name="thxCreatePasswordTxt"> 
+		<properties>   
+			<xpath>//*[contains(.,'Thanks for creating a password')]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="checkDisclaimerText"> 
+		<properties>   
+			<id>orderConfirmCheckText</id>			
+		</properties> 
+	</TestObject>	
+	
+	<TestObject name="placeOrderSuccessInfo"> 
+		<properties>   
+			<id>orderConfirmIntroText</id>			
+		</properties> 
+	</TestObject>	
+	<TestObject name="createPasswordInfo"> 
+		<properties>   
+			<id>createPWInfo</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="createPasswordTxt"> 
+		<properties>   
+			<css>#createPWInfo h2</css>
+		</properties> 
+	</TestObject>
+	<TestObject name="emailAddressInput"> 
+		<properties>   
+			<xpath>//*[@id="txtEmailAddress"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="billToAddressZipInput"> 
+		<properties>   
+			<xpath>//*[@id="txtSecAnswer1"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="resetPasswordText"> 
+		<properties>   
+			<xpath>//*[@id='divContent']//p[contains(text(), 'Password reset link')]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="clickTheStatusOfYourOrderNowLink"> 
+		<properties>   
+			<xpath>//*[@id='divCheckoutOrderStatusMessage']//a</xpath>
+		</properties> 
+	</TestObject>	
+</Page>

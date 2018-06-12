@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="SubmitOrderPage" include="MastheadMain">
+	
+	<TestObject name="SubmitOrderHeader"> 
+		<properties>   
+			<id>divPageTitle</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="submitOrderHeader2"> 
+		<properties>   
+			<xpath>.//*[@id='divPageTitle']/h1[.="Submit order"]</xpath>			
+		</properties> 
+	</TestObject>
+	<TestObject name="detailShipToAddressTxt"> 
+		<properties>  
+			<xpath>.//*[@id='divOrderDetailShippingAddress']/p</xpath>
+			<id>divOrderDetailShippingAddress</id>			
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="detailBillToAddressTxt"> 
+		<properties>   
+			<id>divOrderDetailBillingAddress</id>			
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="editShipToLink"> 
+		<properties>   
+			<linkText>Edit Ship-To Address</linkText>			
+		</properties>
+	</TestObject>
+	
+	<TestObject name="editDeliveryaddressTitle"> 
+		<properties>   
+			 <xpath>//*[@id='divOrderDetailShippingAddress']/h3</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="editDeliveryaddressLink"> 
+		<properties>   
+			 <xpath>//*[@id='divOrderDetailShippingAddress']/h3/span/a</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="editBillingaddressTitle"> 
+		<properties>   
+			 <xpath>//*[@id='divOrderDetailBillingAddress']/h3</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="editBillingaddressLink"> 
+		<properties>   
+			 <xpath>//*[@id='divOrderDetailBillingAddress']/h3/span/a</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="editCartLink"> 
+		<properties>   
+			<css>#frmSubmitOrder > div.divOrderTotalButtons > #editShoppingCart > span</css>	
+		</properties> 
+	</TestObject>	
+	<TestObject name="clickHereToSubmitOrderBtn"> 
+		<properties>   
+			 <xpath>//*[@class='primaryButton']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="cancelOrderBtn"> 
+		<properties>   
+			<xpath>//input[@value="Cancel order"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="paypayUnAuthorizeErrMsg"> 
+		<properties>   
+			<id>errConsole</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="cancelOrderHeader"> 
+		<properties>   
+			<id>cancelPageTitle</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="cancelOrderContextHeader"> 
+		<properties>   
+			<xpath>//*[@id="frmCheckout"]/h2</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="YesBtn"> 
+		<properties>   
+			<css>input.primaryButton</css>
+		</properties> 
+	</TestObject>
+	<TestObject name="NoBtn"> 
+		<properties>   
+			<css>input.secondaryButton</css>
+		</properties> 
+	</TestObject>
+	 <TestObject name="employeeRateTxt"> 
+		<properties>   
+			<xpath>//td[contains(.,'Employee Rate')]</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="BackToHomePage">
+		<Properties>			
+			<css>img[alt="QVC Logo"]</css>
+		</Properties>
+	</TestObject>	
+	<TestObject name="freeShipping_Txt">
+		<Properties>			
+			<css>.freeShipping</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="expressDeliveryTxt"> 
+		<properties>   
+			<xpath>//td[contains(.,'Express Delivery')]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="perishableFoodDeliveryTxt"> 
+		<properties>   
+			<xpath>//td[contains(.,'Perishable Food')]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="orderSummaryTable"> 
+		<properties>   
+			<xpath>//*[@class='orderTable']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="totalSHPrice"> 
+		<properties>   
+			<xpath>//div[@id='divInStockTotal']//tr[2]/td[@class='tdCurrency']</xpath>
+			<xpath>//*[@class='tblOrderSubTotal']//tbody//tr[2]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ShippintDiscount"> 
+		<properties>   
+			<xpath>//*[@class='orderTable']//td[@class='tdCurrency'][2]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="shippingIncludePriceText">
+		<Properties>
+			<css>.shippingIncluded</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="shippingPrice">
+		<Properties>			
+			<css>.shippingOfferPrice</css>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="colorSizeEditLink"> 
+		<properties>   
+			<xpath>//*[@class='productSpecifications']/a</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="privacyPolicyLink"> 
+		<properties>   
+			<xpath>//*[@id='lblAcceptTerms' ]/a</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="continueOrderedBtn"> 
+		<properties>   
+			<xpath>//*[@class='primaryButton' and @value='Weiter']</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="privacyPolicyCheckbox"> 
+		<properties>   
+			<id>cbAcceptTerms</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="fristPrice"> 
+		<properties>   
+			<xpath>//*[@id='divOrderDetailItemInformation'][1]//*[@class='itemSubtotal']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="secondPrice"> 
+		<properties>   
+			<xpath>//*[@id='divOrderDetailItemInformation'][2]//*[@class='itemSubtotal']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="editPaymentLink"> 
+		<properties>   
+			<xpath>//*[@id="divOrderDetailPaymentInformation"]//a</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="editPaymentTitle"> 
+		<properties>   
+			<xpath>//*[@id="divOrderDetailPaymentInformation"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="easyPayDetail"> 
+		<properties>   
+			<xpath>//*[@class='itemPersonalization']/p[2]</xpath>
+			<xpath>//*[@class='itemPersonalization']/p</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="advancedOrderTotalTxt"> 
+		<properties>   
+			<xpath>//*[.='Advanced Order total:']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="advancedOrderTotalPrice"> 
+		<properties>   
+			<xpath>//*[.='Advanced Order total:']/following-sibling::*[1]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="waitlistTitle">
+		<Properties>
+		    <xpath>//*[@class="clear topspacer"]/h2</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productNumber">
+		<Properties>
+		    <xpath>//*[@class="itemInformationWrapper"][1]/*[@class="itemInfo"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondProductNumber">
+		<Properties>
+		    <xpath>//*[@class="itemInformationWrapper"][2]/*[@class="itemInfo"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="shipToAddressText">
+		<Properties>
+			<xpath>//*[@id='divOrderDetailShippingAddress']/p</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="paymentMethodInfo">
+		<Properties>
+			<xpath>//*[@id='divOrderDetailPaymentInformation']/p</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productQTY">
+		<Properties>
+			<xpath>//*[@class='itemInformationWrapper'][1]//tbody//*[@class='tdNumber']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondProductQTY">
+		<Properties>
+			<xpath>//*[@class='itemInformationWrapper'][2]//tbody//*[@class='tdNumber']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productPrice">
+		<Properties>
+			<xpath>//div[@class="itemInformationWrapper over_hidden"][1]//td[3]</xpath>
+			<xpath>//*[@class='itemInformationWrapper'][1]//tbody//td[2]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondProductPrice">	
+		<Properties>
+			<xpath>//div[@class="itemInformationWrapper over_hidden"][2]//td[3]</xpath>
+			<xpath>//*[@class='itemInformationWrapper'][2]//tbody//td[2]</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="productSHFee">
+		<Properties>
+			<xpath>//div[@class="itemInformationWrapper over_hidden"][1]//span[@class="shippingOfferPrice"]</xpath>
+			<xpath>//div[@class="itemInformationWrapper over_hidden"][1]//span[@class="shippingIncluded"]</xpath>
+			<xpath>//*[@class='itemInformationWrapper'][1]//tbody//td[4]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondProductSHFee">
+		<Properties>
+			<xpath>//div[@class="itemInformationWrapper over_hidden"][2]//span[@class="shippingOfferPrice"]</xpath>
+			<xpath>//div[@class="itemInformationWrapper over_hidden"][2]//span[@class="shippingIncluded"]</xpath>
+			<xpath>//*[@class='itemInformationWrapper'][2]//tbody//td[4]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="tax">
+		<Properties>
+			<xpath>//div[@class="itemInformationWrapper over_hidden"][1]//td[6]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondTax">
+		<Properties>
+			<xpath>//div[@class="itemInformationWrapper over_hidden"][2]//td[6]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="subTotal">
+		<Properties>
+			<xpath>//div[@class="itemInformationWrapper over_hidden"][1]//td[@class="tdCurrency1"]</xpath>
+			<xpath>//*[@class='itemInformationWrapper'][1]//tbody//td[5]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondSubTotal">
+		<Properties>
+			<xpath>//div[@class="itemInformationWrapper over_hidden"][2]//td[@class="tdCurrency1"]</xpath>
+			<xpath>//*[@class='itemInformationWrapper'][2]//tbody//td[5]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="employeeDiscountTxt"> 
+		<properties>   
+			<xpath>//table[@class="tblOrderSubTotal"]//*[contains(text(),'Employee discount')]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="employeeDiscountTotal"> 
+		<properties>   
+			<xpath>//table[@class="tblOrderSubTotal"]//*[contains(text(),'Employee discount')]/../*[@class='tdCurrency']</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="productTotalPrice">
+		<Properties>
+			<xpath>//table[@class="tblOrderSubTotal"]//tbody//tr[1]/td[@class="tdCurrency"]</xpath>
+			<xpath>//*[@class='tblOrderSubTotal']//tbody//tr[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="totalTax">
+		<Properties>
+			<xpath>//table[@class="tblOrderSubTotal"]//tbody//tr[3]/td[@class="tdCurrency"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="orderTotal">
+		<Properties>
+			<xpath>//*[@class="tblOrderSubTotal"]//tfoot//*[@class="tdCurrency"]</xpath>
+			<xpath>//tr[@id="trOrderTotal"]//td[@class="tdCurrency"]</xpath>
+			<xpath>//*[@class='tblOrderSubTotal']//tfoot</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="editShippingAddressLink">
+		<Properties>
+			<xpath>//*[@id="divOrderDetailShippingAddress"]//*[.="Edit"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="orderNum">
+		<Properties>
+			<xpath>//*[@class='orderNumber']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="instockTotalPrice">
+		<Properties>
+			<xpath>//*[contains(text(),'In Stock') and contains(text(),'Order total')]/following-sibling::*[1]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="AOTotalPrice">
+		<Properties>
+			<xpath>//*[contains(text(),'Advanced Order') and contains(text(),'Order total')]/following-sibling::*[1]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="WLTotalPrice">
+		<Properties>
+			<xpath>//*[contains(text(),'Waitlist') and contains(text(),'Order total')]/following-sibling::*[1]</xpath>
+		</Properties>
+	</TestObject>	
+
+	<TestObject name="grandTotalPrice">
+		<Properties>
+			<xpath>//*[.='Grand total:']/following-sibling::*[1]</xpath>
+		</Properties>
+	</TestObject>	
+</Page>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ItemsRecentlyOnAirPage_AEM" include="MastheadMain">	  
+ <TestObject name="itemOnAirHeader"> 
+	<properties>   
+		<xpath>//*[@class="col-tn-12 col-xs-3 col-lg-2"]//h3</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="selectedChannelBtn"> 
+        <properties>   
+          	<xpath>//button[contains(@class,'selectedChannel')]</xpath>       		
+        </properties> 
+     </TestObject>	
+ </Page>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="EditEmailAddressPage" include="MastheadMain">
+	<TestObject name="editEmailAddressPageTitle">
+		<Properties>
+			<id>divPageTitle</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="currentEmailAddressTxt">
+		<Properties>
+			<id>lblEmailAddressCurr</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="currentemailAddressBox">
+		<Properties>
+			<xpath>//*[@id='frmEditEmail']/fieldset/span[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="newEmailAddressTxt">
+		<Properties>
+			<id>lblEmailAddress</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="newEmailAddressBox">
+		<Properties>
+			<id>txtEmailAddress</id>
+		</Properties>
+	</TestObject>		
+	<TestObject name="confirmEmailAddressTxt">
+		<Properties>
+			<id>lblEmailAddressConf</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="confirmEmailAddressBox">
+		<Properties>
+			<id>txtEmailAddressConf</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="submitChangesBtn">
+		<Properties>
+			<css>input.primaryButton[value='Submit Changes']</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="cancelBtn">
+		<Properties>
+			<css>input.secondaryButton[value='Cancel']</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="errMsgHeader">
+		<Properties>
+			<id>errConsole</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="errMsgEmailUse">
+		<Properties>
+			<id>errPin</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="thankYouHeader">
+		<Properties>
+			<xpath>//h1</xpath>
+		</Properties>
+	</TestObject>
+</Page>

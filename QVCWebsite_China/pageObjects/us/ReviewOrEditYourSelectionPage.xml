@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ReviewOrEditYourSelectionPage" include="MastheadMain">
+	
+	<TestObject name="addToCartbtn">
+		<Properties>
+			<class>btnAddToCart</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="speedBuyBtn">
+		<Properties>
+			<class>btnSpeedBuy</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="addToWishListBtn">
+		<Properties>
+			<class>btnAddToWishList</class>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="tsvBadgeImg">
+	    <properties>
+	         <id>spanTodaysSpecialValue</id>
+	    </properties>
+	 </TestObject>	
+</Page>

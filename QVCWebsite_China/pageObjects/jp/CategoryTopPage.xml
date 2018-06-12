@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="CategoryTopPage" include="MastheadMain">
+	
+	<TestObject name="BreadCrumb">
+			<Properties>
+				<class>breadcrumb</class>
+			</Properties>
+	</TestObject>
+	
+	<TestObject name="CategoryTitle">
+			<Properties>
+				<xpath>//*[@data-component-type="HEADER_TEXT"]//h1</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="CategoryDescription">
+			<Properties>
+				<xpath>//*[@data-component-type="HEADER_TEXT"]//p</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="HeroBannerAdImg">
+			<Properties>
+				<xpath>//*[@class="qComponent"]//img[@class="img-responsive main_img"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="HeroBannerAdSpecialFeatureText">
+			<Properties>
+				<xpath>//*[@class="qComponent"]//*[@class="slide_caption hidden-tn hidden-xs"]</xpath>
+			</Properties>
+	</TestObject>
+	
+	
+	
+	
+</Page>

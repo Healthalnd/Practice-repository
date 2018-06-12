@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="AddressBookPage" include="MastheadMain">
+	<TestObject name="pageTitle">
+		<Properties>
+			<id>divPageTitle</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="deleteAddressLink">
+		<Properties>
+			<linkText>Delete</linkText>
+		</Properties>
+	</TestObject>
+	<TestObject name="deleteBtn">
+		<Properties>
+			<id>btnDelete</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="addANewAddress">
+		<Properties>
+			<xpath>//input[@id='btnAddNewAddress']</xpath>
+		</Properties>
+	</TestObject>
+</Page>

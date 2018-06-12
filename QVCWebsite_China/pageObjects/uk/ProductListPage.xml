@@ -1,0 +1,1235 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ProductListPage" include="MastheadMain">
+	<TestObject name="productListModule"> 
+		<properties>   
+			<xpath>//*[@data-component-type='PRODUCT_LISTING_LIST']</xpath>
+			<id>frmProductList</id>
+		</properties> 
+	</TestObject>	
+	<TestObject name="productListHeader"> 
+		<properties>   
+			<xpath>//*[@class="active"]/h1</xpath>
+			<xpath>//*[@id="divPageTitle"]//h1</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="filterByLabel">
+		<Properties>
+			<xpath>//*[@class='facetedTitle bg-white']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstProductDesLink"> 
+		<properties>   
+			<xpath>//*[@class='col-tn-6 col-sm-4 galleryItem']//*[@class='productDesc'][2]</xpath>
+			<xpath>(//*[@class='productDesc'])[1]</xpath>
+			<xpath>//*[@class='productName'][1]//a</xpath>
+			<xpath>//*[@class='row']//*[@class="col-tn-6 col-lg-4 galleryItem"][1]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="secondProductDesLink"> 
+		<properties>   
+			<xpath>//*[@class='col-tn-6 col-sm-4 galleryItem'][2]//*[@class='productDesc'][2]</xpath>	
+			<xpath>(//*[@class='productDesc'])[2]</xpath>
+			<xpath>//*[@class='productName'][2]//a</xpath>
+			<xpath>//*[@class='row']//*[@class="col-tn-6 col-lg-4 galleryItem"][2]</xpath>		
+		</properties> 
+	</TestObject>
+	<TestObject name="firstProductImg"> 
+		<properties>  
+			<xpath>//*[@class="col-tn-6 col-sm-4 galleryItem"][1]//*[@class='productInfoWrapper']//*[@class='primary lazy'][1]</xpath>
+			<xpath>(//*[@class='productInfoWrapper']//*[@class='primary lazy'])[1]</xpath>
+			<xpath>(//*[@class='prodDetailLink'])[1]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="secondProductImg"> 
+		<properties>  
+			<xpath>//*[@class="col-tn-6 col-sm-4 galleryItem"][2]//*[@class='productInfoWrapper']//*[@class='primary lazy'][1]</xpath>
+			<xpath>(//*[@class='productInfoWrapper']//*[@class='primary lazy'])[2]</xpath>
+			<xpath>(//*[@class='prodDetailLink'])[2]</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="firstRatingProductImg"> 
+		<properties>   
+			<xpath>(//*[@class='productNumberOfReviews']/../../..)[1]//img</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstRatingProductDesc"> 
+		<properties>   
+			<xpath>(//*[@class='productNumberOfReviews']/../../..)[1]//*[@class="productName"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstRatingProductQVCPrice"> 
+		<properties>   
+			<xpath>(//*[@class='productNumberOfReviews']/../../..)[1]//*[@class="productQvcPrice"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstRatingProductRating"> 
+		<properties>   
+			<xpath>(//*[@class='productNumberOfReviews']/../../..)[1]//*[@class="productRatings"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="pageControl"> 
+		<properties>
+			<xpath>//*[@class='plControlPanel bg-white']</xpath>
+			<xpath>//*[@class='listDescriptionProductSortWrapper']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="leftNavTool"> 
+		<properties>
+			<xpath>//*[@class='col-sm-4 col-md-3 col-lg-3 col-xs-7 col-tn-10 facetedNav']</xpath>
+			<id>divNavFaceted</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="BrandFilter_FirstUnselected"> 
+		<properties>
+			<xpath>//*[@class='RefineLink']//input[@id='cbTiana B1']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="BrandFilter_FirstSelected"> 
+		<properties>  
+			<xpath>//*[@class='RefineLink']//input[@id='cbTiana B1' and @checked='checked']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="BrandFilter_FirstSelectedText"> 
+		<properties>   
+			<xpath>//*[@for='cbSize1']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="PriceFilter_FirstUnselected"> 
+		<properties> 
+			<xpath>//*[@class='RefineLink']//input[@id='cb£25 - £501']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="PriceFilter_FirstUnselectedText"> 
+		<properties>   
+			<xpath>//*[@for='cb£25 - £501']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="PriceFilter_FirstSelected"> 
+		<properties> 
+			<xpath>//*[@class='RefineLink']//input[@id='cb£25 - £501' and @checked='checked']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="PriceFilter_FirstSelectedText"> 
+		<properties>   
+			<xpath>//*[@class='RefineLink']//label[contains(text(),"£25 - £50")]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ProductTotalNum"> 
+		<properties>   
+			<xpath>//*[@class='inlineLabelLeftOfSelect']//strong</xpath>
+			<xpath>//*[@class="plControlPanel bg-white"]//*[@class="productPageNumbers"]//*[@class='panelPages']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="selectedResult"> 
+		<properties>   
+			<xpath>//*[@class="plControlPanel bg-white"]//*[@class="selectedResultFacets"]//li[&lt;index&gt;]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="1stSelectedResult"> 
+		<properties>			 
+			<xpath>//*[@class="plControlPanel bg-white"]//*[@class="selectedResultFacets"]//li[1]</xpath>		
+			<xpath>//*[@id='seoNavlink2' and contains(text(),"Tiana B")]</xpath>
+			<xpath>//*[@id='seoNavlink1' and contains(text(),"Tiana B")]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="2ndSelectedResult"> 
+		<properties>   
+			<xpath>//*[@id='seoNavlink1' and contains(text(),"£25 - £50")]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="1stProductReviews"> 
+		<properties>   
+			<xpath>(//*[contains(@class,"productRatings")])[1]</xpath>
+		</properties> 
+	</TestObject>	
+	<TestObject name="firstPrice"> 
+		<properties>   
+			<xpath>//*[@class="col-tn-6 col-sm-4 galleryItem" or @class="col-tn-6 col-lg-4 galleryItem"][1]//*[@class="priceSell"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="secondPrice"> 
+		<properties>   
+			<xpath>//*[@class="col-tn-6 col-sm-4 galleryItem" or @class="col-tn-6 col-lg-4 galleryItem"][2]//*[@class="priceSell"]</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="predictiveArea"> 
+		<properties>   
+			<xpath>//*[@id="predictiveSearch"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="predictiveBrands"> 
+		<properties>   
+			<xpath>//*[@id="brands"]</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="predictiveBrandsTitle"> 
+		<properties>   
+			<xpath>//*[@id="brands"]/*[@class="title"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="predictiveBrandsInfo"> 
+		<properties>   
+			<xpath>//*[@id="brands"]/*[@class="coremetricsLink"][1]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="predictiveBrandsCount"> 
+		<properties>   
+			<xpath>//*[@id="brands"]/*[@class="coremetricsLink"][1]/*[@class="itemCount"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="predictiveCategories"> 
+		<properties>   
+			<xpath>//*[@id="categories"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="predictiveCategoryTitle"> 
+		<properties>   
+			<xpath>//*[@id="categories"]/*[@class="title"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="predictiveCategoryInfo"> 
+		<properties>   
+			<xpath>//*[@id="categories"]/*[@class="coremetricsLink"][1]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="predictiveCategoryCount"> 
+		<properties>   
+			<xpath>//*[@id="categories"]/*[@class="coremetricsLink"][1]/*[@class="itemCount"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="predictiveFeaturedProductArea"> 
+		<properties>   
+			<xpath>//*[@id="featuredProducts"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="predictiveFeaturedProductTitle"> 
+		<properties>   
+			<xpath>//*[@id="featuredProducts"]/*[@class="title"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="predictiveFeaturedProductInfo"> 
+		<properties>   
+			<xpath>//*[@id="featuredProducts"]//*[contains(@class,'coremetricsLink')][1]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="predictiveFeaturedProductInfoSecond"> 
+		<properties>   
+			<xpath>//*[@id="featuredProducts"]//*[contains(@class,'coremetricsLink')][2]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="predictiveFeaturedProductInfoThird"> 
+		<properties>   
+			<xpath>//*[@id="featuredProducts"]//*[contains(@class,'coremetricsLink')][3]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="predictiveFeaturedProductInfoFourth"> 
+		<properties>   
+			<xpath>//*[@id="featuredProducts"]//*[contains(@class,'coremetricsLink')][4]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="predictiveFeatured1stProductImg"> 
+		<properties>   
+			<xpath>//*[@id="featuredProducts"]//*[contains(@class,'coremetricsLink')][1]/img</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="predictiveFeaturedProductCount"> 
+		<properties>   
+			<xpath>//*[@id="featuredProducts"]//*[contains(@class,'coremetricsLink')][1]//*[@class="pItemRev"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="predictiveFeaturedProductStar"> 
+		<properties>   
+			<xpath>//*[@id="featuredProducts"]//*[contains(@class,'coremetricsLink')][1]//*[@class="pItemRevStar"]/img</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="predictiveFeaturedProduct"> 
+		<properties>   
+			<xpath>//*[@class="thumbnail coremetricsLink"]//*[@class="caption text-center"]/h6</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstPredictiveBrand"> 
+		<properties>   
+			<xpath>//*[@id="brands"]//a[1]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ProductListModule"> 
+		<properties>   
+			<xpath>//*[@data-component-type="PRODUCT_LISTING_LIST"]</xpath>
+			<xpath>//*[@class="divBorder"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ProductListHeader"> 
+		<properties>   
+			<xpath>//*[@class="active"]/h1</xpath>
+			<xpath>//*[@id='breadCrumbs']/h2</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstBrand"> 
+		<properties> 
+			<xpath>//*[.='Brand']/following-sibling::*[1]//*[@class='refinementImg'][1]/a</xpath>
+			<xpath>//*[@data-component-type="PRODUCT_LISTING_NAV"]//*[contains(@class,'facetedMulti')][1]//li[1]</xpath>			
+		</properties> 
+	</TestObject>
+	<TestObject name="categoryFilter"> 
+		<properties> 
+			<xpath>//*[.='Category']/following-sibling::*[1]//*[@class='refinementImg'][&lt;index&gt;]/a</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstBrandFilterBody"> 
+		<properties> 
+			<xpath>//*[.='Brand']/following-sibling::*</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="brandExpanded"> 
+		<properties>   
+			<xpath>//*[@class='facetedMulti facetedBrand bg-white']//*[@class='expanded']</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="priceExpanded"> 
+		<properties>   
+			<xpath>//*[@class='facetedMulti facetedPrice bg-white']//*[@class='expanded']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="discoverExpanded"> 
+		<properties>   
+			<xpath>//*[@class='facetedMulti facetedDiscover bg-white']//*[@class='expanded']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="brandTitle"> 
+		<properties> 			
+			<xpath>//*[.='Brand']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="priceTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedPrice bg-white"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="priceFilter"> 
+		<properties> 
+			<xpath>//*[.='Price']/following-sibling::*[1]//*[@class='refinementImg'][&lt;index&gt;]/a</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="discoverFilter"> 
+		<properties> 
+			<xpath>//*[.='Discover']/following-sibling::*[1]//*[@class='refinementImg'][&lt;index&gt;]/a</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="moreOptions"> 
+		<properties>   
+			<xpath>//*[@class='moreOptions']/a</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="UpperLeftArrow"> 
+		<properties>   
+			<xpath>//*[@class="productPanel"]//*[@class="prvsPage"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="UpperRightArrow"> 
+		<properties>   
+			<xpath>//*[@class="productPanel"]//*[@class="nxtPage"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="LowerLeftArrow"> 
+		<properties>   
+			<xpath>//*[@class="row center"]//*[@class="pagination"]//*[@class="prvsPage"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="LowerRightArrow"> 
+		<properties>   
+			<xpath>//div[@class="row center"]//*[@class="pagination"]//img[@class="nxtPage"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="UpperLeftArrowDisable"> 
+		<properties>   
+			<xpath>//*[@class="productPanel"]//*[@class="disabled"]//*[@class="prvsPage"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="LowerLeftArrowDisable"> 
+		<properties>   
+			<xpath>//*[@class="row center"]//*[@class="pagination"]//*[@class="disabled"]//*[@class="prvsPage"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="LowerUnselected2ndPage"> 
+		<properties>   
+			<xpath>//*[@class="row center"]//*[@class="pagination"]//a[contains(text(),'2')]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="LowerSelectedPage"> 
+		<properties>   
+			<xpath>//*[@class="row center"]//*[@class="pagination"]//*[@class="active"]</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="selectedResultTenth"> 
+		<properties> 
+			<xpath>//*[@class="plControlPanel bg-white"]//*[@class="selectedResultFacets"]//li[10]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="filtersErrorMessageTop"> 
+		<properties> 
+			<xpath>//*[@class="plControlPanel bg-white"]//*[@class="errorMsg"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="filtersErrorMessage"> 
+		<properties> 
+			<xpath>//*[@class='error-tooltip mobile errorBlock']</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="plpSearchResultText"> 
+		<properties>   
+			<xpath>//*[@class='searchResults']/em</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="filterItemList"> 
+		<properties>   
+			<xpath>//*[contains(@class,"productGallery")]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="SearchWord"> 
+		<properties>   
+			<xpath>//*[@class="searchWord"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="searchResultCount"> 
+		<properties>   
+			<xpath>//*[@class="searchResults"]/strong/div</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="youMayLikeContainer"> 
+		<properties>   
+			<xpath>//*[@class='container productInfo qvcCarousel productCarousel ']</xpath>
+		</properties> 
+	</TestObject>	
+		<TestObject name="resultForText"> 
+		<properties>   
+			<xpath>//*[@class="searchResults"]/strong/em</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="resultCorrectWord"> 
+		<properties>   
+			<xpath>//*[@class="searchResults"]/strong/*[@class="correctWord"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="PanelNumbrs"> 
+		<properties>   
+			<xpath>//*[@class="plControlPanel bg-white"]//*[@class="productPageNumbers"]//*[@class="panelNumbrs"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="breadCrumb">
+		<Properties>
+			<xpath>//*[@class="breadcrumb pageBreadcrumb"]//li[&lt;index&gt;]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="LevelTwoBreadCrumb"> 
+		<properties>   
+			<xpath>//*[@class="breadcrumb pageBreadcrumb"]/li[2]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="LevelThreeBreadCrumb"> 
+		<properties>   
+			<xpath>//*[@class="breadcrumb pageBreadcrumb"]/li[3]</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="LevelFourBreadCrumb"> 
+		<properties>   
+			<xpath>//*[@class="breadcrumb pageBreadcrumb"]/li[4]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="brandFilterSelected"> 
+		<properties> 
+			<xpath>//*[.='Brand']/following-sibling::*[1]//*[@class='refinementImg'][&lt;index&gt;]/*[@class='refinementLnk selected']</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="brandFilterSelectedText"> 
+		<properties> 
+			<xpath>//*[.='Brand']/following-sibling::*[1]//*[@class='refinementImg'][&lt;index&gt;]/*[@class='refinementLnk selected']/span</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="didYouMeanText"> 
+		<properties>   
+			<xpath>//*[@class="dym"]/strong</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="dymWord"> 
+		<properties>   
+			<xpath>//*[@class="dym"]//a</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstProductDesc"> 
+		<properties>   
+			<xpath>//*[@class="col-tn-6 col-sm-4 galleryItem"][1]//*[@class="productDesc"][2]</xpath>
+			<xpath>//*[@class="col-tn-6 col-lg-4 galleryItem"][1]//*[@class="productDesc"][2]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="resultsText"> 
+		<properties>   
+			<xpath>//*[@class="searchResults"]/em</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="LetterLinks"> 
+		<properties>   
+			<id>alphaLinks</id>
+		</properties> 
+	</TestObject>	
+	<TestObject name="Letter0Block"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][1]</xpath>
+			</properties> 
+	</TestObject>
+	<TestObject name="Letter0Blocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][1]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="Letter1Block"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][2]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="Letter1Blocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][2]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="Letter2Block"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][3]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="Letter2Blocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][3]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="Letter3Block"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][4]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="Letter3Blocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][4]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="Letter4Block"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][5]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="Letter4Blocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][5]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="Letter5Block"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][6]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="Letter5Blocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][6]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="Letter6Block"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][7]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="Letter6Blocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][7]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="Letter7Block"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][8]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="Letter7Blocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][8]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="Letter8Block"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][9]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="Letter8Blocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][9]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="Letter9Block"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][10]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="Letter9Blocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][10]/h3</xpath>
+			</properties> 
+		</TestObject>	
+	<TestObject name="LetterABlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][11]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterABlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][11]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterBBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][12]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterBBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][12]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterCBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][13]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterCBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][13]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterDBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][14]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterDBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][14]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterEBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][15]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterEBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][15]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterFBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][16]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterFBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][16]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterGBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][17]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterGBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][17]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterHBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][18]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterHBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][18]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterIBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][19]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterIBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][19]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterJBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][20]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterJBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][20]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterKBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][21]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterKBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][21]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterLBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][22]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterLBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][22]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterMBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][23]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterMBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][23]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterNBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][24]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterNBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][24]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterOBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][25]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterOBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][25]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterPBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][26]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterPBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][26]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterQBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][27]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterQBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][27]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterRBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][28]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterRBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][28]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterSBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][29]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterSBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][29]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterTBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][30]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterTBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][30]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterUBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][31]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterUBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][31]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterVBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][32]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterVBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][32]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterWBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][33]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterWBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][33]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterXBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][34]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterXBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][34]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterYBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][35]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterYBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][35]/h3</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterZBlock"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][36]</xpath>
+			</properties> 
+		</TestObject>
+	<TestObject name="LetterZBlocktxt"> 
+			<properties>   
+				<xpath>//*[@id="alphaList"]//*[@class="columnsSix_1"][36]/h3</xpath>
+			</properties> 
+	</TestObject>
+	<TestObject name="CarouselTitle"> 
+		<properties> 
+			<xpath>//*[@class='text-center']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="CarouselFirstProduct"> 
+		<properties> 
+			<xpath>//*[@class='carouselItem col-sm-2'][1]</xpath>
+			<xpath>//*[@class="accordion active accordion_preview"]//*[@class="accordionText"]/*[@class='col-tn-6 col-xs-3 col-md-2 galleryItem'][1]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="SelectionsPanel"> 
+		<properties>   
+			<xpath>//*[contains(@class,"plControlPanel bg-white")]//*[@class="plSelectionPanel"]//*[@class="productResultFacets"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="PanelNumbrs"> 
+		<properties>   
+			<xpath>//*[@class="plControlPanel bg-white"]//*[@class="productPageNumbers"]//*[@class="panelNumbrs"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="SortWrapper"> 
+		<properties>   
+			<xpath>//*[@class="sortWrapper"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="showSortByName"> 
+		<properties> 
+			<xpath>//*[@class="sortLink"]/span</xpath>			
+		</properties> 
+	 </TestObject>
+	 <TestObject name="facetedSingle"> 
+		<properties> 
+			<xpath>//*[@data-component-type="PRODUCT_LISTING_NAV"]//*[contains(@class,'facetedSingle')][1]</xpath>			
+		</properties> 
+	 </TestObject>
+	 <TestObject name="facetedMulti"> 
+		<properties> 
+			<xpath>//*[@data-component-type="PRODUCT_LISTING_NAV"]//*[contains(@class,'facetedMulti')][1]</xpath>	
+		</properties> 
+	 </TestObject>
+	 <TestObject name="filterItemListItem"> 
+		<properties>   
+			<xpath>(//*[@class='col-tn-6 col-lg-4 galleryItem']/*)[&lt;index&gt;]</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="SearchResultArea"> 
+		<properties>   
+			<xpath>//*[@data-component-type="SEARCH_MESSAGING"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="plpView"> 
+		<properties>   
+			<xpath>//*[@data-component-type='PRODUCT_CAROUSEL']</xpath>
+			<xpath>//*[@data-module-type='PRODUCT_LISTING']</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="plpItem"> 
+		<properties>   
+			<xpath>//*[@data-component-type='PRODUCT_CAROUSEL']//*[@class='carouselItem col-sm-2'][&lt;index&gt;]</xpath>
+			<xpath>//*[@data-component-type='PRODUCT_LISTING_LIST']//*[@class='col-tn-6 col-sm-4 galleryItem' or @class='col-tn-6 col-lg-4 galleryItem'][&lt;index&gt;]</xpath>
+		</properties> 
+	</TestObject>	
+	<TestObject name="filterByText"> 
+		<properties>   
+			<xpath>//*[@id='plModule']//h2</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="categoryText"> 
+		<properties>   
+			<xpath>//*[@class="facetedSingle facetedCategory bg-white"]//h3</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="LeftNavTool"> 
+		<properties>   
+			<xpath>//*[@data-component-type="PRODUCT_LISTING_NAV"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="PageControl"> 
+		<properties>   
+			<xpath>//*[@class="plControlPanel bg-white"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="SelectionsPanel"> 
+		<properties>   
+			<xpath>//*[contains(@class,"plControlPanel bg-white")]//*[@class="plSelectionPanel"]//*[@class="productResultFacets"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ClearAllFilters"> 
+		<properties>   
+			<xpath>//*[@class="plControlPanel bg-white"]//*[@class="plSelectionPanel"]//*[@class="productResultFacets"]//*[contains(text(),'Clear All Filters')]</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="brandFilter"> 
+		<properties> 
+			<xpath>//*[.='Brand']/following-sibling::*[1]//*[@class='refinementImg'][&lt;index&gt;]//span</xpath>
+		</properties> 
+	</TestObject>			
+	<TestObject name="closeErrorMessageButton"> 
+		<properties>   
+			<xpath>//*[@class='error-tooltip mobile errorBlock']//*[@class='closeTooltip']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="autoCorrectedText"> 
+		<properties>   
+			<xpath>//*[@class="searchResults"]//*[@class="correctWord"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="BreadCrumbByValue">
+		<Properties>
+			<xpath>//*[@class="breadcrumb pageBreadcrumb"]//*[.="&lt;BreadCrumb&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="pageBreadCrumb">
+		<Properties>
+			<xpath>//*[@class="col-md-9 col-sm-8 plWrapper"]//a[.="Special prices"]</xpath>	
+			<xpath>//*[@class="breadcrumb pageBreadcrumb"]//*[.="&lt;BreadCrumb&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="breadCrumb">
+		<Properties>
+			<xpath>//*[@class="breadcrumb pageBreadcrumb"]//li[&lt;index&gt;]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="selectedPanel">
+		<Properties>
+			<xpath>//*[@class="col-md-9 col-sm-8 plWrapper"]//*[@class="plSelectionPanel"]/*[@class="selectedResultFacets"]//*[.="&lt;selectedValue&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="brand">
+		<Properties>
+			<xpath>//*[@class="refinementDiv"]//*[@class="refinementLnk "]//*[.="&lt;brandValue&gt;"]</xpath>
+			<xpath>//*[@class="refinementDiv"]//*[.="&lt;brandValue&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="collapseBrandTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedBrand bg-white"]//*[@style="display: none;"]</xpath>
+			<xpath>//*[@class="facetedMulti facetedBrand bg-white"]//*[@class="refinementDiv" and @style="display: none;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="brandTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedBrand bg-white"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="collapseFeaturesTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedFeatures bg-white"]/h3[@class="" or not(@class)]</xpath>
+			<xpath>//*[@class="facetedMulti facetedFeatures bg-white"]//*[@class="refinementDiv" and @style="display: none;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="expandedFeaturesTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedFeatures bg-white"]//*[@class="expanded"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="featuresTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedFeatures bg-white"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="features">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedFeatures bg-white"]//*[@class="refinementImg"]//*[.="&lt;featuresValue&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="collapseproductTypeTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedProduct Type bg-white"]/h3[@class='' or not(@class)]</xpath>
+			<xpath>//*[@class="facetedMulti facetedProduct Type bg-white"]//*[@style="display: none;"]</xpath>
+			<xpath>//*[@class="facetedMulti facetedProduct Type bg-white"]//*[@class="refinementDiv" and @style="display: none;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="expandedproductTypeTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedProduct Type bg-white"]//*[@class="expanded"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productTypeTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedProduct Type bg-white"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productType">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedProduct Type bg-white"]//*[@class="refinementImg"]//*[.="&lt;productTypeValue&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="collapseDiscoverTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedDiscover bg-white"]/h3[@class='' or not(@class)]</xpath>
+			<xpath>//*[@class="facetedMulti facetedDiscover bg-white"]//*[@style="display: none;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="expandedDiscoverTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedDiscover bg-white"]//*[@class="expanded"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="discoverTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedDiscover bg-white"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="discover">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedDiscover bg-white"]//*[@class="refinementImg"]//*[.="&lt;DiscoverValue&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="benefitTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedBenefit bg-white"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="benefit">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedBenefit bg-white"]//*[@class="refinementImg"]//*[.="&lt;benefitValue&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="genderTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedGender bg-white"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="gender">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedGender bg-white"]//*[@class="refinementImg"]//*[.="&lt;genderValue&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="hairTypeTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedHair Type bg-white"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="hairType">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedHair Type bg-white"]//*[@class="refinementImg"]//*[.="&lt;hairValue&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="collapseScentTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedScent bg-white"]/h3[@class='' or not(@class)]</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="expandedScentTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedScent bg-white"]//*[@class="expanded"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="scentTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedScent bg-white"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="scent">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedScent bg-white"]//*[@class="refinementImg"]//*[.="&lt;scentValue&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="targetAreaTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedTarget Area bg-white"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="targetArea">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedTarget Area bg-white"]//*[@class="refinementImg"]//*[.="&lt;targetAreaValue&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="skinTypesTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedSkin Type bg-white"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="skinTypes">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedSkin Type bg-white"]//*[@class="refinementImg"]//*[.="&lt;skinTypesValue&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="CategoryFilter">
+		<Properties>
+			<xpath>//*[@class="facetedSingle facetedCategory bg-white"]//*[@class='refinementImg']//span[.='&lt;filterName&gt;']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="BrandFilter">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedBrand bg-white"]//*[@class='refinementImg']//span[.='&lt;filterName&gt;']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="DiscoverFilter">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedDiscover bg-white"]//*[@class='refinementImg']//span[.='&lt;filterName&gt;']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="SizeFilter">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedSize bg-white"]//*[@class='refinementImg']//span[.='&lt;filterName&gt;']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="BreadCrumbByIndexAndValue">
+		<Properties>
+			<xpath>//*[@class="breadcrumb pageBreadcrumb"]//li[&lt;index&gt;]//*[.='&lt;BreadCrumb&gt;']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="spotLightCarouselTitle">
+		<Properties>
+			<xpath>//*[@class="container headerText"]//*[@class="text-center"]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="spotLightCarouselproduct1">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][1]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="spotLightCarouselproduct1Des">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][1]//*[@class="productDesc"]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="spotLightCarouselproduct2">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][2]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="spotLightCarouselproduct2Des">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][2]//*[@class="productDesc"]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="spotLightCarouselproduct3">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][3]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="spotLightCarouselproduct3Des">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][3]//*[@class="productDesc"]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="spotLightCarouselproduct4">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][4]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="spotLightCarouselproduct4Des">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][4]//*[@class="productDesc"]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="spotLightCarouselproduct5">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][5]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="spotLightCarouselproduct5Des">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][5]//*[@class="productDesc"]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="spotLightCarouselproduct6">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][6]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="spotLightCarouselproduct6Des">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][6]//*[@class="productDesc"]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="spotLightCarouselRightArrow">
+		<Properties>
+			<xpath>//*[@title="Scroll right"]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="spotLightCarouselLeftArrow">
+		<Properties>
+			<xpath>//*[@title="Scroll left"]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="spotLightCarouselproduct1Img">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][1]//*[contains(@class,"productImg")]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="spotLightCarouselproduct1Price">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][1]//*[@class="priceSell"]</xpath>
+		</Properties>
+	</TestObject>
+</Page>

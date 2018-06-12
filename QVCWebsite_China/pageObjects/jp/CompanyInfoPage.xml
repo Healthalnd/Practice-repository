@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="CompanyInfoPage" include="MastheadMain">
+	
+	
+	<TestObject name="BreadCrumb">
+			<Properties>
+				<id>pankuzu</id>
+			</Properties>
+	</TestObject>
+	<TestObject name="CollegeRecruitment">
+			<Properties>
+				<xpath>//*[@alt="新卒採用はこちら"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="QVCJapanMenu">
+			<Properties>
+				<xpath>//*[@alt="QVCについて"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="HostIntroduceTitle">
+			<Properties>
+				<xpath>//*[@src="images/head.gif"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="ModelIntroduceTitle">
+			<Properties>
+				<xpath>//*[@alt="QVC MODELS（QVCモデル紹介） "]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="MagazineIntroduceTitle">
+			<Properties>
+				<xpath>//*[@alt="qvc.jpのメールマガジン　QVC News"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="DeviceIntroduceTitle">
+			<Properties>
+				<xpath>//*[@src="tobira/00.jpg"]</xpath>
+			</Properties>
+	</TestObject>
+	
+	<TestObject name="QVCCommunityGuideTitleIMG">
+			<Properties>
+				<xpath>//*[@src="images/use_guide/01.jpg"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="ProductReviewMenuIMG">
+			<Properties>
+				<xpath>//*[@src="/community/images/rev_nav_open.png"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="ProductQandAMenuIMG">
+			<Properties>
+				<xpath>//*[@src="/community/images/qa_nav_open.png"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="MyCommunityLoginTitle">
+			<Properties>
+				<xpath>//*[@alt="ログイン"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="TwitterTitle">
+			<Properties>
+				<xpath>//*[@class="ProfileHeaderCard-name"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="FacebookTitle">
+			<Properties>
+				<class>fb_logo</class>
+			</Properties>
+	</TestObject>
+	<TestObject name="InstagramTitle">
+			<Properties>
+				<class>coreSpriteDesktopNavLogoAndWordmark</class>
+			</Properties>
+	</TestObject>
+	<TestObject name="YouTubeLogo">
+			<Properties>
+				<id>yt-masthead-logo-fragment</id>
+			</Properties>
+	</TestObject>
+</Page>

@@ -1,0 +1,43 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <!--
+    This jelly script is used for per-project configuration.
+
+    See global.jelly for a general discussion about jelly script.
+  -->
+
+  <!--
+    Creates a text field that shows the value of the "name" property.
+    When submitted, it will be passed to the corresponding constructor parameter.
+  -->
+ <!-- 
+ 	<f:entry title="Framework JAR Location" field="frameworkJAR"><f:textbox /></f:entry>
+  -->
+  <f:entry title="Selenium Grid URL*" field="grid"><f:textbox default="localhost"/></f:entry>
+  <f:entry title="Suite Name*" field="suite"><f:textbox default="Smoke"/></f:entry>
+  <f:entry title="Test Package*" field="testPackage"><f:textbox default="QVCMobile"/></f:entry>
+  <f:entry title="Target Environment*" field="env"><f:textbox default="QA"/></f:entry>
+  <f:entry title="Thread Count*" field="threadCount"><f:textbox default="10"/></f:entry>
+  <f:entry title="ReRun" Name="rerun" field="rerun">
+    <select name="rerun">
+        <option value="auto" selected="selected">auto</option>
+        <option value="no">no</option>
+        <option value="yes">yes</option>
+    </select>
+  </f:entry>
+  <f:entry title="Log Level" Name="logLevel" field="logLevel">
+    <select name="logLevel">
+        <option value="info" selected="selected">info</option>
+        <option value="debug">debug</option>
+    </select>
+  </f:entry>
+  <f:section title="Filters">
+      <f:entry title="Country" field="country"><f:textbox/></f:entry>
+      <f:entry title="OS" field="os"><f:textbox/></f:entry>
+      <f:entry title="Browser Type" field="client"><f:textbox/></f:entry>
+      <f:entry title="Device Name" field="deviceName"><f:textbox/></f:entry>
+  </f:section>
+  <f:section title="Mobile">
+      <f:entry title="Directory with builds" field="mobBuildsDir"><f:textbox/></f:entry>
+  </f:section>
+</j:jelly>

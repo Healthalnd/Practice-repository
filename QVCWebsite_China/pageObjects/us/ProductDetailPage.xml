@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ProductDetailPage" include="MastheadMain">
+	<TestObject name="productDetailHeader">
+		<Properties>
+			<css>.breadcrumb.pageBreadcrumb</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="ItemOnAirTxt">
+		<Properties>
+			<class>itemOnAir</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="sizeOptionsImage1st">
+		<Properties>
+			<xpath>//*[@class="buyBoxSizeList"]//li[@ats='Y'][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="colorOptionsImage1st">
+		<Properties>
+			<xpath>//*[@class="buyBoxColorList"]//li[@ats='Y'][1]</xpath>			
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="sizeOptionsImage">
+		<Properties>
+			<xpath>//*[@class="buyBoxSizeList"]//li[@class='selectSize']</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="colorOptionsImage">
+		<Properties>
+			<xpath>//*[@class="buyBoxColorList"]//li</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="wlSizeOptionsImage">
+		<Properties>
+			<xpath>//*[@class="buyBoxSizeList"]//li[@ats="W"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="wlColorOptionsImage">
+		<Properties>
+			<xpath>//*[@class="buyBoxColorList"]//li[@ats="W"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="addToCartbtn">
+		<Properties>
+			<class>btnAddToCart</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="addToWishListbtn">
+		<Properties>
+			<class>btnAddToWishList</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="speedBuybtn">
+		<Properties>
+			<class>btnSpeedBuy</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="errSelectProductSizetxt">
+		<Properties>
+			<id>errSelectProductSize</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="errSelectProductColortxt">
+		<Properties>
+			<id>errSelectProductColor</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="productQuantityList">
+		<Properties>
+			<id>selProductQuantity</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="productQtyInputBox">
+		<Properties>
+			<css>.productQuantity</css>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="productNumbertxt">
+		<Properties>
+			<class>itemNo</class>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="tsvText">
+		<Properties>
+			<css>.tsvBadge</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="productTitleText">
+		<Properties>
+			<xpath>//*[@id='divProductDetailsWrapper']/h1</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productPriceText">
+		<Properties>
+			<id>parProductDetailPrice</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="yes_AutoDeliveryBtn">
+		<Properties>
+			<css>input.primaryButton[value='Yes']</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="yes_WaitlistBtn">
+		<Properties>
+			<css>input.primaryButton[value='YES']</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="freeShipping_Txt">
+		<Properties>			
+			<css>.freeSH</css>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="shippingPrice">
+		<Properties>			
+			<css>.shippingOfferPrice</css>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="DeliveryDateEstimateTab">
+		<Properties>
+			<id>tabProductDetailNav2</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="ZipCodeInputBox">
+		<Properties>
+			<css>.zipCode</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="GoBtn">
+		<Properties>
+			<css>.zipCheck</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="EstimateDeliveryInfo">
+		<Properties>
+			<css>.shippingMethods</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="standardDeliveryPrice">
+		<Properties>
+			<xpath>//*[@id='tblshipping']//tr[@class='odd'][1]/td[2]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="deliveryDisclaimInfo">
+		<Properties>
+			<id>deliverydisclaimId2</id>
+		</Properties>
+	</TestObject>	
+	<TestObject name="standardDelivery">
+		<Properties>
+		    <xpath>//.[text()='Standard Delivery']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="expressDelivery">
+		<Properties>
+		    <xpath>//.[text()='Express Delivery']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="premiumDelivery">
+		<Properties>
+		    <xpath>//.[text()='Premium Delivery']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="shippingInfoLink">
+		<Properties>
+			<linkText>Shipping Information</linkText>	
+		</Properties>
+	</TestObject>
+	<TestObject name="shippingInfoOverlayHeader">
+		<Properties>
+			<css>#TB_ajaxContent h1</css>	
+		</Properties>
+	</TestObject>
+	<TestObject name="closeOverlay">
+		<Properties>
+			<id>TB_closeAjaxWindow</id>
+		</Properties>
+	</TestObject>	
+	<TestObject name="shippingHandingLabel">
+		<Properties>			
+			<css>.shPrice</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="groupItem">
+		<Properties>
+			<css>.groupChild</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="shopNow">
+		<Properties>
+			<css>.groupShopNow</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="easyPayTxt">
+		<Properties>
+			<class>easyPayDesc</class>
+		</Properties>
+	</TestObject>
+</Page>

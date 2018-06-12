@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="WatchTVLivePage" include="MastheadMain">
+	
+	 <TestObject name="SLTVHeader"> 
+        	<properties>   
+				<xpath>//div[@id="divPageTitle"]/h1</xpath>  		
+        	</properties> 
+     </TestObject>
+	  <TestObject name="TVHeader"> 
+        	<properties>   
+          		<class>active</class>          		
+        	</properties> 
+      	</TestObject>
+	 <TestObject name="channelSelector"> 
+        	<properties>   
+				<id>liveTvChannelMenu</id>
+          		<id>ssmplive_html5_api</id>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="liveChannelLink"> 
+        	<properties>   
+          		<xpath>//*[@id="liveTvChannelMenu"]//a[@data-channelname="LIVE"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="beautyChannelLink"> 
+        	<properties>   
+          		<xpath>//*[@id="liveTvChannelMenu"]//a[@data-channelname="BEAUTY"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="styleChannelLink"> 
+        	<properties>   
+          		<xpath>//*[@id="liveTvChannelMenu"]//a[@data-channelname="STYLE"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="extraChannelLink"> 
+        	<properties>   
+          		<xpath>//*[@id="liveTvChannelMenu"]//a[@data-channelname="EXTRA"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="christmasChannelLink"> 
+        	<properties>   
+          		<xpath>//*[@id="liveTvChannelMenu"]//a[@data-channelname="CHRISTMAS"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="plusChannelLink"> 
+        	<properties>   
+          		<xpath>//*[@id="liveTvChannelMenu"]//a[@data-channelname="PLUS"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="buyBoxLayerIOA"> 
+        	<properties>   
+          		<id>qProdOverlay</id>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IOAProductName"> 
+        	<properties>   
+          		<xpath>//*[@id="qProdOverlay"]//*[@class="productDesc"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IOAQVCPrice"> 
+        	<properties>   
+          		<xpath>//*[@id="qProdOverlay"]//*[@class="qvcPrice"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IOAPriceStrikeOut"> 
+        	<properties>   
+          		<xpath>//*[@id="qProdOverlay"]//*[@class="price strikeout"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IOARetailPrice"> 
+        	<properties>   
+          		<xpath>//*[@id="qProdOverlay"]//*[@class="rvPrice"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IOAFeaturePrice"> 
+        	<properties>   
+          		<xpath>//*[@id="qProdOverlay"]//*[@class="featuredPrice"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IOAShippingCost"> 
+        	<properties>   
+          		<xpath>//*[@id="qProdOverlay"]//*[@class="shPrice freeSH"]/..//label</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IOAEasyPayInfo"> 
+        	<properties>   
+          		<xpath>//*[@id="qProdOverlay"]//*[@class="easyPayInfo"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IOARating"> 
+        	<properties>   
+          		<xpath>//*[@id="qProdOverlay"]//*[@class="productRatings"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IOAShopNowBtn"> 
+        	<properties>   
+          		<xpath>//*[@id="qProdOverlay"]//*[@class="btn btn-default"]</xpath>
+				<xpath>//*[@id="qProdOverlay"]//*[@class="btn btn-primary"]</xpath>   
+        	</properties> 
+     </TestObject>
+	 <TestObject name="activeState"> 
+        	<properties>   
+          		<xpath>//*[@id="liveTvChannelMenu"]//*[@class="btn btn-default activeChannel"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 
+	 <TestObject name="IROACarouselHeaderText"> 
+        	<properties>   
+          		<xpath>//*[@class="shopLiveIroaWrapper"]//*[@data-component-type="HEADER_TEXT"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IROACarouselBtn"> 
+        	<properties>   
+          		<xpath>//*[@data-component-type="SHOP_LIVE_TV_IROA"]//*[@class="btn btn-primary"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IROACarouselItem1th"> 
+        	<properties>   
+          		<xpath>//*[@class="shopLiveTvIroaItem col-tn-6 col-xs-6 col-sm-4 col-md-3"][1]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IROACarouselItem2th"> 
+        	<properties>   
+          		<xpath>//*[@class="shopLiveTvIroaItem col-tn-6 col-xs-6 col-sm-4 col-md-3"][2]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IROACarouselItem3th"> 
+        	<properties>   
+          		<xpath>//*[@class="shopLiveTvIroaItem col-tn-6 col-xs-6 col-sm-4 col-md-3"][3]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IROACarouselItem4th"> 
+        	<properties>   
+          		<xpath>//*[@class="shopLiveTvIroaItem col-tn-6 col-xs-6 col-sm-4 col-md-3"][4]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IROACarouselItem5th"> 
+        	<properties>   
+          		<xpath>//*[@class="shopLiveTvIroaItem col-tn-6 col-xs-6 col-sm-4 col-md-3"][5]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IROACarouselItem6th"> 
+        	<properties>   
+          		<xpath>//*[@class="shopLiveTvIroaItem col-tn-6 col-xs-6 col-sm-4 col-md-3"][6]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IROACarouselItem7th"> 
+        	<properties>   
+          		<xpath>//*[@class="shopLiveTvIroaItem col-tn-6 col-xs-6 col-sm-4 col-md-3"][7]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IROACarouselItem8th"> 
+        	<properties>   
+          		<xpath>//*[@class="shopLiveTvIroaItem col-tn-6 col-xs-6 col-sm-4 col-md-3"][8]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IROACarouselItem1thProductDesc"> 
+        	<properties>   
+          		<xpath>//*[@class="shopLiveTvIroaItem col-tn-6 col-xs-6 col-sm-4 col-md-3"][1]//*[@class="productDesc"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IROACarouselItem1thProductImg"> 
+        	<properties>   
+          		<xpath>//*[@class="shopLiveTvIroaItem col-tn-6 col-xs-6 col-sm-4 col-md-3"][1]//*[@class="itemImg"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IROACarouselItem1thProductSellPrice"> 
+        	<properties>   
+          		<xpath>//*[@class="shopLiveTvIroaItem col-tn-6 col-xs-6 col-sm-4 col-md-3"][1]//*[@class="productPrice"]//*[@class="priceSell"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IROACarouselItem1thProductOldPrice"> 
+        	<properties>   
+          		<xpath>//*[@class="shopLiveTvIroaItem col-tn-6 col-xs-6 col-sm-4 col-md-3"][1]//*[@class="productPrice"]//*[@class="priceOld"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IROACarouselItem1thProductRating"> 
+        	<properties>   
+          		<xpath>//*[@class="shopLiveTvIroaItem col-tn-6 col-xs-6 col-sm-4 col-md-3"][1]//*[@class="productRatings"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IROACarouselItem2thLink"> 
+        	<properties>   
+          		<xpath>//*[@class="shopLiveTvIroaItem col-tn-6 col-xs-6 col-sm-4 col-md-3"][2]//a</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IROACarouselItem2thProductDesc"> 
+        	<properties>   
+          		<xpath>//*[@class="shopLiveTvIroaItem col-tn-6 col-xs-6 col-sm-4 col-md-3"][2]//*[@class="productDesc"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	<TestObject name="IROASeeAllItemBtn"> 
+        	<properties> 
+				<linkText>See All Items</linkText>
+				<xpath>//*[@data-component-type="SHOP_LIVE_TV_IROA"]//*[@class="col-tn-12"]/a</xpath>
+        	</properties> 
+     </TestObject>
+	 <TestObject name="contactUsTitleFooter"> 
+        	<properties>				
+				<xpath>//*[@data-component-type="LINK_LIST"]//*[text()="CONTACT US"]</xpath>
+        	</properties> 
+     </TestObject>
+	 <TestObject name="stayInTheKnowFooter"> 
+        	<properties>				
+				<xpath>//*[@id='emailHeadingFooter']</xpath>
+				<xpath>//*[@id="footer_top_module_1"]//*[text()="My QVC"]</xpath>
+        	</properties> 
+     </TestObject>
+	
+</Page>

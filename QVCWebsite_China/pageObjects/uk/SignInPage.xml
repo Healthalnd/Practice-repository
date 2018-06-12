@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="SigninPage" include="MastheadMain">
+	<TestObject name="resetPasswordLink">
+		<Properties>
+			<id>forgotPW</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="signInHeader">
+		<Properties>
+			<id>divPageTitle</id>
+			<xpath>//*[@class='simpleMasthead container cont']//h1</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="signInArea">
+		<Properties>
+			<id>divExistingQvcAccountSignIn</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="enterEmailMsg">
+		<Properties>
+			<xpath>//*[@class="form-group email floatLblWr"]//p</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="DQErrorMsg">
+		<Properties>
+			<id>divContent</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="DQErrorMsgLine1">
+		<Properties>
+			<xpath>//*[@id='divContent']/p[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="DQErrorMsgLine2">
+		<Properties>
+			<xpath>//*[@id='divContent']/p[2]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="DQErrorMsgLine3">
+		<Properties>
+			<xpath>//*[@id='divContent']/p[3]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="whereEnterPWMsg">
+		<Properties>
+			<id>whereEnterPW</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="enterPWorAddressMsg">
+		<Properties>
+			<id>toolTip</id>
+		</Properties>
+	</TestObject>	
+	<TestObject name="enterPWMsgLink">
+		<Properties>
+			<class>ttLink</class>
+		</Properties>
+	</TestObject>	
+	<TestObject name="emailAddressTextbox">
+		<Properties>
+			<id>txtEmailAddress</id>
+			<name>logonId</name>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="passwordText">
+		<Properties>
+			<id>lblPassword</id>			
+		</Properties>
+	</TestObject>
+	<TestObject name="passwordTextbox">
+		<Properties>
+			<id>txtPassword</id>
+			<name>logonPassword</name>
+		</Properties>
+	</TestObject>
+	<TestObject name="forgotPWLink">
+		<Properties>
+			<xpath>//*[text()="Forgot Your Password?"]</xpath>
+			<xpath>//*[text()="Forgotten your password?"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="errorMsgAtHeader">
+		<Properties>
+			<id>errConsole</id>			
+		</Properties>
+	</TestObject>
+	<TestObject name="errorMsgInvalidEmail">
+		<Properties>
+			<id>errEmailAddress</id>			
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="errorMsgInvalidPassword">
+		<Properties>
+			<id>errConsole</id>			
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="continueBtn">
+		<Properties>
+			<id>aWeiter</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="loginBtn">
+		<Properties>
+			<id>btnSignIn</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="signUpBtn">
+		<Properties>
+			<id>btnSignUp</id>
+			<name>Signup Button</name>
+		</Properties>
+	</TestObject>
+	<TestObject name="submitOrderBtn">
+		<Properties>
+			<css>input#btnSignIn.primaryButton[value='Submit Order']</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="continueWithoutSignArea">
+		<Properties>
+			<css>#divCreateQvcAccountSignIn .roundedBorderBottom</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="signHelpLink">
+		<Properties>
+			<linkText>Sign In Help</linkText>			
+		</Properties>
+	</TestObject>
+	<TestObject name="snPWWelcomeTxt">
+		<Properties>
+			<id>snPWWelcome</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="continueWithoutSignBtn">
+		<Properties>
+			<id>btnSignUp</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="useDefault">
+		<Properties>
+			<xpath>//*input[@id='cbUseDefaults' and @value='on']</xpath>
+			<xpath>//*[@id='cbUseDefaults' and @value='on']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="continueNewCustomerLink">
+		<Properties>
+			<linkText>Continue as a new customer</linkText>	
+		</Properties>
+	</TestObject>
+	<TestObject name="showPasswordLink">
+		<Properties>
+			<xpath>//*[@class='showPW']</xpath>	
+		</Properties>
+	</TestObject>
+	<TestObject name="NoPasswordLabel">
+		<Properties>
+			<xpath>//*[@id='signInFields']/div[2]/p[3]</xpath>	
+		</Properties>
+	</TestObject>
+	<TestObject name="WelcomebackLabel">
+		<Properties>
+			<id>snPWWelcome</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="PasswordToolTip">
+		<Properties>
+			<xpath>//*[@id='signInFields']/div[2]/a[2]/img</xpath>	
+		</Properties>
+	</TestObject>
+	<TestObject name="NewToQvcLabel">
+		<Properties>
+			<xpath>//*[@id='whereEnterPW']/div[2]/p</xpath>	
+		</Properties>
+	</TestObject>
+	<TestObject name="ContinueNewCusLink">
+		<Properties>
+			<xpath>//*[@id='whereEnterPW']/div[2]/p/a</xpath>	
+		</Properties>
+	</TestObject>
+		<TestObject name="errNoPwdMsg">
+		<Properties>
+			<id>errNoPw</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="createPasswordBtn">
+		<Properties>
+			<xpath>//input[@id='btnSignIn' and @value='Create Password']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="viewEasyPayOrdersBtn">
+		<Properties>
+			<class>primaryButtonAlignVertical</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="errorMessageInvalidPIN">
+		<Properties>
+			<id>errPin</id>			
+		</Properties>
+	</TestObject>
+	<TestObject name="expressCheckoutOption">
+		<Properties>
+			<xpath>//*[@id="cbUseDefaults" and @value="on" and @checked="checked"]</xpath>			
+		</Properties>
+	</TestObject>
+	
+	
+	
+	
+</Page>

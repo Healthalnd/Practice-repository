@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="YourInfoPage_AEM">
+	<TestObject name="yourInfoHeader">
+		<Properties>
+			<xpath>//*[@class="text-center"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="stepProgressBar">
+		<Properties>
+			<xpath>//div[@class='steppedProgressBar']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="emailAddressLabel">
+		<Properties>
+			<xpath>//span[@data-for="email"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="emailAddresstxt">
+		<Properties>
+			<xpath>//*[@name="email"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="titleLabel">
+		<Properties>
+			<xpath>(//*[@data-for="titleSelect-label"])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="titleSeletor">
+		<Properties>
+			<xpath>//select[@id='titleSelect-shipping']/..</xpath>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="passwordFields">
+		<Properties>
+			<xpath>//label[contains(.,'Password')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstNameBillTo">
+		<Properties>
+			<id>txtFirstName</id>
+			<xpath>//div[@class='custInfoWr shipping']//div[@class='addressForm']//div[@class='form-group fullName']//label[@class='col-tn-12 col-xs-4 floatLblWr firstName']//div//input[@name='firstName']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="lastNameBillTo">
+		<Properties>
+			<id>txtLastName</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="addressBillTo">
+		<Properties>
+			<id>txtAddress1</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="address2BillTo">
+		<Properties>
+			<id>txtAddress2</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="zipCodeBillTo">
+		<Properties>
+			<id>txtZipPostalCode</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="phoneBillTo">
+		<Properties>
+			<id>txtphone1</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="sameAsBillToCBox">
+		<Properties>
+			<id>cbSameAsBillingAddress</id>
+			<xpath>//label[@class='form-group custom-control custom-checkbox']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="fistNameShipTo">
+		<Properties>
+			<xpath>(//input[@name="firstName"])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="lastNameShipTo">
+		<Properties>
+			<xpath>(//input[@name="lastName"])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="addressShipTo">
+		<Properties>
+			<xpath>(//input[@name="address1"])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="zipCode">
+		<Properties>
+			<xpath>(//input[@name="postCode"])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="phoneShipTo">
+		<Properties>
+			<xpath>//input[@type='tel']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="phoneShipToLabel">
+		<Properties>
+			<xpath>(//*[@data-for="phoneNumber"])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="fistNameShipToLabel">
+		<Properties>
+			<xpath>(//*[@data-for="firstName"])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="lastNameShipToLabel">
+		<Properties>
+			<xpath>(//*[@data-for="lastName"])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="addressShipToLabel">
+		<Properties>
+			<xpath>(//*[@data-for="address1"])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="AddSuiteFloorShipToBtn">
+		<Properties>
+			<xpath>(//*[@class="btnAddrExtension iconBefore accIcon"])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="zipCodeLabel">
+		<Properties>
+			<xpath>(//*[@data-for="postCode"])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="continueCheckoutBtn">
+		<Properties>
+			<id>btnContinueCheckout</id>
+			<xpath>//button[@class='btn btn-primary btnContinue']</xpath>	
+		</Properties>
+	</TestObject>
+	<TestObject name="existCustomerWarningText">
+		<Properties>
+			<id>whereEnterPW</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="returnToSignInLink">
+		<Properties>
+			<linkText>Return to Sign In now</linkText>		
+		</Properties>
+	</TestObject>
+	<TestObject name="emailWebEdit">
+		<Properties>
+			<id>txtEmailAddress</id>
+		</Properties>
+	</TestObject>
+		<TestObject name="confEmailWebEdit">
+		<Properties>
+			<id>txtEmailAddressConf</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="emailMatch">
+		<Properties>
+			<id>emMatch</id>
+		</Properties>
+	</TestObject>	
+	<TestObject name="pageTitle">
+		<Properties>
+			<id>divPageTitle</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="emailOfferTxt">
+		<Properties>
+			<id>lblUseDefaults</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="emailOfferCheckBox">
+		<Properties>
+			<xpath>//*/input[@id='cbUseDefaults' and @value='true']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="confirmEmailAddressLabel">
+		<Properties>
+			<id>lblEmailAddressConf</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="billToAddressLabel">
+		<Properties>
+			<xpath>//div[@class='h2RoundedBorderTop'][2]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="totalTxt">
+		<Properties>
+			<xpath>//*[@class="row total"]//*[@class="label"]/strong</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="cartSummaryBeforeTaxTxt">
+		<Properties>
+			<xpath>//*[@class="row total"]//*[@class="label"]/span</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="CartSummaryTitle">
+		<Properties>
+			<xpath>//*[@class="col-tn-12 col-sm-offset-1 col-sm-4 cont cartSummary"]//h2</xpath>
+			<xpath>//*[@class="h2 col-tn-12"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="summaryItemNum">
+		<Properties>
+			<xpath>//*[@class="col-tn-12 col-sm-offset-1 col-sm-4 cont cartSummary"]//h2/span</xpath>
+			<xpath>//*[@class="h2 col-tn-12"]/span</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="cartSummaryInventoryStatus">
+		<Properties>
+			<xpath>//*[@class="singleAmountsWr"]//*[@class="row"][&lt;index&gt;]/*[@class="col-tn-7 label"]</xpath>			
+		</Properties>
+	</TestObject>	
+	<TestObject name="TotalPriceValue">
+		<Properties>
+			<xpath>//*[@class="amount"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="inYourCartText">
+		<Properties>
+			<xpath>//div[@class='col-tn-12 verticalAlignWr']//span</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="editCartLink">
+		<Properties>
+			<xpath>//div[@class='col-tn-12 verticalAlignWr']//a</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstProductImageInSummary">
+		<Properties>
+			<xpath>//div[@class="row prodWr"][1]//img</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstProductDescInSummary">
+		<Properties>
+			<xpath>//div[@class="row prodWr"][1]//*[@class="h3 prodName"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstProductNumInSummary">
+		<Properties>
+			<xpath>//div[@class="row prodWr"][1]//*[@class="prodId"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="indexProductImageInSummary">
+		<Properties>
+			<xpath>//div[@class="row prodWr"][&lt;index&gt;]//img</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="indexProductDescInSummary">
+		<Properties>
+			<xpath>//div[@class="row prodWr"][&lt;index&gt;]//*[@class="h3 prodName"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="indexProductNumInSummary">
+		<Properties>
+			<xpath>//div[@class="row prodWr"][&lt;index&gt;]//*[@class="prodId"]</xpath>
+		</Properties>
+	</TestObject>
+	
+</Page>

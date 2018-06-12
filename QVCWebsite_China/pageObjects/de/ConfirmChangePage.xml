@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ConfirmChangePage" include="MastheadMain">
+	<TestObject name="pageTitle"> 
+		<properties>   
+			<id>divPageTitle</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="confirmMsg"> 
+		<properties>   
+			<id>shownoAddaLineText</id>
+		</properties> 
+	</TestObject>	
+	<TestObject name="continueBtn"> 
+		<properties> 
+		<xpath>//*[@class="divButtons"]/*[@value="Weiter"]</xpath>
+		</properties> 
+	</TestObject>
+</Page>

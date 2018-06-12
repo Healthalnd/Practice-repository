@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ShipToAddressPage" include="MastheadMain">
+	<TestObject name="shipToAddressHeader"> 
+		<properties>   
+			<id>divPageTitle</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="pageHeader"> 
+		<properties>   
+			<xpath>//*[@id="divPageTitle"]/h1</xpath>		
+		</properties> 
+	</TestObject>
+	<TestObject name="continuebtn"> 
+		<properties>   
+			<id>btnContinueAddressBook</id>
+		</properties> 
+	</TestObject>
+	 <TestObject name="createNewAddresstxt"> 
+		<properties>   
+			<id>tabNav-sameAsBillTo</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstNameTextbox"> 
+		<properties>   
+			<id>txtFirstName</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="lastNameTextbox"> 
+		<properties>   
+			<id>txtLastName</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="houseNumWebEdit"> 
+		<properties>   
+			<id>txtAddress1</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="postalCodeTextbox"> 
+		<properties>   
+			<id>txtZipPostalCode</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="continue_NewAddressBtn"> 
+		<properties>   
+			<id>btnSubmitChanges</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="cityWebEdit">
+		<Properties>
+			<id>txtCity</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="addressWebEdit">
+		<Properties>
+			<id>txtAddress2</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstAddressRadio"> 
+		<properties>   
+			<xpath>//*[@id='rbName0']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="secondAddressRadio"> 
+		<properties>   
+			<xpath>//*[@id='rbName1']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstAddress"> 
+		<properties>   
+			<xpath>//*[@id="divAddressBookAddresses"]/div[1]/*[@id='lblName1']</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="unableToShipHeader"> 
+		<properties>   
+			<xpath>//h1[.="Unable to ship"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="unableToShipTxt"> 
+		<properties>   
+			<xpath>//input[@type="button" and @value="Edit basket"]/../preceding-sibling::*[1]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="cancelOrderBtn"> 
+		<properties>   
+			<xpath>//input[@type="button" and @value="Cancel order"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="editAddressBtn"> 
+		<properties>   
+			<xpath>//input[@type="button" and @value="Edit ship-to address"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="editBasketBtn"> 
+		<properties>   
+			<xpath>//input[@type="button" and @value="Edit basket"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="cancelConfirmationHeader"> 
+		<properties>   
+			<xpath>//*[@id="cancelPageTitle"]//h1</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="cancelConfirmationSubheader">
+		<properties>   
+			<xpath>//input[@type="button" and @value="No"]/../preceding-sibling::*[2]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="cancelConfirmationTxt">
+		<properties>   
+			<xpath>//input[@type="button" and @value="No"]/../preceding-sibling::*[1]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="yesBtn"> 
+		<properties>   
+			<xpath>//input[@type="button" and @value="Yes"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="NoBtn"> 
+		<properties>   
+			<xpath>//input[@type="button" and @value="No"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="errorMsgHeader"> 
+		<properties>   
+			<xpath>//p[@id="errConsole"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="errorFirstName"> 
+		<properties>   
+			<xpath>//p[@id="errfirstName"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="errorLastName"> 
+		<properties>   
+			<xpath>//p[@id="errlastName"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="errorCity"> 
+		<properties>   
+			<xpath>//p[@id="errCity"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="errorPostalCode"> 
+		<properties>   
+			<xpath>//p[@id="errZipPostalCode"]</xpath>
+		</properties> 
+	</TestObject>
+	
+</Page>

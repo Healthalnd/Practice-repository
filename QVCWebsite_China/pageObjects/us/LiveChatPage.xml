@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="LiveChatPage" >
+	<TestObject name="ChatLogo">
+		<Properties>
+			<xpath>//*[@src='chat/img/qvc_chat-logo.png']</xpath>
+		</Properties>
+	</TestObject>	
+	
+</Page>

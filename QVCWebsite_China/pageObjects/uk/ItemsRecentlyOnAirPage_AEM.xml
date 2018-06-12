@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ItemsRecentlyOnAirPage_AEM" include="MastheadMain">	  
+ <TestObject name="iROAHeader"> 
+	<properties>   
+		<xpath>//*[@class="breadcrumb pageBreadcrumb"]//h1</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="itemOnAirBtn"> 
+	<properties> 
+		<xpath>//*[@data-feature-name="Item on air"]//*[@class="text-center"]/a</xpath>
+		<xpath>//*[@class="iroaAddNavComp"]//*[@data-component-type="BUTTON"]//a[contains(text(),"Item On Air")]</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="watchLiveLink"> 
+	<properties> 
+		<xpath>//*[@data-feature-name="Watch QVC TV"]//*[@class="text-center"]/a</xpath>
+		<xpath>//*[@class="iroaAddNavComp"]//*[@data-component-type="BUTTON"]//a[contains(text(),"Watch QVC TV")]</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="programGuideLink"> 
+	<properties>  
+		<xpath>//*[@data-feature-name="Tv guide"]//*[@class="text-center"]/a</xpath>	
+		<xpath>//*[@class="iroaAddNavComp"]//*[@data-component-type="BUTTON"]//a[contains(text(),"Program Guide")]</xpath> 			
+	</properties> 
+ </TestObject>
+ <TestObject name="showsTitle"> 
+	<properties>   
+		<xpath>//*[@class="iroaNavMenu bg-white"][2]//*[@class='expanded']</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="IOABadgeShow"> 
+	<properties>   
+		<xpath>//*[@class="menuItems iroaShows"]//li[contains(@class,'onair')]</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="timezoneTitle"> 
+	<properties>   
+		<xpath>//*[@id='iroa_product_listing_1']//*[@class="menuItems iroaShows"]//p/span</xpath>          		
+	</properties> 
+ </TestObject>
+<TestObject name="timezoneLink"> 
+	<properties>   
+		<xpath>//*[@class="iroaTimeZoneLink"]</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="timezonePopUpWindow"> 
+	<properties>   
+		<class>fancybox-skin</class>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="WhereAreYouTitle"> 
+	<properties>   
+		<xpath>//*[@class="iroaTimeZoneSelect"]/h4</xpath> 
+	</properties> 
+ </TestObject>
+  <TestObject name="selectedTimezone"> 
+	<properties>   
+		<class>timeZone curTimeZone</class>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="closeBtn"> 
+	<properties>   
+		<class>fancybox-item fancybox-close</class>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="timeZoneList"> 
+	<properties>   
+		<class>timeZone</class>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="firstSelectedShow"> 
+	<properties>   
+		<xpath>//*[@data-component-type="IROA_PRODUCT_LISTING_NAVIGATION"]//*[@class="iroaNavMenu bg-white"]//*[@class="menuItems iroaShows"]//li[contains(@class,"selected")][1]/a</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="firstUnSelectedShow"> 
+	<properties>   
+		<xpath>//*[@data-component-type="IROA_PRODUCT_LISTING_NAVIGATION"]//*[@class="iroaNavMenu bg-white"]//*[@class="menuItems iroaShows"]//li[not(contains(@class,'selected'))][1]/a</xpath>          		
+	</properties> 
+ </TestObject>
+<TestObject name="firstSelectedDate"> 
+	<properties>   
+		<xpath>//*[@class="menuItems iroaDates"]//li[@class="selected"][1]/a</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="firstUnSelectedDate"> 
+	<properties>   
+		<xpath>//*[@class="menuItems iroaDates"]//li[not(contains(@class,'selected'))][1]/a</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="showNameHeader"> 
+	<properties>   
+		<xpath>//*[@data-component-type="IROA_LIST_HEADER_TEXT"]//h2</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="pageTitle"> 
+	<properties>   
+		<xpath>//*[@class="active"]/h1</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="itemsROAlink"> 
+	<properties>   
+		<linktext>Items Recently On Air</linktext>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="shopQVCTVlink"> 
+	<properties>   
+		<linktext>Shop QVC TV</linktext>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="iROASelectedChannel"> 
+	<properties>   
+		<xpath>//*[@class="btn-default activeChannel" and @data-channelname="&lt;ChannelName&gt;"]</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="iROAUnselectChannel"> 
+	<properties>   
+		<xpath>//*[contains(@class,"btn-default") and @data-channelname="&lt;ChannelName&gt;"]</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="leftFunctionArea"> 
+	<properties>   
+		<xpath>//*[@class="col-sm-4 col-md-3 col-lg-3 col-xs-7 col-tn-10 facetedNav iroa"]</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="filterByText"> 
+	<properties>   
+		<xpath>//*[@class="iroaNavTitle bg-white"]/h2</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="dateText"> 
+	<properties>   
+		<xpath>//*[@class="iroaNavMenu bg-white"][1]/h3</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="showsText"> 
+	<properties>   
+		<xpath>//*[@class="iroaNavMenu bg-white"][2]/h3</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="itemOaAirLinkBtn"> 
+	<properties>   
+		<xpath>//*[@class="iroaAddNavComp"]//*[@class="qComponent"][1]//*[@class="btn btn-primary"]</xpath>
+		<xpath>//*[@class="iroaAddNavComp"]//*[@class="qComponent"][1]//*[@class="btn btn-primary "]</xpath> 		
+	</properties> 
+ </TestObject>
+ <TestObject name="watchQVCTVLinkBtn"> 
+	<properties>   
+		<xpath>//*[@class="iroaAddNavComp"]//*[@class="qComponent"][2]//*[@class="btn btn-primary"]</xpath>          		
+		<xpath>//*[@class="iroaAddNavComp"]//*[@class="qComponent"][2]//*[@class="btn btn-primary "]</xpath>
+	</properties> 
+ </TestObject>
+ <TestObject name="tVGuideLinkBtn"> 
+	<properties>   
+		<xpath>//*[@class="iroaAddNavComp"]//*[@class="qComponent"][3]//*[@class="btn btn-primary"]</xpath>          		
+		<xpath>//*[@class="iroaAddNavComp"]//*[@class="qComponent"][3]//*[@class="btn btn-primary "]</xpath>
+	</properties> 
+ </TestObject>
+ <TestObject name="remindMeLink"> 
+	<properties>   
+		<xpath>//*[@class="qComponent remindMeLink"]</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="watchLiveLink"> 
+	<properties>   
+		<xpath>//*[@class="qComponent watchLiveLink"]</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="productArea"> 
+	<properties>   
+		<xpath>//*[@class="row "]</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="showsBtn"> 
+	<properties>   
+		<xpath>//*[@class="qComponent"]/*[@class="iroaNavMenu bg-white"][2]/*[@tabindex="0"]</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="expandedShows"> 
+	<properties>   
+		<xpath>//*[@class="iroaNavMenu bg-white"][2]/*[@class="menuItems iroaShows" and @style="display: block;"]</xpath> 		
+	</properties> 
+ </TestObject>
+ <TestObject name="expandedDateList"> 
+	<properties>   
+		<xpath>//*[@class="iroaNavMenu bg-white"][1]//*[@class="expanded"]/..//*[@class="menuItems iroaDates"]</xpath> 		
+	</properties> 
+ </TestObject>
+ <TestObject name="dateIndex"> 
+	<properties>   
+		<xpath>//*[@class="menuItems iroaDates"]//li[&lt;index&gt;]</xpath> 		
+	</properties> 
+ </TestObject>
+ <TestObject name="showIndex"> 
+	<properties>   
+		<xpath>//*[@class="menuItems iroaShows"]//li[&lt;index&gt;]</xpath> 		
+	</properties> 
+ </TestObject>
+ <TestObject name="unselectTimeArea"> 
+	<properties>   
+		<xpath>//*[@data-timezoneshort="&lt;TimeArea&gt;" and @class="timeZone"]</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="selectedTimeArea"> 
+	<properties>   
+		<xpath>//*[@class="timeZone curTimeZone" and @data-timezoneshort="&lt;TimeArea&gt;"]</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="firstProductDesc"> 
+	<properties>   
+		<xpath>//*[@class="plContent iroaListItems"]//*[contains(@class,"galleryItem")][1]//*[@class="productDesc"][1]</xpath>
+		<xpath>//*[@class="plContent iroaListItems"]//*[contains(@class,"galleryItem")][1]//*[@class="productDesc"][2]</xpath>
+	</properties> 
+ </TestObject>
+ <TestObject name="firstProductBrand"> 
+	<properties>   
+		<xpath>//*[@class="plContent iroaListItems"]//*[contains(@class,"galleryItem")][1]//*[@class="productDesc"][1]</xpath>
+	</properties> 
+ </TestObject>
+ <TestObject name="firstProduct"> 
+	<properties>   
+		<xpath>//*[contains(@class,"galleryItem")]</xpath>
+	</properties> 
+ </TestObject>
+  <TestObject name="firstProductPrice"> 
+	<properties>   
+		<xpath>//*[contains(@class,"galleryItem")][1]//*[@class="priceSell"]</xpath>
+	</properties> 
+ </TestObject>
+  <TestObject name="firstProductImage"> 
+	<properties>   
+		<xpath>//*[contains(@class,"galleryItem")][1]//*[contains(@class,"primary")]</xpath>
+	</properties> 
+ </TestObject>
+  <TestObject name="firstProductRating"> 
+	<properties>   
+		<xpath>//*[contains(@class,"galleryItem")][1]//*[@class="productRatings"]</xpath>
+	</properties> 
+ </TestObject>
+  <TestObject name="firstProductBadge"> 
+	<properties>   
+		<xpath>//*[@class="col-tn-6 col-sm-4 galleryItem ioaBadge"]</xpath>
+	</properties> 
+ </TestObject>
+ <TestObject name="homepageIcon"> 
+	<properties>   
+		<xpath>//*[@id="pageMasthead"]//img[contains(@alt,'QVC')]</xpath>
+		<css>.home a</css>
+	</properties> 
+ </TestObject>
+ <TestObject name="secondUnSelectedDate"> 
+	<properties>   
+		<xpath>//*[@class="menuItems iroaDates"]//li[not(contains(@class,'selected'))][2]/a</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="unselectedFirstDate"> 
+	<properties>   
+		<xpath>//*[@class="menuItems iroaDates"]//li[1][not(contains(@class,'selected'))]</xpath>          		
+	</properties> 
+ </TestObject>
+ <TestObject name="firstDate"> 
+	<properties>   
+		<xpath>//*[@class="menuItems iroaDates"]//li[1]</xpath>          		
+	</properties> 
+ </TestObject>
+</Page>

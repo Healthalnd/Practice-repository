@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="UpdateBillAddressPage" include="MastheadMain">
+	<TestObject name="firstNameWebEdit">
+		<Properties>
+			<id>txtFirstName</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="lastNameWebEdit">
+		<Properties>
+			<id>txtLastName</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="addressWebEdit">
+		<Properties>
+			<id>txtAddress1</id>
+		</Properties>
+	</TestObject>
+	
+</Page>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="WriteAReviewOrderListPage" include="MastheadMain">
+
+	<TestObject name="OrderDateLink">
+		<Properties>
+			<linkText>Order Date:</linkText>
+		</Properties>
+	</TestObject>
+	<TestObject name="ItemPriceText">
+		<Properties>
+			<xpath>//*[@id='divOrder1']//*[@class='orderItem orderItem1']//*[@class='itemPrice']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstItemNumberLink">
+		<Properties>
+			<xpath>//*[@id='divOrder1']//*[@class='orderItem orderItem1']//*[@class='itemNumRight']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstShortDescriptionLink">
+		<Properties>
+			<xpath>//*[@id='divOrder1']//*[@class='orderItem orderItem1']//*[@class='productName']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="writeAReviewBtn">
+		<Properties>
+			<xpath>//*[@class='orderItem orderItem1']//*[@class='primaryButton writeReview']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="ReviewOfCommentText">
+		<Properties>
+			<xpath>//*[@id='divOrder1']//*[@class='orderItem orderItem1']//*[@class='reviewFeedbackCopy']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="ProductImage">
+		<Properties>
+			<xpath>//*[@id='divOrder1']//*[@class='orderItem orderItem1']//*[@class='itemInfo']</xpath>
+		</Properties>
+	</TestObject>
+</Page>

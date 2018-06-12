@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="WishListPage_AEM" include="MastheadMain">
+	
+	<TestObject name="pageTitle">
+		<Properties>
+			<xpath>//h1[.='Wish List']</xpath>
+			<id>lastBCNode</id>			
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="myWishListTitle">
+		<Properties>
+			<xpath>//*[@class="wishHeader"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="myWishListHeader">
+		<Properties>
+			<xpath>//*[@class="wishHeader"]//h2</xpath>
+			<id>divPageTitle</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="customerFirstName">
+		<Properties>
+			<xpath>//*[@class="wishHeader"]//h2/*[@class="wishOwnerName"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="homePageIcon">
+		<Properties>
+			<xpath>//*[@class="home"]//a</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="sortSelector">
+		<Properties>
+			<xpath>//*[@class="sortWrapper"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="activeSelectedSort">
+		<Properties>
+			<xpath>//*[@class="sortLink"]/span</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="sortValue">
+		<Properties>
+			<xpath>//*[@class="sortLink"]//a[contains(text(),"&lt;SortValue&gt;")]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="ItemDescByIndex">
+		<Properties>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,"wishListCardWrapper")][&lt;Index&gt;]//*[@class="productDesc"]/a</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="ItemProductStatusByIndex">
+		<Properties>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,"wishListCardWrapper")][&lt;Index&gt;]//*[@class="badge"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="ItemPriceByIndex">
+		<Properties>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,"wishListCardWrapper")][&lt;Index&gt;]//*[@class="productPrice"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="availibilityOption">
+		<Properties>
+			<xpath>//*[@class="sortLink"]//li[1]/a</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstItemDesc">
+		<Properties>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,"wishListCardWrapper")][1]//*[@class="productDesc"]/a</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstItemImg">
+		<Properties>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,"wishListCardWrapper")][1]//*[contains(@class,"productImg")]//img</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstItemPrice">
+		<Properties>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,"wishListCardWrapper")][1]//*[@class="priceSell"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstItemBasePrice">
+		<Properties>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,"wishListCardWrapper")][1]//*[@class="productBasePrice"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="firstItemOldPrice">
+		<Properties>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,"wishListCardWrapper")][1]//*[@class="priceOld"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstItemEZInfo">
+		<Properties>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,"wishListCardWrapper")][1]//*[@class="productEZPay"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstItemQty">
+		<Properties>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,"wishListCardWrapper")][1]//*[contains(@class,"wishlQty")]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="itemQTY">
+		<Properties>
+			<xpath>//*[@class="col-tn-12 col-md-6 wishListCardWrapper"][1]//*[contains(@class, 'wishlQty')]/span</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstItemColor">
+		<Properties>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,"wishListCardWrapper")][1]//*[contains(@class,"wishlSwatch")]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstItemColorSoldOutBadge">
+		<Properties>
+			<xpath>//*[contains(@class,"wishListCardWrapper")][1]//*[contains(@class,"wishlSwatch")]//*[@class='tag' and .='!']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstItemColorSoldOut">
+		<Properties>
+			<xpath>//*[contains(@class,"wishListCardWrapper")][1]//*[contains(@class,"wishlSwatch")]//*[@class='selectColor' and @ats='N']//span</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstItemSize">
+		<Properties>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,"wishListCardWrapper")][1]//*[contains(@class,"wishlSize")]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstItemSizeSoldOutBadge">
+		<Properties>
+			<xpath>//*[contains(@class,"wishListCardWrapper")][1]//*[contains(@class,"wishlSize")]//*[@class='tag' and .='!']</xpath>
+			<xpath>//*[contains(@class,"wishListCard")][1]//*[contains(@class,"productOptions")]//*[@class='tag']//span</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstItemSizeSoldOut">
+		<Properties>
+			<xpath>//*[contains(@class,"wishListCardWrapper")][1]//*[contains(@class,"wishlSize")]/span</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstItemInventoryStatus">
+		<Properties>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,"wishListCardWrapper")][1]//*[@class="status"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstItemBadge">
+		<Properties>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,"wishListCardWrapper")][1]//*[@class="badge"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstItemEditlink">
+		<Properties>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,"wishListCardWrapper")][1]//*[contains(@class,"productEdit")]//a</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstItemAddToCartBtn">
+		<Properties>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,"wishListCardWrapper")][1]//*[contains(@class,"buyBoxButtons")]//a</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstItemRatingStars">
+		<Properties>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,"wishListCardWrapper")][1]//*[@class="productRatings"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstItemRatingNumber">
+		<Properties>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,"wishListCardWrapper")][1]//*[@class="productNumberOfReviews"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstItemRemovelink">
+		<Properties>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,"wishListCardWrapper")][1]//*[@class="removeItemWL"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="thirdItemDesc">
+		<Properties>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,"wishListCardWrapper")][3]//*[@class="productDesc"]/a</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="thirdItemEditlink">
+		<Properties>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,"wishListCardWrapper")][3]//*[contains(@class,"productEdit")]//a</xpath>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//a[contains(text(),"Edit")]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="thirdItemPrice">
+		<Properties>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,"wishListCardWrapper")][1]//*[@class="priceSell"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="emailAddressContext">
+		<Properties>
+			<xpath>//*[@data-for="receiverEmail" and text()="E-Mail-Adresse"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="shareBtn">
+		<Properties>
+			<xpath>//*[@class="wishShare"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="shareYourWishListTitle">
+		<Properties>
+			<xpath>//*[@class="shareWishList"]/h1</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="closeBtn">
+		<Properties>
+			<xpath>//*[@class="fancybox-item fancybox-close"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="enterEmailContext">
+		<Properties>
+			<xpath>//*[@class="wishFormCopy"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="emailAddressTextbox">
+		<Properties>
+			<id>receiverEmail</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="emailAddressWarningMsg">
+		<Properties>
+			<xpath>//*[@class="form-group floatLblWr receiverEmail"]//*[@class="wishFormCopy"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="messageContext">
+		<Properties>
+			<xpath>//*[@data-for="receiverMessage" and text()="Ihre Nachricht (optional)"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="messageTextbox">
+		<Properties>
+			<xpath>//*[@name="receiverMessage"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="msgWarningMsg">
+		<Properties>
+			<xpath>//*[@class="form-group floatLblWr receiverMessage"]//*[@class="wishFormCopy"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="plusBtn">
+		<Properties>
+			<xpath>//*[@class="stepUp"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="sendBtn">
+		<Properties>
+			<xpath>//*[@class="btn btn-primary btnSend"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="cancelBtn">
+		<Properties>
+			<xpath>//*[@class="btn btn-secondary btnCancel"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="warmingMsg">
+		<Properties>
+			<xpath>//*[@class="alert alert-danger"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="requiredFieldMsg">
+		<Properties>
+			<xpath>//*[@id="receiverEmail-error"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="tickImg">
+		<Properties>
+			<xpath>//*[@class="wishEmailSent"]/img</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="successfulMsg">
+		<Properties>
+			<xpath>//*[@id='shareWishListFormResult']/p</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="sentEmailAddress">
+		<Properties>
+			<xpath>//*[@id='shareWishListFormResult']/div[2]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="emailErrMsg">
+		<Properties>
+			<xpath>//*[@id='receiverEmail-error']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="msgErrMsg">
+		<Properties>
+			<xpath>//*[@id='receiverMessage-error']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="emailList">
+			<Properties>
+				<xpath>//*[@id="wishEmailList"]//div[1]</xpath>
+			</Properties>
+		</TestObject>
+	<TestObject name="alertErr">
+			<Properties>
+				<xpath>//*[@class="alert alert-danger"]//p</xpath>
+				<xpath>//*[@id="emailListError"]//*[@class="help-block"]</xpath>
+			</Properties>
+		</TestObject>
+	<TestObject name="jspVerticalBar">
+			<Properties>
+				<xpath>//*[@class="jspVerticalBar"]</xpath>
+			</Properties>
+		</TestObject>
+	<TestObject name="shortDesc">
+			<Properties>
+				<xpath>//*[@id="wishListMessaging"]/div[1]</xpath>
+			</Properties>
+		</TestObject>
+	<TestObject name="previousPageArrow">
+		<Properties>
+			<xpath>//*[@class="productPages"]//*[@class="prvsPage"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="inFirstPage">
+		<Properties>
+			<xpath>//*[@class="productPages"]//*[@class="disabled"]/*[@class="prvsPage"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="inFirstPageFooter">
+		<Properties>
+			<xpath>//*[@class="pagination"]//*[@class="disabled"]/*[@class="prvsPage"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="nextPageArrow">
+		<Properties>
+			<xpath>//*[@class="productPages"]//*[@class="nxtPage"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="inLastPage">
+		<Properties>
+			<xpath>//*[@class="productPages"]//*[@class="disabled"]/*[@class="nxtPage"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="previousPageArrowFooter">
+		<Properties>
+			<xpath>//*[@class="pagination"]//*[@class="prvsPage"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="nextPageArrowFooter">
+		<Properties>
+			<xpath>//*[@class="pagination"]//*[@class="nxtPage"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="inLastPageFooter">
+		<Properties>
+			<xpath>//*[@class="pagination"]//*[@class="disabled"]/*[@class="nxtPage"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstPaginationIcon">
+		<Properties>
+			<xpath>//*[@class="pagination"]//a[text()="1"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondPaginationIcon">
+		<Properties>
+			<xpath>//*[@class="pagination"]//a[text()="2"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="selectedFirstPagination">
+		<Properties>
+			<xpath>//*[@class="pagination"]//*[@class="active"]/a[text()="1"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="selectedSecondPagination">
+		<Properties>
+			<xpath>//*[@class="pagination"]//*[@class="active"]/a[text()="2"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="badge">
+		<Properties>
+			<xpath>//*[@class="badge" and text()="&lt;Badge&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="itemColor">
+	<Properties>
+		<xpath>//*[@class="selectColor"][contains(@content,"&lt;Color&gt;")]</xpath>
+		<xpath>//*[@class="selectColor"]//*[contains(text(),'&lt;Color&gt;')]</xpath>
+	</Properties>
+	</TestObject>
+	<TestObject name="itemColorNoTooltip">
+		<Properties>
+			<xpath>//*[@class="popover fade top in"][contains(@style,'display: none')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="itemWLTooltip">
+		<Properties>
+			<xpath>//*[@class="popover fade top in"][contains(@style,'display: block')]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="itemColorTooltipContent">
+		<Properties>
+			<xpath>//*[@class="popover fade top in"][contains(@style,'display: block')]/div[2]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="waitListDottedAround">
+		<Properties>
+			<xpath>//*[@class="selectColor" and @ats="W"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="itemColorNameTooltip">
+		<Properties>
+			<xpath>//*[@class="popover fade top in"][contains(@style,'display: block')]/*[@class="popover-content" and .="&lt;Color&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="itemColorTooltip">
+		<Properties>
+			<xpath>//*[@class="popover fade top in"][contains(@style,'display: block')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="itemSize">
+		<Properties>
+			<xpath>//*[contains(@class, 'wishlSize')]//*[.='&lt;Size&gt;']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="removeItemBtn">
+		<Properties>
+			<xpath>//*[@class="wishListCard"][1]//*[@class="removeItemWL"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="waitListEmptyMsg">
+		<Properties>
+			<xpath>//*[@class="wishEmptyMsg"]</xpath>
+			<id>horizontalCrossSellHeading</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="waitListEmptySubMsg">
+		<Properties>
+			<xpath>//*[@class="wishEmptySubhead"]</xpath>
+			<xpath>//*[@class="divNoWishlistContent"]//p</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstRatingStarsValue">
+		<Properties>
+			<xpath>//*[@data-component-type="WISH_LIST_ELEMENTS"]//*[contains(@class,"wishListCardWrapper")][1]//*[@alt="&lt;RatingStarValue&gt; von 5"]</xpath>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="productImgFirst">
+		<Properties>
+			<xpath>//*[contains(@class, 'wishListCardWrapper')][1]//*[contains(@class, 'productImg')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productQtyFirst">
+		<Properties>
+			<xpath>//*[contains(@class, 'wishListCardWrapper')][1]//*[contains(@class, 'wishlQty')]//span</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="soldOutDottedAround">
+		<Properties>
+			<xpath>//*[@class="selectColor" and @ats="N" and @data-original-title="Ausverkauft"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="soldOutTooltip">
+		<Properties>
+			<xpath>//*[@class="popover fade top in"][contains(@style,'display: block')]/h3</xpath>
+		</Properties>
+	</TestObject>	
+	
+	<TestObject name="soldOutColorTooltip">
+		<Properties>
+			<xpath>//*[@class="popover fade top in"][contains(@style,'display: block')]/*[@class="popover-content"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="redExclamationTag">
+		<Properties>
+			<xpath>//*[@class="tag"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="firstItemSoldOutStatus">
+		<Properties>
+			<xpath>//*[@class="atsMsg"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="ImmerFooter">
+		<Properties>
+			<xpath>//*[@id="footer_top_module_1"]//p[contains(text(),"E-Mail")]</xpath>
+			<xpath>//*[contains(text(),"Immer informiert!")]</xpath>
+			<xpath>//*[@id="siteFooter"]//*[@class="paragraph paragraph1"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="wishlistShareOverlay">
+		<Properties>
+			<id>wishShareOverlay</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="shareWishListEmailAddr">
+		<Properties>
+			<xpath>//*[@id="wishEmailList"]//div[&lt;number&gt;]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="PopUpWindow">
+		<Properties>
+			<xpath>//*[contains(@class,"fancybox-opened")]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="PopUpTitle">
+		<Properties>
+			<xpath>//*[contains(@class,"fancybox-opened")]//h2</xpath>
+            <xpath>//*[contains(@class,"fancybox-opened")]//h1</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="PopUpContent">
+		<Properties>
+			<xpath>//*[contains(@class,"fancybox-opened")]//*[contains(@class,"rich-text")]</xpath>
+		</Properties>
+	</TestObject>
+</Page>

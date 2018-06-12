@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="FooterPage" include="MastheadMain">
+	
+	
+	<TestObject name="AnounceTitle">
+			<Properties>
+				<xpath>//*[@class="container infoModule"]//*[@class="infoTitle"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="AnounceInfoLink">
+			<Properties>
+				<xpath>//*[@class="container infoModule"]//*[@class="row"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="OrderPhoneTitle">
+			<Properties>
+				<xpath>//*[@data-component-type="CONTACT_DETAIL"][1]//h6</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="OrderPhoneNumber">
+			<Properties>
+				<xpath>//*[@data-component-type="CONTACT_DETAIL"][1]//*[@class="tel"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="QuickAccessPhoneTitle">
+			<Properties>
+				<xpath>//*[@data-component-type="CONTACT_DETAIL"][2]//h6</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="QuickAccessPhoneNumber">
+			<Properties>
+				<xpath>//*[@data-component-type="CONTACT_DETAIL"][2]//*[@class="tel"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="CompanyInfoTitle">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][4]//h6</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="CompanyInfoIntroduce">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][4]//li[1]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="CompanyInfoRecruitment">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][4]//li[2]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="CompanyInfoBrief">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][4]//li[3]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="CompanyInfoNews">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][4]//li[4]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="CompanyInfoSupply">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][4]//li[5]</xpath>
+			</Properties>
+	</TestObject>
+	
+	<TestObject name="QVCCommunityTitle">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][3]//h6</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="QVCCommunityIntroduce">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][3]//*[@data-component-type="Footer Link"]//li[1]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="QVCCommunityProductReview">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][3]//*[@data-component-type="Footer Link"]//li[2]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="QVCCommunityProductQandA">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][3]//*[@data-component-type="Footer Link"]//li[3]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="QVCCommunityMyCommunity">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][3]//*[@data-component-type="Footer Link"]//li[4]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="QVCCommunityMemberIntroduce">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][3]//*[@data-component-type="Footer Link"]//li[5]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="QVCCommunityTwitter">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][3]//*[@class="sns"]//a[1]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="QVCCommunityFacebook">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][3]//*[@class="sns"]//a[2]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="QVCCommunityInstagram">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][3]//*[@class="sns"]//a[3]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="QVCCommunityYoutube">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][3]//*[@class="sns"]//a[4]</xpath>
+			</Properties>
+	</TestObject>
+	
+	
+	
+	<TestObject name="HelpGuideTitle">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][2]//h6</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="HelpGuideNewUserGuide">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][2]//li[1]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="HelpGuideVideoGuide">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][2]//li[2]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="HelpGuideVideoGuideQandA">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][2]//li[3]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="HelpGuidePaymentMethod">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][2]//li[4]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="HelpGuideShipment">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][2]//li[5]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="HelpGuideRefund">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][2]//li[6]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="HelpGuideFrequentQuestion">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][2]//li[7]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="HelpGuideQuery">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][2]//li[8]</xpath>
+			</Properties>
+	</TestObject>
+
+	<TestObject name="BussinessInfoTitle">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][1]//h6</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="BussinessInfoHostIntroduceLink">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][1]//li[1]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="BussinessInfoModelIntroduceLink">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][1]//li[2]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="BussinessInfoMagazineIntroduceLink">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][1]//li[3]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="BussinessInfoDeviceIntroduceLink">
+			<Properties>
+				<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][1]//li[4]</xpath>
+			</Properties>
+	</TestObject>
+	
+	
+	<TestObject name="QVCInternationalTitle">
+		<Properties>
+			<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][5]//h6</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="QVCInternationalUS">
+		<Properties>
+			<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][5]//li[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="QVCInternationalUK">
+		<Properties>
+			<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][5]//li[2]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="QVCInternationalGermany">
+		<Properties>
+			<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][5]//li[3]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="QVCInternationalItaly">
+		<Properties>
+			<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][5]//li[4]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="QVCInternationalFrance">
+		<Properties>
+			<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][5]//li[5]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="QVCInternationalChina">
+		<Properties>
+			<xpath>//*[@class="col-tn-12 col-sm-6 col-md-4 col-lg-2 panel"][5]//li[6]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="TVShopOfQVCJapanLink">
+		<Properties>
+			<xpath>//*[@data-component-type="FOOTER_NAVIGATION"]//li[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="InfoToSecurityActivityLink">
+		<Properties>
+			<xpath>//*[@data-component-type="FOOTER_NAVIGATION"]//li[2]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="PrivacyPolicyLink">
+		<Properties>
+			<xpath>//*[@data-component-type="FOOTER_NAVIGATION"]//li[3]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="PersonalInfoHandlingLink">
+		<Properties>
+			<xpath>//*[@data-component-type="FOOTER_NAVIGATION"]//li[4]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="MembershipAgreementLink">
+		<Properties>
+			<xpath>//*[@data-component-type="FOOTER_NAVIGATION"]//li[5]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="AboutLink">
+		<Properties>
+			<xpath>//*[@data-component-type="FOOTER_NAVIGATION"]//li[6]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="NortonIcon">
+		<Properties>
+			<xpath>//*[@data-component-type="PrivacyPolicy"]//a[1]//img</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="OSTIcon">
+		<Properties>
+			<xpath>//*[@data-component-type="PrivacyPolicy"]//a[2]//img</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="ISOIcon">
+		<Properties>
+			<xpath>//*[@data-component-type="PrivacyPolicy"]//a[3]//img</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="JasracIcon">
+		<Properties>
+			<xpath>//*[@data-component-type="PrivacyPolicy"]//a[4]//img</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="CopyRightIcon">
+		<Properties>
+			<xpath>//*[@data-component-type="PrivacyPolicy"]//*[@class="col-sm-12 col-md-5"]//img</xpath>
+		</Properties>
+	</TestObject>
+</Page>

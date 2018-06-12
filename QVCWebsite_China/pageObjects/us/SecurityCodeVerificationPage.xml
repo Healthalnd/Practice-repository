@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="Security Code Verification" include="MastheadMain">
+	<TestObject name="PaymentMethodHeader" > 
+		<properties>   
+			<id>divPageTitle</id>			
+		</properties> 
+	</TestObject>	
+	<TestObject name="compltetOrderUpdateBtn"> 
+		<properties>   
+			<xpath>//*[@id='divFormButtons']//input[@class="primaryButton"]</xpath>
+		</properties> 
+	</TestObject>	
+	<TestObject name="securityCodeWebEdit"> 
+		<properties>   
+			<id>txtSecurityCode</id>
+		</properties> 	
+	</TestObject>	
+</Page>

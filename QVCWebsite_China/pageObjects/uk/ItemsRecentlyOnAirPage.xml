@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ItemsRecentlyOnAirPage" include="MastheadMain">
+	  
+	
+	 <TestObject name="channelList"> 
+        	<properties>   
+          		<id>selChannel</id>          		
+        	</properties> 
+     </TestObject>
+	 
+</Page>

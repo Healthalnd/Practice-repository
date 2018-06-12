@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ProgramGuidePage" include="MastheadMain">
+	
+	<TestObject name="ProgramGuideListTitle">
+		<Properties>
+			<xpath>//*[@alt="番組ガイド"]</xpath>
+		</Properties>
+	</TestObject>
+	
+</Page>

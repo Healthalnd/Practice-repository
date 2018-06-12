@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="HomePage" include="MastheadMain">
+	<TestObject name="divHomepage">
+			<Properties>
+				<id>pageContent</id>
+				<xpath>//*[@id='pageContent']</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="cookiesBarCloseBtn"> 
+		<properties>   
+			<xpath>//*[@id="alert-cookie-info-bar"]//button[@class="close"]</xpath>   
+			<xpath>//*[@class="privacyBannerContent"]//*[@class="btn btn-primary"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="privacyBanner"> 
+		<properties>   
+			<xpath>//*[@id="qPrivacyBanner"]</xpath>   			
+		</properties> 
+	</TestObject>
+	<TestObject name="privacyBannerOKBtn"> 
+		<properties>   
+			<xpath>//*[@id="qPrivacyBanner"]//*[@class="btn btn-primary"]</xpath>   			
+		</properties> 
+	</TestObject>
+	<TestObject name="privacyBannerOKBtn"> 
+		<properties>   
+			<xpath>//*[@id="qPrivacyBanner"]//*[@class="btn btn-primary"]</xpath>   			
+		</properties> 
+	</TestObject>
+	<TestObject name="homepageImg"> 
+		<properties>   
+			<xpath>//*[@id="tsv_1"]//*[@class="imageCrop" and @title="Today's Special Value"]</xpath>   			
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="BackToHomePage">
+		<Properties>		
+			<xpath>//img[@title='QVC']</xpath>
+			<id>pageMasthead</id>
+			<id>divMastheadLogo</id>
+			<id>mastheadLogo</id>
+			<linkText>Home</linkText>
+		</Properties>
+	</TestObject>
+	<TestObject name="homepageHeader">
+			<Properties>
+				<xpath>//*[@data-module-type="TSV"]</xpath>
+			</Properties>
+	</TestObject>
+		
+	<TestObject name="wishListLink">
+		<Properties>
+			<xpath>//*[@class='acctGreeting acctAuth']//*[@data-link-tag='Wish list']</xpath>
+			<xpath>//*[@class='acctGreeting acctUnAuth']//*[@data-link-tag='Wish list']</xpath>			
+			<id>linkWishList</id>
+			<linkText>Wish list</linkText>	
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="tsvContainer">
+			<Properties>
+				<class>tsvCountdown</class>
+			</Properties>
+	</TestObject>
+	<TestObject name="tsvLogo">
+			<Properties>
+				<xpath>//*[@class="visible-dt tsvLogoDt"]/*[@alt="Today's Special Value"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="signArea">
+		<Properties>
+			<id>divSignIn</id>
+			<id>customer</id>
+			<xpath>//*[@class="acctGreeting acctAuth"]</xpath>	
+			<xpath>(//*[contains(text(),"Hello")])[1]</xpath>
+			<xpath>//*[@id="customer"]//a[contains(text(),"Sign out")]</xpath>
+			<xpath>//*[@class="acctGreeting acctUnAuth"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="itemsROABtn"> 
+        	<properties>   
+          		<linkText>Recent on-air items</linkText>    
+				<xpath>//*[@class="shopQVCTV"]//a[text()='Recently On-air items']</xpath>	
+        	</properties> 
+     </TestObject>
+	 <TestObject name="shopQVCTVMenu">
+		<Properties>
+			<linkText>Shop QVC TV</linkText>
+			<xpath>//*[@class="shopQVCTV"]/a</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="tsvLink">
+			<Properties>
+				<linkText>Today's Special Value</linkText>
+				<xpath>//*[@class="visible-dt tsvLogoDt"]/img</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="programGuideLink">
+		<Properties>
+			<linkText>TV guide</linkText>
+			<xpath>//*[@title="TV guide"]</xpath>
+			<xpath>//*[.='Program Guide']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="tsvShopBtn">
+			<Properties>
+				<css>.shopDt</css>
+			</Properties>
+	</TestObject>
+	<TestObject name="cartLink">
+			<Properties>
+				<xpath>//div[@class='cartIcon']/span</xpath>
+				<xpath>//div[@class='cartIcon']</xpath>
+			</Properties>
+	</TestObject>
+	
+	<TestObject name="homeBreadcrumb">
+		<Properties>			
+			<id>breadCrumbs</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="categoryLabel">
+		<Properties>			
+			<xpath>//*[@id='divNavFacetCategory']//h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="watchLiveTVHeader">
+		<Properties>			
+			<xpath>//*[@class='active']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="staticContentModule">
+		<Properties>			
+			<xpath>//*[@data-module-type='STATIC_CONTENT']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="staticContentModuleImag1">
+		<Properties>			
+			<xpath>(//img[@class='img-responsive cq-dd-displayImage'])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="staticContentModuleImag2">
+		<Properties>			
+			<xpath>(//img[@class='img-responsive cq-dd-displayImage'])[2]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="staticContentModuleImag3">
+		<Properties>			
+			<xpath>(//img[@class='img-responsive cq-dd-displayImage'])[3]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productGrid">
+		<Properties>			
+			<xpath>//*[@data-component-type='PRODUCT_GRID']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productGridLeftTopImg">
+		<Properties>			
+			<xpath>(//*[@class='col-tn-6 top left'])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productGridRightTopImg">
+		<Properties>			
+			<xpath>(//*[@class='col-tn-6 top right'])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productGridLeftBottomImg">
+		<Properties>			
+			<xpath>(//*[@class='col-tn-6 bottom left'])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productGridRightBottomImg">
+		<Properties>			
+			<xpath>(//*[@class='col-tn-6 bottom right'])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productGridImg1">
+		<Properties>			
+			<xpath>(//*[@class='col-tn-6 col-sm-4 left'])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productGridImg2">
+		<Properties>			
+			<xpath>(//*[@class='col-tn-6 col-sm-4 col-sm-push-4 right'])[1]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="ContainerStripModule">
+		<Properties>
+			<xpath>//*[@data-module-type="CONTAINER_STRIP"][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="ContainerStripImg1">
+		<Properties>
+			<xpath>//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][1]//img</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="ContainerStripImg2">
+		<Properties>
+			<xpath>//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][2]//img</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="ContainerStripImg3">
+		<Properties>
+			<xpath>//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][3]//img</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="ContainerStripImg4">
+		<Properties>
+			<xpath>//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][4]//img</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="ContainerStripHearderLink1">
+		<Properties>
+			<xpath>//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][1]//p</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="ContainerStripHearderLink2">
+		<Properties>
+			<xpath>//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][2]//p</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="ContainerStripHearderLink3">
+		<Properties>
+			<xpath>//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][3]//p</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="ContainerStripHearderLink4">
+		<Properties>
+			<xpath>//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][4]//p</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="StoryModuleHeader">
+		<Properties>
+			<xpath>//*[@data-module-type="STORY"]//h2</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="StoryModuleContentHeader">
+		<Properties>
+			<xpath>//*[@data-module-type="STORY"]//h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="StoryModuleContent">
+		<Properties>
+			<xpath>//*[@data-component-type="STORY"]//p</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="StoryModuleImg">
+		<Properties>
+			<xpath>//*[@data-component-type="STORY"]//img</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="StoryModulePrimaryBtn">
+		<Properties>
+			<xpath>//*[@data-module-type="STORY"]//*[@class="btn btn-primary "]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="StoryModuleSecondaryBtn">
+		<Properties>
+			<xpath>//*[@data-module-type="STORY"]//*[@class="btn btn-secondary "]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="watchNowLink">
+		<Properties>			
+			<xpath>//*[@class='onAirWatch col-tn-12 col-xs-6']//a</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="itemsRecentlyOnAirImg1">
+		<Properties>			
+			<xpath>//*[@data-module-type="ON_AIR"]//*[@class='carouselItem col-sm-2'][1]//a[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="itemOnAirImg">
+		<Properties>			
+			<xpath>//*[@data-module-type='ON_AIR']//div[@class='onAirProdInfo']//*[contains(@class,'productImg')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="shopNowBtn">
+		<Properties>
+			<xpath>//div[@class='shopBtn row']//a</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="onAirArea">
+		<Properties>			
+			<xpath>//*[@data-module-type="ON_AIR"][1]//*[@class="row"]//*[@class="onAirProdInfo"]//*[@class="row"]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="onAirDesc">
+		<Properties>
+			<xpath>//*[@data-module-type='ON_AIR']//div[@class='onAirProdInfo']//*[contains(@class,'productDesc')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="viewMoreBtn">
+		<Properties>			
+			<xpath>//*[@class='shopBtn']//*[@class='btn btn-primary']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="addToBasketIOABtn">
+		<Properties>			
+			<xpath>//*[@data-module-type='ON_AIR']//div[@class='onAirProdBtn']//a[contains(text(),'Add to Basket')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="speedBuyIOABtn">
+		<Properties>			
+			<xpath>//*[@data-module-type='ON_AIR']//div[@class='onAirProdBtn']//a[contains(text(),'Speed Buy')]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="OnAirChanelMenu">
+		<Properties>
+			<css>.channelMenu span</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="shopItemsOnAirBtn">
+		<Properties>
+			<xpath>//*[@data-component-type="ITEMS_RECENTLY_ON_AIR"]//*[@class="btn btn-primary"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="StyleChannel">
+		<Properties>
+			<xpath>//*[@class="channelMenu"]//li[text()='STYLE']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="BeautyChannel">
+		<Properties>
+			<xpath>//*[@class="channelMenu"]//li[text()='BEAUTY']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="ExtraChannel">
+		<Properties>
+			<xpath>//*[@class="channelMenu"]//li[text()='EXTRA']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="ChristmasChannel">
+		<Properties>
+			<xpath>//*[@class="channelMenu"]//li[text()='CHRISTMAS']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="LiveChannel">
+		<Properties>
+			<xpath>//*[@class="channelMenu"]//span[text()='LIVE']</xpath>
+			<xpath>//*[@class="channelMenu"]//li[text()='LIVE']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="MyAccountLink">
+		<Properties>
+			<linkText>My account</linkText>
+			<xpath>//div[@class='acctGreeting acctAuth']//p[@class="signInAcct"]</xpath>
+			<xpath>//div[@class='acctGreeting acctUnAuth']//p[@class="signInAcct"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="ShopQVCTVlink">
+		<Properties>
+			<xpath>//*[@class="shopQVCTV"]/a[@aria-label="Shop QVC TV"]</xpath>
+			<xpath>//div[@id="mastTierTwo"]//a[text()="Shop QVC TV"]</xpath>
+		</Properties>		
+	</TestObject>
+	<TestObject name="watchQVCTVLink">
+		<Properties>
+			<xpath>//*[@class="shopTVDropDown"]//*[@title="Watch QVC TV"]</xpath>			
+		</Properties>		
+	</TestObject>
+	
+	<TestObject name="CorporateInformationLink">
+		<Properties>
+			<linkText>Corporate information</linkText>
+		</Properties>
+	</TestObject>
+	<TestObject name="QVCCareersLink">
+		<Properties>
+			<linkText>QVC careers</linkText>
+		</Properties>
+	</TestObject>
+	<TestObject name="productGridHeader">
+		<Properties>
+			<xpath>//*[@data-module-type='PRODUCT_GRID']//h2</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="imageGridHeader">
+		<Properties>
+			<xpath>//*[@data-module-type='IMAGE_GRID']//h2</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="gridLeftImg"> <!-- <grid> was a parameter that passed in-->
+		<Properties>			
+			<xpath>//div[@data-component-type='&lt;grid&gt;']//div[@class='col-tn-6 col-sm-4 left']//img</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="gridMidLeftImg">
+		<Properties>			
+			<xpath>//div[@data-component-type='&lt;grid&gt;']//div[@class='col-tn-6 top left']//img</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="gridMidRightImg">
+		<Properties>			
+			<xpath>//div[@data-component-type='&lt;grid&gt;']//div[@class='col-tn-6 top right']//img</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="gridRightImg">
+		<Properties>			
+			<xpath>//div[@data-component-type='&lt;grid&gt;']//div[@class='col-tn-6 col-sm-4 col-sm-push-4 right']//img</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="featureBrandHeader">
+		<Properties>
+			<xpath>//*[@data-module-type='FEATURED_BRANDS']//h2</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="featureBrandImg"> <!-- <index> was a parameter that passed in-->
+		<Properties>			
+			<xpath>(//div[@data-component-type='FEATURED_BRAND_ITEM']//div[@class='productImg']//img)['&lt;index&gt;']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="lateNightSpecialsHeader">
+		<Properties>
+			<xpath>//*[@data-module-type='LATE_NIGHT_SPECIALS']//h2</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="lateNightSpecialsImg"> <!-- <index> was a parameter that passed in-->
+		<Properties>			
+			<xpath>(//*[@data-module-type='LATE_NIGHT_SPECIALS']//div[starts-with(@class,'productImg')])[&lt;index&gt;]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="carouselRightImg"><!-- <module> was a parameter that passed in-->
+		<Properties>			
+			<xpath>//*[@data-module-type='&lt;module&gt;']//img[@alt='Scroll right']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="carouselLeftImg"><!-- <module> was a parameter that passed in-->
+		<Properties>			
+			<xpath>//*[@data-module-type='&lt;module&gt;']//img[@alt='Scroll left']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="lateNightSpecialsShopBtn">
+		<Properties>			
+			<xpath>//*[@data-module-type='LATE_NIGHT_SPECIALS']//a[contains(text(), 'Shop')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="lifestyleHeader">
+		<Properties>			
+			<xpath>//*[@data-module-type='LIFESTYLE_CAROUSEL']//h2</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="lifestyleImg"><!-- <index> was a parameter that passed in-->
+		<Properties>			
+			<xpath>(//*[@data-module-type='LIFESTYLE_CAROUSEL']//div[@class='productImg'])[&lt;index&gt;]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="lifestyleShopBtn">
+		<Properties>			
+			<xpath>//*[@data-module-type='LIFESTYLE_CAROUSEL']//a[contains(text(), 'Shop')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productCarouselHeader">
+		<Properties>			
+			<xpath>//*[@data-module-type='PRODUCT_CAROUSEL']//h2</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productCarouselImg"> <!-- <index> was a parameter that passed in-->
+		<Properties>			
+			<xpath>(//*[@data-module-type='PRODUCT_CAROUSEL']//div[starts-with(@class,'productImg')])[&lt;index&gt;]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productGalleryHeader">
+		<Properties>			
+			<xpath>//*[@data-module-type='PRODUCT_GALLERY']//h2</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productGalleryImg"> <!-- <index> was a parameter that passed in-->
+		<Properties>			
+			<xpath>(//*[@data-module-type='PRODUCT_GALLERY']//div[contains(@class,'galleryItem')]//div[contains(@class,'productImg')])[&lt;index&gt;]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productGalleryShopBtn">
+		<Properties>			
+			<xpath>//*[@data-module-type='PRODUCT_GALLERY']//a[contains(text(), 'Shop')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="shopByCategoryHeader"> 
+		<Properties>			
+			<xpath>//*[@data-module-type='SHOP_BY_CATEGORY']//h2</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="shopByCategoryImg"> <!-- <index> was a parameter that passed in-->
+		<Properties>			
+			<xpath>(//*[@data-module-type='SHOP_BY_CATEGORY']//div[@data-component-type='SHOP_BY_CATEGORY_ITEM']//img)[&lt;index&gt;]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="staticContentHeader"> 
+		<Properties>			
+			<xpath>//*[@data-module-type='STATIC_CONTENT']//h2</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="staticContentImg"> <!-- <index> was a parameter that passed in-->
+		<Properties>			
+			<xpath>(//*[@data-module-type='STATIC_CONTENT']//div[contains(@class,'staticContent')]//img)[&lt;index&gt;]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="staticContentTxt"> 
+		<Properties>			
+			<xpath>//*[@data-module-type='STATIC_CONTENT']//div[contains(@class,'staticContent')]//div[@class='caption']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="PersonalizedProductHeader"> 
+		<Properties>			
+			<xpath>//*[@data-module-type='PERSONALIZED_PRODUCT_CAROUSEL']//h2</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="PersonalizedProductImg"> <!-- <index> was a parameter that passed in-->
+		<Properties>			
+			<xpath>(//*[@data-module-type='PERSONALIZED_PRODUCT_CAROUSEL']//div[contains(@class, 'productImg')])[&lt;index&gt;]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="120DealsImg">
+		<Properties>
+			<css>#feature-item .img-responsive</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="120DealsDesc">
+		<Properties>
+			<css>#feature-item .productDesc</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="addToCartBtn_Deals">
+		<Properties>
+			<xpath>//div[@id='feature-item']//a[contains(text(), 'Add to Basket')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="speedBuyBtnD_Deals">
+		<Properties>
+			<xpath>//div[@id='feature-item']//a[contains(text(), 'Speed Buy')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="largeStaticImage">
+		<Properties>			
+			<xpath>//*[@class='visible-dt cq-dd-largeDisplayImage']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="largeStaticImageHeader">
+		<Properties>			
+			<xpath>//*[@data-module-type='LARGE_STATIC_IMAGE']//h2</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="onAirModule"><!-- please do not change the name!!!-->
+		<Properties>
+			<xpath>//*[@data-module-type="ON_AIR"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="iOAChannelName">
+		<Properties>			
+			<xpath>//*[@data-module-type="ON_AIR"]//li[text()="&lt;ChannelName&gt;"]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="addToCartBtn">
+		<Properties>
+			<xpath>//div[@class='onAirProdBtn']//a[text()='Add to Basket ']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="speedBuyBtn">
+		<Properties>
+			<xpath>//div[@class='onAirProdBtn']//a[text()='Speed Buy ']</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="iOAArea">
+		<Properties>
+			<xpath>//*[@data-component-type="ON_AIR"]/*[@class="onAirActualData"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="itemsROAlink">
+		<Properties>		
+			<xpath>//div[@class='shopTVDropDown']//a[contains(text(),"Recently On-air items")]</xpath>
+			<xpath>//*[@class="qvctv visible-desktop"]//a[contains(text(),"Recent on-air items")]</xpath>			
+		</Properties>		
+	</TestObject>
+	
+	<TestObject name="cartIndicator">
+		<Properties>
+			<id>ancCart</id>
+			<xpath>//div[@class="menuIconCell menuCart"]</xpath>
+		</Properties>		
+	</TestObject>
+	<TestObject name="beauty">
+		<Properties>
+			<xpath>//*[@class="shopByDropDown"]//*[.="Beauty"]</xpath>			
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="1stPredictiveSearchInCategory">
+		<Properties>
+			<xpath>//*[@id="predictiveSearch"]//*[@id="categories"]//a[1]</xpath>			
+		</Properties>
+	</TestObject>
+		<TestObject name="homepageImg"> 
+		<properties>   
+			<xpath>//*[@id="tsv_1"]//*[@class="imageCrop" and @title="Today's Special Value"]</xpath>   			
+		</properties> 
+	</TestObject>
+</Page>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="YourAccountSuspendPage" include="MastheadMain">
+		<TestObject name="lockedErrMsg">
+		<Properties>
+			<id>divContent</id>
+		</Properties>
+	</TestObject>
+	
+</Page>

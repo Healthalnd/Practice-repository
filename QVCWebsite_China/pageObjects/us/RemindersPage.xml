@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="RemindersPage" include="MastheadMain">
+	 
+	<TestObject name="reminderTable"> 
+        <properties>   
+          	<xpath>//table</xpath>         		
+        </properties> 
+    </TestObject>
+	<TestObject name="row1ReminderDate"> 
+        <properties>   
+          	<xpath>//table//tr[1]/td[2]</xpath>         		
+        </properties> 
+    </TestObject>	
+	<TestObject name="row1Desc"> 
+        <properties>   
+          	<xpath>//table//tr[1]/td[3]</xpath>         		
+        </properties> 
+    </TestObject>	
+	<TestObject name="editReminderLink"> 
+        <properties>   
+          	<xpath>//tr[1]//a[.='Edit Reminder']</xpath>         		
+        </properties> 
+    </TestObject>
+	<TestObject name="remindersOverlayTitle"> 
+        <properties>   
+          	<xpath>//*[@id='remindersOverlayContent']/h1</xpath>         		
+        </properties> 
+    </TestObject>
+	<TestObject name="remindMeAbout"> 
+        <properties>   
+          	<id>remindMeAbout</id> 
+			<id>txtRemindMeAbout</id>  
+        </properties> 
+    </TestObject>	
+	<TestObject name="remindMeAboutLabel"> 
+        <properties>   
+          	<id>lblRemindMeAbout</id>
+        </properties> 
+    </TestObject>
+	<TestObject name="eventDateLabel"> 
+        <properties>   
+          	<id>lblMonth</id>
+        </properties> 
+    </TestObject>
+	<TestObject name="reminderDateLabel"> 
+        <properties>   
+          	<id>lblReminderDate</id>
+        </properties> 
+    </TestObject>
+	<TestObject name="repeatLabel"> 
+        <properties>   
+          	<id>lblRepeat</id>
+        </properties> 
+    </TestObject>
+	<TestObject name="commentLabel"> 
+        <properties>   
+          	<id>lblComment</id>
+        </properties> 
+    </TestObject>
+	<TestObject name="saveButtonLabel"> 
+        <properties>   
+          	<class>primaryWrapBtn wrapBtnsavereminder</class>
+			<xpath>//*[@class="primaryWrapBtn wrapBtnsavereminder"]</xpath>
+        </properties> 
+    </TestObject>
+	<TestObject name="cancelButtonLabel"> 
+        <properties>   
+          	<xpath>//*[@class="secondaryWrapBtn wrapBtncancel"]</xpath>
+			<class>secondaryWrapBtn wrapBtncancel</class>
+        </properties> 
+    </TestObject>
+	<TestObject name="reminderDateSelector"> 
+        <properties>   
+          	<id>reminderDate</id>         		
+        </properties> 
+    </TestObject>
+	<TestObject name="additionalCommentsTextarea"> 
+        <properties>   
+          	<id>additionalComments</id>         		
+        </properties> 
+    </TestObject>
+	<TestObject name="saveReminderBtn"> 
+        <properties>   
+          	<xpath>//*[@value="Save Reminder"]</xpath>         		
+        </properties> 
+    </TestObject>	
+	<TestObject name="deleteLink"> 
+        <properties>   
+          	<xpath>//tr[1]//a[.='Delete']</xpath>         		
+        </properties> 
+    </TestObject>
+	<TestObject name="deleteConfirmTitle"> 
+        <properties>   
+          	<xpath>//*[@id='remindersDeleteOverlayContent']/h1</xpath>         		
+        </properties> 
+    </TestObject>
+	<TestObject name="deleteBtn"> 
+        <properties>   
+          	<xpath>//*[@id='remindersDeleteOverlayContent']//*[@value="Delete"]</xpath>         		
+        </properties> 
+    </TestObject>	
+	<TestObject name="deleteAllRemindersBtn"> 
+        <properties>   
+          	<xpath>//*[@id='btnDelReminder']</xpath>         		
+        </properties> 
+    </TestObject>
+	<TestObject name="addReminderBtn"> 
+        <properties>   
+          	<id>btnAddReminder</id>         		
+        </properties> 
+    </TestObject>	
+	<TestObject name="eventNameSelector"> 
+        <properties>   
+          	<id>eventName</id>         		
+        </properties> 
+    </TestObject>	
+	<TestObject name="RemindersTitle"> 
+        <properties>   
+          	<id>divPageTitle</id>         		
+        </properties> 
+    </TestObject>
+	
+</Page>

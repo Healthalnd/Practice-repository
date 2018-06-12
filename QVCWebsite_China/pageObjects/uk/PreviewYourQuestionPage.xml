@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="PreviewYourQuestionPage" include="MastheadMain">
+	<TestObject name="divHomepage">
+		<Properties>
+			<id>divPageTitle</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="askQuestionContext">
+		<Properties>
+			<xpath>//*[@class="BVQAQuestionSummary"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="nickName">
+		<Properties>
+			<xpath>//*[@id='BVQAQuestionOverallSummaryID']//*[@class="BVQANickname"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="cityName">
+		<Properties>
+			<xpath>//*[@id='BVQAQuestionOverallSummaryID']//*[@class="BVQALocation"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="addAdditionalDetails">
+		<Properties>
+			<xpath>//*[@id='BVQAQuestionOverallSummaryID']/*[@class="BVQAContentText BVQAQuestionDetails"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="ageContext">
+		<Properties>
+			<xpath>//*[@id='BVQAQuestionOverallSummaryID']//*[@class="BVQALabel BVQAContextDataValuePrefix BVQAContextDataValueagePrefix"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="ageRange">
+		<Properties>
+			<xpath>//*[@id='BVQAQuestionOverallSummaryID']//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValueage"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="howLongContext">
+		<Properties>
+			<xpath>//*[@class="BVQALabel BVQAContextDataValuePrefix BVQAContextDataValuehowLongShoppingPrefix"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="shoppingRange">
+		<Properties>
+			<xpath>//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValuehowLongShopping"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="recommendProductContext">
+		<Properties>
+			<xpath>//*[@class="BVQALabel BVQAContextDataValuePrefix BVQAContextDataValuewouldRecommendPrefix"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="recommendProductAnswer">
+		<Properties>
+			<xpath>//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValuewouldRecommend"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="perfectGiftContext">
+		<Properties>
+			<xpath>//*[@class="BVQALabel BVQAContextDataValuePrefix BVQAContextDataValueperfectGiftForPrefix"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="perfectGiftAnswer">
+		<Properties>
+			<xpath>//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValueperfectGiftFor"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="sendMeEmailCheckboxTure">
+		<Properties>
+			<xpath>//*[@class="BVQAFieldMain"]/*[@checked="checked" and @id="BVQAFieldCheckboxQuestionUseremailalertsID"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="sendPostedContext">
+		<Properties>
+			<xpath>//*[@id='BVQAQuestionSendEmailAlertsID']//*[@class="BVQAFieldFollowingText"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="sendAnswerContext">
+		<Properties>
+			<xpath>//*[@id='BVQAQuestionSendEmailAlertWhenAnsweredID']//*[@class="BVQAFieldFollowingText"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="sendAnswerCheckboxTure">
+		<Properties>
+			<xpath>//*[@id='BVQAFieldCheckboxQuestionSendemailonanswerID' and @checked="checked"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="notificationsContext">
+		<Properties>
+			<xpath>//*[@id="BVQAQuestionPreviewNotificationID"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="emailAddress">
+		<Properties>
+			<xpath>//*[@id="BVQAQuestionPreviewNotificationID"]/*[@class="BVQAEmailAddress"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="acceptContext">
+		<Properties>
+			<xpath>//*[@id='BVQAQuestionAgreedToTermsAndConditionsID']//*[@class="BVQAFieldFollowingText"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="termsOfUseLink">
+		<Properties>
+			<linkText>Terms of Use</linkText>
+		</Properties>
+	</TestObject>
+	<TestObject name="approvalWarningMsg">
+		<Properties>
+			<id>BVQAQuestionPostDelayDisclaimerID</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="cancelBtn">
+		<Properties>
+			<id>BVQACancelQuestionButtonID</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="editBtn">
+		<Properties>
+			<id>BVQAEditQuestionButtonID</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="submitBtn">
+		<Properties>
+			<id>BVQASubmitQuestionButtonID</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="sendAnswerCheckboxFalse">
+		<Properties>
+			<xpath>//*[@id='BVQAFieldCheckboxQuestionSendemailonanswerID' and @disabled="disabled"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="sendMeEmailCheckboxFalse">
+		<Properties>
+			<xpath>//*[@disabled="disabled" and @id="BVQAFieldCheckboxQuestionUseremailalertsID"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="acceptCheckBoxTure">
+		<Properties>
+			<xpath>//*[@checked="checked" and @id="BVQAFieldCheckboxQuestionAgreedToTermsAndConditionsID"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="questionPreviewContext">
+		<Properties>
+			<id>BVQAQuestionPreviewFormTitleID</id>
+		</Properties>
+	</TestObject>
+	
+</Page>

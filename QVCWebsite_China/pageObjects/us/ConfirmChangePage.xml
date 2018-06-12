@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ConfirmChangePage" include="MastheadMain">
+	<TestObject name="pageTitle"> 
+		<properties>   
+			<id>divPageTitle</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="submitChangesBtn"> 
+		<properties>   
+			<id>btnSubmitChanges</id>
+		</properties> 
+	</TestObject>	
+	<TestObject name="paymentMethodInfo">
+		<Properties>
+			<id>divOrderDetailPaymentInformation</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="shippingAddressInfo">
+		<Properties>
+			<id>divOrderDetailShippingAddress</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="newShipmentMethodHighlight">
+		<Properties>
+			<xpath>//td[@id='item_status_1']</xpath>
+		</Properties>
+	</TestObject>
+</Page>

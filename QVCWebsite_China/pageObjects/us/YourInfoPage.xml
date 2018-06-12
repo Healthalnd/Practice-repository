@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="YourInfoPage" include="MastheadMain">
+
+	<TestObject name="emailAddresstxt">
+		<Properties>
+			<id>txtEmailAddress</id>
+			<xpath>//*[@id='signInFields']/span</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="toolTipLink">
+		<Properties>
+			<linkText>How do I change my email address?</linkText>
+		</Properties>
+	</TestObject>
+	<TestObject name="editEmailMsg">
+		<Properties>
+			<id>toolTip</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="passwordFields">
+		<Properties>
+			<xpath>//label[contains(.,'Password')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstNameBillTo">
+		<Properties>
+			<id>txtFirstName</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="lastNameBillTo">
+		<Properties>
+			<id>txtLastName</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="addressBillTo">
+		<Properties>
+			<id>txtAddress1</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="address2BillTo">
+		<Properties>
+			<id>txtAddress2</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="zipCodeBillTo">
+		<Properties>
+			<id>txtZipPostalCode</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="phoneBillTo">
+		<Properties>
+			<id>txtphone1</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="sameAsBillToCBox">
+		<Properties>
+			<id>cbSameAsBillingAddress</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="fistNameShipTo">
+		<Properties>
+			<id>txtFirstNameShipTo</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="lastNameShipTo">
+		<Properties>
+			<id>txtLastNameShipTo</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="addressShipTo">
+		<Properties>
+			<id>txtAddress1ShipTo</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="zipCode">
+		<Properties>
+			<id>txtZipPostalCodeShipTo</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="continueCheckoutBtn">
+		<Properties>
+			<id>btnContinueCheckout</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="existCustomerWarningText">
+		<Properties>
+			<id>whereEnterPW</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="returnToSignInLink">
+		<Properties>
+			<linkText>Return to Sign In now</linkText>		
+		</Properties>
+	</TestObject>
+	<TestObject name="emailWebEdit">
+		<Properties>
+			<id>txtEmailAddress</id>
+		</Properties>
+	</TestObject>
+		<TestObject name="confEmailWebEdit">
+		<Properties>
+			<id>txtEmailAddressConf</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="emailMatch">
+		<Properties>
+			<id>emMatch</id>
+		</Properties>
+	</TestObject>	
+	<TestObject name="pageTitle">
+		<Properties>
+			<id>divPageTitle</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="emailOfferTxt">
+		<Properties>
+			<id>lblUseDefaults</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="emailOfferCheckBox">
+		<Properties>
+			<xpath>//*/input[@id='cbUseDefaults' and @value='true']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="emailAddressLabel">
+		<Properties>
+			<id>lblEmailAddress</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="confirmEmailAddressLabel">
+		<Properties>
+			<id>lblEmailAddressConf</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="billToAddressLabel">
+		<Properties>
+			<xpath>//div[@class='h2RoundedBorderTop'][2]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="shipToAddressLabel">
+		<Properties>
+			<xpath>//div[@class='h2RoundedBorderTop'][3]</xpath>
+		</Properties>
+	</TestObject>
+</Page>

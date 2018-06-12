@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="MakeYourSelectionPage" include="MastheadMain">
+	<TestObject name="firstAvailableSize">
+		<Properties>	
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectSize"]//*[@ats="Y"][1]</xpath>	
+			<xpath>//*[starts-with(@class,'selectSize') and contains(@style,'active')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstAvailableColor">
+		<Properties>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@ats="Y"][1]</xpath>
+			<xpath>//*[starts-with(@class,'selectColor') and contains(@style,'active')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productQtyList">
+		<Properties>			
+			<id>selProductQuantity</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="continueBtn">
+			<Properties>
+				<xpath>//*[@class="buyBoxButtons"]//button[@class="btn btn-tall btn-primary btnContinue"]</xpath>
+				<xpath>//*[@id='divButtons']//input</xpath>
+				<xpath>//*[@class='primaryWrapBtn wrapBtncontinue']</xpath>
+				<xpath>//input[@value='CONTINUE']</xpath>
+			</Properties>
+	</TestObject>
+	
+	<TestObject name="makeYourSelectionHeader"> 
+		<properties>   
+			<xpath>//h1[.='Make Your Selection']</xpath>
+			<xpath>//*[@class="pdShortDescLabel"]</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="productDesc">
+		<Properties>
+			<xpath>//*[@class="pdShortDesc"]//h1</xpath>
+			<xpath>//*[@id='frmProductDetail']//h1[@class='fn']</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="stepUpActive">
+		<Properties>
+			<xpath>//*[@class="stepUp" and @state="active"]</xpath>			
+		</Properties>
+	</TestObject>
+		<TestObject name="qVCPrice"> 
+		<properties>  
+			<xpath>//*[@class="featuredPrice"]/span</xpath>
+			<xpath>//*[@class="qvcPrice"]/span</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="itemColorSelected">
+	<Properties>
+		<xpath>//*[@class="selectColor" and @state="selected" and @data-original-title="&lt;Color&gt;"]</xpath>
+		<xpath>//*[@class='buyBoxSelect buyBoxSelectColor']//*[@state="selected" and @data-original-title="&lt;Color&gt;"]</xpath>
+	</Properties>
+	</TestObject>
+	<TestObject name="itemSizeSelected">
+		<Properties>
+			<xpath>//*[@class="selectSize" and @state="selected"]//span[.="&lt;Size&gt;"]</xpath>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectSize"]//*[@state="selected"]//span[.="&lt;Size&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productQtyInputBox">
+		<Properties>
+			<css>.productQuantity</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="submitChangesBtn"> 
+		<properties>
+			<xpath>//input[@id='btnSave']</xpath>
+			<xpath>//*[@class="btn btn-secondary btnSaveToWishList"]</xpath>
+			<xpath>//*[@class="btn btn-primary btnAddToCart"]</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="stepUpInactive">
+		<Properties>
+			<xpath>//*[@class="stepUp" and @state="inactive"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstWaitListSize">
+		<Properties>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectSize"]//*[@ats="W"][1]</xpath>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectSize"]//*[@ats="Y"][1]</xpath>	
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstWaitListColor">
+		<Properties>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@ats="W"][1]</xpath>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@ats="Y"][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstWaitListColorName">
+		<Properties>
+			<xpath>//*[@class="selectColor" and @ats="W"][1]</xpath>			
+			<xpath>//*[@class="selectOption" and @ats="W"][1]</xpath>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@ats="W"][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="SelectedSizeText">
+		<Properties>
+			<xpath>//*[@class="selectSize" and @state="selected"]//span</xpath>
+			<xpath>//*[@class="selectedSize"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="SelectedColorText">
+		<Properties>
+			<xpath>//*[@class="selectedColor"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="inStockedSelected">
+		<Properties>
+			<xpath>//*[@class="status instock"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="waitListSelected">
+		<Properties>
+			<xpath>//*[@class="status waitlist"]/a</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="InstockColor">
+		<Properties>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectColor"]//*[and @ats="Y"][&lt;Index&gt;]</xpath>
+			<xpath>//*[@data-original-title="&lt;Color&gt;" and @ats="Y"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="InstockColorOption">
+		<Properties>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@ats="Y"][&lt;Index&gt;]</xpath>
+			<xpath>//*[@data-original-title="&lt;Color&gt;" and @ats="Y"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="OtherSize">
+		<Properties>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectSize"]//*[@ats="Y"][&lt;Index&gt;]</xpath>
+			<xpath>//span[text()="&lt;Size&gt;"]/../..</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="cancelBtn"> 
+		<properties>   
+			<xpath>//input[@value='Cancel']</xpath>
+			<xpath>//*[@class="btn btn-tertiary btnCancel"]</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="addToCartBtn"> 
+		<properties>   
+			<xpath>//*[@class="btn btn-primary btnAddToCart"]</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="colorList">
+		<Properties>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectColor"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="sizeList">
+		<Properties>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectSize"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="waitlistConfirmOverlay">
+		<Properties>
+			<xpath>//*[@class="fancybox-wrap fancybox-desktop fancybox-type-ajax overlayWaitlistConfirm fancybox-opened"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="yesBtn">
+		<Properties>
+			<xpath>//*[@class="fancybox-wrap fancybox-desktop fancybox-type-ajax overlayWaitlistConfirm fancybox-opened"]//button[@class="btn btn-primary btnSave"]</xpath>
+		</Properties>
+	</TestObject>
+	
+</Page>

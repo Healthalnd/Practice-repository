@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="FooterPage" include="MastheadMain">
+	
+	<TestObject name="QVCEverywhereLink">
+		<Properties>
+			<xpath>//ul[@class='phone-hidden']/h5[contains(text(),"QVC Everywhere")]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="emailCaptureLink">
+	    <Properties>
+	        <xpath>//*[@id="emailAddress1Footer"]</xpath>
+	    </Properties>
+	</TestObject>
+	
+	<TestObject name="TitleOfContactLink">
+		<Properties>
+			<xpath>//*[text()="Contact Us. Your Way. Anytime."]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="blogsLink">
+		<Properties>
+			<xpath>//*[text()="Blogs &amp; Forums"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="meetOurHostLink">
+		<Properties>
+			<xpath>//*[text()="Meet our Hosts"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="mobileLink">
+		<Properties>
+			<xpath>//*[text()="Mobile Apps &amp; More "]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="giftCardsLink">
+		<Properties>
+			<xpath>//ul[@class='phone-hidden']/li[@class='liGiftCard']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="aboutUsLink">
+		<Properties>
+			<xpath>//ul[@class='phone-hidden']/li/a[text()='About Us']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="comeVisitUsLink">
+		<Properties>
+			<xpath>//ul[@class='phone-hidden']/li/a[text()='Come Visit Us']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="mediaLink">
+		<Properties>
+			<xpath>//ul[@class='phone-hidden']/li/a[text()='Media']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="investorRelationsLink">
+		<Properties>
+			<xpath>//ul[@class='phone-hidden']/li/a[text()='Investor Relations']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="socialResponsibilityLink">
+		<Properties>
+			<xpath>//ul[@class='phone-hidden']/li/a[text()='Social Responsibility']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="EmailUsLink">
+		<Properties>
+			<xpath>//ul[@class='footerTopIconList']//a[text()='Email Us']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="qvcAffiliateProgramLink">
+		<Properties>
+			<xpath>//div[@class='footerMenuBox']//a[text()='QVC Affiliate Program']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="becomeAVendorLink">
+		<Properties>
+			<xpath>//ul[@class='phone-hidden']/li/a[text()='Become a Vendor']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="careersLink">
+		<Properties>
+			<xpath>//div[@class='footerMenuBox']//a[text()='Careers']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="footerMyAccountLink">
+		<Properties>
+			<xpath>//*[@class='footerTopLeft']//a[text()='My Account']</xpath>
+			<xpath>//*[@class='module-footer-top']//a[contains(text(),'QVC ACCOUNT')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="customerServiceLink">
+		<Properties>
+			<xpath>//*[@class='footerTopIconList footerIconsMid']//a[text()='Customer Service']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="footerOrderStatusLink">
+		<Properties>
+			<xpath>//a[contains(text(),'ORDER STATUS')]</xpath>
+			<xpath>//*[@class='footerTopIconList']//a[text()='Order Status']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="blogsAndForumsTitle"> 
+        	<properties>   
+          		<id>link</id>          		
+        	</properties> 
+      	</TestObject>
+	<TestObject name="followOurCommunityTitle">
+		<Properties>
+			<xpath>//div[@class='page-title pull-right']</xpath>
+		</Properties>
+	</TestObject>
+</Page>

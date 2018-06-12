@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="HelpGuidePage" include="MastheadMain">
+	
+	<TestObject name="NewCustomerGuideTitle">
+			<Properties>
+				<xpath>//*[@class="p10h"]//*[@class="b14"]</xpath>
+			</Properties>
+	</TestObject>
+	
+	<TestObject name="CellMenu">
+			<Properties>
+				<xpath>//*[@class="CelMenu"]</xpath>
+			</Properties>
+	</TestObject>
+	
+	<TestObject name="PaymentMethodGuideTitle">
+			<Properties>
+				<xpath>//*[@alt="お支払い方法について"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="DeliveryGuideTitle">
+			<Properties>
+				<xpath>//*[@alt="お届けについて"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="ReturnGuideTitle">
+			<Properties>
+				<xpath>//*[@alt="返品について"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="FrequentQuestionTitle">
+			<Properties>
+				<xpath>//*[@src="img/faqbar.gif"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="QueryGuideTitle">
+			<Properties>
+				<xpath>//*[@alt="お問い合わせについて"]</xpath>
+			</Properties>
+	</TestObject>
+	
+</Page>

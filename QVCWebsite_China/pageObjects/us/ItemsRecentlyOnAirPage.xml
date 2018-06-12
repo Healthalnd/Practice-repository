@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ItemsRecentlyOnAirPage" include="MastheadMain">
+	<TestObject name="iROAHeader"> 
+		<properties>   
+			<xpath>//*[@class="active"]/h1</xpath>   
+			<xpath>//*[@id="divPageTitle"]/h1</xpath>         		
+		</properties> 
+     </TestObject>	  
+	 <TestObject name="imageFirstProduct"> 
+		<properties>   
+			<css>.productImg</css>          		
+		</properties> 
+     </TestObject>
+	<TestObject name="shopQVCTVMenu">
+		<Properties>
+			<linkText>Shop QVC TV</linkText>			
+		</Properties>
+	</TestObject>	
+	 <TestObject name="TVMenuTxt"> 
+		<properties>   
+			<xpath>//*[@id='metaFlyoutTV']</xpath>           		
+		</properties> 
+     </TestObject>
+	<TestObject name="ItemOnAirBtn"> 
+		<properties>  
+			<xpath>//*[@data-feature-name="Item on air"]//*[@class="text-center"]/a</xpath>
+			<xpath>//*[@id='metaFlyoutTV']//a[contains(text(), 'Item On Air')]</xpath>         		
+		</properties> 
+	</TestObject>
+	<TestObject name="WatchTVLiveLink"> 
+		<properties>  
+			<xpath>//*[@class="shopTVDropDown"]//a[contains(text(), 'Watch QVC TV')]</xpath>
+			<xpath>//*[@data-feature-name="Watch QVC TV"]//*[@class="text-center"]/a</xpath>
+			<xpath>//*[@id='metaFlyoutTV']//a[contains(text(), 'Watch QVC TV')]</xpath>        		
+		</properties> 
+	 </TestObject>
+	 <TestObject name="ProgramGuideLink"> 
+			<properties>  
+				<xpath>//*[@data-feature-name="Tv guide"]//*[@class="text-center"]/a</xpath>
+				<xpath>//*[@id='metaFlyoutTV']//a[contains(text(), 'Program Guide')]</xpath>         		
+			</properties> 
+	 </TestObject>
+	 <TestObject name="channelList"> 
+			<properties>   
+				<css>.showActive</css>          		
+			</properties> 
+	 </TestObject>
+	 <TestObject name="addToCartBtnFirstProduct"> 
+			<properties>   
+				<xpath>//*[@class='divProduct'][1]//*[@class='primaryButton btnAddToCart']</xpath>         		
+			</properties> 
+	 </TestObject>
+	 <TestObject name="iroaInfo"> 
+			<properties>   
+				<id>divItemsRecentlyOnAirShowInfo</id>
+			</properties> 
+	 </TestObject>
+	 <TestObject name="toolTip"> 
+        	<properties>   
+          		<id>toolTipBottom</id>
+        	</properties> 
+     </TestObject>
+	 <TestObject name="closeToolTip"> 
+        	<properties>   
+				<xpath>//*[@id="toolTipClose"]//*[@class="closeTT"]/img</xpath>
+        	</properties> 
+     </TestObject>
+	 <TestObject name="channelSeletor"> 
+        	<properties>   
+          		<id>divChannelSwitcher</id>
+        	</properties> 
+     </TestObject>
+</Page>

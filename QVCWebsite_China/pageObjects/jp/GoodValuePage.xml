@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="GoodValuePage" include="MastheadMain">
+	
+	
+	<TestObject name="TagTitle">
+			<Properties>
+				<xpath>//*[@alt="本日限り価格"]</xpath>
+			</Properties>
+	</TestObject>
+	
+</Page>

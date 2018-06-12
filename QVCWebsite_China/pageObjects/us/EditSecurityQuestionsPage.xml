@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="EditSecurityQuestionsPage" include="MastheadMain">
+	
+	<TestObject name="securityQuestionList">
+		<Properties>
+			<id>txtSecQuestion1</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="securityAnswerTextbox">
+		<Properties>
+			<id>txtSecAnswer1</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="errMsg">
+		<Properties>
+			<id>errConsole</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="submit">
+		<Properties>
+			<xpath>//*[@class="primaryWrapBtn wrapBtnsubmit"]</xpath>
+		</Properties>
+	</TestObject>	
+</Page>

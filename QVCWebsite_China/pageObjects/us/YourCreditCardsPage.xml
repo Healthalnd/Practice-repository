@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="YourCreditCardsPage" include="MastheadMain">
+	  <TestObject name="addACardbtn"> 
+        	<properties>   
+          		<css>input.primaryButton[value='Add a Card']</css>          		
+        	</properties> 
+      	</TestObject>
+      	 <TestObject name="creditCardList"> 
+        	<properties>   
+          		<id>selNewCardType</id>          		
+        	</properties> 
+      	</TestObject>
+      	 <TestObject name="cardnumbertextbox"> 
+        	<properties>   
+          		<id>txtNewCardNumber</id>          		
+        	</properties> 
+      	</TestObject>
+      	<TestObject name="expirationDateList"> 
+        	<properties>   
+          		<id>selNewCardExpDate</id>          		
+        	</properties> 
+      	</TestObject>
+	 	<TestObject name="submitChangesBtn"> 
+        	<properties>   
+          		<css>input.primaryButton[value='Submit Changes']</css>          		
+        	</properties> 
+      	</TestObject>
+      	<TestObject name="creditCardTable"> 
+        	<properties>   
+          		<id>tblCreditCards</id>          		
+        	</properties> 
+      	</TestObject>
+      	<TestObject name="deleteCC"> 
+	        	<properties>   
+	          		<linkText>Delete</linkText>          		
+	        	</properties> 
+      	</TestObject>
+      	<TestObject name="confirmDelBtn"> 
+	        	<properties>   
+	          		<css>input.primaryButton[value='YES']</css>          		
+        		</properties> 
+        </TestObject>
+		<TestObject name="errMsg"> 
+        	<properties>   
+          		<id>errConsole</id>          		
+        	</properties> 
+		</TestObject>
+		<TestObject name="editCC"> 
+      		<properties>   
+				<xpath>//form [@id="frmCreditCards"]//tr[1]//*[contains(@onclick,"editCC")][1]</xpath>
+			</properties> 
+		</TestObject>
+		<TestObject name="expirationDate"> 
+      		<properties>   
+				<xpath>//*[@id='tblCreditCards']/tbody/tr</xpath>
+			</properties> 
+		</TestObject>
+		<TestObject name="returnToCreditCardLink"> 
+      		<properties>   
+				<linkText>Return to Credit Card</linkText>
+			</properties> 
+		</TestObject>
+		<TestObject name="creditCardsTable"> 
+      		<properties>   
+				<xpath>//div[@class="outline"]</xpath>
+			</properties> 
+		</TestObject>
+		<TestObject name="firstRowCardNumber"> 
+      		<properties>   
+				<xpath>//table[@id="tblCreditCards"]//tr[1]//td[2]</xpath>
+			</properties> 
+		</TestObject>
+</Page>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="Payment" include="MastheadMain">
+	<TestObject name="PaymentMethodHeader" > 
+		<properties>   
+			<id>divPageTitle</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="easyPayOptionsDiv"> 
+		<properties>   
+			<id>divEasyPayOptions</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="onePayRadio"> 
+		<properties>   
+			<id>rb1PaymentsItem_1</id>		
+		</properties> 
+	</TestObject>
+	<TestObject name="CreateCreditCardIFrame"> 
+		<properties>   
+			<id>securepaymentiframe</id>		
+		</properties> 
+	</TestObject>
+	<TestObject name="easyPayRadio"> 
+		<properties>   
+			<id>rb1PaymentsItem_1</id>		
+		</properties>
+	</TestObject>
+	<TestObject name="easyPayRadioList"> 
+		<properties>   
+			<id>rbBillLater</id>		
+		</properties>
+	</TestObject>
+	<TestObject name="oneEZPayment"> 
+		<properties>   
+			<id>rb2PaymentsItem_1</id>	
+			<id>rbPaymentsItem_1</id>	
+		</properties> 
+	</TestObject>
+	<TestObject name="oneEZPayment2"> 
+		<properties>   
+			<id>rb2PaymentsItem_2</id>
+			<id>rb1PaymentsItem_1</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="Check"> 
+		<properties>   
+			<id>rbCheck</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="easyPayDetail"> 
+		<properties>   
+			<xpath>//*[@for='rbPaymentsItem_1']</xpath>			
+		</properties> 
+	</TestObject>
+	<TestObject name="newCardRadio"> 
+		<properties>   
+			<id>rbNewCard</id>		
+		</properties> 
+	</TestObject>
+	<TestObject name="continueCheckoutBtn"> 
+		<properties>   
+			<id>btnSubmitChanges</id>
+			<id>btnSubmit</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="newCardTypeList"> 
+		<properties>   
+			<id>selNewCardType</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="newCardNumWebEdit"> 
+		<properties>   
+			<xpath>//*[@id='cardNumber']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="expirationDateList"> 
+		<properties>   
+			<id>selNewCard</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="expirationMonthList"> 
+		<properties>   
+			<id>expiryMonth</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="expirationYearList"> 
+		<properties>   
+			<id>expiryYear</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="securityCodeWebEdit"> 
+		<properties>   
+			<id>csc</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="paymentTable"> 
+		<properties>   
+			<id>tblNewPaymentMethod</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="securityCodeTextbox"> 
+		<properties>   
+			<xpath>//*[@id='txtSecurityCodeCreditCard1']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="securityCodeTxt"> 
+		<properties>   
+			<css>div#fldSecurityCodeCreditCard1 > label</css>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="homePhoneTxt"> 
+		<properties>   
+			<id>txtPrimaryPhone</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="emailAddressTxt"> 
+		<properties>   
+			<id>txtEmailAddress</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="socialSecurityNumTxt"> 
+		<properties>   
+			<id>txtSsn</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="monthSel"> 
+		<properties>   
+			<id>selDobMonth</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="daySel"> 
+		<properties>   
+			<id>selDobDay</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="yearSel"> 
+		<properties>   
+			<id>selDobYear</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="agreeCheckBox"> 
+		<properties>   
+			<id>cbBillMeLaterElectronicConsent</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="BillMeLaterFrame"> 
+		<properties>   
+			<id>ifBillMeLaterTermsAndConditions</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="bottomTextInFrame"> 
+		<properties>   
+			<xpath>//td[contains(text(),"We will also comply")]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="middleTextInFrame"> 
+		<properties>   
+			<xpath>//h5[contains(text(),"FEES")]</xpath>
+		</properties> 
+	</TestObject>	
+	<TestObject name="notScrollBottomErrMsg"> 
+		<properties>   
+			<id>errScrollBottom</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="notCheckAgreeBoxErrMsg"> 
+		<properties>   
+			<id>errAcceptTerms</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="phoneEmptyErrMsg"> 
+		<properties>   
+			<id>errPrimaryPhone</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="emailEmptyErrMsg"> 
+		<properties>   
+			<id>errEmailAddress</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="SSNEmptyErrMsg"> 
+		<properties>   
+			<id>errSsn</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="dateEmptyErrMsg"> 
+		<properties>   
+			<id>errDateOfBirth</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="qvcHomeLogo"> 
+		<properties>   
+			<css>img[alt="QVC Logo"]</css>
+		</properties> 
+	</TestObject>
+	<TestObject name="anyCreditCard"> 
+		<properties>   
+			<xpath>//*/tr[contains(@id, 'CreditCard') ]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="checkPayMethod">
+	     <properties>
+	         <xpath>//td[contains(.,'Check')]</xpath>
+	     </properties>
+	</TestObject>
+		<TestObject name="payPalRadio"> 
+		<properties>   
+			<id>rbBillLater</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="giftCardChkBox"> 
+		<properties>   
+			<id>cbGiftCard</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="qCardRadio"> 
+		<properties>   
+			<id>rbQCard</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="GigtCardString"> 
+		<properties>   
+			<xpath>//*[contains(text(),"Please note that any remaining balance on redeemed gift cards will be applied to your QVC account. In order to access this account and apply your unused balance on future orders, you'll need to sign in with your password")]</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="LearnMoreAboutGIftCardString"> 
+		<properties>   
+			<xpath>//*[contains(text(),"If your Gift Card does not cover your total purchase, the outstanding balance due will be charged to the credit card you selected above.")]</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="txtQvcGiftCardNumber"> 
+		<properties>   
+			<id>txtQvcGiftCardNumber</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="txtQvcGiftCardSecurityIdNumber"> 
+		<properties>   
+			<id>txtQvcGiftCardSecurityIdNumber</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="addACardBtn"> 
+		<properties>   
+			<xpath>//*[@value='Add a card']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="continueBtn"> 
+		<properties>   
+			<id>btnSubmitChanges</id>
+			<id>btnSubmit</id>
+		</properties> 
+	</TestObject>
+
+	<TestObject name="errMsgCCExpired"> 
+		<properties>   
+			<id>errConsole</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="firstPaymentMethodRadio"> 
+		<properties>   
+			<xpath>//*[@id='trCreditCardCard_1-1']//*[@type='radio']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstPaymentMethodText"> 
+		<properties>   
+			<xpath>//*[@id='trCreditCardCard_1-1']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="secondPaymentMethodRadio"> 
+		<properties>   
+			<xpath>//*[@id='trCreditCardCard_2-1']//*[@type='radio']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="secondPmCardName"> 
+		<properties>   
+			<xpath>//*[@id='trCreditCardCard_2-1']//*[@class='rbLabel']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="secondPmCardNum"> 
+		<properties>   
+			<xpath>//*[@id='trCreditCardCard_2-1']//td[2]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="secondPmExpireDate"> 
+		<properties>   
+			<xpath>//*[@id='trCreditCardCard_2-1']//td[3]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstCardNumber"> 
+		<properties>   
+			<xpath>//*[@id='trCreditCardCard_1-1']/td[2]</xpath>
+		</properties> 
+	</TestObject>
+	
+</Page>

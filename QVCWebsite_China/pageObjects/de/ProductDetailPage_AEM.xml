@@ -1,0 +1,1570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ProductDetailPage" include="MastheadMain">
+	<TestObject name="productDetailHeader">
+		<Properties>
+			<xpath>//*[@class="breadcrumb pageBreadcrumb"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productNumbertxt">
+		<Properties>
+			<xpath>//*[@class='itemNo']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productTitleText">
+		<Properties>
+			<xpath>//*[@class='pdShortDesc']//h1</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productQtyInputBox">
+		<Properties>
+			<css>.productQuantity</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="productQtyField">
+		<Properties>
+			<class>buyBoxQuantity</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="productQtyPopMsg">
+		<Properties>
+			<xpath>//*[@class="buyBoxSelect buyBoxQuantity"]//*[@class="popover fade top in"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="addToCartbtn">
+		<Properties>
+			<class>btn btn-tall btn-primary btnAddToCart</class>
+			<class>btnAddToCart</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="speedBuyBtn">
+		<Properties>
+			<class>btn btn-tall btn-primary btnSpeedBuy</class>
+			<xpath>//*[@class="btn btn-tall btn-primary btnSpeedBuy"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="addToWishListBtn">
+		<Properties>
+			<class>btnAddToWishList</class>
+			<class>btn btn-tertiary btnAddToWishList</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="SHPrice">
+		<Properties>
+			<xpath>//*[@class="shPrice freeSH"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="priceInfo">
+		<Properties>
+			<xpath>//*[@class="pricingTable"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="QCardInfo">
+		<Properties>
+			<xpath>//*[@id="pdQcardEasyPay"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="deliveryDateEstimateInfo">
+		<Properties>
+			<xpath>//*[@id="pdEDD_Wrapper"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="SpecialPriceText">
+		<Properties>
+			<xpath>//*[@class="col-tn-12 col-xs-6 colSpecialPrice"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="tsvBadge">
+		<Properties>
+			<xpath>//*[@class="tsvBadge badgeRight"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="TSVInfoIcon">
+		<Properties>
+			<xpath>//*[@class="col-tn-12 col-xs-6 colSpecialPrice"]//*[@class="infoIcon fancybox fancybox.ajax"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="buyMoreSaveMoveText">
+		<Properties>
+			<xpath>//*[@class="col-tn-12 col-xs-6 buyBoxQuantityInfo"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="buyMoreSaveMoveOfferLink">
+		<Properties>
+			<xpath>//*[@class="col-tn-12 col-xs-6 buyBoxQuantityInfo"]//*[@class="arrow fancybox fancybox.ajax"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="popupPhoto">
+		<Properties>
+			<xpath>//*[@class="fancybox-outer"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="popupText">
+		<Properties>
+			<xpath>//*[@class="rich-text-editor parbase section text"]</xpath>
+			<xpath>//*[contains(@class,"rich-text-editor")]</xpath>
+			<xpath>//*[@class="fancybox-skin"]//*[contains(@class,"rich-text-editor")]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="popupTextTitle">
+		<Properties>
+			<xpath>//*[contains(@class,"rich-text-editor")]//h1</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="popupTextContent">
+		<Properties>
+			<xpath>//*[contains(@class,"rich-text-editor")]//ul</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="popupClose">
+		<Properties>
+			<xpath>//*[@class="fancybox-item fancybox-close"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="colorText">
+		<Properties>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectColor"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="sizeText">
+		<Properties>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectSize"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="enlargeImg">
+		<Properties>
+			<xpath>//*[@class="enlarge"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstAvailableColor">
+		<Properties>
+			<xpath>//*[@class="selectColor" and @ats="Y"][1]</xpath>
+			<xpath>//*[@ats="Y"][1]/*[@class="swatchBox selectColor"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstAOAvailableColor">
+		<Properties>			
+			<xpath>//*[@ats="A"][1]/*[@class="swatchBox selectColor"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstSelectedColorOption">
+		<Properties>
+			<xpath>//*[@class="selectOption" and @state="selected"][1]</xpath>
+			<xpath>//*[@class="buyBoxColorList"]//*[@state="selected"]//*[contains(@class,"selectOption")]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstSelectedColor">
+		<Properties>
+			<xpath>//*[@class="selectColor" and @state="selected"][1]</xpath>
+			<xpath>//*[@class="buyBoxColorList"]//*[@state="selected"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstSelectedSize">
+		<Properties>
+			<xpath>//*[@class="selectSize" and @state="selected"][1]</xpath>
+			<xpath>//*[@class="buyBoxSizeList"]//*[@state="selected"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstAvailableColorOption">
+		<Properties>
+			<xpath>//*[@ats="Y"]//*[@class="swatchBox selectOption"][1]</xpath>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@class="swatchBox selectOption"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstAvailableSize">
+		<Properties>
+			<xpath>//*[@class="selectSize" and @ats="Y"][1]</xpath>
+			<xpath>//*[@ats="Y"][1]/*[@class="swatchBox selectSize"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstAOAvailableColorOption">
+		<Properties>
+			<xpath>//*[@ats="A"]//*[@class="swatchBox selectOption"][1]</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstAOAvailableSize">
+		<Properties>
+			<xpath>//*[@ats="A"][1]/*[@class="swatchBox selectSize"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstSoldOutSize">
+		<Properties>
+			<xpath>//*[@class="selectSize" and @ats="N"][1]</xpath>
+			<xpath>//*[@ats="N"][1]/*[@class="swatchBox selectSize"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstSoldOutColor">
+		<Properties>
+			<xpath>//*[@class="selectColor" and @ats="N"][1]</xpath>
+			<xpath>//*[@ats="N"][1]/*[@class="swatchBox selectColor"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstSoldOutColorOption">
+		<Properties>
+			<xpath>//*[@class="selectOption" and @ats="N"][1]</xpath>
+			<xpath>//*[@ats="N"][1]/*[@class="swatchBox selectOption"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstWaitListSize">
+		<Properties>
+			<xpath>//*[@class="selectSize" and @ats="W"][1]</xpath>
+			<xpath>//*[@ats="W"][1]/*[@class="swatchBox selectSize"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstWaitListColor">
+		<Properties>
+			<xpath>//*[@class="selectColor" and @ats="W"][1]</xpath>
+			<xpath>//*[@class="selectOption" and @ats="W"][1]</xpath>
+			<xpath>//*[@ats="W"][1]/*[@class="swatchBox selectColor"]</xpath>
+			<xpath>//*[@ats="W"][1]/*[@class="swatchBox selectOption"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="selectedColorName">
+		<Properties>
+			<xpath>//*[@class="selectedColor"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstWaitListColorOption">
+		<Properties>
+			<xpath>//*[@class="selectOption" and @ats="W"][1]</xpath>
+			<xpath>//*[@ats="W"][1]/*[@class="swatchBox selectOption"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstAvailableAOColorOption">
+		<Properties>
+			<xpath>//*[@class="selectOption" and @ats="A"][1]</xpath>
+			<xpath>//*[@ats="A"][1]/*[@class="swatchBox selectOption"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstAvailableAOColor">
+		<Properties>
+			<xpath>//*[@class="selectColor" and @ats="A"][1]</xpath>
+			<xpath>//*[@ats="A"][1]/*[@class="swatchBox selectColor"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstAvailableAOSize">
+		<Properties>
+			<xpath>//*[@class="selectSize" and @ats="A"][1]</xpath>
+			<xpath>//*[@ats="A"][1]/*[@class="swatchBox selectSize"]</xpath>
+			<xpath>//*[@ats="Y"][1]/*[@class="swatchBox selectSize"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="hoverOverTitle">
+		<Properties>
+			<xpath>//*[@class="popover-title"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="hoverOverText">
+		<Properties>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectSize"]//*[@class="popover fade top in"][1]//*[@class="popover-content"]</xpath>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@class="popover fade top in"][1]//*[@class="popover-content"]</xpath>
+			<xpath>//*[@class="popover fade top in"][1]//*[@class="popover-content"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="soldOutSelected">
+		<Properties>
+			<xpath>//*[@class="status soldOut"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="allSoldOutStatus">
+		<Properties>
+			<xpath>//*[@class="status allSoldOut"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="AdvanceOrderStatusLabel">
+		<Properties>
+			<xpath>//*[@class="status advancedOrder"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="inStockedSelected">
+		<Properties>
+			<xpath>//*[@class="status instock"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="waitListSelected">
+		<Properties>
+			<xpath>//*[@class="status waitlist"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="waitListStatus">
+		<Properties>
+			<xpath>//*[@class="status waitlist"]//a</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="errMsgWithoutSelectColor">
+		<Properties>
+			<xpath>//*[@class="err errSelectColor"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="errMsgWithoutSelectSize">
+		<Properties>
+			<xpath>//*[@class="err errSelectSize"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="inactiveQTYMinusSign">
+		<Properties>
+			<xpath>//*[@class="stepDown" and @state="inactive"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="activeQTYMinusSign">
+		<Properties>
+			<xpath>//*[@class="stepDown" and @state="active"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="activeQTYPlusSign">
+		<Properties>
+			<xpath>//*[@class="stepUp" and @state="active"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="inactiveQTYPlusSign">
+		<Properties>
+			<xpath>//*[@class="stepUp" and @state="inactive"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="tweetIconImag">
+		<Properties>
+			<xpath>//*[@class='shareBtnContainer']//*[@class='twitter-share-button btnExtSocials']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="emailFriendIcon">
+		<Properties>
+			<xpath>//*[@class='shareBtnContainer']/*[contains(text(),'Email')]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="emailFriendFancyBox">
+		<Properties>
+			<xpath>//*[contains(@class,'email-a-friend')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="emailFriendFancyBoxTitle">
+		<Properties>
+			<xpath>//*[.='Produkt weiterempfehlen']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="tweetPageHeaderTxt">
+		<Properties>
+			<xpath>//*[@id='bd']/h2</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="DeliveryOptionLabel">
+		<Properties>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectDelivery"]/label</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="DeliveryOptionTooltip">
+		<Properties>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectDelivery"]//*[@class="infoIcon fancybox fancybox.ajax"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="SingleShipmentOption">
+		<Properties>
+			<xpath>//*[@class="deliveryOption individualPurchase"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="AutoDeliveryOption">
+		<Properties>
+			<xpath>//*[@class="deliveryOption adPurchase"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="AutoDeliverySelectedOption">
+		<Properties>
+			<xpath>//*[@class="deliveryOption adPurchase" and @state="selected"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="itemOnAirHeader">
+		<Properties>
+			<xpath>//*[@class='itemOnAir']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="itemOnAirBadge">
+		<Properties>
+			<xpath>//*[@class='col-tn-4 col-xs-2']//*[@class="prodBadge"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="qvcLiveUnSelectedChannelLink">
+		<Properties>
+			<xpath>//*[@title='QVC']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="qvcLiveSelectedChannelLink">
+		<Properties>
+			<xpath>//*[@title='QVC' and @class='btn btn-default selectedChannel']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="qvcPlusUnSelectedChannelLink">
+		<Properties>
+			<xpath>//*[@title='QVC2']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="qvcPlusSelectedChannelLink">
+		<Properties>
+			<xpath>//*[@title='QVC2' and @class='btn btn-default selectedChannel']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="QVCBeautyAndStyleSelectedLink">
+		<Properties>
+			<xpath>//*[@title='QVC STYLE' and @class='btn btn-default selectedChannel']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="QVCBeautyAndStyleUnSelectedLink">
+		<Properties>
+			<xpath>//*[@title='QVC STYLE']</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="qVCSpecialRegularPrice">
+		<Properties>
+			<xpath>//*[@class="price"]</xpath>
+			<xpath>//*[@class="price priceSm"]</xpath>
+			<xpath>//*[@class="price priceMd"]</xpath>
+			<xpath>//*[@class="productDetailPrice  price"]</xpath>	
+			<xpath>//*[contains(@class,"productDetailPrice")]</xpath>
+		</Properties>
+	</TestObject>	
+	
+	<TestObject name="printLink">
+		<Properties>
+			<xpath>//*[@class="col-tn-12 col-sm-8 hidden-tn pdPrintLink"]/a</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="EmailLink">
+		<Properties>
+			<class>btnEMailAFriend</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="EmailToFriendFrame">
+		<Properties>
+			<xpath>//*[contains(@id,'fancybox-frame')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="RecipientEmailLbl">
+		<Properties>
+			<id>lblRecipientEmail</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="easyPayDescText">
+		<Properties>
+			<xpath>//*[@class="easyPayDesc"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="easyPayOfferDetailsLinks">
+		<Properties>
+			<xpath>//*[@class='col-tn-12 easyPayDetails']/a</xpath>
+			<xpath>//*[@class="col-tn-12 col-lg-4 easyPayDetails"]//*[@class="arrow fancybox fancybox.ajax"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="promotionalField">
+		<Properties>
+			<xpath>//*[@class="buyBoxPromotion"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="promotionalTitle">
+		<Properties>
+			<xpath>//*[@class="buyBoxPromotion"]//h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="promotionalToolTip">
+		<Properties>
+			<xpath>//*[@class="buyBoxPromotion"]//*[@class="infoIcon"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="promotionalQcardLink">
+		<Properties>
+			<xpath>//*[@class="buyBoxPromotion"]//*[@class="pdQcardLink"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="AdjustFontSizeText">
+		<Properties>
+			<xpath>//*[@class="adjustFontSize"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="increaseSizeButtonRed">
+		<Properties>
+			<xpath>//*[@class="increaseSize"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="increaseSizeButtonGrey">
+		<Properties>
+			<xpath>//*[@class="increaseSize disabled"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="decreaseSizeButtonRed">
+		<Properties>
+			<xpath>//*[@class="decreaseSize"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="decreaseSizeButtonGrey">
+		<Properties>
+			<xpath>//*[@class="decreaseSize disabled"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="accordionTextSize_19px">
+		<Properties>
+			<xpath>//*[@class="accordionText" and @style="font-size: 19px;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="accordionTextSize_17px">
+		<Properties>
+			<xpath>//*[@class="accordionText" and @style="font-size: 17px;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="accordionTextSize_15px">
+		<Properties>
+			<xpath>//*[@class="accordionText" and @style="font-size: 15px;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="accordionTextSize_13px">
+		<Properties>
+			<xpath>//*[@class="accordionText" and @style="font-size: 13px;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="accordionTextSize_11px">
+		<Properties>
+			<xpath>//*[@class="accordionText" and @style="font-size: 11px;"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="quantityLabel">
+		<Properties>
+			<xpath>//*[@class='col-tn-6']//label[@class='aboveLabel' ]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="LongDescriptionField">
+		<Properties>
+			<xpath>//*[@class='accordion accLongDesc accordion_expanded']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="LongDescriptionTitle">
+		<Properties>
+			<xpath>//*[@class='accordion accLongDesc accordion_expanded']//a[@class='accordionTitle']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="LongDescriptionTitle_expand">
+		<Properties>
+			<xpath>//*[@class='accordion accLongDesc accordion_expanded']//a[@class='accordionTitle']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="LongDescriptionTitle_collapsed">
+		<Properties>
+			<xpath>//*[@class='accordion accLongDesc accordion_collapsed']//a[@class='accordionTitle']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="LongDescriptionContent">
+		<Properties>
+			<xpath>//*[@class='accordion accLongDesc accordion_expanded']//div[@class='accordionBox']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FashionGlossaryTitle_expand">
+		<Properties>
+			<xpath>//*[@class='accordion accMoreInfo accordion_expanded']//a[@class='accordionTitle']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FashionGlossaryTitle_collapsed">
+		<Properties>
+			<xpath>//*[@class='accordion accMoreInfo accordion_collapsed'][1]//a[@class='accordionTitle']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FashionGlossaryText">
+		<Properties>
+			<xpath>//*[@class='accordion accMoreInfo accordion_expanded']//*[@class='accordionTextbox']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="SingleAccordionTitle">
+		<Properties>
+			<xpath>//*[@class='accordionTitle singleAccordion']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="SingleAccordionText">
+		<Properties>
+			<xpath>//*[@class='accordionTextbox']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="LongDescriptionReadMoreLink">
+		<Properties>
+			<xpath>//*[@class='accordion accLongDesc accordion_preview']//*[@class='togglePreview']/a</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="LongDescriptionReadLessLink">
+		<Properties>
+			<xpath>//*[@class='accordion accLongDesc accordion_expanded']//*[@class='togglePreview']/a[@class='less']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="reviewsSortSelector">
+		<Properties>
+			<xpath>//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="reviewStarsImag">
+		<Properties>
+			<xpath>//*[@class='BVRROverallRatingContainer col-tn-6']//div[@class='BVRRRatingNormalImage']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="reviewsCountLabel">
+		<Properties>
+			<xpath>//*[@class='BVRROverallRatingContainer col-tn-6']//span[@class='BVRRNumber BVRRRatingNumber']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="SizeGuideLink">
+		<Properties>
+			<xpath>//*[@class='fancybox fancybox.ajax selectLink']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="SizeGuidePopUp">
+		<Properties>
+			<xpath>//*[@class='fancybox-outer']//*[@class='jspPane']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="watchQVCTVHeader">
+		<Properties>
+			<xpath>//*[@class='fn']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="watchQVCTVSeletor">
+		<Properties>
+			<id>selChannel</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="onQChannelMsgTxt">
+		<Properties>
+			<id>divChannelText</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="tvAddToCartBtn">
+		<Properties>
+			<xpath>//*[@class='primaryButton btnAddToCart']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="tvSpeedBuyBtn">
+		<Properties>
+			<xpath>//*[@class='primaryButton btnSpeedBuy']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="reviewsHeaderTxt">
+		<Properties>
+			<xpath>//*[@class='row qModule headerText']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="reviewsSummaryContainer">
+		<Properties>
+			<xpath>//*[@id='reviewsContainer']//*[@id='BVRRSecondarySummaryContainer']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="writeAReviewBtn">
+		<Properties>
+			<xpath>//*[@id='BVRRContentContainerID']//*[@class='btn btn-primary btnPrimary btnWriteReview']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="askAQuestionBtn">
+		<Properties>
+			<xpath>//*[@id='BVRRContentContainerID']//*[@class='btn btn-secondary btnAskQuestion']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="SelectedColorText">
+		<Properties>
+			<xpath>//*[@class="selectedColor"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="SelectedSizeText">
+		<Properties>
+			<xpath>//*[@class="selectedSize"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="SelectedSizeText2">
+		<Properties>
+			<xpath>//*[@class="selectedSize"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="easyPayCheckbox">
+		<Properties>
+			<xpath>//*[@class='cbLabel easyPayDesc']/input[@type='checkbox']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="yes_Btn">
+		<Properties>
+			<xpath>//*[@class='primaryButton']</xpath>
+			<xpath>//*[@class="btn btn-primary btnSave"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="qvcPrice">
+		<Properties>
+			<xpath>//*[@class="qvcPrice"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="qVCRegularPrice">
+		<Properties>
+			<xpath>//*[@class="price"]</xpath>
+			<xpath>//*[@class="price priceSm"]</xpath>
+			<xpath>//*[@class="productDetailPrice  price"]</xpath>
+			<xpath>//*[@class="price priceMd"]</xpath>
+			<xpath>//*[contains(@class,"productDetailPrice")][1]</xpath>
+			<xpath>//*[@class="price priceSm priceRange"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="strikeoutPrice">
+		<Properties>
+			<xpath>//*[@class="qvcPrice"]//*[@class="price strikeout"]</xpath>
+			<xpath>//*[@class="qvcPrice"]//*[@class="price priceMd strikeout"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="basePrice">
+		<Properties>
+			<xpath>//*[@class="basePrice"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="specialPriceTitle">
+		<Properties>
+			<xpath>//*[@class="featuredPrice"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="specialPrice">
+		<Properties>
+			<xpath>//*[@class="featuredPrice"]//*[contains(@class,"productDetailPrice  price")]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="pdfFirstAttachFileLink">
+		<Properties>
+			<xpath>//*[@class="accordionFileList"]//li[1]/a</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="pdfPageContent">
+		<Properties>
+			<xpath>//*[@class="pdfViewer"]</xpath>
+			<id>pageContainer1</id>
+			<xpath>//*[@type="application/pdf"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="sizeIsSelected">
+		<Properties>
+			<xpath>//*[@class="selectSize" and @state="selected"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="onlyOneColorSelected">
+		<Properties>
+			<xpath>//*[@class="buyBoxColorList"]//*[@state="selected"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="viewAllQAndALink">
+		<Properties>
+			<xpath>//div[@id='BVQAMainID']//div[@id='BVQAPageTabBrowseID']//a[@class='BVQAPageTabLink']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstAnswerBtnOfViewAllQAndA">
+		<Properties>
+			<xpath>//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class="btn btn-secondary btnAnswerQuestion"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstQuestionTitleOfViewAllQAndALink">
+		<Properties>
+			<xpath>//div[contains(@id,"BVQAQuestionAndAnswers")][1]//h1[@class='BVQAQuestionSummary']/a</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="askerOfFirstQuestionOfViewAllQAndA">
+		<Properties>
+			<xpath>//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class="BVQAContent BVQAQuestion"]//div[@class='BVQANickname']//a</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstQuestionDetailOfViewAllQAndA">
+		<Properties>
+			<xpath>//div[contains(@id,"BVQAQuestionAndAnswers")][1]//div[@class='BVQAContentText BVQAQuestionDetails']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="toolbarOfTabViewAllQAndA">
+		<Properties>
+			<xpath>//div[@id='BVQAViewQuestionsContentID']//div[@id='BVQAToolbarID']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstReportAsInappropriateOfViewAllQAndABtn">
+		<Properties>
+			<xpath>//div[contains(@id,"BVQAQuestionAndAnswers")][1]//a[contains(@name,'Inappropriate')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="answerThisQuestionTitle">
+		<Properties>
+			<xpath>//div[@id='BVQAMainID']//div[@id='BVQAAnswerEditFormTitleID']/span</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="questionTitleOfAnswerThisQuestion">
+		<Properties>
+			<xpath>//div[@id='BVQAQuestionOverallSummaryID']//h1[@class='BVQAQuestionSummary']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="askerOfAnswerThisQuestion">
+		<Properties>
+			<xpath>//div[@id='BVQAQuestionOverallSummaryID']//div[@class='BVQANickname']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="questionDetailOfAnswerThisQuestion">
+		<Properties>
+			<xpath>//div[@id='BVQAQuestionOverallSummaryID']//div[@class='BVQAContentText BVQAQuestionDetails']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="nameOfYourAnswerTextBox">
+		<Properties>
+			<xpath>//div[@id='BVQAAnswerAnswerTextFieldID']//div[@class='BVQAFieldHeader']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="textBoxOfYourAnswer">
+		<Properties>
+			<xpath>//div[@id='BVQAAnswerAnswerTextFieldID']//textarea[@id='BVQAFieldTextAreaAnswerTextID']</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="beTheFistToAskAQuestionLink">
+		<Properties>
+			<xpath>//*[@id="BVQASummaryBoxAskFirstQuestionID"]/a</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="askQuestionLink">
+		<Properties>
+			<xpath>//*[@id='BVQAAskQuestionID']/a</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="communityQandASection">
+		<Properties>
+			<id>pdCommunityQA</id>
+		</Properties>
+	</TestObject>	
+	<TestObject name="videoField">
+		<Properties>
+			<xpath>//div[@class="productVideo"]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="videoPlayer">
+		<Properties>
+			<xpath>//div[@class="productVideo"]//video</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="videoControlBar">
+		<Properties>
+			<xpath>//div[@class="vjs-control-bar"]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="autoPlayVideoChkBox">
+		<Properties>
+			<xpath>//div[contains(@class,'videoCheckAutoPlay')]/label[contains(@class,'active')]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="unAutoPlayVideoChkBox">
+		<Properties>
+			<xpath>//div[contains(@class,'videoCheckAutoPlay')]/label[not(contains(@class,'active'))]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="playVideoBtn">
+		<Properties>
+			<xpath>//button[@title="Wiedergabe"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="pauseVideoBtn">
+		<Properties>
+			<xpath>//button[@title="Anhalten"]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="muteBtn">
+		<Properties>
+			<xpath>//div[@title='Ton aus']</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="unmuteBtn">
+		<Properties>
+			<xpath>//div[@title='Ton ein']</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="fullScreenBtn">
+		<Properties>
+			<xpath>//button[@title="Vollbild"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="unFullScreenBtn">
+		<Properties>
+			<xpath>//button[@title="Kein Vollbild"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="resumeBtn">
+		<Properties>
+			<xpath>//button[@title="Fortsetzen"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="backToVideoLink">
+		<Properties>
+			<xpath>//a[.='Zurück zum Video']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstBonusVideo">
+		<Properties>
+			<xpath>//div[@class='video'][1]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="firstBonusVideoSelected">
+		<Properties>
+			<xpath>//div[@class='video' and @state="selected"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productRatingNumberText">
+		<Properties>
+			<xpath>//*[@id='BVRRRatingSummaryLinkReadID']//*[@class='BVRRNumber'][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="askQuestionBtn_ReviewBar">
+		<Properties>
+			<xpath>//*[@class='reviewsSummaryBar']//a[contains(@class,'btnAskQuestion')]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="productRatingImage">
+		<Properties>
+			<xpath>//*[@id='reviewsSummary']//*[@class='BVRROverallRatingContainer']//img</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="energyGuideImg">
+		<Properties>
+			<xpath>//a[@class="energyLabel fancybox"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="energyImg">
+		<Properties>
+			<xpath>//*[@class="fancybox-image"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="closeBtn">
+		<Properties>
+			<xpath>//*[@class="fancybox-item fancybox-close"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="energyGuideLink">
+		<Properties>
+			<xpath>//a[@class="energyFileLink"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="energyPDF">
+		<Properties>
+			<xpath>//*[contains(@src,"Datenblatt.pdf")]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="lexikonLongDescription">
+		<Properties>
+			<xpath>//*[@class="accordion accMoreInfo accordion_collapsed"]//*[@class="accordionTitle" and text()="Lexikon"]</xpath>		
+		</Properties>
+	</TestObject>	
+	<TestObject name="lexikonLongDescriptionTitle">
+		<Properties>
+			<xpath>//*[@class="moreInfoTabWrapper beautyLex"]/h4</xpath>
+			<xpath>//*[@class="moreInfoTabWrapper"]/h4</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="lexikonLongDescriptionExpand">
+		<Properties>
+			<xpath>//*[@class="accordion accMoreInfo accordion_expanded" and @data-initstate="collapsed"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="lexikonLongDescriptionContent">
+		<Properties>
+			<xpath>//*[contains(@class,"accordionBox")]//*[@class="accordionText"]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="CollapsedLongDescription">
+		<Properties>
+			<xpath>//*[contains(@class,"accordion_collapsed")]//*[@class="accordionTitle" and text()="&lt;LongDescriptionTitle&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="ExpandLongDescription">
+		<Properties>
+			<xpath>//*[contains(@class,"accordion_expanded")]//*[@class="accordionTitle" and text()="&lt;LongDescriptionTitle&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="SpecialFeatureLongDescription">
+		<Properties>
+			<xpath>//*[@class="accordion accMoreInfo accordion_collapsed"]//*[@class="accordionTitle" and text()="Die Marke"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="SpecialFeatureLongDescriptionExpand">
+		<Properties>
+			<xpath>//*[contains(@class,"accMoreInfo")]//*[@style="display: block;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="SpecialFeatureLongDescriptionTitle">
+		<Properties>
+			<xpath>//*[@class="tab-ipim"]/h2</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="SpecialFeatureLongDescriptionText">
+		<Properties>
+			<xpath>//*[@class="accordion accMoreInfo accordion_expanded"]//*[@class="accordionTextbox"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productPhoto">
+		<Properties>
+			<id>s7Flyout</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="channelName">
+		<Properties>
+			<xpath>//*[contains(@class,"btn btn-default") and @title="&lt;ChannelName&gt;"]</xpath> 
+		</Properties>
+	</TestObject>
+	<TestObject name="selectChannelName">
+		<Properties>
+			<xpath>//*[@class="btn btn-default selectedChannel" and @title="&lt;ChannelName&gt;"]</xpath> 
+		</Properties>
+	</TestObject>
+	<TestObject name="PageTitle">
+		<Properties>
+			<id>lastBCNode</id>
+			<id>divPageTitle</id>	
+			<xpath>//*[@class="overlayHeader"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productDesc">
+		<Properties>
+			<xpath>//*[@id="divProductDetailsWrapper"]/h1[@class="fn"]</xpath>
+			<xpath>//*[@class="pdShortDesc"]//h1</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="firstReviewTitle">
+		<Properties>
+			<xpath>//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="reviewsSortAndPageNav">
+		<Properties>
+			<xpath>//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="reviewsSortSelectorInTop">
+		<Properties>
+			<xpath>//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id="BVRRDisplayContentSelectBVFrameID"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="reviewsSortSelectorInBottom">
+		<Properties>
+			<xpath>//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][2]//select[@id="BVRRDisplayContentSelectBVFrameID"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="reviewPageNextInTop">
+		<Properties>
+			<xpath>//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentFooterID"][1]//*[@class="BVRRPageLink BVRRNextPage"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="reviewPageNextInBottom">
+		<Properties>
+			<xpath>//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentFooterID"][2]//*[@class="BVRRPageLink BVRRNextPage"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="reviewPagePreviousInTop">
+		<Properties>
+			<xpath>//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentFooterID"][1]//*[@class="BVRRPageLink BVRRPreviousPage"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="reviewPagePreviousInBottom">
+		<Properties>
+			<xpath>//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentFooterID"][2]//*[@class="BVRRPageLink BVRRPreviousPage"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="reviewPageNavSecondPageInTop">
+		<Properties>
+			<xpath>//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentFooterID"][1]//*[@class="BVRRPageLink BVRRPageNumber"]/a[@title="2"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="reviewPageNavSecondPageInBottom">
+		<Properties>
+			<xpath>//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentFooterID"][2]//*[@class="BVRRPageLink BVRRPageNumber"]/a[@title="2"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="reviewPageNavSelectdPageInTop">
+		<Properties>
+			<xpath>//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentFooterID"][1]//*[@class="BVRRPageLink BVRRPageNumber BVRRSelectedPageNumber"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="reviewPageNavSelectdPageInBottom">
+		<Properties>
+			<xpath>//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentFooterID"][2]//*[@class="BVRRPageLink BVRRPageNumber BVRRSelectedPageNumber"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="zoomOutImage">
+		<Properties>
+			<xpath>//div[@class='s7highlight']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="shareThisProductArea">
+		<Properties>
+			<xpath>//*[@id='pageContent']//*[@class="col-tn-12 col-md-6 socialShare"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="pinterestBtn">
+		<Properties>
+			<xpath>//*[@data-pin-log="button_pinit"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="signUpForPinterestTitle">
+		<Properties>
+			<xpath>//div[text()='Welcome to Pinterest']</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="qPayCheckbox">
+		<Properties>
+			<xpath>//*[@class="cbLabel easyPayDesc"]</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="selectedQPayCheckbox">
+		<Properties>
+			<xpath>//*[@class="easyPayDesc"]</xpath>
+			<xpath>//*[@class="cbLabel easyPayDesc active"]/*[@class="cb QPayOpt" and @type="checkbox"]</xpath>	
+			<xpath>//*[@class="cb QPayOpt"]</xpath>				
+		</Properties>
+	</TestObject>
+	<TestObject name="relatedCarouselTitle">
+		<Properties>
+            <xpath>//*[contains(@id,'product_carousel')]//*[.='Kunden kauften auch' or .='Wir empfehlen Ihnen' or .="Mehr aus dieser Kategorie"]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="firstRelatedCarouselItem">
+		<Properties>
+			<xpath>//*[contains(@class, 'relatedItemsCarousel')]//div[contains(@class,'carouselItem')][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstRelatedCarouseItemImg">
+		<Properties>
+			<xpath>//*[contains(@class, 'relatedItemsCarousel')]//div[contains(@class,'carouselItem')][1]//*[contains(@class,'productImg')]//img</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstRelatedCarouseItemLink">
+		<Properties>
+			<xpath>//*[contains(@class, 'relatedItemsCarousel')]//div[contains(@class,'carouselItem')][1]//*[@class="productDesc"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstRelatedCarouseItemTitle">
+		<Properties>
+			<xpath>//*[contains(@class, 'relatedItemsCarousel')]//div[contains(@class,'carouselItem')][1]//*[@class="productTitle"]</xpath>
+		</Properties>
+	</TestObject>		
+	<TestObject name="firstRelatedCarouseItemDesc">
+		<Properties>
+			<xpath>//*[contains(@class, 'relatedItemsCarousel')]//div[contains(@class,'carouselItem')][1]//*[@class="productDesc"]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="firstRelatedCarouseItemPrice">
+		<Properties>
+			<xpath>//*[contains(@class, 'relatedItemsCarousel')]//div[contains(@class,'carouselItem')][1]//*[@class="productPrice"]</xpath>
+			<xpath>//*[contains(@class, 'relatedItemsCarousel')]//div[contains(@class,'carouselItem')][1]//*[contains(@class,'productPrice')]</xpath>
+		</Properties>
+	</TestObject>		
+	<TestObject name="relatedCarouseItemRating">
+		<Properties>
+			<xpath>//*[contains(@class, 'relatedItemsCarousel')]//div[@class="productRatings"]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="rightArrow">
+		<Properties>
+			<xpath>//div[contains(@class, 'carArrow right')]/a</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="leftArrow">
+		<Properties>
+			<xpath>//div[contains(@class, 'carArrow left')]/a</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="reviewStarsValue">
+		<Properties>			
+			<xpath>(//*[@class='BVRRRating BVRRRatingNormal BVRRRatingOverall']//span[@class='BVRRNumber BVRRRatingNumber'])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="reviewStars">
+		<Properties>			
+			<xpath>//*[@class='BVRRRating BVRRRatingNormal BVRRRatingOverall']//*[@class='BVRRRatingNormalImage']</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="AODescription">
+		<Properties>
+			<xpath>//*[@class="status advancedOrder"]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="groupItem">
+		<Properties>
+			<css>.groupChild</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="shopNow">
+		<Properties>
+			<css>.groupShopNow</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="tsvText">
+		<Properties>
+			<css>.tsvBadge</css>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="shareThisProductArea">
+		<Properties>
+			<xpath>//*[@id='pageContent']//*[@class="col-tn-12 col-md-6 socialShare"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="emailBtn">
+		<Properties>
+			<class>btnEMailAFriend fancybox fancybox.iframe</class>
+			<xpath>//*[@class="btnEMailAFriend fancybox fancybox.iframe"]</xpath>
+			<xpath>//*[@class="btnEMailAFriend fancybox fancybox.ajax"]</xpath>
+			<xpath>//*[@class='shareBtnContainer']/*[contains(text(),'Email')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="framePopUpWindow">
+		<Properties>
+			<class>fancybox-skin</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="emailTitle">
+		<Properties>
+			<xpath>//*[@id="divEmailToAFriend"]/h1</xpath>
+			<xpath>//*[@id="emailToAFriend"]/h1</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="emailPageTitle">
+		<Properties>
+			<id>emailToAFriend</id>			
+		</Properties>
+	</TestObject>	
+	<TestObject name="recipientAreaTitle">
+		<Properties>
+			<xpath>//*[@class="h4"][1]</xpath>
+			<xpath>//fieldset/h2[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="recipientEmailContext">
+		<Properties>
+			<xpath>//*[@class="control-label"]</xpath>
+			<id>lblRecipientEmail</id>
+			<xpath>//*[@data-for='recipientEmail']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="recipientEmailTextbox">
+		<Properties>
+			<id>txtRecipientEmail</id>
+			<xpath>//*[@class="form-group floatLblWr recipientEmail"]//input</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="recipientFirstNameContext">
+		<Properties>
+			<xpath>//*[@data-for="recipientFirstName"]</xpath>
+			<id>lblRecipientFirstName</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="recipientFirstNameTextbox">
+		<Properties>
+			<id>txtRecipientFirstName</id>
+			<xpath>//*[@class="form-group floatLblWr recipientFirstName"]//input</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="recipientLastNameContext">
+		<Properties>
+			<xpath>//*[@data-for="recipientLastName"]</xpath>
+			<id>lblRecipientLastName</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="recipientLastNameTextbox">
+		<Properties>
+			<id>txtRecipientLastName</id>
+			<xpath>//*[@class="form-group floatLblWr recipientLastName"]//input</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="SenderAreaTitle">
+		<Properties>
+			<xpath>//*[@class="h4"][2]</xpath>
+			<xpath>//fieldset/h2[2]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="senderEmailAddressContext">
+		<Properties>
+			<xpath>//*[@data-for="senderEmail"]</xpath>
+			<id>lblSenderEmail</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="senderEmailAddressTextbox">
+		<Properties>
+			<id>txtSenderEmail</id>
+			<xpath>//*[@class="form-group floatLblWr senderEmail"]//input</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="senderFirstNameContext">
+		<Properties>
+			<xpath>//*[@data-for="senderFirstName"]</xpath>
+			<id>lblSenderFirstName</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="senderFirstNameTextbox">
+		<Properties>
+			<id>txtSenderFirstName</id>
+			<xpath>//*[@class="form-group floatLblWr senderFirstName"]//input</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="senderLastNameContext">
+		<Properties>
+			<xpath>//*[@data-for="senderLastName"]</xpath>
+			<id>lblSenderLastName</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="senderLastNameTextbox">
+		<Properties>
+			<id>txtSenderLastName</id>
+			<xpath>//*[@class="form-group floatLblWr senderLastName"]//input</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="shortMsgContext">
+		<Properties>
+			<xpath>//*[@data-for="message"]</xpath>
+			<id>lblShortMessage</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="shortMsgTextbox">
+		<Properties>
+			<id>taShortMessage</id>
+			<xpath>//*[@class="form-group floatLblWr senderMessage"]//textarea</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="warningMsg">
+		<Properties>
+			<class>indentedInstructions</class>
+			<xpath>//*[@class="h4"][2]/following-sibling::p[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="submitBtn">
+		<Properties>
+			<id>btnSubmit</id>
+			<xpath>(//*[@class='btn btn-primary btnSend'])[2]</xpath>
+			<xpath>(//*[@class='btn btn-primary btnSend'])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="frameCloseBtn">
+		<Properties>
+			<class>fancybox-item fancybox-close</class>
+			<xpath>//*[@class="fancybox-item fancybox-close"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="errMsgTitle">
+		<Properties>
+			<xpath>//*[@class="alert alert-danger"]</xpath>
+			<id>errConsole</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="recipientEmailAddresswarningMsg">
+		<Properties>
+			<id>recipientEmail-error</id>
+			<id>errRecipientEmail</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="senderEmailAddresswarningMsg">
+		<Properties>
+			<id>errSenderEmail</id>
+			<id>senderEmail-error</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="recipientFirstNameWarningMsg">
+		<Properties>
+			<id>recipientFirstName-error</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="recipientLastNameWarningMsg">
+		<Properties>
+			<id>recipientLastName-error</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="senderFirstNameWarningMsg">
+		<Properties>
+			<id>senderFirstName-error</id>
+			<id>errSenderFirstName</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="senderLastNameWarningMsg">
+		<Properties>
+			<id>senderLastName-error</id>
+			<id>errSenderLastName</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="shortMsgWarningMsg">
+		<Properties>
+			<id>message-error</id>
+			<id>errShortMessage</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="CancelSendEmaliBtn">
+		<Properties>
+			<xpath>//*[.='Abbrechen']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="jspArrowDown">
+		<Properties>
+			<xpath>//*[@class="jspArrow jspArrowDown"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="facebookShareLink">
+		<Properties>
+			<xpath>//a[@class="btnExtSocials fb-share-button"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="facebookLogInPageTitle">
+		<Properties>
+			<xpath>//h2[@id="homelink"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="facebookLogInPageInfo">
+		<Properties>
+			<xpath>//form[@id="login_form"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="emailSendResultTitle">
+		<Properties>
+			<xpath>//*[@id="emailToAFriendResult"]/h1</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="emailSendResultMsg">
+		<Properties>
+			<xpath>//*[@class="alert alert-success"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="WaitListPopup">
+		<Properties>
+			<xpath>//*[@class="container"]</xpath>
+			<xpath>//*[@class="fancybox-skin"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="WaitListPopup_title">
+		<Properties>
+			<xpath>//*[@class="container"]//*[@class='overlayHeader']</xpath>
+			<xpath>//*[@id='lastBCNode']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="WaitListPopup_Content1">
+		<Properties>
+			<xpath>//*[@class="container"]/p[1]</xpath>
+			<xpath>//*[@id='divPageTitle']/h1</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="WaitListPopup_Content2">
+		<Properties>
+			<xpath>//*[@id='frmIntermediateConfirmation']/p[1]</xpath>
+			<xpath>//*[@class="container"]/p[2]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="WaitListPopup_Content3">
+		<Properties>
+			<xpath>//*[@class="container"]/p[3]</xpath>
+			<xpath>//*[@id='frmIntermediateConfirmation']/p[2]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="WaitListPopup_YesBtn">
+		<Properties>
+			<xpath>//*[@class="btn btn-primary btnSave"]</xpath>
+			<xpath>//*[@class="primaryButton"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="WaitListPopup_NoBtn">
+		<Properties>
+			<xpath>//*[@class="btn btn-primary btnSave"]</xpath>
+			<xpath>//*[@class="secondaryButton buttonAlignVertical"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="WaitListPopup_CloseBtn">
+		<Properties>
+			<xpath>//*[@title="Close"]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="tsvCount">
+		<Properties>
+			<xpath>//*[@class="tsvCountdown"]</xpath>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="tsvCountClock">
+		<Properties>
+			<xpath>//*[@class="tsvCountDyn"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productGroupSelection">
+		<Properties>
+			<xpath>//*[@class='divGroupSnippet groupSimpleDefault']</xpath>
+			<xpath>//*[@class='divGroupSnippet groupSimple']</xpath>
+			<xpath>//*[@class='divGroupSnippet groupComplex']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productGroupFirstItem">
+		<Properties>
+			<xpath>//*[@class="divGroupSnippet groupSimple"]//*[@class="groupChild"][1]/a</xpath>
+			<xpath>//*[@id="GROUP0"]//li[1]//*[@class="groupChildLink"]</xpath>
+			<xpath>//*[@class="groupChild"][1]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="AOPopup_Content1">
+		<Properties>
+			<xpath>//*[@class="container"]//*[@class='overlayHeader']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="AOPopup_Content2">
+		<Properties>
+			<xpath>//*[@class="container"]//*[@class='infoTextAOoverlay']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="marketingText">
+		<Properties>
+			<xpath>//*[@class="prodBadge"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="automatedMarketingText">
+		<Properties>
+			<xpath>//*[@class="prodBadge"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="SpecialPriceType">
+		<Properties>
+			<xpath>//*[@class="featuredPrice"]/label/span</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="moreInfoCollapsed">
+		<Properties>
+			<xpath>//*[@class="accordion accMoreInfo accordion_collapsed"][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="moreInfoExpanded">
+		<Properties>
+			<xpath>//*[@class="accordion accMoreInfo accordion_expanded"][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="moreAboutText">
+		<Properties>
+			<xpath>//*[@class="accordion accMoreInfo accordion_expanded"]//*[@class="accordionContent"]</xpath>
+			<xpath>//*[@id='contentabout']/*[@class="GAbout2"]</xpath>
+		</Properties>
+	</TestObject>
+	
+</Page>
+
+

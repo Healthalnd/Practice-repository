@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="OrderStatusPage" include="MastheadMain">
+	<TestObject name="orderSearchWebEdit"> 
+		<properties>   
+			<id>txtByOrderNumber</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="byOrderNumRadio"> 
+		<properties>   
+			<id>rbByOrderNumber</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="GOBtn"> 
+		<properties>   
+			<id>btnSearch</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstOrderNum"> 
+		<properties>   
+			<xpath>//*[@id="samerow1-1"]//*[@class="tdText" and @rowspan="1"]/a</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="easyPayLink"> 
+		<properties>   
+			<id>orderStatusTab2</id>
+		</properties> 
+	</TestObject>	
+	<TestObject name="easyPayIntallmentsTxt"> 
+		<properties>   
+			<id>ancViewInstallment</id>
+		</properties> 
+	</TestObject>	
+	<TestObject name="autoDeliveryPlansLink">
+		<Properties>
+			<linkText>Auto-Delivery Plans</linkText>	
+		</Properties>
+	</TestObject>
+	<TestObject name="viewEditMyPlanLink">
+		<Properties>
+			<linkText>View / Edit My Plan</linkText>	
+		</Properties>
+	</TestObject>
+	<TestObject name="viewEditMyOrderLink">
+		<Properties>
+			<linkText>View / Edit My Order</linkText>	
+		</Properties>
+	</TestObject>
+	<TestObject name="orderStausResult"> 
+		<properties>   
+			<id>divOrderStatusResults</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="orderSearch"> 
+		<properties>   
+			<id>divContent</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="previousPageLinksTop"> 
+		<properties>   
+			<xpath>//*[@id="divOrderStatusResultsPagingLinksTop"]//*[@class="previous"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="nextPageLinksTop"> 
+		<properties>   
+			<xpath>//*[@id="divOrderStatusResultsPagingLinksTop"]//*[@class="next"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OrderSearchStatusText"> 
+		<properties>   
+			<xpath>//*[@id="samerow1-1"]//td[6]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="allOrderText"> 
+		<properties>   
+			<id>lblAllOrders</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="byItemNumText"> 
+		<properties>   
+			<id>lblByItemNumber</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="byOrderNumText"> 
+		<properties>   
+			<id>lblByOrderNumber</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="allOrderRadio"> 
+		<properties>   
+			<id>rbAllOrders</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="byItemNumRadio"> 
+		<properties>   
+			<id>rbByItemNumber</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="byOrderNumRadio"> 
+		<properties>   
+			<id>rbByOrderNumber</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="byItemNumTextbox"> 
+		<properties>   
+			<id>txtByItemNumber</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="byOrderNumTextbox"> 
+		<properties>   
+			<id>txtByOrderNumber</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="returnToMyAccountBtn"> 
+		<properties>   
+			<id>btnCancel</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="orderNum"> 
+		<properties>   
+			<xpath>//*[@class="odd"]//*[@class="tdText"][1]/a</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="orderNotFoundText"> 
+		<properties>   
+			<xpath>//*[@class="odd"]//*[@class="err"]</xpath>
+		</properties> 
+	</TestObject>
+</Page>

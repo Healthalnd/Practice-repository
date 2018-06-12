@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="YourCreditCardsPage" include="MastheadMain">
+	<TestObject name="addACardBtn"> 
+		<properties>   
+			<xpath>//*[@value='Add a card']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="creditCardTable"> 
+        	<properties>   
+          		<id>tblCreditCards</id>          		
+        	</properties> 
+    </TestObject>
+	
+	<TestObject name="deleteBtnSpecific"> 
+        	<properties>   
+          		<xpath>//*[@id='tblCreditCards']//td[contains(text(),'&lt;cardNumLastFour&gt;')]/..//a[@id='delete']</xpath> 
+				<xpath>//*[@id='tblCreditCards']//td[contains(text(),'&lt;cclastfournumber&gt;')]/..//a[@id='delete']</xpath>  				
+        	</properties> 
+    </TestObject>
+	<TestObject name="deleteBtn"> 
+        	<properties>   
+          		<xpath>//*[@id='delete']</xpath>      		
+        	</properties> 
+    </TestObject>
+	<TestObject name="deleteCreditCardHeader"> 
+		<properties>   
+			<xpath>//h1[.='Delete credit card']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="yesBtn"> 
+		<properties>   
+			<xpath>//input[@type='submit' and @class='primaryButton']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="noBtn"> 
+		<properties>   
+			<xpath>//input[@type='button' and @class='secondaryButton']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="creditCardDeletedMsg"> 
+		<properties>   
+			<xpath>//*[@id='parMessage' and contains(text(), 'Credit card has been successfully deleted']</xpath>
+            <xpath>//*[@id='parMessage']</xpath>			
+		</properties> 
+	</TestObject>
+</Page>

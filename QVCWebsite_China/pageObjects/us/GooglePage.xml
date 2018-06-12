@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="GooglePage">
+	<TestObject name="searchBox">
+		<Properties>
+			<id>gbqfq</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="resultLink">
+			<Properties>
+				<linkText>Selenium - Web Browser Automation</linkText>
+			</Properties>
+	</TestObject>
+		
+		
+	<TestObject name="verTitle">
+			<Properties>
+			<a>Return to Selenium home page</a>
+			</Properties>
+	</TestObject>
+</Page>

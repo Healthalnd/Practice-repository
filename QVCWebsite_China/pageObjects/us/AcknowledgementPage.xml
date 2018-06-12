@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="AcknowledgementPage" include="MastheadMain">
+
+	<TestObject name="btnYes"> 
+		<properties>   
+			<xpath>//*[@class="primaryWrapBtn wrapBtnyes"]/input</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="btnNo"> 
+		<properties>   
+			<xpath>//*[@class="secondaryWrapBtn wrapBtnno"]/input</xpath>
+		</properties> 
+	</TestObject>
+	
+	
+</Page>
+

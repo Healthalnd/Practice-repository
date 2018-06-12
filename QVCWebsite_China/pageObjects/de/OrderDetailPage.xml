@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="OrderDetailPage" include="MastheadMain">
+	<TestObject name="OrderCancelLink"> 
+		<properties>   
+			<xpath>//*[@class="arrow"]</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="OrderCancelConfirmBtn"> 
+		<properties>   
+			<xpath>//*[@class="primaryButton"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OrderCancelSuccessText"> 
+		<properties>   
+			<id>frmCancelOrder</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="cancelOrderLink"> 
+		<properties>   
+			<id>btnCancelOrder</id>
+			<xpath>//*[contains(text(),'Bestellung stornieren')]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="yesBtn"> 
+		<properties>   
+			<xpath>//*[@type='button' and @value='Ja']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="orderCancelledMsg"> 
+		<properties>   
+			<xpath>//*[@id='frmCancelOrder']//p</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OrderNum"> 
+		<properties>   
+			<id>spanOrderNumber</id>
+			<xpath>//*[contains(text(),'Auftragsnummer')]</xpath>
+		</properties> 
+	</TestObject>
+</Page>

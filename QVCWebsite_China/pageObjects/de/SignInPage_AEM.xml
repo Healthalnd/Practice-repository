@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="SignInPage_AEM" include="MastheadMain">
+	<TestObject name="signInHeader">
+		<Properties>
+			<xpath>//*[@class="text-center"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="emailAddressTextbox">
+		<Properties>			
+			<xpath>//*[@name="email"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="continueBtn">
+		<Properties>
+			<xpath>//*[@class='btn btn-primary btnContinue']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="passwordTextbox">
+		<Properties>
+			<xpath>//*[@name="pw"]</xpath>			
+		</Properties>
+	</TestObject>
+
+	
+	
+	
+</Page>

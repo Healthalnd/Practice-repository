@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="CreateSecurityQuestionsPage" include="MastheadMain">
+	<TestObject name="pageTitle"> 
+		<properties>   
+			<id>divPageTitle</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="submitBtn"> 
+		<properties>   
+			<id>submitButton"</id>
+			<xpath>//*[@id='submitButton']</xpath>
+		</properties> 
+	</TestObject>	
+	<TestObject name="questionList">
+		<Properties>
+			<id>txtSecQuestion1</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="answerText">
+		<Properties>
+			<id>txtSecAnswer1</id>
+		</Properties>
+	</TestObject>
+	
+</Page>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="CreateNicknamePage" include="MastheadMain">
+	<TestObject name="createNicknamePageTitle">
+		<Properties>
+			<id>divPageTitle</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="nicknameTextBox">
+		<Properties>
+			<id>txtNickname</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="continueBtn">
+		<Properties>
+			<xpath>//*[@class="primaryWrapBtn wrapBtncontinue"]//*[@class="primaryButton"]</xpath>
+		</Properties>
+	</TestObject>
+</Page>

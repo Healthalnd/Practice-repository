@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="SpeedBuyLoginPage" include="MastheadMain" >
+	
+	<TestObject name="speedBuyHeader">
+	    <Properties>
+	        <id>divPageTitle</id>
+	    </Properties>
+	</TestObject>
+	<TestObject name="pageTitle">
+	    <Properties>
+	        <xpath>//h1[.='Speed Buy One-Step Verification']</xpath>
+	    </Properties>
+	</TestObject>
+	<TestObject name="emailAddressLabel"> 
+        	<properties>   
+          		<id>lblEmailAddress</id>
+        	</properties> 
+     </TestObject>
+	 <TestObject name="passWordLabel"> 
+        	<properties>   
+          		<id>lblPassword</id>
+        	</properties> 
+     </TestObject>
+	<TestObject name="emailAddressInput"> 
+        	<properties>   
+          		<id>txtEmailAddress</id>
+        	</properties> 
+     </TestObject>
+	 <TestObject name="passWordInput"> 
+        	<properties>   
+          		<id>txtPassword</id>
+        	</properties> 
+     </TestObject>
+	 <TestObject name="pwInfoLabel"> 
+        	<properties>   
+          		<css>p.pwInstructions</css>
+        	</properties> 
+     </TestObject>
+	 <TestObject name="psToolTip"> 
+        	<properties>   
+          		<css>a.ttBtn > img</css>
+        	</properties> 
+     </TestObject>
+	 <TestObject name="psToolTipInfo"> 
+        	<properties>   
+          		<id>toolTip</id>
+        	</properties> 
+     </TestObject>
+	 <TestObject name="submitOrder"> 
+        	<properties>   
+          		<id>btnSignIn</id>
+        	</properties> 
+     </TestObject>
+	 <TestObject name="shipToList"> 
+        	<properties>   
+          		<id>selShipTo</id>
+        	</properties> 
+     </TestObject>
+ 	 <TestObject name="showPassword"> 
+        	<properties>   
+          		<css>a.showPW</css>
+        	</properties> 
+     </TestObject>
+	 <TestObject name="reviewOrderCheckbox"> 
+        	<properties>   
+          		<id>cbReviewOrderTotal</id>
+        	</properties> 
+     </TestObject>
+</Page>

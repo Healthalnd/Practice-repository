@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ShipToAddressPage" include="MastheadMain">
+	<TestObject name="shipToAddressHeader"> 
+		<properties>   
+			<id>divPageTitle</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="continuebtn"> 
+		<properties>   
+			<id>btnContine</id>
+		</properties> 
+	</TestObject>
+	 <TestObject name="createNewAddresstxt"> 
+		<properties>   
+			<id>tabNav-sameAsBillTo</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstNameTextbox"> 
+		<properties>   
+			<id>txtFirstName</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="lastNameTextbox"> 
+		<properties>   
+			<id>txtLastName</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="address1Textbox"> 
+		<properties>   
+			<id>txtAddress1</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="postalCodeTextbox"> 
+		<properties>   
+			<id>txtZipPostalCode</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="continue_NewAddressBtn"> 
+		<properties>   
+			<id>btnSubmitChanges</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="qvcLogoLink"> 
+		<properties>   
+			<xpath>//*[@id='divMastheadCheckout']/a</xpath>
+		</properties> 
+	</TestObject>
+	 <TestObject name="selectfromAddressBooktxt"> 
+		<properties>   
+			<id>tabNav-selectFromAddressBook</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="secondAddressRadio"> 
+		<properties>   
+			<xpath>//*[@id="rbName1"]</xpath>			
+		</properties> 
+	</TestObject>
+	<TestObject name="addressBookTxt"> 
+		<properties>   
+			<xpath>//*[@id='divAddressBookAddresses']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="continueAddressBookBtn"> 
+		<properties>   
+			<xpath>//*[@id='btnContinueAddressBook']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="currentAddressTxt"> 
+		<properties>   
+			<class>uppercase</class>
+		</properties> 
+	</TestObject>
+	<TestObject name="secondshippingAddress"> 
+		<properties>   
+			<class>lblName1</class>
+		</properties> 
+	</TestObject>
+</Page>

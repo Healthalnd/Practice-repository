@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ShipToAddressPage" include="MastheadMain">
+	<TestObject name="shipToAddressHeader"> 
+		<properties>   
+			<id>divPageTitle</id>			
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="OrderedReminderText"> 
+		<properties>   
+			<id>shownoAddaLineText</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="continuebtn"> 
+		<properties>   
+			<id>btnContinueAddressBook</id>
+			<xpath>//*[@class="primaryButton"]</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="createNewAddressTab"> 
+		<properties>   
+			<id>tabNav-sameAsBillTo</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstNameLabel"> 
+		<properties>   
+			<id>lblFirstName</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstNameTextBox"> 
+		<properties>   
+			<id>txtFirstName</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="lastNameLabel"> 
+		<properties> 
+			<id>lblLastName</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="lastNameTextBox"> 
+		<properties> 
+			<id>txtLastName</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="streetNameLabel"> 
+		<properties> 
+			<id>lblStreetName</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="streetNameTextBox"> 
+		<properties>
+			<id>txtStreetName</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="houseNoTextBox"> 
+		<properties>
+			<id>txtHouseNo</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="zipPostalCodeLabel"> 
+		<properties>
+			<id>lblZipPostalCode</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="zipPostalCodeTextBox"> 
+		<properties>
+			<id>txtZipPostalCode</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="cityTextBox"> 
+		<properties>   
+			<id>txtCity</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="submitChangeBtn"> 
+		<properties>   
+			<id>btnSubmitChanges</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="errMsgTitle"> 
+		<properties>   
+			<id>errConsole</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="errFirstName"> 
+		<properties>   
+			<id>errfirstName</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="errLastName"> 
+		<properties>   
+			<id>errlastName</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="errStreetNameHouseNo"> 
+		<properties>   
+			<id>errStreetNameHouseNo</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="errZipPostalCode"> 
+		<properties>   
+			<id>errZipPostalCode</id>
+		</properties> 
+	</TestObject>
+	
+</Page>

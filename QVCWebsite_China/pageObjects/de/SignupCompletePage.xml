@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="SignupCompletePage" include="MastheadMain">
+
+	<TestObject name="returnToMyAccountBtn">
+		<Properties>
+			<id>btnReturnToMyAccount</id>	
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="ShopBtn">
+		<Properties>
+			<id>btnTakeMeShopping</id>	
+		</Properties>
+	</TestObject>
+
+</Page>

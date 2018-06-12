@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="OrderConfirmationPage"  include="MastheadMain">
+	<TestObject name="orderTotal"> 
+		<properties>   
+			<id>tblOrderTotal</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="orderNumberText"> 
+		<properties>   
+			<xpath>//*[@class="orderNumber"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="paymentMethodText"> 
+		<properties>   
+			<xpath>//*[@class="paypos"]</xpath>
+		</properties> 
+	</TestObject>	
+	 <TestObject name="passwordWebEdit"> 
+		<properties>   
+			<id>txtPassword</id>			
+		</properties> 
+	</TestObject>
+	 <TestObject name="confirmPasswordWebEdit"> 
+		<properties>
+			<id>txtVerifyPassword</id>			
+		</properties> 
+	</TestObject>
+	 <TestObject name="SubmitButtom"> 
+		<properties>   
+			<id>btnContinue</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="employeeDiscountTxt"> 
+		<properties>   
+			<xpath>//td[contains(.,'Mitarbeiter-Rabatt')]</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="totalPrice"> 
+		<properties>   
+			<xpath>//*[@class='tblOrderSubTotal']//tbody/tr[1]/td[@class='tdCurrency']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="discountPrice"> 
+		<properties> 
+			<xpath>//*[@class='tblOrderSubTotal']//tbody/tr[2]/td[@class='tdCurrency rebate']</xpath>
+		</properties> 
+	</TestObject>
+	
+	 <TestObject name="createPasswordInfo"> 
+		<properties>   
+			<id>createPWInfo</id>			
+		</properties> 
+	</TestObject>
+		 <TestObject name="passWordMatch"> 
+		<properties>   
+			<id>pwMatch</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="passWordStrength"> 
+		<properties>   
+			<id>pwStrength</id>			
+		</properties> 
+	</TestObject>	
+	<TestObject name="thxCreatePasswordTxt"> 
+		<properties>   
+			<xpath>//*[contains(.,'Thanks for creating a password')]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="checkDisclaimerText"> 
+		<properties>   
+			<id>orderConfirmCheckText</id>			
+		</properties> 
+	</TestObject>	
+	
+	<TestObject name="placeOrderSuccessInfo"> 
+		<properties>   
+			<id>orderConfirmIntroText</id>			
+		</properties> 
+	</TestObject>	
+	<TestObject name="createPasswordInfo"> 
+		<properties>   
+			<id>createPWInfo</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="createPasswordTxt"> 
+		<properties>   
+			<css>#createPWInfo h2</css>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="orderDetailLink"> 
+		<properties>   
+			<id>aOrderToggleLink</id>			
+		</properties> 
+	</TestObject>	
+	
+	<TestObject name="returnToHomePageBtn"> 
+		<properties>   
+			<xpath>//*[@class='primaryButton']</xpath>			
+		</properties> 
+	</TestObject>
+	<TestObject name="vAT"> 
+		<properties>   
+			<xpath>//*[@id='tblOrderTotal']/tfoot/tr/td[3]/p</xpath>			
+		</properties> 
+	</TestObject>
+	<TestObject name="shippingPrice"> 
+		<properties>   
+			<xpath>//*[@class="orderSubTotal"]//tr[2]//*[@class="tdCurrency"]</xpath>			
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="orderTotal"> 
+		<properties>   
+			<xpath>//*[@id='tblOrderTotal']/tbody/tr/td[3]</xpath>			
+		</properties> 
+	</TestObject>
+	<TestObject name="firstOrderStyle"> 
+		<properties>   
+			<xpath>//*[@id="divOrderToggle"]/h2[1]</xpath>			
+		</properties> 
+	</TestObject>
+	<TestObject name="secondOrderStyle"> 
+		<properties>   
+			<xpath>//*[@id="divOrderToggle"]/h2[2]</xpath>			
+		</properties> 
+	</TestObject>
+	<TestObject name="firstOrderNum"> 
+		<properties>   
+			<xpath>//h2[1]//*[@class="orderNumber"]</xpath>			
+		</properties> 
+	</TestObject>
+	<TestObject name="firstProductNum"> 
+		<properties>   
+			<xpath>//*[@class="divOrderDetailItemInformation"][1]//h3</xpath>			
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="secondOrderNum"> 
+		<properties>   
+			<xpath>//h2[2]//*[@class="orderNumber"]</xpath>			
+		</properties> 
+	</TestObject>
+	<TestObject name="secondProductNum"> 
+		<properties>   
+			<xpath>//*[@class="divOrderDetailItemInformation"][2]//h3</xpath>			
+		</properties> 
+	</TestObject>
+	
+</Page>

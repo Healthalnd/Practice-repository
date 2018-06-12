@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="YourCreditCards" include="MastheadMain">
+	  <TestObject name="addACardbtn"> 
+        	<properties>
+          		<css>input.primaryButton[value='Kreditkarte hinzufügen']</css>          		
+        	</properties> 
+      	</TestObject>
+		<TestObject name="exitbtn"> 
+        	<properties>
+          		<css>input.secondaryButton[value='Abbrechen']</css> 
+				<id>cancelButton</id>
+        	</properties> 
+      	</TestObject>
+      	 <TestObject name="creditCardList"> 
+        	<properties>   
+          		<id>selNewCardType</id>          		
+        	</properties> 
+      	</TestObject>
+      	 <TestObject name="cardnumbertextbox"> 
+        	<properties>   
+          		<id>txtNewCardNumber</id>          		
+        	</properties> 
+      	</TestObject>
+		<TestObject name="cardHolderNameTextBox"> 
+        	<properties>   
+          		<id>txtCardHolderName</id>          		
+        	</properties> 
+      	</TestObject>
+      	<TestObject name="expirationDateList"> 
+        	<properties>   
+          		<id>selNewCardExpDate</id>          		
+        	</properties> 
+      	</TestObject>
+		<TestObject name="securityCodeTextBox"> 
+        	<properties>   
+          		<id>txtSecurityCode</id>          		
+        	</properties> 
+      	</TestObject>
+	 	<TestObject name="submitChangesBtn"> 
+        	<properties>   
+          		<css>input.primaryButton[value='Übernehmen']</css>          		
+        	</properties> 
+      	</TestObject>	
+      	<TestObject name="creditCardTable"> 
+        	<properties>   
+          		<id>tblCreditCards</id>          		
+        	</properties> 
+      	</TestObject>	
+      	<TestObject name="deleteCC"> 
+	        	<properties>   
+	          		<linkText>Löschen</linkText>   
+					<id>delete</id>
+	        	</properties> 
+      	</TestObject>		
+		<TestObject name="editCC"> 
+	        	<properties>   
+	          		<linkText>Ändern</linkText>   
+					<id>change</id>
+	        	</properties> 
+      	</TestObject>	
+      	<TestObject name="confirmDelBtn"> 
+	        	<properties>   
+	          		<css>input.primaryButton[value='Ja']</css>          		
+        		</properties> 
+        </TestObject>
+		<TestObject name="cancelDelBtn"> 
+	        	<properties>   
+	          		<css>input.secondaryButton[value='Nein']</css>          		
+        		</properties> 
+        </TestObject>
+		<TestObject name="deleteSuccessMsg"> 
+        	<properties>   
+          		<id>parMessage</id>          		
+        	</properties> 
+      	</TestObject>
+		<TestObject name="errMsg"> 
+        	<properties>   
+          		<id>errConsole</id>          		
+        	</properties> 
+      	</TestObject>
+		<TestObject name="creditCardNotExistMsg"> 
+        	<properties>   
+          		<id>frmCreditCards</id>          		
+        	</properties> 
+      	</TestObject>
+		<TestObject name="creditCardDeleteConfirmMsg"> 
+        	<properties>   
+          		<id>frmCreditCardDeleteConfirmation</id>          		
+        	</properties> 
+      	</TestObject>
+		<TestObject name="firstCardNumber"> 
+        	<properties>   
+          		<xpath>//*[@class="odd"]/td[2]</xpath>          		
+        	</properties> 
+      	</TestObject>
+</Page>

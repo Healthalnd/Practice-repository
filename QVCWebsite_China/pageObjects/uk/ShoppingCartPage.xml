@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ShoppingCartPage" include="MastheadMain" >
+	<TestObject name="pageTitle">
+		<Properties>
+			<id>divPageTitle</id>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="shoppingCartText">
+		<Properties>
+			<css>div#divShoppingCart.outline</css>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="productNumberLink">
+		<Properties>
+			<css>.divItemNumber</css>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="removeAllBtn">
+		<Properties>
+			<id>shoppingCartEmptyBasket</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="clearSavedItemsBtn">
+		<Properties>
+			<xpath>//*[@value="Clear saved items"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="yesButton">
+		<Properties>
+			<id>yesButton</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="mySavedItems">
+		<Properties>
+			<id>divSavedItems</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="checkoutBtn">
+		<Properties>
+			<xpath>//*[@class="divProductButtons"]//*[@value="Checkout"][1]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="SpeedBuyBtn">
+		<Properties>
+			<xpath>//*[@class="divProductButtons"]//*[@value="Speed Buy"][1]</xpath>			
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="SaveForLaterBtn">
+		<Properties>
+			<xpath>//*[@value="Save for Later"]</xpath>
+			<xpath>//*[@value="Save for later"]</xpath>
+			<xpath>//*[.="Save for Later"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="addToWishListBtn">
+		<Properties>
+			<xpath>//*[@value="Add to Wish list"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="qvcPrice">
+		<Properties>
+			<xpath>//*[@class="priceQvc"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="savedItemsTitle">
+		<Properties>
+			<xpath>//*[.="My saved items"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstSavedItemDescText">
+		<Properties>
+			<xpath>//*[@class="productName"][1]//a</xpath>
+		</Properties>
+	</TestObject>
+	 <TestObject name="removeBtn">
+		<Properties>
+			<xpath>(//*/input[@value="Remove"])[1]</xpath>
+		</Properties>
+	</TestObject>
+	 <TestObject name="productQuantityList">
+		<Properties>
+			<id>selProductQuantity_11</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="cartIndicator">
+		<Properties>
+			<id>ancCart</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="btnAddSaveItemToCart">
+		<Properties>
+			<xpath>(//*[@value="Add to cart"])[1]</xpath>
+		</Properties>
+	</TestObject> 
+	 <TestObject name="btnBackToHomepage">
+		<Properties>
+			<css>a.arrow</css>
+		</Properties>
+	</TestObject> 
+	<TestObject name="freeShipping_Txt">
+		<Properties>			
+			<css>.freeShipping</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="shippingIncludePriceText">
+		<Properties>
+			<xpath>//*[@class="productTable"]//thead//tr//*[@class="tdCurrency"][2]</xpath>
+			<xpath>//*[@class="shippingIncluded"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="shippingPrice">
+		<Properties>
+			<xpath>//*[@class="productTable"]//tbody//tr//*[@class="tdCurrency"][2]</xpath>
+			<css>.shippingOfferPrice</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="fistOrderLine">
+		<Properties>
+			<xpath>//div[@class='divProduct'][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondOrderLine">
+		<Properties>
+			<xpath>//div[@class='divProduct'][2]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="buyMoreSaveMoreDiscount">
+		<Properties>
+			<xpath>//div[@class='divProduct'][2]//td[@class='tdCurrency'][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productColorSize">
+		<Properties>
+			<xpath>//*[@class='divProduct'][1]//*[@class="productOption"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="MultiQuantityShippingDiscount">
+		<Properties>
+			<xpath>//div[@class='divProduct']//td[@class='tdCurrency'][2]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="easyPayInfo">
+		<Properties>
+			<xpath>//*[@class='easyPay']</xpath>
+			<xpath>//*[@class="orderTable orderTable_new"]/tbody//*[@class="tdNumber"][2]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstItemDescText">
+		<Properties>
+			<xpath>//div[@id="divShoppingCart"]//div[@class='divProduct'][1]//div[@class="productName"]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="EmptyMsg">
+		<Properties>
+			<xpath>//div[@id="divShoppingCart"]//*[.='There are no items in your Shopping Cart. Please select the items you would like to purchase, and place your order.']</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="inStockLine">
+		<Properties>
+			<xpath>//span[text()='In Stock']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="waitListLine">
+		<Properties>
+			<xpath>//span[text()='Waitlist']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="advancedOrderLine">
+		<Properties>
+			<xpath>//span[text()='Advanced Order']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="firstPrice">
+		<Properties>
+			<xpath>//div[@id="divShoppingCart"]//div[@class='divProduct'][1]//*[@class='tdCurrency totalAllign']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondPrice">
+		<Properties>
+			<xpath>//div[@id="divShoppingCart"]//div[@class='divProduct'][2]//*[@class='tdCurrency totalAllign']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="advancedOrderTotalTxt">
+		<Properties>
+			<xpath>//*[@class='fontLarge totalType']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="advancedOrderTotalPrice">
+		<Properties>
+			<xpath>//*[@class='fontLarge totalCurrency']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstProductNum">
+		<Properties>
+			<xpath>//*[@class="divProduct"][1]//*[@class="divItemNumber"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondProductNum">
+		<Properties>
+			<xpath>//*[@class="divProduct"][2]//*[@class="divItemNumber"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondProductQuantityList">
+		<Properties>
+			<id>selProductQuantity_12</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="productPrice">
+		<Properties>	
+			<xpath>//tbody//*[@class="tdCurrency"][1]</xpath>
+			<xpath>//*[@id="divShoppingCart"]//*[@class="divProduct"][1]//*[@class="divProductInfoSelectToCompareWrapper"]//td[2]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="secondProductPrice">
+		<Properties>			
+			<xpath>//*[@class='divProduct'][2]//tbody//*[@class='tdCurrency'][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondShippingPrice">
+		<Properties>			
+			<xpath>//div[@class="divProduct"][2]//*[@class='shippingIncluded']</xpath>
+			<xpath>//div[@class="divProduct"][2]//*[@class='shippingOfferPrice']</xpath>
+			<xpath>//*[@class='divProduct'][2]//tbody//*[@class='tdCurrency'][2]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="firstSubTotalPrice">
+		<Properties>			
+			<xpath>//*[@id="divShoppingCart"]//*[@class="divProduct"][1]//*[@class="divProductInfoSelectToCompareWrapper"]//*[@class="tdCurrency totalAllign"]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="secondSubTotalPrice">
+		<Properties>			
+			<xpath>//*[@id="divShoppingCart"]//*[@class="divProduct"][2]//*[@class="divProductInfoSelectToCompareWrapper"]//*[@class="tdCurrency totalAllign"]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="totalPrice">
+		<Properties>			
+			<xpath>//*[@class="fontLarge totalCurrency"]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="productQuantity">
+		<Properties>
+			<xpath>//*[@name="quantity_11"]/option[@selected=""]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="secondProductQuantity">
+		<Properties>
+			<xpath>//*[@name="quantity_12"]/option[@selected=""]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="dupulicateButtonYes">
+		<Properties>
+			<xpath>//*[@class='primaryButton'and @value='Yes']</xpath>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="inStockTotalPrice">
+		<Properties>
+			<xpath>//*[.='In Stock total:']/following-sibling::*[1]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="waitListTotalPrice">
+		<Properties>
+			<xpath>//*[.='Waitlist total:']/following-sibling::*[1]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="advanceOrderTotalPrice">
+		<Properties>
+			<xpath>//*[.='Advanced Order total:']/following-sibling::*[1]</xpath>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="grandTotalPrice">
+		<Properties>
+			<xpath>//*[.='Grand total:']/following-sibling::*[1]/*[1]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="removeItemTitle">
+		<Properties>
+			<xpath>//*[@id='TB_ajaxContent']/h1</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="yesBtn">
+		<Properties>
+			<xpath>//*[@id="TB_window"]//*[@id='divButtons']/*[@class="primaryButton"]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="yesBtn2">
+		<Properties>
+			<xpath>//*[@type='button' and @value='Yes']</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="confirmInfoFrame">
+		<Properties>
+			<id>TB_HideSelect</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="waitlistConfirmationTitle">
+		<Properties>
+			<id>lastBCNode</id>
+		</Properties>
+	</TestObject>
+	
+</Page>

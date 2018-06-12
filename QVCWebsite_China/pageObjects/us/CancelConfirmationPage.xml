@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="CancelConfirmationPage"  include="MastheadMain">
+	<TestObject name="ConfirmCancelbtn"> 
+		<properties>   
+			<xpath>//*[@id='divButtons']/span[1]/input</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="pageTitle"> 
+		<properties> 
+			<id>divPageTitle</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="yesBtn"> 
+		<properties> 
+			<xpath>//*[@value="Yes"]</xpath>			
+		</properties> 
+	</TestObject>
+	<TestObject name="getOrderNum"> 
+		<properties>   
+			<xpath>//form[@id="frmOrderDetail"]//strong</xpath>
+		</properties> 
+	</TestObject>
+	
+	
+
+	 
+</Page>

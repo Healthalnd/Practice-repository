@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="EditPaymentMethod" include="MastheadMain">
+	<TestObject name="pageTitle" > 
+		<properties>   
+			<id>divPageTitle</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="Check"> 
+		<properties>   
+			<id>rbCheck</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="newCardRadio"> 
+		<properties>   
+			<id>rbNewCard</id>		
+		</properties> 
+	</TestObject>
+	<TestObject name="continueBtn"> 
+		<properties>   
+			<id>btnSubmitChanges</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="newCardTypeList"> 
+		<properties>   
+			<id>selNewCardType</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="newCardNumWebEdit"> 
+		<properties>   
+			<id>txtNewCardNumber</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="expirationDateList"> 
+		<properties>   
+			<id>selNewCardExpDate</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="securityCodeWebEdit"> 
+		<properties>   
+			<id>CVV_new</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="paymentTable"> 
+		<properties>   
+			<id>tblNewPaymentMethod</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="securityCodeTextbox"> 
+		<properties>   
+			<id>txtSecurityCodeCreditCard1</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="securityCodeTxt"> 
+		<properties>   
+			<css>div#fldSecurityCodeCreditCard1 > label</css>
+		</properties> 
+	</TestObject>			
+	<TestObject name="emailEmptyErrMsg"> 
+		<properties>   
+			<id>errEmailAddress</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="SSNEmptyErrMsg"> 
+		<properties>   
+			<id>errSsn</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="dateEmptyErrMsg"> 
+		<properties>   
+			<id>errDateOfBirth</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="qvcHomeLogo"> 
+		<properties>   
+			<css>img[alt="QVC Logo"]</css>
+		</properties> 
+	</TestObject>
+	<TestObject name="anyCreditCard"> 
+		<properties>   
+			<xpath>//*/tr[contains(@id, 'CreditCard') ]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="checkPayMethod">
+	     <properties>
+	         <xpath>//td[contains(.,'Check')]</xpath>
+	     </properties>
+	</TestObject>
+		<TestObject name="payPalRadio"> 
+		<properties>   
+			<id>rbBillLater</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="giftCardChkBox"> 
+		<properties>   
+			<id>cbGiftCard</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="qCardRadio"> 
+		<properties>   
+			<id>rbQCard</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="securityCodeTxtVisible"> 
+		<properties>   
+			<id>fieldsetSecurityCode</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="securityCodeTextboxVisible"> 
+		<properties>   
+			<xpath>//input[contains(@id,'CVV') and contains(@class,'text')]</xpath>
+		</properties> 
+	</TestObject>	
+
+</Page>

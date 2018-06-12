@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="AskOrAnswerQuestionPage" include="MastheadMain">
+
+	<TestObject name="questionSummaryField">
+		<Properties>
+			<id>BVQAQuestionSummaryFieldID</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="questionSummaryTextBox">
+		<Properties>
+			<id>BVQAFieldTextQuestionSummaryID</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="questionSummaryMaxTip">
+		<Properties>
+			<class>BVQACustomQuestionSummaryFieldMaxTip</class>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="questionDetailsField">
+		<Properties>
+			<id>BVQAQuestionQuestionDetailsFieldID</id>
+		</Properties>
+	</TestObject>	
+
+	<TestObject name="questionDetailTextBox">
+		<Properties>
+			<xpath>//*[@id="BVQAFieldTextAreaQuestionDetailsID"][1]</xpath>
+		</Properties>
+	</TestObject>	
+
+	<TestObject name="questionDetailMaxTip">
+		<Properties>
+			<class>BVQACustomQuestionQuestionDetailsFieldMaxTip</class>
+		</Properties>
+	</TestObject>	
+	
+	<TestObject name="questionGuideLineLink">
+		<Properties>
+			<linkText>Hinweise zum Inhalt</linkText>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="questionGuideDocumentation">
+		<Properties>
+			<id>BVQAGuidelinesDocumentationID</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="photoUploadField">
+		<Properties>
+			<xpath>//*[contains(@class, 'BVQAFieldMainPhotoUpload')]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="browseBtn">
+		<Properties>
+			<id>BVQAVisiblePhotoUploadInputID</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="uploadBtn">
+		<Properties>
+			<id>BVQAVisiblePhotoUploadSubmitID</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="photoGuidelineLink">
+		<Properties>
+			<xpath>//a[contains(@name, 'PhotoGuidelines')]</xpath>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="videoUploadHeader">
+		<Properties>
+			<xpath>//*[contains(@class,'VideoUploadHeader')]</xpath>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="videoUrlInput">
+		<Properties>
+			<id>BVQAFieldTextQuestionVideoURLID</id>
+		</Properties>
+	</TestObject>	
+	
+	<TestObject name="answerVideoUrlInput">
+		<Properties>
+			<id>BVQAFieldTextAnswerVideoURLID</id>
+		</Properties>
+	</TestObject>		
+
+	<TestObject name="videoCaptionInput">
+		<Properties>
+			<id>BVQAFieldTextQuestionVideoCaptionID</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="answerVideoCaptionInput">
+		<Properties>
+			<id>BVQAFieldTextAnswerVideoCaptionID</id>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="videoUrlInputHelper">
+		<Properties>
+			<xpath>//*[contains(@class, 'BVQAVideoUrlInputHelper ')]</xpath>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="videoUrlCaptionInputHelper">
+		<Properties>
+			<xpath>//*[contains(@class, 'BVQAVideoUrlCaptionInputHelper')]</xpath>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="videoGuidelineLink">
+		<Properties>
+			<xpath>//a[contains(@name, 'VideoGuidelines')]</xpath>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="productReferencesField">
+		<Properties>
+			<id>BVQAQuestionProductReferencesFieldID</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="answerProductReferencesField">
+		<Properties>
+			<id>BVQAAnswerProductReferencesFieldID</id>
+		</Properties>
+	</TestObject>	
+	
+	<TestObject name="productReferencesAddLink1">
+		<Properties>
+			<xpath>//*[contains(@id,'Product0')]//a[.='Hinzufügen']</xpath>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="productReferencesAddLink2">
+		<Properties>
+			<xpath>//*[contains(@id,'Product1')]//a[.='Hinzufügen']</xpath>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="productReferencesAddLink3">
+		<Properties>
+			<xpath>//*[contains(@id,'Product2')]//a[.='Hinzufügen']</xpath>
+		</Properties>
+	</TestObject>	
+
+	<TestObject name="nicknameField">
+		<Properties>
+			<xpath>//*[contains(@id,'NicknameFieldID')]</xpath>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="nicknameInput">
+		<Properties>
+			<xpath>//input[contains(@id,'nickname')]</xpath>
+		</Properties>
+	</TestObject>	
+
+	<TestObject name="userLocationField">
+		<Properties>
+			<xpath>//*[contains(@id,'UserLocationFieldID')]</xpath>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="userLocationInput">
+		<Properties>
+			<xpath>//input[contains(@id,'Userlocation')]</xpath>
+		</Properties>
+	</TestObject>	
+	
+	<TestObject name="ageField">
+		<Properties>
+			<id>ContextualDataFieldAge</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="ageSeletor">
+		<Properties>
+			<xpath>//select[contains(@id,'AgeID')]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="howLongShopperField">
+		<Properties>
+			<xpath>//div[contains(@id,'HowLongShopper')]</xpath>
+		</Properties>
+	</TestObject>	
+	
+	<TestObject name="howLongShopperSelector">
+		<Properties>
+			<xpath>//select[contains(@id,'HowLongShopper')]</xpath>
+		</Properties>
+	</TestObject>	
+	
+	<TestObject name="sendEmailAlertsFiled">
+		<Properties>
+			<xpath>//*[contains(@id,'SendEmailAlertsID')]</xpath>
+		</Properties>
+	</TestObject>	
+
+	<TestObject name="sendEmailAlertWhenAnsweredField">
+		<Properties>
+			<xpath>//*[contains(@id,'SendEmailAlertWhenAnsweredID')]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="emailAddressFieldID">
+		<Properties>
+			<xpath>//*[contains(@id,'EmailAddressFieldID') and not(contains(@class,'hidden'))]</xpath>
+		</Properties>
+	</TestObject>	
+	
+	<TestObject name="userEmailInput">
+		<Properties>
+			<xpath>//input[contains(@id,'UseremailID')]</xpath>
+		</Properties>
+	</TestObject>	
+	
+	<TestObject name="editEmailDisclaimer">
+		<Properties>
+			<xpath>//*[contains(@id,'EditEmailDisclaimer')]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="displayDisclaimer">
+		<Properties>
+			<xpath>//*[contains(@id,'EditDisplayDisclaimerID')]</xpath>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="cancelQuestionButton">
+		<Properties>
+			<id>BVQACancelQuestionButtonID</id>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="cancelAnswerButton">
+		<Properties>
+			<id>BVQACancelAnswerButtonID</id>
+		</Properties>
+	</TestObject>	
+	
+	<TestObject name="previewQuestionButton">
+		<Properties>
+			<id>BVQAPreviewQuestionButtonID</id>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="previewAnswerButton">
+		<Properties>
+			<id>BVQAPreviewAnswerButtonID</id>
+		</Properties>
+	</TestObject>	
+
+	
+	<TestObject name="editAnswerButton">
+		<Properties>
+			<id>BVQAEditAnswerButtonID</id>
+		</Properties>
+	</TestObject>	
+	
+	<TestObject name="submitAnswerButton">
+		<Properties>
+			<id>BVQASubmitAnswerButtonID</id>
+		</Properties>
+	</TestObject>	
+	
+	<TestObject name="termsOfUseLink">
+		<Properties>
+			<xpath>//a[.='Nutzungsbedingungen']</xpath>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="photoUploadFrame">
+		<Properties>
+			<xpath>//*[@class="BVQAInlinePhotoUploadFrame"]</xpath>
+		</Properties>
+	</TestObject>	
+	
+	<TestObject name="termsAndConditionsDocumentation">
+		<Properties>
+			<id>BVQATermsAndConditionsDocumentationID</id>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="questionOverallSummary">
+		<Properties>
+			<id>BVQAQuestionOverallSummaryID</id>
+		</Properties>
+	</TestObject>	
+	
+	<TestObject name="answerTextField">
+		<Properties>
+			<id>BVQAAnswerAnswerTextFieldID</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="answerTextArea">
+		<Properties>
+			<id>BVQAFieldTextAreaAnswerTextID</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="answerPreviewFormTitle">
+		<Properties>
+			<id>BVQAAnswerPreviewFormTitleID</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="answerFormTitleCustom">
+		<Properties>
+			<class>BVQAAnswerFormTitleCustom</class>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="answerSummary">
+		<Properties>
+			<id>BVQAAnswerSummaryID</id>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="emailalertChkbox">
+		<Properties>
+			<xpath>//*[contains(@id,'UseremailalertsID')]</xpath>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="emailAnswerChkbox">
+		<Properties>
+			<xpath>//input[contains(@id,'Sendemailonanswer')]</xpath>
+		</Properties>
+	</TestObject>	
+	
+	<TestObject name="LinkText">
+		<Properties>
+			<xpath>//*[contains(text(),'&lt;LinkText&gt;')]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="answerPreviewNotification">
+		<Properties>
+			<id>BVQAAnswerPreviewNotificationID</id>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="answerPreviewTermsAndConditions">
+		<Properties>
+			<id>BVQAAnswerPreviewTermsAndConditionsID</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="Link">
+		<Properties>
+			<xpath>//a[contains(text(),'&lt;Link&gt;')]</xpath>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="answerPostDelayDisclaimer">
+		<Properties>
+			<id>BVQAAnswerPostDelayDisclaimerID</id>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="userEmailAddress_hidden">
+		<Properties>
+			<xpath>//*[contains(@id,'EmailDisclaimer') and contains(@class, 'Hidden')]</xpath>
+		</Properties>
+	</TestObject>	
+
+	<TestObject name="answer_location">
+		<Properties>
+			<xpath>//*[@id='BVQAAnswerSummaryID']//*[contains(text(),'Wohnort')]</xpath>
+		</Properties>
+	</TestObject>	
+	
+	<TestObject name="answer_age">
+		<Properties>
+			<xpath>//*[@id='BVQAAnswerSummaryID']//*[contains(text(),'Alter')]</xpath>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="answer_ShoppingDuration">
+		<Properties>
+			<xpath>//*[@id='BVQAAnswerSummaryID']//*[contains(text(),'QVC Kunde seit')]</xpath>
+		</Properties>
+	</TestObject>	
+
+	<TestObject name="submittedAnswerContent">
+		<Properties>
+			<id>BVQASubmittedAnswerContentID</id>
+		</Properties>
+	</TestObject>	
+
+	<TestObject name="backToQuestionLink">
+		<Properties>
+			<xpath>//a[contains(@name,'ReturnToProduct')]</xpath>
+		</Properties>
+	</TestObject>	
+	
+	<TestObject name="nicknameValue">
+		<Properties>
+			<xpath>//*[contains(@id,'UserNicknameFieldID')]//div[@class='BVQAFieldValue']</xpath>
+		</Properties>
+	</TestObject>	
+
+	<TestObject name="CustomPreviewSubHeaderText">
+		<Properties>
+			<class>BVQACustomPreviewSubHeaderText</class>
+		</Properties>
+	</TestObject>	
+	
+	<TestObject name="questionPreviewTermsAndConditions">
+		<Properties>
+			<id>BVQAQuestionPreviewTermsAndConditionsID</id>
+		</Properties>
+	</TestObject>		
+	
+	<TestObject name="questionPostDelayDisclaimer">
+		<Properties>
+			<id>BVQAQuestionPostDelayDisclaimerID</id>
+		</Properties>
+	</TestObject>	
+	
+
+	<TestObject name="editQuestionButton">
+		<Properties>
+			<id>BVQAEditQuestionButtonID</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="submiQuestionButton">
+		<Properties>
+			<id>BVQASubmitQuestionButtonID</id>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="submittedQuestionContent">
+		<Properties>
+			<id>BVQAQuestionSubmittedDisplayDisclaimerID</id>
+		</Properties>
+	</TestObject>	
+	
+</Page>

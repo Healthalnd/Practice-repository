@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="EmailAndMobilePreferencesPage" include="MastheadMain">
+	<TestObject name="preferencesPageTitle">
+		<Properties>
+		    <id>divPageTitle</id>
+			<xpath>//*[@id='divPageTitle']/h1</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="errorConsole">
+		<Properties>
+		    <id>errConsole</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="mobileNumLabel">
+		<Properties>
+		    <id>lblMobileNumber</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="mobileNumText">
+		<Properties>
+		    <id>txtMobileNumber</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="mobileAddBtn">
+		<Properties>
+		    <id>mobile_add_button</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="mobileSubmitBtn">
+		<Properties>
+		    <xpath>//*[@id="divButtons"]/span[1]/input</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="myAccountBtn">
+		<Properties>
+		    <xpath>//div[@id="TB_ajaxContent"]//input[@value='My Account']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="addMobileSuccessMsg">
+		<Properties>
+		    <id>TB_ajaxContent</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="addMobileNumSuccessMsg">
+		<Properties>
+		    <id>mobileSuccessMessage</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="errorMobileNumMsg">
+		<Properties>
+		    <id>errMobileNumber</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="editMobilePhoneBtn">
+		<Properties>
+		    <id>mobile_button</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="AddedmobileNumText">
+		<Properties>
+		    <id>mobile_text</id>
+		</Properties>
+	</TestObject>
+
+</Page>

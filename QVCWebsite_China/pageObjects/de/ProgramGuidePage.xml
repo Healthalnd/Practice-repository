@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ProgramGuidePage" include="MastheadMain">
+	 
+	 <TestObject name="QVCPlusLink"> 
+        	<properties>   
+          		<id>btn2CH</id>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="QVCLiveLink"> 
+        	<properties>   
+          		<id>btnQVC</id>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="ProgramGuidePageHeader"> 
+        	<properties>   
+          		<h1>TV Program Guide Daily View</h1>         		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="channelSelector"> 
+        <properties>   
+          	<id>selChannel</id>         		
+        </properties> 
+    </TestObject>
+	 <TestObject name="timeZoneSelector"> 
+        <properties>   
+          	<id>selTimeZone</id>         		
+        </properties> 
+    </TestObject>	
+	 <TestObject name="nextdayLink">
+	    <properties>
+	         <xpath>//*[@class="programGuidePageView top"]//a[.='Next Day']</xpath>
+	    </properties>
+	 </TestObject>
+	 <TestObject name="currentDate">
+	    <properties>
+	         <xpath>//*[@class='programGuideSelectorDayCenter']</xpath>
+	    </properties>
+	 </TestObject>
+	 <TestObject name="addReminder1Chkbox">
+	    <properties>
+	         <xpath>//*[contains(@class, 'divNewProgram')][1]//*[@id='cbAddReminder']</xpath>
+	    </properties>
+	 </TestObject>
+	 <TestObject name="addReminder1Title">
+	    <properties>
+	         <xpath>//*[contains(@class, 'divNewProgram')][1]//*[@class='divProgramTitle']</xpath>
+	    </properties>
+	 </TestObject>
+	 <TestObject name="addReminder2Chkbox">
+	    <properties>
+	         <xpath>//*[contains(@class, 'divNewProgram')][2]//*[@id='cbAddReminder']</xpath>
+	    </properties>
+	 </TestObject>
+	 <TestObject name="addReminder2Title">
+	    <properties>
+	         <xpath>//*[contains(@class, 'divNewProgram')][2]//*[@class='divProgramTitle']</xpath>
+	    </properties>
+	 </TestObject>	
+	 <TestObject name="weeklyViewLink">
+	    <properties>
+	         <xpath>//a[.='Weekly View'][1]</xpath>
+	    </properties>
+	 </TestObject>
+	 <TestObject name="saveRemindersBtn">
+	    <properties>
+	         <xpath>//*[@class="programGuidePageView bottom"]//*[@value="Save Reminders"]</xpath>
+	    </properties>
+	 </TestObject>
+	 <TestObject name="saveReminderBtn">
+	    <properties>
+	         <xpath>//*[@value="Save Reminder"]</xpath>
+	    </properties>
+	 </TestObject>	 
+	 <TestObject name="reminderDateSelector">
+	    <properties>
+	         <xpath>//*[@id='reminderDate']</xpath>
+	    </properties>
+	 </TestObject>	
+	 <TestObject name="eventDate">
+	    <properties>
+	         <xpath>//div[@class='ReminderInfoData']/span</xpath>
+	    </properties>
+	 </TestObject>
+	 <TestObject name="createReminderSuccessMsg">
+	    <properties>
+	         <LinkText>Your reminders have been created.</LinkText>
+	    </properties> 
+	 </TestObject>	 
+	 <TestObject name="viewAllRemindersBtn">
+	    <properties>
+	        <xpath>//*[@value="View All Reminders"]</xpath>
+	    </properties>
+	 </TestObject>	 
+</Page>

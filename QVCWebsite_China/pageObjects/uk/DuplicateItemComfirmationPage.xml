@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="DuplicateItemComfirmationPage" include="MastheadMain">
+
+	<TestObject name="Header"> 
+		<properties>   
+			<id>divPageTitle</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="btnYes"> 
+		<properties>   
+			<xpath>//*[@class='primaryButton']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="duplicateConfirmation">
+		<Properties>
+			<xpath>//span[text()='Duplicate item']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="cancelBtn">
+		<Properties>
+			<xpath>//*[@class='secondaryButton buttonAlignVertical']</xpath>
+		</Properties>
+	</TestObject>
+	
+</Page>
+

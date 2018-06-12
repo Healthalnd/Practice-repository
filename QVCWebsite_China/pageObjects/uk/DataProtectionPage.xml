@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="DataProtectionPage" include="MastheadMain">
+
+	<TestObject name="PageTitle"> 
+		<properties>   
+			<xpath>//*[@class='active']/h1</xpath>
+		</properties> 
+	</TestObject>
+	
+	
+	<TestObject name="OptOutLink"> 
+		<properties>   
+			<xpath>//*[contains(text(),"Manage Your Advertising &amp; Tracking Preferences")]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="AccessRequestLink"> 
+		<properties>   
+			<xpath>//*[contains(text(),"Request to Receive a Copy of Your Data")]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ForgetRequestLink"> 
+		<properties>   
+			<xpath>//*[contains(text(),"Learn More &amp; Submit a Request to Delete Your Data")]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ObjectRequestLink"> 
+		<properties>   
+			<xpath>//*[contains(text(),"Submit Your Objection")]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="RestrictRequestLink"> 
+		<properties>   
+			<xpath>//*[contains(text(),"Request to Restrict the Processing of Data for Your Account")]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="PortRequestLink"> 
+		<properties>   
+			<xpath>//*[contains(text(),"Submit a Data Portability Request")]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="goToMyAccountLink"> 
+		<properties>   
+			<xpath>//*[contains(text(),"Go to My Account")]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="contactCCLink"> 
+		<properties>   
+			<xpath>//*[contains(text(),"Contact QVC Customer Care")]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="manageYMPerferencesLink"> 
+		<properties>   
+			<xpath>//*[contains(text(),"Manage Your Marketing Preferences")]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="manageYPrivacyPerferencesLink"> 
+		<properties>   
+			<xpath>//*[contains(text(),"Manage Your Privacy Preferences")]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="learnMoreabountCookieSettingsLink"> 
+		<properties>   
+			<xpath>//*[contains(text(),"Learn More about Cookie Settings")]</xpath>
+		</properties> 
+	</TestObject>
+	
+		<TestObject name="breadCrumb"> 
+		<properties>   
+			<css>.breadcrumb</css>
+		</properties> 
+	</TestObject>
+	<TestObject name="privacyBanner"> 
+		<properties>   
+			<xpath>//*[@id='qPrivacyBanner']//p</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="okBtn"> 
+		<properties>   
+			<xpath>//*[@id='qPrivacyBanner']//*[@class="btn btn-primary"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="privacyLink"> 
+		<properties>   
+			<xpath>//*[@id='qPrivacyBanner']//a[1]</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="privacyStatementContent"> 
+		<properties>   
+			<xpath>//*[@data-component-type='TEXT_SINGLE']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="privacyTrustCenterTitle"> 
+		<properties>   
+			<xpath>//*[@class='hero-intro__title introTitle']</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="cookiesLink"> 
+		<properties>   
+			<xpath>//a[contains(text(),"cookies")]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="cookiesContent"> 
+		<properties>   
+			<xpath>//*[@id='pageContent']</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="tableInPrivacy"> 
+		<properties>   
+			<xpath>//*[@data-component-type='RICH_TEXT']/table</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="bottomPrivacyPrivacyLink"> 
+		<properties>   
+			<xpath>//p[@class='links']//*[contains(text(),"Privacy Statement")]</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="linkInPrivacyPrivacyPage"> 
+		<properties>   
+			<xpath>//a[contains(text(),"&lt;text&gt;")]</xpath>
+			<xpath>//u[contains(text(),"&lt;text&gt;")]</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="ObjectRequest_NameInputBox"> 
+		<properties>   
+			<xpath>//*[@id='gdprObjectDataProcessForm']//*[@name='customerName']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ObjectRequest_NameText"> 
+		<properties>   
+			<xpath>//*[@id='gdprObjectDataProcessForm']//*[@data-for='customerName']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ObjectRequest_ErrorMsg"> 
+		<properties>   
+			<xpath>//*[@id='customerName-error']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ObjectRequest_EmailAddrInputBox"> 
+		<properties>   
+			<xpath>//*[@id='gdprObjectDataProcessForm']//*[@name='email']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ObjectRequest_EmailAddrText"> 
+		<properties>   
+			<xpath>//*[@id='gdprObjectDataProcessForm']//*[@data-for='email']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ObjectRequest_ErrorMsg"> 
+		<properties>   
+			<xpath>//*[@id='email-error']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ObjectRequest_PhoneNumberInputBox"> 
+		<properties>   
+			<xpath>//*[@id='gdprObjectDataProcessForm']//*[@name='phoneNumber']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ObjectRequest_PhoneNumberText"> 
+		<properties>   
+			<xpath>//*[@id='gdprObjectDataProcessForm']//*[@data-for='phoneNumber']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ObjectRequest_PhoneNumberErrorMsg"> 
+		<properties>   
+			<xpath>//*[@id='phoneNumber-error']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ObjectRequest_MessageInputBox"> 
+		<properties>   
+			<xpath>//*[@id='gdprObjectDataProcessForm']//*[@name='message']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ObjectRequest_MessageText"> 
+		<properties>   
+			<xpath>//*[@id='gdprObjectDataProcessForm']//*[@data-for='message']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ObjectRequest_TitleContent"> 
+		<properties>
+			<xpath>//div[@data-component-type='TEXT_SINGLE']//p[1]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="requestContent"> 
+		<properties>
+			<xpath>//*[@data-component-type='TEXT_SINGLE']//&lt;obj&gt;[&lt;index&gt;]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="MessageMaxText"> 
+		<properties>   
+			<xpath>//*[@class='form-group message']//*[@class='txtNote']</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="RestrictRequest_NameInputBox"> 
+		<properties>   
+			<xpath>//*[@id='gdprRestrictDataForm']//*[@name='customerName']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="Restrictquest_EmailAddrInputBox"> 
+		<properties>   
+			<xpath>//*[@id='gdprRestrictDataForm']//*[@name='email']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="RestrictRequest_PhoneNumberInputBox"> 
+		<properties>   
+			<xpath>//*[@id='gdprRestrictDataForm']//*[@name='phoneNumber']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="RestrictRequest_MessageInputBox"> 
+		<properties>   
+			<xpath>//*[@id='gdprRestrictDataForm']//*[@name='message']</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="RestrictRequest_NameText"> 
+		<properties>   
+			<xpath>//*[@id='gdprRestrictDataForm']//*[@data-for="customerName"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="Restrictquest_EmailAddrText"> 
+		<properties>   
+			<xpath>//*[@id='gdprRestrictDataForm']//*[@data-for="email"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="RestrictRequest_PhoneNumberText"> 
+		<properties>   
+			<xpath>//*[@id='gdprRestrictDataForm']//*[@data-for="phoneNumber"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="RestrictRequest_MessageText"> 
+		<properties>   
+			<xpath>//*[@id='gdprRestrictDataForm']//*[@data-for="message"]</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="RestrictRequest_NameErrMsg"> 
+		<properties>   
+			<xpath>//*[@id='customerName-error']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="Restrictquest_EmailAddrErrMsg"> 
+		<properties>   
+			<xpath>//*[@id='email-error']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="RestrictRequest_PhoneNumberErrMsg"> 
+		<properties>   
+			<xpath>//*[@id='phoneNumber-error' and contains(text()," ")]</xpath>
+		</properties> 
+	</TestObject>	
+	
+	<TestObject name="RequestCopyYourDataFormTitle"> 
+		<properties>   
+			<xpath>//*[@data-component-type='HEADER_TEXT']//*[@class='text-left']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="RequestCopyYourInfo_TitleContent1"> 
+		<properties>
+			<xpath>//div[@data-component-type='RICH_TEXT']</xpath>
+			<xpath>//*[@data-component-type='IMAGE_HEADER_TEXT']//*[@class='col-tn-10 col-tn-offset-1 caption']/p[2]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="RequestCopyYourInfo_TitleContent2"> 
+		<properties> 
+			<xpath>//div[@data-component-type='RICH_TEXT']</xpath>
+			<xpath>//*[@data-component-type='IMAGE_HEADER_TEXT']//*[@class='col-tn-10 col-tn-offset-1 caption']/p[3]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="RequestCopyYourDataFormNameInputBox"> 
+		<properties>   
+			<xpath>//*[@id='gdprRequestDataCopyForm']//*[@name='customerName']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="RequestCopyYourDataFormNameText"> 
+		<properties>   
+			<xpath>//*[@id='gdprRequestDataCopyForm']//*[@data-for='customerName']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="NameInput_ErrorMsg"> 
+		<properties>   
+			<xpath>//*[@id='customerName-error']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="RequestCopyYourDataFormEmailAddrInputBox"> 
+		<properties>   
+			<xpath>//*[@id='gdprRequestDataCopyForm']//*[@name='email']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="RequestCopyYourDataFormEmailAddrText"> 
+		<properties>   
+			<xpath>//*[@id='gdprRequestDataCopyForm']//*[@data-for='email']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="EmailInput_ErrorMsg"> 
+		<properties>   
+			<xpath>//*[@id='email-error']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="RequestCopyYourDataFormPhoneNumberInputBox"> 
+		<properties>   
+			<xpath>//*[@id='gdprRequestDataCopyForm']//*[@name='phoneNumber']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="RequestCopyYourDataFormPhoneNumberText"> 
+		<properties>   
+			<xpath>//*[@id='gdprRequestDataCopyForm']//*[@data-for='phoneNumber']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="PhoneNumberInput_ErrorMsg"> 
+		<properties>   
+			<xpath>//*[@id='phoneNumber-error']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="RequestCopyYourDataFormMessageInputBox"> 
+		<properties>   
+			<xpath>//*[@id='gdprRequestDataCopyForm']//*[@name='message']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="RequestCopyYourDataFormMessageText"> 
+		<properties>   
+			<xpath>//*[@id='gdprRequestDataCopyForm']//*[@data-for='message']</xpath>
+		</properties> 
+	</TestObject> 
+		
+	<TestObject name="SubmitBtn"> 
+		<properties>   
+			<xpath>//*[@class='btn btn-primary btnContinue']</xpath>
+			<xpath>//*[@class="btn btn-primary btnSave"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="CancelBtn"> 
+		<properties>   
+			<xpath>//*[@class='btn btn-secondary btnCancel']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="SubmitRequestCopyYourDataSuccessfulText"> 
+		<properties>   
+			<xpath>//*[.='Your request has been submitted successfully!']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OptOutTitleContent1"> 
+		<properties>   
+			<xpath>//*[@data-module-type='FLEX_TEXT_FULL'][1]//*[@class='flexContent']//*[@data-component-type='RICH_TEXT']//p[1]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OptOutTitleContent2"> 
+		<properties>   
+			<xpath>//*[@data-module-type='FLEX_TEXT_FULL'][1]//*[@class='flexContent']//*[@data-component-type='RICH_TEXT']//p[2]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OptOut_ExternalTargetedAdvertising_Header"> 
+		<properties>   
+			<xpath>//*[contains(@data-form-group,'web')][1]//*[@class='custom-control-description']//strong</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OptOut_ExternalTargetedAdvertising_Content"> 
+		<properties>   
+			<xpath>//*[contains(@data-form-group,'web')][1]//*[@class='custom-control-description']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OptOut_ExternalTargetedAdvertising_Btn"> 
+		<properties> 
+			<xpath>//*[contains(@data-form-group,'web')][1]//*[@class='custom-control-input']</xpath>
+			<xpath>//*[contains(@data-form-group,'web')][1]//*[@class='form-group custom-control custom-toggle']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OptOut_AnalyticsPersonalisation_Header"> 
+		<properties>   
+			<xpath>//*[contains(@data-form-group,'web')][2]//*[@class='custom-control-description']//strong</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OptOut_AnalyticsPersonalisation_Content"> 
+		<properties>   
+			<xpath>//*[contains(@data-form-group,'web')][2]//*[@class='custom-control-description']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OptOut_AnalyticsPersonalisation_Btn"> 
+		<properties>
+			<xpath>//*[contains(@data-form-group,'web')][2]//*[@class='custom-control-input']</xpath>	
+			<xpath>//*[contains(@data-form-group,'web')][2]//*[@class='form-group custom-control custom-toggle']</xpath>			
+			<xpath>//*[contains(@data-form-group,'web')][2]//*[@class='custom-control-input']/following-sibling::*[1]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OptOut_LoyaltyPrograms_Header"> 
+		<properties>   
+			<xpath>//*[contains(@data-form-group,'web')][3]//*[@class='custom-control-description']//strong</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OptOut_LoyaltyPrograms_Content"> 
+		<properties>   
+			<xpath>//*[contains(@data-form-group,'web')][3]//*[@class='custom-control-description']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OptOut_LoyaltyPrograms_Btn"> 
+		<properties>   
+			<xpath>//*[contains(@data-form-group,'web')][3]//*[@class='custom-control-input']</xpath>
+			<xpath>//*[contains(@data-form-group,'web')][3]//*[@class='form-group custom-control custom-toggle']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OptOut_Essential_Header"> 
+		<properties>   
+			<xpath>//*[contains(@data-form-group,'web')][4]//*[@class='custom-control-description']//strong</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OptOut_Essential_Content"> 
+		<properties>   
+			<xpath>//*[contains(@data-form-group,'web')][4]//*[@class='custom-control-description']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OptOut_TipsAboveSubmitBtn"> 
+		<properties>   
+			<xpath>//*[contains(@data-form-group,'web')][5]//*[@class='divFormButtons']//*[@class='col-tn-12']/p</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OptOut_Content1BelowSubmitBtn"> 
+		<properties>   
+			<xpath>//*[@data-module-type='FLEX_TEXT_FULL'][2]//*[@data-component-type='RICH_TEXT']//p[1]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OptOut_Content2BelowSubmitBtn"> 
+		<properties>   
+			<xpath>//*[@data-module-type='FLEX_TEXT_FULL'][2]//*[@data-component-type='RICH_TEXT']//p[2]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OptOut_Content3BelowSubmitBtn"> 
+		<properties>   
+			<xpath>//*[@data-module-type='FLEX_TEXT_FULL'][2]//*[@data-component-type='RICH_TEXT']//p[3]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OptOut_ADLink1BelowSubmitBtn"> 
+		<properties>   
+			<xpath>//*[@data-module-type='FLEX_TEXT_FULL'][2]//*[@data-component-type='RICH_TEXT']//p[2]//a[1]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OptOut_ADLink2BelowSubmitBtn"> 
+		<properties>   
+			<xpath>//*[@data-module-type='FLEX_TEXT_FULL'][2]//*[@data-component-type='RICH_TEXT']//p[2]//a[2]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OptOut_ADLink3BelowSubmitBtn"> 
+		<properties>   
+			<xpath>//*[@data-module-type='FLEX_TEXT_FULL'][2]//*[@data-component-type='RICH_TEXT']//p[2]//a[3]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OptOut_CookiesPolicyLinkBelowSubmitBtn"> 
+		<properties>   
+			<xpath>//*[@data-module-type='FLEX_TEXT_FULL'][2]//*[@data-component-type='RICH_TEXT']//p[3]//a</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OptOut_ADLink1NewPageTitle"> 
+		<properties>   
+			<xpath>//*[@class='main-view__title ng-scope']</xpath>
+		</properties> 
+	</TestObject> 
+	<TestObject name="OptOut_ADLink2NewPageTitle"> 
+		<properties>   
+			<xpath>//*[@class='fade-animation ng-scope']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OptOut_ADLink3NewPageTitle"> 
+		<properties>   
+			<xpath>//*[@class='w960 mauto']</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="ForgetRequestFormNameInputBox"> 
+		<properties>   
+			<xpath>//*[@id='gdprRightToBeForgottenForm']//*[@name='customerName']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ForgetRequestFormNameText"> 
+		<properties>   
+			<xpath>//*[@id='gdprRightToBeForgottenForm']//*[@data-for='customerName']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ForgetRequestFormEmailAddrInputBox"> 
+		<properties>   
+			<xpath>//*[@class="form-group email"]//*[@name='email']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ForgetRequestFormEmailAddrText"> 
+		<properties>   
+			<xpath>//*[@id='gdprRightToBeForgottenForm']//*[@data-for='email']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ForgetRequestFormPhoneNumberInputBox"> 
+		<properties>   
+			<xpath>//*[@class="form-group phone"]//*[@name='phoneNumber']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ForgetRequestFormPhoneNumberText"> 
+		<properties>   
+			<xpath>//*[@id='gdprRightToBeForgottenForm']//*[@data-for='phoneNumber']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ForgetRequestFormMessageInputBox"> 
+		<properties>   
+			<xpath>//*[@class="form-group message"]//*[@name='message']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ForgetRequestFormMessageText"> 
+		<properties>   
+			<xpath>//*[@id='gdprRightToBeForgottenForm']//*[@data-for='message']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="popUpMsg"> 
+		<properties>   
+			<xpath>//*[@class="alert alert-success dismissable qMsg"]/*[@class="copy"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="PortabilityRequest_NameInputBox"> 
+		<properties>   
+			<xpath>//*[@id='gdprDataPortabilityForm']//*[@name='customerName']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="PortabilityRequestFormNameText"> 
+		<properties>   
+			<xpath>//*[@id='gdprDataPortabilityForm']//*[@data-for='customerName']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="PortabilityRequestFormEmailAddrText"> 
+		<properties>   
+			<xpath>//*[@id='gdprDataPortabilityForm']//*[@data-for='email']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="PortabilityRequest_EmailInputBox"> 
+		<properties>   
+			<xpath>//*[@id='gdprDataPortabilityForm']//*[@name='email']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="PortabilityRequestFormPhoneNumberText"> 
+		<properties>   
+			<xpath>//*[@id='gdprDataPortabilityForm']//*[@data-for='phoneNumber']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="PortabilityRequest_PhoneNumberInputBox"> 
+		<properties>   
+			<xpath>//*[@id='gdprDataPortabilityForm']//*[@name='phoneNumber']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="PortabilityRequestFormMessageText"> 
+		<properties>   
+			<xpath>//*[@id='gdprDataPortabilityForm']//*[@data-for='message']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="PortabilityRequest_MessageInputBox"> 
+		<properties>   
+			<xpath>//*[@id='gdprDataPortabilityForm']//*[@name='message']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ExplanatoryText"> 
+		<properties>   
+			<xpath>//*[@class="flexContent"]</xpath>
+			<xpath>//*[@id='flex_text_full_2']//*[@data-component-type='RICH_TEXT']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="PrivacyPreferencesFormTitle"> 
+		<properties>   
+			<xpath>//*[@class="container customForm bg-white"]//h2</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="gdprForGetRequestFormName"> 
+		<properties>   
+			<xpath>//*[@id='gdprRightToBeForgottenForm']//*[@name='customerName']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="gdprForGetRequestFormNameField"> 
+		<properties>   
+			<xpath>//*[@id='gdprRightToBeForgottenForm']//*[@data-for='customerName']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="gdprForGetRequestFormNameFieldError"> 
+		<properties>   
+			<xpath>//*[@id='gdprRightToBeForgottenForm']//*[@id='customerName-error']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="gdprForGetRequestFormEmail"> 
+		<properties>   
+			<xpath>//*[@id='gdprRightToBeForgottenForm']//*[@name='email']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="gdprForGetRequestFormEmailField"> 
+		<properties>   
+			<xpath>//*[@id='gdprRightToBeForgottenForm']//*[@data-for='email']</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="gdprForGetRequestFormEmailFieldError"> 
+		<properties>   
+			<xpath>//*[@id='gdprRightToBeForgottenForm']//*[@id='email-error']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="gdprForGetRequestFormPhone"> 
+		<properties>   
+			<xpath>//*[@id='gdprRightToBeForgottenForm']//*[@name='phoneNumber']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="gdprForGetRequestFormPhoneField"> 
+		<properties>   
+			<xpath>//*[@id='gdprRightToBeForgottenForm']//*[@data-for='phoneNumber']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="gdprForGetRequestFormPhoneFieldError"> 
+		<properties>   
+			<xpath>//*[@id='gdprRightToBeForgottenForm']//*[@id='phoneNumber-error']</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="gdprForGetRequestFormMessage"> 
+		<properties>   
+			<xpath>//*[@id='gdprRightToBeForgottenForm']//*[@name='message']</xpath>
+		</properties> 
+	</TestObject>
+			<TestObject name="gdprForGetRequestFormMessageFiled"> 
+		<properties>   
+			<xpath>//*[@id='gdprRightToBeForgottenForm']//*[@data-for='message']</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="gdprForGetRequestFormMessageInfo"> 
+		<properties>   
+			<xpath>//*[.='1000 characters max']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="MyAccountPageTitle"> 
+		<properties>   
+			<xpath>//*[@id='divPageTitle']/h1</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="AccessTextLink"> 
+		<properties>   
+			<xpath>//*[@data-component-type='RICH_TEXT']//*[@title='My Account']</xpath>
+		</properties> 
+	</TestObject>
+</Page>
+

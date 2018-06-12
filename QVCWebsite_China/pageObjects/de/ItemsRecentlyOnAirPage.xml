@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ItemsRecentlyOnAirPage" include="MastheadMain">
+
+	 <TestObject name="pageTitle"> 
+        	<properties>   
+          		<id>divPageTitle</id>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="imageFirstProduct"> 
+        	<properties>   
+          		<xpath>(//*[@class="imageDimensions photo"])[1]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="TVMenuTxt"> 
+        	<properties>   
+          		<css>#divTVMenu h2</css>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="ItemOnAirLink"> 
+        	<properties>   
+          		<xpath>//*[@id='divTVMenu']//a[text()='Item on Air']</xpath>         		
+        	</properties> 
+     </TestObject>
+	  <TestObject name="WatchTVLiveLink"> 
+        	<properties>   
+          		<xpath>//*[@id='divTVMenu']//a[text()='Watch TV Live']</xpath>         		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="ProgramGuideLink"> 
+        	<properties>   
+          		<xpath>//*[@id='divTVMenu']//a[text()='Program Guide']</xpath>         		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="channelList"> 
+        	<properties>   
+          		<id>selChannel</id>          		
+        	</properties> 
+     </TestObject>
+	 
+</Page>

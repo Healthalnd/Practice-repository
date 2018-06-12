@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="SubmitOrderPage_AEM" include="MastheadMain">
+	<TestObject name="placeOrderBtn"> 
+		<properties>   
+			 <xpath>//*[@class="col-tn-12 col-xs-offset-1 col-xs-10 col-sm-4 cont cartSummary"]//*[@class="btn btn-primary btnSubmitOrder"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="pageTitle"> 
+		<properties>   
+			 <xpath>//*[@class='text-center']</xpath>
+		</properties> 
+	</TestObject>
+
+</Page>

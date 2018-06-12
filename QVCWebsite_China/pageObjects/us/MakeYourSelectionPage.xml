@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="MakeYourSelectionPage" include="MastheadMain">
+	<TestObject name="optionSelectFirstSize">
+			<Properties>
+				<xpath>//*[@class='buyBoxSizeList']//*[@class='selectSizeLarge'][1]</xpath>
+			</Properties>
+	</TestObject>	
+	<TestObject name="continueBtn">
+			<Properties>
+				<xpath>//*[@class="btn btn-tall btn-primary btnContinue"] | //*[@class='primaryWrapBtn wrapBtncontinue'] | //input[@value='CONTINUE']</xpath>
+			</Properties>
+	</TestObject>
+	
+	<TestObject name="firstAvailableSize">
+		<Properties>			
+			<xpath>(//*[@class='selectSize'] | //*[@class='selectSizeLarge'] |  //*[starts-with(@class,'selectSize') and contains(@style,'active')] | //*[@ats="Y"][1]/*[@class="swatchBox selectSize"])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstAvailableColor">
+		<Properties>			
+			<xpath>(//*[starts-with(@class,'selectColor') and contains(@style,'active')] | //*[@class='selectColor'] | //*[@ats="Y"][1]/*[@class="swatchBox selectColor"])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productQtyList">
+		<Properties>			
+			<id>selProductQuantity</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="submitChangesBtn"> 
+		<properties>
+			<xpath>//input[@id='btnSave']</xpath>
+			<xpath>//*[@class="btn btn-secondary btnSaveToWishList"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="makeYourSelectionHeader"> 
+		<properties>   
+			<xpath>//h1[.='Make Your Selection']</xpath>
+			<xpath>//*[@class="pdShortDescLabel"]</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="cancelBtn"> 
+		<properties>   
+			<xpath>//input[@value='Cancel']</xpath>
+			<xpath>//*[@class="btn btn-tertiary btnCancel"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="addToCartBtn"> 
+		<properties>   
+			<xpath>//*[@class="btn btn-primary btnAddToCart"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="productQtyInputBox">
+		<Properties>
+			<css>.productQuantity</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="selectedSize">
+		<Properties>
+			<xpath>//ul[@id="ulProductSizeList"]//li[contains(@class,'selectedSwatch')]</xpath>
+			<xpath>//*[@class="selectedSize"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="selectedColor">
+		<Properties>
+		    <xpath>//ul[@id="ulProductColorList"]//li[contains(@class,'selectedSwatch')]</xpath>
+			<xpath>//*[@class="selectedColor"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="availableSizeOprion2nd">
+		<Properties>
+		    <xpath>//ul[@id="ulProductSizeList"]//li[not(contains(@class,'soldout'))][2]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="availableColorOprion2nd">
+		<Properties>
+		    <xpath>//ul[@id="ulProductColorList"]//li[not(contains(@class,'soldout'))][2]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="confirmYourSelectionHeader"> 
+		<properties>   
+			<xpath>//h1[.='Confirm Your Selection']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="confirmYourSelectionDescriptionTxt"> 
+		<properties>   
+			<xpath>//div[@id='TB_window']//p[contains(text(),'You have chosen new')]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="videoSection"> 
+		<properties>   
+			<xpath>//div[@id='pdVideoContainer']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="productPhoto"> 
+		<properties>   
+			<xpath>//div[@id='divProductDetailPhotoDisplay']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="productPriceInfo"> 
+		<properties>   
+			<xpath>//div[@id='divProductPricingInfo']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="productSizeOrColorOption"> 
+		<properties>   
+			<xpath>//div[@class='divProductDetailSelect']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="productDesc">
+		<Properties>
+			<xpath>//*[@class="pdShortDesc"]//h1</xpath>
+			<xpath>//*[@id='frmProductDetail']//h1[@class='fn']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="qVCPrice"> 
+		<properties>  
+			<xpath>//*[@class="featuredPrice"]/span</xpath>
+			<xpath>//*[@class="qvcPrice"]/span</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="itemColorSelected">
+	<Properties>
+		<xpath>//*[@class="selectColor" and @state="selected" and @data-original-title="&lt;Color&gt;"]</xpath>
+		<xpath>//*[@state="selected" and @data-original-title="&lt;Color&gt;"]</xpath>
+	</Properties>
+	</TestObject>
+	<TestObject name="itemSizeSelected">
+		<Properties>
+			<xpath>//*[@class="selectSize" and @state="selected"]//span[.="&lt;Size&gt;"]</xpath>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectSize"]//*[@state="selected"]//span[.="&lt;Size&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="inStockedSelected">
+		<Properties>
+			<xpath>//*[@class="status instock"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="waitListSelected">
+		<Properties>
+			<xpath>//*[@class="status waitlist"]/a</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="InstockColor">
+		<Properties>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectColor"]//*[and @ats="Y"][&lt;Index&gt;]</xpath>
+			<xpath>//*[@data-original-title="&lt;Color&gt;" and @ats="Y"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="InstockColorOption">
+		<Properties>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@ats="Y"][&lt;Index&gt;]</xpath>
+			<xpath>//*[@data-original-title="&lt;Color&gt;" and @ats="Y"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="OtherSize">
+		<Properties>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectSize"]//*[@ats="Y"][&lt;Index&gt;]</xpath>
+			<xpath>//span[text()="&lt;Size&gt;"]/../..</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="FirstWaitListSize">
+		<Properties>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectSize"]//*[@ats="W"][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstWaitListColor">
+		<Properties>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@ats="W"][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstWaitListColorName">
+		<Properties>
+			<xpath>//*[@class="selectColor" and @ats="W"][1]</xpath>			
+			<xpath>//*[@class="selectOption" and @ats="W"][1]</xpath>
+			<xpath>//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@ats="W"][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="SelectedSizeText">
+		<Properties>
+			<xpath>//*[@class="selectSize" and @state="selected"]//span</xpath>
+			<xpath>//*[@class="selectedSize"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="SelectedColorText">
+		<Properties>
+			<xpath>//*[@class="selectedColor"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstSaveColor">
+		<Properties>
+			<xpath>(//*[@class="buyBoxColorList"]//*[@class="swatchBadge markdown"][1]/../div[contains(@class,"swatchBox ")])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstSaveSize">
+		<Properties>
+			<xpath>(//*[@class="buyBoxSizeList"]//*[@class="swatchBadge markdown"][1]/../div[contains(@class,"swatchBox ")])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstSaveBadge">
+		<Properties>
+			<xpath>(//*[@class="swatchBadge markdown"][1]/../div[contains(@class,"swatchBox ")])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstNonSaveColor">
+		<Properties>
+			<xpath>(//*[@class="buyBoxColorList"]//*[@class="swatchBadge"][1]/../div[contains(@class,"swatchBox ")])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstNonSaveSize">
+		<Properties>
+			<xpath>(//*[@class="buyBoxSizeList"]//*[@class="swatchBadge"][1]/../div[contains(@class,"swatchBox ")])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="InstockColorOrOption">
+		<Properties>
+			<xpath>//*[@data-original-title="&lt;Color&gt;"]/div[contains(@class,"swatchBox ")]</xpath>
+			<xpath>//*[@class="buyBoxColorList"]//*[@ats="Y"][&lt;Index&gt;]/div[contains(@class,"swatchBox ")]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="qVCRegularPrice">
+		<Properties>
+			<xpath>//*[@class="price"]</xpath>
+			<xpath>//*[@class="price priceSm"]</xpath>
+			<xpath>//*[@class="productDetailPrice  price"]</xpath>
+			<xpath>//*[contains(@class,"productDetailPrice")][1]</xpath>
+			<xpath>//*[contains(@id,"roductDetailPrice")][1]</xpath>
+		</Properties>
+	</TestObject>
+    <TestObject name="stepUpActive">
+		<Properties>
+			<xpath>//*[@class="stepUp" and @state="active"]</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="stepUpInactive">
+		<Properties>
+			<xpath>//*[@class="stepUp" and @state="inactive"]</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="selectedQTY">
+		<Properties>
+			<xpath>//*[@class="stepStore"]</xpath>
+		</Properties>
+	</TestObject>	
+	
+</Page>

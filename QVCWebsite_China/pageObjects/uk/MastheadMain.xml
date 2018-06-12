@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="MastheadMain" >
+	<TestObject name="pageTitle">
+		<Properties>
+		    <id>divPageTitle</id>
+			<xpath>//*[@id='divPageTitle']/h1</xpath>
+			<xpath>//*[@class='breadcrumb pageBreadcrumb']</xpath>
+			<xpath>//*[@class='text-center']</xpath>
+			<class>active</class>
+		</Properties>
+	</TestObject>	
+	<TestObject name="cookiesBarCloseBtn"> 
+        	<properties>   
+          		<xpath>//*[@id="alert-cookie-info-bar"]//button[@class="close"]</xpath>   
+				<xpath>//*[@class="privacyBannerContent"]//*[@class="btn btn-primary"]</xpath>
+        	</properties> 
+      	</TestObject>
+	<TestObject name="breadcrumbs"> 
+        	<properties>   
+          		<id>breadCrumbs</id> 
+				<xpath>//*[@class="breadcrumb pageBreadcrumb"]//*[@class="active"]/h1</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="PageBreadCrumbs"> 
+        	<properties> 	
+				<id>breadCrumbs</id>
+          		<xpath>//*[@class='breadcrumb pageBreadcrumb']</xpath>          		
+        	</properties> 
+     </TestObject>
+	<TestObject name="footerEmailHeader">
+		<Properties>
+			<xpath>//*[@id="emailAddress"]</xpath>
+			<class>module-footer-top</class>
+			<id>emailHeadingFooter</id>
+		</Properties>
+	</TestObject>	
+	<TestObject name="downTimeErrMsg">
+		<Properties>
+			<css>.errDowntime</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="helloFirstNameTxt">
+		<Properties>
+			<css>#divSignIn .signInGreeting</css>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="searchForm">
+		<Properties>
+			<id>frmMastheadSearch</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="searchBox">
+		<Properties>
+			<id>searchBoxField</id>
+			<id>txtMastheadSearch</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="goBtn">
+		<Properties>
+			<id>btnMastheadSearch</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="signArea">
+		<Properties>
+			<id>divSignIn</id>
+			<id>customer</id>
+			<xpath>//*[@class="acctGreeting acctAuth" and @style="display: inline-block;"]</xpath>	
+			<xpath>(//*[contains(text(),"Hello")])[1]</xpath>
+			<xpath>//*[@id="customer"]//a[contains(text(),"Sign out")]</xpath>
+			<xpath>//*[@class="acctGreeting acctUnAuth" and @style="display: inline-block;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="myAccountLink">
+		<Properties>
+			<linkText>My account</linkText>
+		</Properties>
+	</TestObject>
+	<TestObject name="orderStatusLink">
+		<Properties>
+			<id>linkOrderStatus</id>
+			<linkText>Order status</linkText>
+		</Properties>
+	</TestObject>	
+	<TestObject name="wishListLink">
+		<Properties>
+			<id>linkWishList</id>
+			<linkText>Wish list</linkText>	
+		</Properties>
+	</TestObject>
+	<TestObject name="ContractLink">
+		<Properties>
+			<id>linkKontakt</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="QVCinTVLink">
+		<Properties>
+			<id>linkQVCTV</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="signInArea">
+			<Properties>
+			<xpath>//*[@class="menuIconCell myAccountMenu"]//*[contains(text(),"Sign in or register")]</xpath>	
+			<xpath>//*[@class="acctGreeting acctUnAuth"]</xpath>
+			<xpath>//*[@class="acctGreeting acctAuth"]</xpath>	
+			<xpath>(//*[contains(text(),"Hello")])[1]</xpath>
+			<xpath>//*[@id="customer"]//a[contains(text(),"Sign out")]</xpath>
+			</Properties>
+	</TestObject>
+	
+	<TestObject name="signInLink">
+			<Properties>
+			<xpath>//*[@class="acctGreeting acctUnAuth"]//p[1]</xpath>
+			<linkText>Sign in or register</linkText>	
+			</Properties>
+	</TestObject>
+	<TestObject name="signOutLink">
+		<Properties>
+			<linkText>Sign out</linkText>
+			<linkText>Sign-out</linkText>
+			<xpath>(//a[@title='Sign out'])[1]</xpath>
+			<xpath>//div[@class='acctGreeting acctAuth']//a[@title='Sign out']</xpath>
+			<xpath>//*[@class="menuIconCell myAccountMenu"]//a[@data-link-tag="SIGNOUT"]</xpath>
+			<xpath>//*[@class="menuIconCell myAccountMenu"]//a[@data-link-tag="Sign-out"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="cartLink">
+		<Properties>
+			<id>ancCart</id>
+			<id>shoppingCart</id>
+			<xpath>//div[@class='cartIcon']/span</xpath>
+			<xpath>//div[@class='cartIcon']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="cartNumberLink">
+		<Properties>
+			<class>cartNumber</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="shopByCategory">
+		<Properties>
+			<id>shopByCategory</id>
+			<id>shopByMenu</id>
+			<id>menuProd</id>
+			<id>nav</id>
+		</Properties>
+	</TestObject>	
+	<TestObject name="shopQVCTVMenu">
+		<Properties>
+			<linkText>Shop QVC TV</linkText>
+			<id>metaNaviQVCTV</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="itemOnAirLink">
+		<Properties>
+			<linkText>Recent on-air items</linkText>
+			<xpath>//*[@data-module-type='ON_AIR']//div[@class='onAirProdInfo']//*[contains(@class,'productImg')]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="TvProgramGuide">
+		<Properties>
+			<linkText>TV guide</linkText>
+            <xpath>//*[@title="TV guide"]</xpath>
+			<xpath>//*[.='Program Guide']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="watchQVCTVLink">
+		<Properties>
+			<xpath>//*[@class="shopTVDropDown"]//*[@title="Watch QVC TV"]</xpath>
+			<xpath>//*[@class="qvctv visible-desktop"]//a[text()="Watch QVC TV"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="fashionLink">
+		<Properties>
+			<linkText>Fashion</linkText>
+		</Properties>
+	</TestObject>
+	<TestObject name="Accessories">
+		<Properties>
+			<linkText>Accessories</linkText>
+			<xpath>//*[@id="nav"]//*[text()="Accessories"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="dressesLink">
+		<Properties>
+			<linkText>Dresses</linkText>
+		</Properties>
+	</TestObject>
+	<TestObject name="ckShipToAddressStepLink">
+		<Properties>
+			<id>liCheckoutStep1</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="Blazers">
+		<Properties>
+			<xpath>//a[contains(text(),"Blazers")]</xpath>
+			<linkText>Blazers &amp; Jackets</linkText>
+		</Properties>
+	</TestObject>
+	<TestObject name="predictiveSearchSection">
+		<Properties>
+			<xpath>//div[@id='predictiveSearch']</xpath>
+			<id>predictiveSearch</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="shopByBrand">
+		<Properties>
+			<xpath>//*[@class="dropdownLinks flyOutMiddle"]//*[contains(text(),"&lt;BrandValue&gt;")]</xpath>
+			<xpath>//*[@class="menuLinkCell shopByCat"]//*[@class="flyoutSection"][2]//*[@class="dropdownLinks flyOutRight"]//*[@class="qComponent"]//*[contains(text(),"&lt;shopByBrand&gt;")]</xpath>
+			<xpath>//*[@class="dropdown meta0100"]//*[@class="divDropdownColumn3"]//*[.="&lt;shopByBrand&gt;")]</xpath>
+			<xpath>//*[@class="dropdown meta0100"]//*[@class="divDropdownColumn3"]//*[contains(text(),"&lt;shopByBrand&gt;")]</xpath>
+			<xpath>//*[@class="shopByDDOpen"]//*[@class="mobFlyoutCat" and contains(text(),'Fashion')]/../following-sibling:://*[contains(text(),"&lt;shopByBrand&gt;")]</xpath>
+			<xpath>//*[contains(@class,"dropdown")]//*[@class="dropdownLinks flyOutRight"]//*[contains(text(),"&lt;shopByBrand&gt;")]</xpath>
+			<xpath>//*[contains(@class,"masthead-pop")]//*[contains(@class,"menuHeader")]//*[contains(text(),"&lt;BrandValue&gt;")]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="Category">
+		<Properties>
+			<xpath>//*[@class="dropdownLinks flyOutMiddle"]//*[contains(text(),"&lt;category&gt;")]</xpath>
+			<xpath>//*[@class="shopByDropDown"]//*[contains(text(),"&lt;category&gt;")]</xpath>
+			<xpath>//*[@class="divMainMenu"]//*[.="&lt;category&gt;"]</xpath>
+			<xpath>//*[@class="divMainMenu"]//*[contains(text(),"&lt;category&gt;")]</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="UpperCategory">
+		<Properties>
+			<xpath>//*[@class="shopByDropDown"]//*[contains(@class,'flyoutMenuLink')]/a[.='&lt;UpperCategory&gt;']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="LowerCategory">
+		<Properties>
+			<xpath>//a[contains(text(),'&lt;LowerCategory&gt;')]</xpath>
+			<xpath>//*[@id="&lt;UpperCategory&gt;Flyout"]//*[text()="&lt;LowerCategory&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="Jewelry">
+		<Properties>
+			<id>Jewelry</id>
+			<linkText>Jewelry</linkText>
+			<xpath>//*[@class="shopByDropDown"]//*[.='Jewellery']</xpath> 
+		</Properties>
+	</TestObject>
+	<TestObject name="Rings">
+		<Properties>
+			<xpath>//*[contains(text(),'Rings')]</xpath>
+			<xpath>//*[@id="JewelryFlyout"]//*[text()="Rings"]</xpath>
+			<linkText>Rings</linkText>
+		</Properties>
+	</TestObject>
+	
+</Page>

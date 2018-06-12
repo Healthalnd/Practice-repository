@@ -1,0 +1,48 @@
+watchNowLink no
+onAirModule  no
+	<TestObject name="onAirModule">  
+		<Properties>			
+			<xpath>//*[@data-module-type='ON_AIR']</xpath>
+		</Properties>
+	</TestObject>
+	
+	
+	
+	<TestObject name="itemsRecentlyOnAirImg1">
+		<Properties>			
+			<xpath>(//*[@class='carouselItem col-sm-2']//img)[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="itemOnAirImg">
+		<Properties>			
+			<xpath>//*[@class='onAirProdInfo']//*[@class='productImg ']</xpath>
+		</Properties>
+	</TestObject>
+	
+	qvcTVLogoLabel
+	//h1[@class='fn']
+	
+	 
+	<TestObject name="firstAvailableSize">
+		<Properties>			
+			<xpath>(//*[@class='selectSize'])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstAvailableColor">
+		<Properties>			
+			<xpath>(//*[@class='selectColor'])[1]</xpath>
+		</Properties>
+	</TestObject>
+	
+	
+	
+	
+	//*[@id='divButtons']//*[@value='CONTINUE']
+	
+	MakeYourSelectionPage
+
+	VerifyOnAirModule
+	
+	
+	
+	http://qa.qvc.com/webapp/wcs/stores/servlet/InterPageView?partNumber=A0009&storeId=10251&URL=OrderItemDisplay%3FupdatePrices%3D1%26calculationUsageId%3D-1%26orderId%3D.&quantity=1&langId=-1&itemQty=&catalogId=10151&productId=5683371&itemId=&sc=A0009-24HR&catEntryId=5683371&state=PS&errorViewName=ProdNotFoundView&ddkey=http%3AAddToCart

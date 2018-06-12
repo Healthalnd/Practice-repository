@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="FeaturePage" include="MastheadMain">
+	
+	
+	<TestObject name="PageTitle">
+			<Properties>
+				<xpath>//*[@data-component-type="HEADER_TEXT"]//h1</xpath>
+			</Properties>
+	</TestObject>
+	
+</Page>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ItemOnAirPage" include="MastheadMain">
+	  
+	 <TestObject name="unselectedPlusChannelBtn"> 
+        <properties>   
+          	<xpath>//button[@title="QVC2"]</xpath>       		
+        </properties> 
+     </TestObject>
+	 <TestObject name="itemOnAirHeader"> 
+        <properties>   
+          	<class>itemOnAir</class>       		
+        </properties> 
+     </TestObject>
+	 <TestObject name="selectedPlusChannelBtn"> 
+        <properties>   
+          	<xpath>//button[@title="QVC2" and contains(@class,'selectedChannel')]</xpath>       		
+        </properties> 
+     </TestObject>
+	 <TestObject name="selectedChannelBtn"> 
+        <properties>   
+          	<xpath>//button[contains(@class,'selectedChannel')]</xpath>       		
+        </properties> 
+     </TestObject>	 
+ 	 <TestObject name="buyboxField"> 
+		<properties>   
+			<xpath>//div[@class="container"]/div[contains(@class,'buyBox')]</xpath>       		
+		</properties> 
+     </TestObject>
+	 <TestObject name="onAirText"> 
+		<properties>   
+			<xpath>//*[@class="prodBadge"]</xpath>       		
+		</properties> 
+     </TestObject>
+</Page>

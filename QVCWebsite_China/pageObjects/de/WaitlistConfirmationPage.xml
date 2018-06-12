@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="WaitlistConfirmationPage" include="MastheadMain">
+
+	<TestObject name="pageTitle">
+		<Properties>
+			<xpath>//*[@id='divPageTitle']/h1[contains(text(),'Bestellung über Warteliste bestätigen')]</xpath>
+			<xpath>//*[@id='divPageTitle']/h1[contains(text(),'Artikel auf Warteliste bestellen')]</xpath>
+			<id>divPageTitle</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="yesBtn">
+		<Properties>
+			<xpath>//*[@value='Ja']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="noBtn">
+		<Properties>
+			<xpath>//input[@value='Nein']</xpath>
+		</Properties>
+	</TestObject>
+</Page>

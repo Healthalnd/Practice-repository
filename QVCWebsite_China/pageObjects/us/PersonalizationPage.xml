@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="PersonalizationPage" include="MastheadMain">
+	<TestObject name="fontType">
+			<Properties>
+				<xpath>/html/body/div[2]/div[7]/div[3]/form/div/div[3]/fieldset/div/input</xpath>
+						
+			</Properties>
+	</TestObject>
+	<TestObject name="persLine1">
+			<Properties>
+				<xpath>/html/body/div[2]/div[7]/div[3]/form/div/div[3]/fieldset[2]/input</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="persLine2">
+			<Properties>
+				<xpath>/html/body/div[2]/div[7]/div[3]/form/div/div[3]/fieldset[2]/input[2]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="contBtn">
+			<Properties>
+				<xpath>//*[@class="primaryWrapBtn wrapBtncontinue"]/input</xpath>
+			</Properties>
+	</TestObject>
+	
+	<TestObject name="personalizedName">
+		<Properties>
+			<id>txtPersonalizedMessageLine1</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="previewLink">
+		<Properties>
+			<xpath>//a[@class="underline" and text()="Preview"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="previewContent">
+		<Properties>
+			<xpath>//*[@id="previewContent"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="previewCloseBtn">
+		<Properties>
+			<xpath>//*[@id="TB_closeAjaxWindow"]/a</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="reqPhone1WebEdit">
+		<Properties>
+			<id>txtRequiredPhone1</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="reqPhone2WebEdit">
+		<Properties>
+			<id>txtRequiredPhone2</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="reqPhone3WebEdit">
+		<Properties>
+			<id>txtRequiredPhone3</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="reqPhone4WebEdit">
+		<Properties>
+			<id>txtRequiredPhone4</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstInitialWebEdit">
+		<Properties>
+			<id>txtPersonalizedMessageFirstInitial</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="middleInitialWebEdit">
+		<Properties>
+			<id>txtPersonalizedMessageSecondInitial</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="lastInitialWebEdit">
+		<Properties>
+			<id>txtPersonalizedMessageLastInitial</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="firstRadio">
+		<Properties>
+			<id>rbBlock</id>
+		</Properties>
+	</TestObject>
+	
+</Page>
+

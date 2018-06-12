@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="DeliveryInfomationPage" include="MastheadMain">
+
+	<TestObject name="deliveryInfoHeader"> 
+		<properties>   
+			<id>divPageTitle</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="ageRestrictedCheckBox">
+		<Properties>
+			<xpath>//*[@class="cb ws_required"]</xpath>
+			<xpath>//*[@class="custom-controls-stacked form-custom-group"]//*[@class="form-group custom-control custom-checkbox"]</xpath>
+			<xpath>//*[@id='cbAge']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="continueBtn">
+		<Properties>
+			<xpath>//*[@class="primaryButton" and @value="Continue"]</xpath>
+			<xpath>//*[@class="btn btn-primary btnCont"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="inforTitle">
+		<Properties>
+			<xpath>//*[@id='mainHeader']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="warningMessage">
+		<Properties>
+			<xpath>//*[@id='lblAge']</xpath>
+		</Properties>
+	</TestObject>
+	
+</Page>
+

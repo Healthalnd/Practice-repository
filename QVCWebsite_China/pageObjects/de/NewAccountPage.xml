@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="NewAccountPage" include="MastheadMain">
+	
+	<TestObject name="emailWebEdit">
+		<Properties>
+			<id>txtEmailAddress</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="confEmailWebEdit">
+		<Properties>
+			<id>txtConfirmEmailAddress</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="passwordTextBox">
+		<Properties>
+			<id>txtPassword</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="confirmPasswordTextBox">
+		<Properties>
+			<id>txtVerifyPassword</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="passwordStrength">
+		<Properties>
+			<id>pwStrength</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="passwordMatch">
+		<Properties>
+			<id>pwMatch</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstNameWebEdit">
+		<Properties>
+			<id>txtFirstName</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="lastNameWebEdit">
+		<Properties>
+			<id>txtLastName</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="streetNameTextBox">
+		<Properties>
+			<id>txtStreetName</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="houseNoTextBox">
+		<Properties>
+			<id>txtHouseNo</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="zipCodeWebEdit">
+		<Properties>
+			<id>txtZipPostalCode</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="cityTextBox">
+		<Properties>
+			<id>txtCity</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="birthTextBox">
+		<Properties>
+			<id>txtDateOfBirth</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="phoneWebEdit">
+		<Properties>
+			<id>txtphone1.1</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="dataProtectCheckBox">
+		<Properties>
+			<xpath>//*[@id='cbDataProtection' and @type="checkbox"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="continueBtn">
+		<Properties>
+			<id>btnContinueCheckout</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="NewAccountcontinueBtn">
+		<Properties>
+			<id>btnContinue</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="errLastNameMsg">
+		<Properties>
+			<id>errlastName</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="errLastNameLabel">
+		<Properties>
+			<xpath>//*[@id="lblLastName" and @class="required labelError"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="errLastNameTextBox">
+		<Properties>
+			<xpath>//*[@id="txtLastName" and @class="crmflowswitch text ws_required ws_letters_hyphen inputError"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="errPasswordMsg">
+		<Properties>
+			<id>errPassword</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="errConfirmPwdMsg">
+		<Properties>
+			<id>errVerifyPassword</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="entireErrMsg">
+		<Properties>
+			<id>errConsole</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="eMailMatchMsg">
+		<Properties>
+			<id>emMatch</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="eMailValidMsg">
+		<Properties>
+			<id>emValid</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="anyQuestionTitle">
+		<Properties>
+			<xpath>//*[@id="helpChatSidebarHead"]/h2</xpath>			
+		</Properties>
+	</TestObject>
+	
+</Page>

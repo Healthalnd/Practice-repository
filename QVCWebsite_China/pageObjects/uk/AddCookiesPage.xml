@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="AddCookiesPage" >
+
+	<TestObject name="AddCookiesBtn"> 
+		<properties>   
+			<id>addCookie</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="updateSuccess"> 
+		<properties>   
+			<id>success</id>
+		</properties> 
+	</TestObject>
+	
+	
+</Page>
+

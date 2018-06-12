@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="EditShipmentPage" include="MastheadMain">
+	<TestObject name="editOptionsLink">
+		<Properties>
+			<linkText>Edit Options</linkText>	
+		</Properties>
+	</TestObject>
+	<TestObject name="editShipToAddressLink">
+		<Properties>
+			<linkText>Edit Ship-to Address</linkText>	
+		</Properties>
+	</TestObject>
+	<TestObject name="itemNumDescriptionTxt">
+		<Properties>
+			<id>TB_ajaxWindowTitle</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="autoDeliveryConfirmationMsg">
+		<Properties>
+			<css>#editOptionsOverlayConfirm p</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="needHelpLink">
+			<Properties>
+				<xpath>//div[@id='divNeedHelp']/a</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="closeBtn">
+			<Properties>
+				<id>TB_closeWindowButton</id>
+			</Properties>
+	</TestObject>
+	<TestObject name="newColor">
+		<Properties>
+			<xpath>//*[@id="ulProductColorList"]/li[@class='selectColor' and not(@style)]</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="cancelBtn">
+		<Properties>
+			<id>btnCancel</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="colorSizeOptionsInfo">
+		<Properties>
+			<id>spanOrderDetailOptions</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="paymentMethodList">
+			<Properties>
+				<id>selPaymentMethod</id>
+			</Properties>
+	</TestObject>
+	<TestObject name="confirmChangesBtn">
+		<Properties>
+			<id>btnConfirmChanges</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="addressBookRadio">
+		<Properties>
+			<id>rbSelectAddress</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="addressList">
+		<Properties>
+			<name>addressId</name>
+		</Properties>
+	</TestObject>
+	<TestObject name="addressDetailTxt">
+		<Properties>
+			<css>.taSpan</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="colorTxt">
+			<Properties>
+				<id>spanSelectedColorText</id>
+			</Properties>
+	</TestObject>
+	<TestObject name="colorESTxt">
+		<Properties>
+			<xpath>//span[@id='spanOrderDetailOptions']//span</xpath>			
+		</Properties>
+	</TestObject>
+</Page>

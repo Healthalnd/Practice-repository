@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ProductDetailPage" include="MastheadMain">
+	
+	
+	<TestObject name="ProductTitle">
+			<Properties>
+				<xpath>//*[@id="ShohinTitle"]//h1</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="ReviewLable">
+			<Properties>
+				<xpath>//*[@class="detail_bbox"]</xpath>
+			</Properties>
+	</TestObject>
+</Page>

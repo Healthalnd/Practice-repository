@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="AOConfirmPage" include="MastheadMain">
+
+	<TestObject name="Advanced-orderHeader"> 
+		<properties>
+			<xpath>//*[@class="overlayHeader"]</xpath>
+			<xpath>//*[@id="divPageTitle"]/h1[contains(text(),'Artikel vorbestellen')]</xpath>
+			<xpath>//*[@id="divPageTitle"]/h1[contains(text(),'Vorbestellung bestätigen')]</xpath>
+			<id>divPageTitle</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="AdvancedOrderMsg"> 
+		<properties>
+			<xpath>//*[@class="infoTextAOoverlay"]</xpath>
+			<xpath>//*[@class="ws_validate"]/p[contains(text(),"Der Artikel ist zurzeit nur auf Vorbestellung erhältlich")]</xpath>
+			<xpath>//*[@class="ws_validate"]/p[contains(text(),"Die Auslieferung erfolgt ab dem")]</xpath>
+			<xpath>//*[@class="ws_validate"]/p[contains(text(),"Jetzt bestellen")]</xpath>			
+		</properties> 
+	</TestObject>
+	<TestObject name="AdvancedOrderConfirmationMsg"> 
+		<properties>
+			<xpath>//*[@class="ws_validate"]/p[2]</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="btnYes"> 
+		<properties>
+			<xpath>//*[@class='btn btn-primary btnSave']</xpath>
+			<xpath>//*[@class='primaryButton buttonAlignVertical']</xpath>
+			<xpath>//*[@value='Yes']</xpath>
+			<xpath>//*[@value='Ja']</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="cancelBtn">
+		<Properties>
+			<xpath>//*[@class="btn btn-secondary btnCancel"]</xpath>
+			<xpath>/html/body/div[2]/div[6]/div[3]/form/div/span[2]/input</xpath>
+		</Properties>
+	</TestObject>
+	
+</Page>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="CatagoryContentPage" include="MastheadMain">
+	<TestObject name="fashionHeader">
+		<Properties>
+			<xpath>//*[@class="breadcrumb pageBreadcrumb"]</xpath>
+			<xpath>//*[@id="breadCrumbs"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="homeWearLink">
+		<Properties>
+			<xpath>//*[@manual_cm_sp="Attributes-_-Kategorie-_-Homewear"]</xpath>
+			<xpath>//span[contains(text(), "Homewear")]</xpath>
+		</Properties>
+	</TestObject>	
+</Page>

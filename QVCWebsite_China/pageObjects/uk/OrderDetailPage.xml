@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="Order Detail" include="MastheadMain">
+	<TestObject name="OrderStatus"> 
+		<properties>   
+			<id>item_status_1</id>
+			<id>divOrderDetailOrderChanges</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="OrderNum"> 
+		<properties>   
+			<id>spanOrderNumber</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="freeShipping_Txt">
+		<Properties>			
+			<css>.freeShipping</css>
+		</Properties>
+	</TestObject>	
+	<TestObject name="firstSHPrice"> 
+		<properties>   
+			<css>.shippingOfferPrice</css>
+		</properties> 
+	</TestObject>
+	<TestObject name="totalSHPrice"> 
+		<properties>   
+			<xpath>//div[@id='divOrderDetailOrderTotal']//tbody/tr[2]/td[@class='tdCurrency']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="editThisItemLink">
+		<Properties>
+			<linkText>Edit This Item</linkText>	
+		</Properties>
+	</TestObject>
+	<TestObject name="viewEditADPlan"> 
+		<properties>   
+			<linkText>View/Edit Auto-Delivery Plan</linkText>
+		</properties> 
+	</TestObject>
+	<TestObject name="expressDeliveryTxt"> 
+		<properties>   
+			<xpath>//td[contains(.,'Express Delivery')]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="premiumDeliveryTxt"> 
+		<properties>   
+			<xpath>//td[contains(.,'Premium Delivery')]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="perishableFoodDeliveryTxt"> 
+		<properties>   
+			<xpath>//td[contains(.,'Perishable Food')]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="orderChangeSuccessInfo"> 
+		<properties>   
+			<id>parMessage</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="orderStatusText"> 
+		<properties>   
+			<id>item_status_1</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="cancelOrderLink"> 
+		<properties>   
+			<id>btnCancelOrder</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="yesBtn"> 
+		<properties>   
+			<xpath>//*[@type='button' and @value='Yes']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="noBtn"> 
+		<properties>   
+			<xpath>//*[@type='button' and @value='No']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="orderCancelledMsg"> 
+		<properties>   
+			<xpath>//*[@id='frmCancelOrder']//p</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="returnToMyAccountBtn"> 
+		<properties>   
+			<xpath>//*[@type='button' and @value='Return to My Account']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="editPaymentLink"> 
+		<properties>   
+			<xpath>//*[@id='divOrderDetailPaymentInformation']//a</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="printLink"> 
+		<properties>   
+			<xpath>//*[@class="itemLinks"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="orderTotal"> 
+		<properties>   
+			<xpath>//*[@id='tblOrderDetailOrderTotal']/tfoot/tr/td[2]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="cancelBtn"> 
+		<properties>   
+			<xpath>//*[@id='btnCancelOrder']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="paymentMethod"> 
+		<properties>   
+			<xpath>//*[@id='divOrderDetailPaymentInformation']/p</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="returnToORHistoryBtn"> 
+		<properties>   
+			<xpath>//*[@id='btnBack']</xpath>
+		</properties> 
+	</TestObject>
+	
+</Page>

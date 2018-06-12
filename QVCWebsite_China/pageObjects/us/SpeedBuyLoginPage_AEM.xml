@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="SpeedBuyLoginPage" include="MastheadMain" >
+	
+	<TestObject name="speedBuyHeader">
+	    <Properties>
+	       <xpath>//*[@class="simpleMasthead container cont"]/h1</xpath>
+	    </Properties>
+	</TestObject>
+	<TestObject name="emailAddressLabel">
+	    <Properties>
+	        <xpath>//*[@class="form-group email floatLblWr"]//*[@class="form-control"]</xpath>
+	    </Properties>
+	</TestObject>
+	<TestObject name="continueBtn">
+	    <Properties>
+	        <xpath>//*[@class="btn btn-primary btnContinue"]</xpath>
+	    </Properties>
+	</TestObject>
+	<TestObject name="passWordLabel">
+	    <Properties>
+	        <xpath>//*[@class="form-control" and @name="pw"]</xpath>
+	    </Properties>
+	</TestObject>
+
+	
+</Page>

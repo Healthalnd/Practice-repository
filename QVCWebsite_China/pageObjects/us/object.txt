@@ -1,0 +1,9 @@
+C:\Users\00919588\Workspaces\MyEclipse Bling 2014\SeleniumTesterPlugin\testOutput\02-25-2016-16-36\Customer_Home_SummaryReport.html
+
+
+
+
+MA_Wish_List_Module_Full_auth_More_than_4_items_Availabe
+MA_Left_Nav_Auth_View_My_Orders_Write_a_Review
+MA_Wish_List_Module_Anonymous_User		
+MA_Wish_List_Module_Full_auth_Two_items_Availabe

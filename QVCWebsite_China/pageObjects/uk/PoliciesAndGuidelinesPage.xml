@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="PoliciesAndGuidelinesPage" include="MastheadMain">
+<TestObject name="pageHeaderID">
+	<Properties>
+		<xpath>//*[@id='BVQAGuidelinesDocumentationHeaderID']</xpath>
+		<id>BVQAGuidelinesDocumentationHeaderID</id>
+	</Properties>
+</TestObject>
+<TestObject name="policiesAndGuidelinesDetail">
+	<Properties>
+		<xpath>//*[@id='BVQAGuidelinesDocumentationID']/p[1]</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="closeThisWindowLink">
+	<Properties>
+		<xpath>//*[@id='BVQACloseWindowLinkDivID']/a[@class="BVQACloseWindowLink"]</xpath>
+	</Properties>
+</TestObject>
+</Page>

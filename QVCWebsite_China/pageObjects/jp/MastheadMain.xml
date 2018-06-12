@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="MastheadMain" >
+	<TestObject name="QVCLogo">
+		<Properties>
+			<class>headLogo</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="AdvertiseCloseBtn">
+		<Properties>
+			<class>karte-temp-icon-close</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="FirstCategoryLink">
+			<Properties>
+				<xpath>//*[@class="globalNav"]/li[1]</xpath>
+			</Properties>
+	</TestObject>
+	
+	<TestObject name="searchForm">
+		<Properties>
+			<class>input-group pcSearchBox</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="searchBox">
+		<Properties>
+				<xpath>//*[@class="input-group pcSearchBox"]//*[@placeholder="キーワードで探す"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="goBtn">
+		<Properties>
+			<class>btn btn-default sub-d</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="signArea">
+		<Properties>
+			<class>gray login</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="myAccountLink">
+		<Properties>
+			<linktext>マイアカウント</linktext>
+		</Properties>
+	</TestObject>
+	<TestObject name="orderStatusLink">
+		<Properties>
+			<id>linkOrderStatus</id>
+		</Properties>
+	</TestObject>	
+	<TestObject name="wishListLink">
+		<Properties>
+			<id>linkWishList</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="ContractLink">
+		<Properties>
+			<id>linkKontakt</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="QVCinTVLink">
+		<Properties>
+			<id>linkQVCTV</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="signInLink">
+			<Properties>
+			<linkText>Sign in or register</linkText>	
+			</Properties>
+	</TestObject>
+	<TestObject name="signOutLink">
+		<Properties>
+			<linkText>Sign out</linkText>
+		</Properties>
+	</TestObject>
+	<TestObject name="cartLink">
+		<Properties>
+			<id>ancCart</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="cartNumberLink">
+		<Properties>
+			<class>cartNumber</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="shopByCategory">
+		<Properties>
+			<id>menuProd</id>
+		</Properties>
+	</TestObject>	
+	<TestObject name="shopQVCTVMenu">
+		<Properties>
+			<id>metaNaviQVCTV</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="TSVLink">
+		<Properties>
+			<xpath>//*[@data-component-type="MASTHEAD"]//*[@class="headBox_02"]//li[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="IROAlink">
+		<Properties>
+			<xpath>//*[@data-component-type="MASTHEAD"]//*[@class="headBox_02"]//li[2]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="GoodValueLink">
+		<Properties>
+			<xpath>//*[@data-component-type="MASTHEAD"]//*[@class="headBox_02"]//li[3]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="ProgramGuideLink">
+		<Properties>
+			<xpath>//*[@data-component-type="MASTHEAD"]//*[@class="headBox_02"]//li[4]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="QVCLiveLink">
+		<Properties>
+			<xpath>//*[@data-component-type="MASTHEAD"]//*[@class="headBox_02"]//li[5]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FavoritesLink">
+		<Properties>
+			<xpath>//*[@data-component-type="MASTHEAD"]//*[@class="headBox_02"]//li[6]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="JewelryCategoryLink">
+		<Properties>
+			<xpath>//*[@data-component-type="TOP_NAVIGATION"]//*[@class="globalNav"]//li[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FashionCategoryLink">
+		<Properties>
+			<xpath>//*[@data-component-type="TOP_NAVIGATION"]//*[@class="globalNav"]//li[2]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="BeautyCategoryLink">
+		<Properties>
+			<xpath>//*[@data-component-type="TOP_NAVIGATION"]//*[@class="globalNav"]//li[3]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="HealthDietCategoryLink">
+		<Properties>
+			<xpath>//*[@data-component-type="TOP_NAVIGATION"]//*[@class="globalNav"]//li[4]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="KitchenCategoryLink">
+		<Properties>
+			<xpath>//*[@data-component-type="TOP_NAVIGATION"]//*[@class="globalNav"]//li[5]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="LeisureHobbyCategoryLink">
+		<Properties>
+			<xpath>//*[@data-component-type="TOP_NAVIGATION"]//*[@class="globalNav"]//li[6]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FoodCategoryLink">
+		<Properties>
+			<xpath>//*[@data-component-type="TOP_NAVIGATION"]//*[@class="globalNav"]//li[7]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="ElectrcApplianceCategoryLink">
+		<Properties>
+			<xpath>//*[@data-component-type="TOP_NAVIGATION"]//*[@class="globalNav"]//li[8]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="BrandCategoryLink">
+		<Properties>
+			<xpath>//*[@data-component-type="TOP_NAVIGATION"]//*[@class="globalNav"]//li[9]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="FeatureSegmentCategoryLink">
+		<Properties>
+			<xpath>//*[@data-component-type="TOP_NAVIGATION"]//*[@class="globalNav"]//li[10]</xpath>
+		</Properties>
+	</TestObject>
+</Page>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="GmailPage" >
+
+	<TestObject name="SignInHeader"> 
+		<properties>   
+			<xpath>//*[@data-g-label="Sign in"]</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="FirstName"> 
+		<properties>   
+			<id>FirstName</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="LastName"> 
+		<properties>   
+			<id>LastName</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="GmailAddress"> 
+		<properties>   
+			<id>GmailAddress</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="PasswdAgain"> 
+		<properties>   
+			<id>PasswdAgain</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="BirthMonth"> 
+		<properties>   
+			<xpath>//*[@id="BirthMonth"]/div</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="May"> 
+		<properties>   
+			<xpath>//*[@id="BirthMonth"]//*[@class="goog-menu goog-menu-vertical"]//*[@id=":5"]</xpath>
+		</properties> 
+	</TestObject>
+	
+	
+	<TestObject name="BirthDay"> 
+		<properties>   
+			<id>BirthDay</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="BirthYear"> 
+		<properties>   
+			<id>BirthYear</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="Gender"> 
+		<properties>   
+			<xpath>//*[@id="Gender"]/div</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="Female"> 
+		<properties>   
+			<xpath>//*[@id="Gender"]//*[@class="goog-menu goog-menu-vertical"]//*[@id=":e"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="RecoveryPhoneNumber"> 
+		<properties>   
+			<id>RecoveryPhoneNumber</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="submitbutton"> 
+		<properties>   
+			<id>submitbutton</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="ScrollBtn"> 
+		<properties>   
+			<id>tos-scroll-button</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="Agreebutton"> 
+		<properties>   
+			<id>iagreebutton</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="SuccessMsg"> 
+		<properties>   
+			<xpath>//*[@class="welcome"]</xpath>
+		</properties> 
+	</TestObject>
+	
+	
+	<TestObject name="EmailBox"> 
+		<properties>   
+			<id>Email</id>
+			<id>identifierId</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="NextBtn"> 
+		<properties>   
+			<id>Next</id>
+			<id>identifierNext</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="PassWord"> 
+		<properties>   
+			<id>Passwd</id>
+			<xpath>//*[@id="password"]//input</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="SignInBtn"> 
+		<properties>   
+			<id>signIn</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="StaySignIn"> 
+		<properties>   
+			<id>PersistentCookie</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="EmailTable"> 
+		<properties>   
+			<xpath>//*[@class="F cf zt"]</xpath>
+			<xpath>//*[@id=":30"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="FristEmail"> 
+		<properties>   
+			<xpath>//*[@class="F cf zt"]//tbody/tr[1]/td[4]</xpath>
+			<xpath>//*[@id=":5q"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ShareWishListLink"> 
+		<properties>   
+			<xpath>//a[contains(@href,"https://qa.qvcuk.com/myaccount/shared-wishlist.html")][1]</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="GEmailBox"> 
+		<properties>   
+			<id>identifierId</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="GNextBtn"> 
+		<properties>  
+			<id>identifierNext</id>
+			<xpath>//div[@class="ZFr60d CeoRYc"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="GPassWord"> 
+		<properties>   
+			<xpath>//*[@class="whsOnd zHQkBf"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="GSignInBtn"> 
+		<properties>   
+		<id>passwordNext</id>
+			<xpath>//*[@class="RveJvd snByac"]</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="GShowContentBtn"> 
+		<properties>   
+			<xpath>//*[@data-tooltip="Show trimmed content"]</xpath>
+		</properties> 
+	</TestObject>
+	
+</Page>
+

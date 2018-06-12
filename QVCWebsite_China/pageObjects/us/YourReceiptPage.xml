@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="YourReceiptPage" include="MastheadMain">
+	<TestObject name="pageTitle"> 
+       	<properties>   
+       		<id>divPageTitle</id>          		
+       	</properties> 
+   	</TestObject>
+	 
+	<TestObject name="shipToAddresstxt"> 
+       	<properties>   
+       		<id>divOrderDetailShippingAddress</id>          		
+       	</properties> 
+   	</TestObject>
+	
+	<TestObject name="orderNum"> 
+       	<properties>   
+       		<xpath>//*[@id="frmSubmitOrder"]/p</xpath>          		
+       	</properties> 
+	</TestObject>
+	
+	<TestObject name="freeShipping_Txt">
+		<Properties>			
+			<css>.freeShipping</css>
+		</Properties>
+	</TestObject>	
+	<TestObject name="totalSHPrice"> 
+		<properties>   
+			<xpath>//div[@id='divInStockTotal']//tr[2]/td[@class='tdCurrency']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="shippingIncludePriceText">
+		<Properties>
+			<css>.shippingIncluded</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="shippingPrice">
+		<Properties>			
+			<css>.shippingOfferPrice</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="bonusItemTxt">
+		<Properties>
+			<xpath>//*[@class="bonusItemtxt"][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="paymentMethodInfo">
+		<Properties>
+			<id>divOrderDetailPaymentInformation</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="productQTY">
+		<Properties>
+			<xpath>(//td[@class="tdNumber"])[1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondProductQTY">
+		<Properties>
+			<xpath>(//td[@class="tdNumber"])[2]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="easyPayCreditTermText"> 
+		<properties>   
+			<xpath>//*[@class="itemInformationWrapper"][1]//*[@class="creditTermstxtReceipt ezInfo"][1]</xpath>
+		</properties> 
+	</TestObject>	
+	<TestObject name="EXPDate">
+		<Properties>
+			<xpath>//*[@id='divOrderDetailPaymentInformation']/p</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productPrice">
+		<Properties>
+			<xpath>//div[@id='divOrderDetailItemInformation'][1]//td[3]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondProductPrice">
+		<Properties>
+			<xpath>//div[@id='divOrderDetailItemInformation'][2]//td[3]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productSHFee">
+		<Properties>
+			<xpath>//div[@id="divOrderDetailItemInformation"][1]//td[5]/span</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondproductSHFee">
+		<Properties>
+			<xpath>//div[@id="divOrderDetailItemInformation"][2]//td[5]/span</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="tax">
+		<Properties>
+			<xpath>//div[@id="divOrderDetailItemInformation"][1]//td[6]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondTax">
+		<Properties>
+			<xpath>//div[@id="divOrderDetailItemInformation"][2]//td[6]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="subTotal">
+		<Properties>
+			<xpath>//div[@id="divOrderDetailItemInformation"][1]//td[@class="tdCurrency1 currency_float"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondSubTotal">
+		<Properties>
+			<xpath>//div[@id="divOrderDetailItemInformation"][2]//td[@class="tdCurrency1 currency_float"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productTotalPrice">
+		<Properties>
+			<xpath>//div[@id="divInStockTotal"]//tbody//tr[1]/td[@class="tdCurrency"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="totalTax">
+		<Properties>
+			<xpath>//div[@id="divInStockTotal"]//tr[3]//td[@class="tdCurrency"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="orderTotal">
+		<Properties>
+			<xpath>//*[@id='trOrderTotal']/td[@class="tdCurrency"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="expirationDate">
+		<Properties>
+			<xpath>//*[@id='divOrderDetailPaymentInformation']/p</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="itemNumber">
+		<Properties>
+			<xpath>//*[@class='divOrderDetailItemInformation'][1]//*[@class="itemInfo"]/h3</xpath>
+			<xpath>//*[@id='divOrderDetailItemInformation'][1]//*[@class="itemInfo"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="2ndItemNumber">
+		<Properties>
+			<xpath>//*[@id='divOrderDetailItemInformation'][2]//*[@class="itemInfo"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	
+</Page>

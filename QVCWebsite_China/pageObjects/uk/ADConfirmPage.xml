@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ADConfirmPage" include="MastheadMain">
+
+	<TestObject name="Auto-diHeader"> 
+		<properties>   
+			<id>divPageTitle</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="btnYes"> 
+		<properties>   
+			<xpath>//input[@class='primaryButton buttonAlignVertical' and @value='Yes']</xpath>
+			<xpath>//*[@class='primaryButton buttonAlignVertical']</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="yesBtn">
+		<Properties>
+			<xpath>/html/body/div[3]/div[5]/div[3]/form/div/span/input</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="cancelBtn">
+		<Properties>
+			<xpath>/html/body/div[2]/div[6]/div[3]/form/div/span[2]/input</xpath>
+		</Properties>
+	</TestObject>
+	
+</Page>
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ProductListPage" include="MastheadMain">
+	<TestObject name="productListDiv">
+		<Properties>
+			<id>shohinList</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="ToolLeftDown">
+		<Properties>
+			<xpath>//*[@class="lmenu"][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="SearchResultTitle">
+		<Properties>
+			<id>listTitle</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="BrandListTitle">
+		<Properties>
+			<class>brandlist</class>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="TSVListTitle">
+		<Properties>
+			<xpath>//*[@src="http://img.qvc.jp/cont/tsv/img/bar.gif"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="IROAListTitle">
+		<Properties>
+			<xpath>//*[@class="p10"][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="GoodValueListTitle">
+		<Properties>
+			<id>shohinList</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="FavoritesListTitle">
+		<Properties>
+			<xpath>//*[@alt="お気に入りが便利になりました！"]</xpath>
+		</Properties>
+	</TestObject>
+	
+</Page>

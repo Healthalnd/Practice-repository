@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ViewEditAutoDeliveryPlanPage" include="MastheadMain">
+	<TestObject name="closeLink"> 
+		<properties>   
+			<id>TB_closeWindowButton</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="EditShipmentFrame"> 
+		<properties>   
+			<id>TB_iframeContent</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="editLink">
+		<Properties>
+			<linkText>Edit</linkText>	
+		</Properties>
+	</TestObject>	
+	<TestObject name="frameHeader">
+		<Properties>
+			<css>h1</css>	
+		</Properties>
+	</TestObject>
+	<TestObject name="shipMethodList">
+		<Properties>
+			<id>selShipmentMethod</id>	
+		</Properties>
+	</TestObject>
+	<TestObject name="standardDelivery">
+		<Properties>
+		    <xpath>//select[@id='selShipmentMethod']/option[text()='Standard Delivery']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="expressDelivery">
+		<Properties>
+		    <xpath>//select[@id='selShipmentMethod']/option[text()='Express Delivery']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="premiumDelivery">
+		<Properties>
+		    <xpath>//select[@id='selShipmentMethod']/option[text()='Premium Delivery']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="itemProductDescTxt">
+		<Properties>
+			<css>strong</css>	
+		</Properties>
+	</TestObject>
+	<TestObject name="paymentMethodTxt">
+		<Properties>
+			<xpath>//tr[@class='odd']/td[4]</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="changedSuccessfulMsgTxt"> 
+		<properties>   
+			<id>parMessage</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="viewEditMyPlanLink">
+		<Properties>
+		    <xpath>//a[.='View / Edit My Plan']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="editOptionsLink">
+		<Properties>
+		    <xpath>//a[.='Edit Options']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="waitlistOptionOverlayImage">
+		<Properties>
+		    <xpath>//li[@title='Sweet Almond']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="editOptionsOverlay">
+		<Properties>
+		    <id>TB_window</id>
+		</Properties>
+	</TestObject>
+</Page>
+

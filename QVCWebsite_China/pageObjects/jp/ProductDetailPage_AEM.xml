@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ProductDetailPage_AEM" include="MastheadMain">
+	
+	
+	<TestObject name="BreadCrumb">
+			<Properties>
+				<xpath>//*[@class="breadcrumb pageBreadcrumb"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="ProductNum">
+			<Properties>
+				<xpath>//*[@class="itemNo"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="ProductName">
+			<Properties>
+				<xpath>//*[@class="pdShortDesc"]//h1</xpath>
+			</Properties>
+	</TestObject>
+	
+	
+</Page>

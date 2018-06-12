@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="OrderStatusPage" include="MastheadMain">
+	<TestObject name="nextPageLinksTop"> 
+		<properties>   
+			<xpath>//*[@id="divOrderStatusResultsPagingLinksTop"]//*[@class="next"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="nextPageLinksBottom"> 
+		<properties>   
+			<xpath>//*[@id="divOrderStatusResultsPagingLinksBottom"]//*[@class="next"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="previousPageLinksTop"> 
+		<properties>   
+			<xpath>//*[@id="divOrderStatusResultsPagingLinksTop"]//*[@class="previous"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="previousPageLinksBottom"> 
+		<properties>   
+			<xpath>//*[@id="divOrderStatusResultsPagingLinksBottom"]//*[@class="previous"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="orderStausResult"> 
+		<properties>   
+			<id>divOrderStatusResults</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="orderSearch"> 
+		<properties>   
+			<id>divContent</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="searchButton"> 
+		<properties>   
+			<id>btnSearch</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="searchByOrderNumRadio"> 
+		<properties>   
+			<id>lblByOrderNumber</id>
+			<id>rbByOrderNumber</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="searchByOrderNumText"> 
+		<properties>   
+			<id>txtByOrderNumber</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="OrderNum"> 
+		<properties>   
+			<xpath>//*[@rowspan="1"][2]/a</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="OrderStaus"> 
+		<properties>   
+			<xpath>//*[@class="tdText"][2]</xpath>
+		</properties> 
+	</TestObject>
+	
+</Page>

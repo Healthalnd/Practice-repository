@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="WriteAReviewPage" include="MastheadMain">
+<TestObject name="OverallRatingText">
+	<Properties>
+		<id>BVRRFieldLabelReviewRatingID</id>
+	</Properties>
+</TestObject>	
+<TestObject name="nickNameTitle">
+	<Properties>
+		<id>lblNickname</id>
+	</Properties>
+</TestObject>
+<TestObject name="nickNameText">
+	<Properties>
+		<id>txtNickname</id>
+	</Properties>
+</TestObject>
+<TestObject name="continueBtn">
+	<Properties>
+		<xpath>//*[@id='divFormButtons']//input[@class='primaryButton']</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="productRatingsTitle">
+	<Properties>
+		<id>BVRRSubmissionFormTitle</id>
+		<id>BVMessagePageHeaderID</id>
+	</Properties>
+</TestObject>
+<TestObject name="pageTitle">
+	<Properties>
+		<id>divPageTitle</id>
+	</Properties>
+</TestObject>
+<TestObject name="productImage">
+	<Properties>
+		<id>BVRRProductDetailsImageID</id>
+		<class>BVSubjectImage</class>
+	</Properties>
+</TestObject>
+<TestObject name="productShortDes">
+	<Properties>
+		<id>BVRRProductDetailsNameID</id>
+		<class>BVSubjectName</class>
+	</Properties>
+</TestObject>
+<TestObject name="overallRatingTitle">
+	<Properties>
+		<id>BVRRFieldLabelReviewRatingID</id>
+		<xpath>//*[@id='BVFieldRatingLabelID']/span</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="tipsTitle">
+	<Properties>
+		<id>divSidebarWriteReviewHeading</id>
+	</Properties>
+</TestObject>
+<TestObject name="detailsOfTips">
+	<Properties>
+		<xpath>//*[@id='divSidebarWriteReview']/ul</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="contactInfor">
+	<Properties>
+		<xpath>//*[@id='divSidebarWriteReview']/p</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="firstRateStar">
+	<Properties>
+		<id>star_link_rating_1</id>
+	</Properties>
+</TestObject>
+<TestObject name="secondRateStar">
+	<Properties>
+		<id>star_link_rating_2</id>
+	</Properties>
+</TestObject>
+<TestObject name="thirdRateStar">
+	<Properties>
+		<id>star_link_rating_3</id>
+	</Properties>
+</TestObject>
+<TestObject name="fourthRateStar">
+	<Properties>
+		<id>star_link_rating_4</id>
+	</Properties>
+</TestObject>
+<TestObject name="fifthRateStar">
+	<Properties>
+		<id>star_link_rating_5</id>
+	</Properties>
+</TestObject>
+<TestObject name="requiredContext">
+	<Properties>
+		<xpath>//*[@id='BVRRFieldLabelReviewReviewtextID']//*[@class="BVRRCustomAdditionalRequiredField"]</xpath>
+		<xpath>//*[@class="BVMERequiredFieldIndicatorSectionHeader"]</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="recommendToFriendTitle">
+	<Properties>
+		<id>BVRRFieldLabelReviewRecommendID</id>
+		<id>BVFieldRecommendLabelID</id>	
+	</Properties>
+</TestObject>
+<TestObject name="recommendToFriendYesRadioBtn">
+	<Properties>
+		<id>BVRRRecommendToFriendYesID</id>
+		<id>BVFieldRecommendYesID</id>
+	</Properties>
+</TestObject>
+<TestObject name="recommendToFriendNoRadioBtn">
+	<Properties>
+		<id>BVRRRecommendToFriendRadioLabelNoID</id>
+		<id>BVFieldRecommendNoID</id>
+	</Properties>
+</TestObject>
+<TestObject name="reviewTitle">
+	<Properties>
+		<id>BVRRFieldLabelReviewTitleID</id>
+		<id>BVFieldTitleLabelID</id>
+	</Properties>
+</TestObject>
+<TestObject name="reviewTitleText">
+	<Properties>
+		<id>BVRRFieldTextReviewTitleID</id>
+		<id>BVFieldTitleID</id>
+	</Properties>
+</TestObject>
+<TestObject name="reviewExample">
+	<Properties>
+		<id>BVRRFieldHelperReviewTitleID</id>
+		<id>BVFieldTitleFieldHelperID</id>
+	</Properties>
+</TestObject>
+<TestObject name="review">
+	<Properties>
+		<id>BVRRFieldLabelReviewReviewtextID</id>
+		<id>BVFieldReviewtextLabelID</id>
+	</Properties>
+</TestObject>
+<TestObject name="reviewText">
+	<Properties>
+		<id>BVRRFieldTextAreaReviewTextID</id>
+		<id>BVFieldReviewtextID</id>
+	</Properties>
+</TestObject>
+<TestObject name="reviewTextWarningMsg">
+	<Properties>
+		<id>BVRRFieldHelperReviewReviewtextID</id>
+	</Properties>
+</TestObject>
+<TestObject name="AEMReviewTextWarningMsg">
+	<Properties>
+		<id>BVFieldReviewtextCounterID</id>
+	</Properties>
+</TestObject>
+<TestObject name="addPhotoOrVideoBtn">
+	<Properties>
+		<id>BVRRSectionHeaderCustomID</id>
+	</Properties>
+</TestObject>
+<TestObject name="addPhotoBtn">
+	<Properties>
+		<id>BVVisiblePhotoUploadInputID</id>
+	</Properties>
+</TestObject>
+<TestObject name="addPhotoTitle">
+	<Properties>
+		<id>BVFieldPhotoLabelID</id>
+	</Properties>
+</TestObject>
+<TestObject name="selectImageContext">
+	<Properties>
+		<id>BVRRFieldLabelPhotoInputID</id>
+	</Properties>
+</TestObject>
+<TestObject name="browseBtn">
+	<Properties>
+		<id>BVRRVisiblePhotoUploadInputID</id>
+	</Properties>
+</TestObject>
+<TestObject name="uploadBtn">
+	<Properties>
+		<id>BVRRVisiblePhotoUploadSubmitID</id>
+	</Properties>
+</TestObject>
+<TestObject name="uploadWarningMsg">
+	<Properties>
+		<id>BVRRFieldHelperPhotoInputID</id>
+		<id>BVFieldPhotoFieldHelperID</id>
+	</Properties>
+</TestObject>
+<TestObject name="photoGuidelinesLink">
+	<Properties>
+		<id>BVRRShowPhotoGuidelinesID</id>
+	</Properties>
+</TestObject>
+<TestObject name="addAVideoContext">
+	<Properties>
+		<id>BVRRSectionHeaderVideoUploadID</id>
+	</Properties>
+</TestObject>
+<TestObject name="videoURLContext">
+	<Properties>
+		<id>BVRRFieldLabelReviewVideoURLID</id>
+		<id>BVFieldVideourl_1LabelID</id>
+	</Properties>
+</TestObject>
+<TestObject name="videoGuidelinesLink">
+	<Properties>
+		<id>BVRRShowVideoGuidelinesID</id>
+	</Properties>
+</TestObject>
+<TestObject name="videoURLTextbox">
+	<Properties>
+		<id>BVRRFieldTextReviewVideoURLID</id>
+		<id>BVFieldVideourl_1ID</id>
+	</Properties>
+</TestObject>
+<TestObject name="videoURLWarningMsg">
+	<Properties>
+		<xpath>//*[@id='BVRRFieldContainerReviewVideoURLID']/*[@class="BVRRFieldHelper BVRRVideoUrlInputHelper BVVIVideoUrlInputHelper"]</xpath>
+		<id>BVFieldVideourl_1FieldHelperID</id>
+	</Properties>
+</TestObject>
+<TestObject name="videoCaptionContext">
+	<Properties>
+		<id>BVRRFieldLabelReviewVideoURLCaptionID</id>
+		<id>BVFieldVideocaption_1LabelID</id>
+	</Properties>
+</TestObject>
+<TestObject name="videoCaptionTextbox">
+	<Properties>
+		<id>BVRRFieldTextReviewVideoURLCaptionID</id>
+		<id>BVFieldVideocaption_1ID</id>
+	</Properties>
+</TestObject>
+<TestObject name="videoCaptionWarningMsg">
+	<Properties>
+		<id>BVRRFieldHelperReviewVideoURLCaptionID</id>
+		<id>BVFieldVideocaption_1FieldHelperID</id>
+	</Properties>
+</TestObject>
+<TestObject name="sendMeEmailText">
+	<Properties>
+		<xpath>//*[@id='BVRRFieldContainerReviewUseremailalertsID']//span[@class='BVRRFieldFollowingText']</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="AEMSendMeEmailText">
+	<Properties>
+		<xpath>//*[@id='BVFieldUseremailalertsLabelID']//span[@class="BVFieldLabel"]</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="sendMeEmailCheckbox">
+	<Properties>
+		<id>BVRRFieldCheckboxReviewUseremailalertsID</id>
+		<id>BVFieldUseremailalertsLabelID</id>
+	</Properties>
+</TestObject>
+
+<TestObject name="purchaseAndReceiveContext">
+	<Properties>
+		<id>BVRRFieldLabelReviewContextualDataFieldOwnershipValidatorID</id>
+		<id>BVFieldContextdatavalueOwnershipValidatorLabelID</id>
+	</Properties>
+</TestObject>
+<TestObject name="purchaseAndReceiveSelection">
+	<Properties>
+		<id>BVRRFieldSelectReviewContextualDataFieldOwnershipValidatorID</id>
+		<id>BVFieldContextdatavalueOwnershipValidatorID</id>
+	</Properties>
+</TestObject>
+<TestObject name="recommendThisProductContext">
+	<Properties>
+		<id>BVRRFieldLabelReviewContextualDataFieldWouldRecommendID</id>
+		<id>BVFieldContextdatavalueWouldRecommendLabelID</id>
+	</Properties>
+</TestObject>
+<TestObject name="recommendThisProductSelection">
+	<Properties>
+		<id>BVRRFieldSelectReviewContextualDataFieldWouldRecommendID</id>
+		<id>BVFieldContextdatavalueWouldRecommendID</id>
+	</Properties>
+</TestObject>
+<TestObject name="perfectGiftContext">
+	<Properties>
+		<id>BVRRFieldLabelReviewContextualDataFieldPerfectGiftForID</id>
+		<id>BVFieldContextdatavaluePerfectGiftForLabelID</id>
+	</Properties>
+</TestObject>
+<TestObject name="perfectGiftSelection">
+	<Properties>
+		<id>BVRRFieldSelectReviewContextualDataFieldPerfectGiftForID</id>
+		<id>BVFieldContextdatavaluePerfectGiftForID</id>
+	</Properties>
+</TestObject>
+<TestObject name="provideSizingHelpContext">
+	<Properties>
+		<id>BVRRContextSectionHeaderprovideSizingID</id>
+	</Properties>
+</TestObject>
+<TestObject name="provideSizingHelpCheckbox">
+	<Properties>
+		<id>BVRRFieldContainerReviewContextualDataFieldProvideSizingID</id>
+	</Properties>
+</TestObject>
+<TestObject name="recommendToOthersContext">
+	<Properties>
+		<id>BVRRFieldLabelReviewProductSelectID</id>
+		<id>BVFieldProductreferenceFieldHelperID</id>
+	</Properties>
+</TestObject>
+<TestObject name="myRecommendationTitle">
+	<Properties>
+		<xpath>//*[@id='BVRRFieldProductSelectID']//*[@class="BVSUTitle BVSU_PLTitle"]</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="threePictureAreas">
+	<Properties>
+		<xpath>//*[@id='BVRRFieldProductSelectID']//div[@class="BVSUInside BVSU_PLInsideBody"]</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="addTextLink">
+	<Properties>
+		<xpath>//*[@id='BVSU_PLProduct0_ContainerID']//*[@class="BVSU_PLProductAction"]//*[@class="BVSULink BVSULinkAdd"]/span[@class="BVSULinkSpan"]</xpath>
+		<xpath>//*[@class="BVSUInside BVPLInsideProduct BVPLInsideProductEmpty"]//*[@class="BVSULink BVSULinkAdd"]</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="addPictureLink">
+	<Properties>
+		<xpath>//*[@id='BVSU_PLProduct0_ContainerID']//*[@class="BVSU_PLProductImage"]//*[@title="Find a product"]</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="recommendAProductTitle">
+	<Properties>
+		<xpath>//*[@id='BVSU_PLFieldSearchID']//*[@class="BVSUTitle BVSU_SearchTitle"]</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="searchContext">
+	<Properties>
+		<xpath>//*[@id='BVSU_PLFieldSearchID']//*[@class="BVSUFieldLabel"]</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="searchTextbox">
+	<Properties>
+		<id>BVSU_PLInputSearchID</id>
+	</Properties>
+</TestObject>
+<TestObject name="goBtn">
+	<Properties>
+		<xpath>//*[@id='BVSU_PLFieldSearchID']//*[@class="BVSUInput BVSUInputButton BVSUInputButtonSearch"]</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="closeBtn">
+	<Properties>
+		<xpath>//*[@id='BVSU_PLFieldSearchID']//*[@class="BVSULinkSpan"]</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="doneBtn">
+	<Properties>
+		<xpath>//*[@id='BVSU_PLFieldSearchID']//*[@class="BVSUInput BVSUInputButton BVSUInputButtonDone"]</xpath>
+		<xpath>//*[@id='BVSU_PLFieldSearchID']//span[contains(text(),"Done")]</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="previewBtn">
+	<Properties>
+		<id>BVRRPreviewReviewButtonID</id>
+		<id>BVButtonPreviewID</id>
+	</Properties>
+</TestObject>
+<TestObject name="prevtermsAndConditionsLink">
+	<Properties>
+		<linkText>Terms &amp; Conditions</linkText>
+		<linkText>Terms and Conditions</linkText>	
+	</Properties>
+</TestObject>
+<TestObject name="reviewGuidelinesLink">
+	<Properties>
+		<linkText>Review Guidelines</linkText>
+	</Properties>
+</TestObject>
+<TestObject name="communityStandardsLink">
+	<Properties>
+		<linkText>Community Standards</linkText>
+	</Properties>
+</TestObject>
+<TestObject name="addAPhotoFrame">
+	<Properties>
+		<class>BVRRInlinePhotoUploadFrame</class>
+	</Properties>
+</TestObject>
+<TestObject name="emailContext">
+	<Properties>
+		<id>BVRRFieldLabelReviewUseremailID</id>
+		<xpath>//label[@id='BVFieldUseremailLabelID']//span[@class='BVFieldLabel']</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="emailTextbox">
+	<Properties>
+		<id>BVRRFieldTextReviewUseremailID</id>
+		<id>BVFieldUseremailID</id>
+	</Properties>
+</TestObject>
+<TestObject name="emailWarningMsg">
+	<Properties>
+		<id>BVRRReviewEditEmailDisclaimerID</id>
+		<id>BVFieldUseremailFieldHelperID</id>
+	</Properties>
+</TestObject>
+</Page>

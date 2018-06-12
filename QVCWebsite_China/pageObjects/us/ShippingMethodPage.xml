@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ShippingMethod" include="MastheadMain">	
+	<TestObject name="continueCheckoutbtn"> 
+		<properties>   
+			<css>input.primaryButton[value='Continue Checkout']</css>
+		</properties> 
+	</TestObject>	
+	 <TestObject name="standardDelivery">
+		<Properties>
+		    <xpath>//label[@for='shipOptVal_01']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="expressDelivery">
+		<Properties>
+		    <xpath>//label[@for='shipOptVal_11']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="expressDeliverySelected">
+		<Properties>
+		    <xpath>//label[@for='shipOptVal_11' and @class='shipOptSelected']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="premiumDelivery">
+		<Properties>
+		    <xpath>//label[@for='shipOptVal_21']</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="premiumDeliverySelected">
+		<Properties>
+		    <xpath>//label[@for='shipOptVal_21' and @class='shipOptSelected']</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="deliveryDisclaimInfo"> 
+			<properties>   
+				<id>divEstimatedDeliveryDatesNote</id>
+			</properties> 
+	</TestObject>	
+	<TestObject name="shippingInfoLink">
+		<Properties>
+			<linkText>Shipping Information</linkText>	
+		</Properties>
+	</TestObject>
+	<TestObject name="shippingInfoOverlayHeader">
+		<Properties>
+			<css>#TB_ajaxContent h1</css>	
+		</Properties>
+	</TestObject>
+	<TestObject name="closeOverlay">
+		<Properties>
+			<id>TB_closeAjaxWindow</id>
+		</Properties>
+	</TestObject>
+	
+	 <TestObject name="employeeRate">
+	     <properties>
+	         <xpath>//*[contains(.,'Employee Rate')]</xpath>
+	     </properties>
+	 </TestObject>
+	 <TestObject name="CancelOrderbtn">
+	     <properties>
+	         <class>secondaryButton</class>
+	     </properties>
+	 </TestObject>
+	 <TestObject name="congratulationsMessage">
+	     <properties>
+	         <xpath>//*[contains(text(),'congratulations')]</xpath>
+	     </properties>
+	 </TestObject>
+	 <TestObject name="freeShipping_Txt">
+	     <properties>
+	         <xpath>//*[.='FREE']</xpath>
+	     </properties>
+	 </TestObject>
+	 <TestObject name="firstDeliveryMethod">
+		<Properties>
+		    <xpath>//label[@for='shipOptVal_01']</xpath>
+		</Properties>
+	</TestObject>
+	 <TestObject name="AllDeliveryMethod">
+		<Properties>
+		    <id>shipMethod_1</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="bonusItemTxt">
+		<Properties>
+			<xpath>//*[@class="bonusItemtxt"][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productQuantity">
+		<Properties>
+			<xpath>//select[@name="quantity_11"]//option[@selected="selected"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondProductQuantity">
+		<Properties>
+			<xpath>//select[@name="quantity_12"]//option[@selected="selected"]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="productQuantityList">
+		<Properties>
+			<xpath>//select[@name="quantity_11"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondProductQuantityList">
+		<Properties>
+			<xpath>//select[@name="quantity_12"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productPrice">	
+		<Properties>
+			<id>productPrice11</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondProductPrice">
+		<Properties>
+			<id>productPrice12</id>
+			<id>productPrice21</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstSHFee">
+		<Properties>
+			<xpath>//div[@id="shipMethod_1"]//label[@class="shipOptSelected"]//span[@class="shipPrice"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondSHFee">
+		<Properties>
+			<xpath>//div[@id="shipMethod_2"]//label[@class="shipOptSelected"]//span[@class="shipPrice"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstSubTotalPrice">
+		<Properties>
+			<id>productSubtotal11</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondSubTotalPrice">
+		<Properties>
+			<id>productSubtotal12</id>
+		</Properties>
+	</TestObject>
+	
+</Page>

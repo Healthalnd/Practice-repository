@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ThankYouPage" include="MastheadMain">
+	<TestObject name="pageTitle">
+		<Properties>
+			<id>divPageTitle</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="thankYouWarningMsg">
+		<Properties>
+			<id>BVQAQuestionSubmittedDisplayDisclaimerID</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="backtoProductBtn">
+		<Properties>
+			<xpath>//*[@name="BV_TrackingTag_Question_Submission_ThankYou_ReturnToProduct"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="countQAndA">
+		<Properties>
+			<id>BVQAQuestionAndAnswerCountID</id>
+		</Properties>
+	</TestObject>
+</Page>

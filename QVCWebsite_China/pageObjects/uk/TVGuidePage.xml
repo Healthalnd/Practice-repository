@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="TVGuidePage" include="MastheadMain">
+	<TestObject name="pageTitle"> 
+		<properties>   
+			<id>divPageTitle</id>			
+		</properties> 
+	</TestObject>
+	
+</Page>

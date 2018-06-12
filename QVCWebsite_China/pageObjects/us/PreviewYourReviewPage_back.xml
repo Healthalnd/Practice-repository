@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="PreviewYourReviewPage" include="MastheadMain">
+<TestObject name="pageTitle">
+	<Properties>
+		<id>divPageTitle</id>
+	</Properties>
+</TestObject>
+<TestObject name="warningMsg">
+	<Properties>	
+		<id>BVRRSubmitContentHeaderID</id>
+		<xpath>//*[@class='BVRRPreviewContentHeaderSentence BVRRPreviewContentHeaderSentenceSubmit']</xpath>
+		<id>BVRRReviewSubmittedDisplayDisclaimerID</id>
+		<class>BVMEContentHeaderSentence</class>
+	</Properties>
+</TestObject>	
+<TestObject name="AEMWarningMsg">
+	<Properties>
+		<xpath>//span[@class='BVMEPostDelayText']</xpath>
+		<class>BVMEPostDelayText</class>
+	</Properties>
+</TestObject>
+<TestObject name="reviewTitle">
+	<Properties>
+		<xpath>//*[@class='BVRRValue BVRRReviewTitle']</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="fiveRateStar">
+	<Properties>
+		<xpath>//*[@title="5 out of 5"]</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="fourRateStar">
+	<Properties>
+		<xpath>//*[@title="4 out of 5"]</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="reviewText">
+	<Properties>
+		<xpath>//*[@class="BVRRReviewText"]</xpath>
+	</Properties>
+</TestObject>			
+<TestObject name="videoReviewContext">
+	<Properties>
+		<xpath>//*[@class='BVRRVideoSectionLabel BVVIVideoSectionLabel']</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="videoWarningMsg">
+	<Properties>
+		<xpath>//*[@class='BVRRVideoSectionHint BVVIVideoSectionHint']</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="video">
+	<Properties>
+		<xpath>//*[@class='BVRRVideo BVRRReviewVideo BVVIVideo BVVIReviewVideo']</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="videoCaptionText">
+	<Properties>
+		<id>BVRRVideoCaptionTextID_Preview</id>
+	</Properties>
+</TestObject>
+<TestObject name="recommendThisProductContext">
+	<Properties>
+		<xpath>//*[@class='BVRRLabel BVRRContextDataValuePrefix BVRRContextDataValuewouldRecommendPrefix']</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="recommendThisProductSelection">
+	<Properties>
+		<xpath>//*[@class='BVRRValue BVRRContextDataValue BVRRContextDataValuewouldRecommend']</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="perfectGiftContext">
+	<Properties>
+		<xpath>//*[@class='BVRRLabel BVRRContextDataValuePrefix BVRRContextDataValueperfectGiftForPrefix']</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="perfectGiftSelection">
+	<Properties>
+		<xpath>//*[@class='BVRRValue BVRRContextDataValue BVRRContextDataValueperfectGiftFor']</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="sendEmailContext">
+	<Properties>
+		<xpath>//*[@class='BVRRFieldFollowingText']</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="sendEmailCheckbox">
+	<Properties>
+		<id>BVRRFieldCheckboxReviewUseremailalertsID</id>
+	</Properties>
+</TestObject>
+<TestObject name="notificationsContext">
+	<Properties>
+		<id>BVRRReviewPreviewNotificationID</id>
+		<xpath>//span[@class='BVMEPreviewNotification']</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="emailAddress">
+	<Properties>
+		<xpath>//*[@id='BVRRReviewPreviewNotificationID']/*[@class="BVRREmailAddress"]</xpath>
+		<xpath>//div[@class='BVRREmailAddress']</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="agreeContext">
+	<Properties>
+		<xpath>//*[@class='BVRRPreviewTermsAndConditionsNotice']</xpath>
+		<xpath>//*[@class='BVMETermsAndConditionsAgreementNote']</xpath>
+		
+	</Properties>
+</TestObject>
+<TestObject name="termsAndConditionsLink">
+	<Properties>
+		<xpath>//*[@class='BVRRCustomGuidelinesLinkTerms']</xpath>
+		<xpath>//*[@class='BVLink BVMETermsLink']</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="qVCCommunityStandardsLink">
+	<Properties>
+		<xpath>//*[@class='BVRRCustomGuidelinesLinkCommunity']</xpath>
+	</Properties>
+</TestObject>
+<TestObject name="submitBtn">
+	<Properties>
+		<id>BVRRSubmitReviewButtonID</id>
+		<id>BVButtonSubmitID</id>
+	</Properties>
+</TestObject>
+<TestObject name="editBtn">
+	<Properties>
+		<id>BVRREditReviewButtonID</id>
+	</Properties>
+</TestObject>
+<TestObject name="cancelBtn">
+	<Properties>
+		<id>BVRRCancelReviewButtonID</id>
+	</Properties>
+</TestObject>
+<TestObject name="successMsg">
+	<Properties>
+		<id>BVRRReviewSubmittedTextID</id>
+	</Properties>
+</TestObject>
+<TestObject name="AEMSuccessMsg">
+	<Properties>
+		<id>BVMessagePageHeaderID</id>
+	</Properties>
+</TestObject>
+
+<TestObject name="submittedWarningMsg">
+	<Properties>
+		<xpath>//*[@id='BVRRSubmitContentHeaderID']/*[@class="BVRRDuplicateContentHeaderSentence BVRRDuplicateContentHeaderSentenceDuplicate"]</xpath>
+		<id>BVMessageDuplicateID</id>
+	</Properties>
+</TestObject>
+<TestObject name="returnToProductLink">
+	<Properties>
+		<xpath>//*[@id='BVRRReviewFormButtonsID']/a</xpath>
+		<xpath>//div[@class='BVPageFooter BVFooter']//a</xpath>
+		<xpath>//*[@name="BV_TrackingTag_Review_Submission_ThankYou_ReturnToProduct"]</xpath>
+	</Properties>
+</TestObject>
+</Page>

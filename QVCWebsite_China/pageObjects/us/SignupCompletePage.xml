@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="SigninPage" include="MastheadMain">
+	<TestObject name="continueBtn">
+		<Properties>
+			<xpath>//input[@id='btnContinue' and @value='Continue']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="PasswordErrMsg">
+		<Properties>
+			<id>errPassword</id>	
+		</Properties>
+	</TestObject>
+	<TestObject name="ErrorMsgText">
+		<Properties>
+			<id>errConsole</id>	
+		</Properties>
+	</TestObject>
+
+</Page>

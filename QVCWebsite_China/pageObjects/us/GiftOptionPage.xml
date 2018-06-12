@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="GiftOptionPage" include="MastheadMain">
+	
+	<TestObject name="giftShipMessageFreeTypeRadio"> 
+		<properties>   
+			<id>rbGiftWrapPackingSlipMessage</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="giftSendToTextBox"> 
+		<properties>   
+			<id>txtGiftWrapOptionsTo</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="giftFromTextBox"> 
+		<properties>   
+			<id>txtGiftWrapOptionsFrom</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="giftMessageTextBox"> 
+		<properties>   
+			<id>txtGiftWrapOptionsMessage</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="continueBtn"> 
+		<properties>   
+			<xpath>//*[@class="primaryWrapBtn wrapBtncontinue"]</xpath>
+		</properties> 
+	</TestObject>
+</Page>

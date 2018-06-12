@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ProductListPage" include="MastheadMain">
+	<TestObject name="productListModule"> 
+		<properties>   
+			<id>frmProductList</id>
+			<xpath>//*[@data-component-type='PRODUCT_LISTING_LIST']</xpath>
+		</properties> 
+	</TestObject>	
+	<TestObject name="productListHeader"> 
+		<properties>   
+			<xpath>//*[@id='divPageTitle']/h1</xpath>
+			<xpath>//*[@id='pageContent']//h1</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="filterByLabel">
+		<Properties>
+			<xpath>//*[@class='facetedTitle bg-white']</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="productList">
+		<Properties>			
+			<id>frmProductList</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="PageControl"> 
+		<properties>   
+			<xpath>//*[@class="plControlPanel bg-white"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="LeftNavTool"> 
+		<properties>   
+			<xpath>//*[@data-component-type="PRODUCT_LISTING_NAV"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="optionOfSelection"> 
+		<properties>   
+			<id>seoNavlink1</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="BreadCrumb"> 
+		<properties>   
+			<xpath>//*[@class='breadcrumb pageBreadcrumb']//*[@class="active"]/h1</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="LevelTwoBreadCrumb"> 
+		<properties>   
+			<xpath>//*[@class='breadcrumb pageBreadcrumb']//li[2]/a</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="breadcrumbs"> 
+		<properties>   
+			<xpath>//*[@id='divBreadCrumbsPageTitleWrapper']//*[@id='breadCrumbs']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="pageBreadCrumb">
+		<Properties>
+			<xpath>//*[@class="breadcrumb pageBreadcrumb"]//*[.="&lt;BreadCrumb&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="selectedPanel">
+		<Properties>
+			<xpath>//*[@class="col-md-9 col-sm-8 plWrapper"]//*[@class="plSelectionPanel"]/*[@class="selectedResultFacets"]//*[.="&lt;selectedValue&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="selectedPanelValue">
+		<Properties>
+			<xpath>//*[@class="col-md-9 col-sm-8 plWrapper"]//*[@class="plSelectionPanel"]/*[@class="selectedResultFacets"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="expandedColourTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedFarbe bg-white"]//*[@class="expanded"]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="ColourTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedFarbe bg-white"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="Colour">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedFarbe bg-white"]//*[@class="refinementImg"]//*[.="&lt;colourValue&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="collapseColourTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedFarbe bg-white"]/h3[@class="" or not(@class)]</xpath>
+			<xpath>//*[@class="facetedMulti facetedFarbe bg-white"]//*[@class="refinementDiv" and @style="display: none;"]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="leftNavContent"> 
+		<properties>   
+			<id>divContentNav</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="LevelThreeBreadCrumb"> 
+		<properties>   
+			<xpath>//*[@class="breadcrumb pageBreadcrumb"]/li[3]</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="priceTitle"> 
+		<properties>   
+			<xpath>//*[@class='facetedMulti facetedPrice bg-white']/h3</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="price">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedPrice bg-white"]//*[@class="refinementImg"]/a//*[.="&lt;priceValue&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="collapsePriceTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedPrice bg-white"]/h3[@class='' or not(@class)]</xpath>
+			<xpath>//*[@class="facetedMulti facetedPrice bg-white"]//*[@style="display: none;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstProductDesLink"> 
+		<properties>   
+			<xpath>//*[@class="col-tn-6 col-lg-4 galleryItem"][1]//*[@class='productDesc'][2]</xpath>			
+			<xpath>//*[@class="divBorder"]//*[@class="divProduct"][1]//*[@class="divBrand"]//*[@class="prodDetailLink"]</xpath>
+			<xpath>//*[@class="col-tn-6 col-lg-4 galleryItem"][1]//*[@class='productImg']/img</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="expandedPriceTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedPrice bg-white"]//*[@class="expanded"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstPrice"> 
+		<properties>   
+			<xpath>//*[@class="col-tn-6 col-lg-4 galleryItem"][1]//*[@class="priceSell"]</xpath>
+			<xpath>//*[@class="divBorder"]//*[@class="divProduct"][1]//*[@class="productQvcPrice"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="1stProductReviews"> 
+		<properties>   
+			<xpath>(//*[contains(@class,"productRatings")])[1]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstProductImg"> 
+		<properties>  
+			<xpath>//*[@class="col-tn-6 col-lg-4 galleryItem"][1]//*[@class="primary lazy"]</xpath>			
+		</properties> 
+	</TestObject>
+		<TestObject name="plpSearchResultText"> 
+		<properties>   
+			<xpath>//*[@class='searchResults']/em</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="SearchWord"> 
+		<properties>   
+			<xpath>//*[@class="searchWord"]</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="filterItemListItem"> 
+		<properties>   
+			<xpath>(//*[@class='col-tn-6 col-lg-4 galleryItem']/*)[&lt;index&gt;]</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="searchResultCount"> 
+		<properties>   
+			<xpath>//*[@class="searchResults"]/strong/div</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="filterByLabel">
+		<Properties>
+			<xpath>//*[@class='facetedTitle bg-white']</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="SearchResultArea"> 
+		<properties>   
+			<xpath>//*[@data-component-type="SEARCH_MESSAGING"]</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="resultsText"> 
+		<properties>   
+			<xpath>//*[@class="searchResults"]/em</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="resultForText"> 
+		<properties>   
+			<xpath>//*[@class="searchResults"]/strong/em</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="resultCorrectWord"> 
+		<properties>   
+			<xpath>//*[@class="searchResults"]/strong/*[@class="correctWord"]</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="didYouMeanText"> 
+		<properties>   
+			<xpath>//*[@class="dym"]/strong</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="dymWord"> 
+		<properties>   
+			<xpath>//*[@class="dym"]//a</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="CarouselTitle"> 
+		<properties> 
+			<xpath>//*[@class='text-center']</xpath>
+			<xpath>//*[@class="searchResults"]/*[@class="searchWord"]</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="CarouselFirstProduct"> 
+		<properties> 
+			<xpath>//*[@class='carouselItem col-sm-2'][1]</xpath>
+			<xpath>//*[@class="accordion active accordion_preview"]//*[@class="accordionText"]/*[@class='col-tn-6 col-xs-3 col-md-2 galleryItem'][1]</xpath>
+			<xpath>//*[@class="accordion active accordion_preview"]//*[@class="accordionText"]/*[@class='col-tn-6 col-lg-4 galleryItem'][1]</xpath>
+			<xpath>//*[@class="col-tn-6 col-lg-4 galleryItem"][1]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="SelectionsPanel"> 
+		<properties>   
+			<xpath>//*[contains(@class,"plControlPanel bg-white")]//*[@class="plSelectionPanel"]//*[@class="productResultFacets"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="PanelNumbrs"> 
+		<properties>   
+			<xpath>//*[@class="plControlPanel bg-white"]//*[@class="productPageNumbers"]//*[@class="panelNumbrs"]</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="SortWrapper"> 
+		<properties>   
+			<xpath>//*[@class="sortWrapper"]</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="showSortByName"> 
+		<properties> 
+			<xpath>//*[@class="sortLink"]/span</xpath>			
+		</properties> 
+	 </TestObject>
+	 <TestObject name="facetedSingle"> 
+		<properties> 
+			<xpath>//*[@data-component-type="PRODUCT_LISTING_NAV"]//*[contains(@class,'facetedSingle')][1]</xpath>			
+		</properties> 
+	 </TestObject>
+	 	 <TestObject name="facetedMulti"> 
+		<properties> 
+			<xpath>//*[@data-component-type="PRODUCT_LISTING_NAV"]//*[contains(@class,'facetedMulti')][1]</xpath>	
+		</properties> 
+	 </TestObject>
+	 	<TestObject name="firstProductDesc"> 
+		<properties>   
+			<xpath>//*[@class="col-tn-6 col-lg-4 galleryItem"][1]//*[@class="productDesc"][2]</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="brandTitle"> 
+		<properties> 			
+			<xpath>//*[@class='facetedMulti facetedBrand bg-white']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstBrand"> 
+		<properties> 
+			<xpath>//*[.='Brand']/following-sibling::*[1]//*[@class='refinementImg'][1]/a</xpath>
+			<xpath>//*[@data-component-type="PRODUCT_LISTING_NAV"]//*[contains(@class,'facetedMulti')][1]//li[1]</xpath>			
+		</properties> 
+	 </TestObject>
+		<TestObject name="selectedResult"> 
+		<properties>   
+			<xpath>//*[@class="plControlPanel bg-white"]//*[@class="selectedResultFacets"]//li[&lt;index&gt;]</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="firstBrandFilterBody"> 
+		<properties> 
+			<xpath>//*[@class='facetedMulti facetedBrand bg-white']//*[@class="refinementDiv"]/ul</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="LevelFourBreadCrumb"> 
+		<properties>   
+			<xpath>//*[@class="breadcrumb pageBreadcrumb"]/li[4]</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="selectedResultTenth"> 
+		<properties> 
+			<xpath>//*[@class="plControlPanel bg-white"]//*[@class="selectedResultFacets"]//li[10]</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="brandFilter"> 
+		<properties> 
+			
+			<xpath>//*[@class='facetedMulti facetedBrand bg-white']//*[@class="refinementImg"][&lt;index&gt;]/a</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="brandFilterSelected"> 
+		<properties> 
+			<xpath>//*[@class="plControlPanel bg-white"]//*[@class="selectedResultFacets"]//li[&lt;index&gt;]/a</xpath>
+		</properties> 
+	</TestObject>
+			<TestObject name="brandFilterSelectedText"> 
+		<properties> 
+			<xpath>//*[@class="facetedMulti facetedBrand bg-white"]//*[@class='refinementImg'][&lt;index&gt;]</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="filtersErrorMessage"> 
+		<properties> 
+			<xpath>//*[@class='error-tooltip mobile errorBlock']</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="filtersErrorMessageTop"> 
+		<properties> 
+			<xpath>//*[@class="plControlPanel bg-white"]//*[@class="errorMsg"]</xpath>
+		</properties> 
+	</TestObject>
+			<TestObject name="closeErrorMessageButton"> 
+		<properties>   
+			<xpath>//*[@class='error-tooltip mobile errorBlock']//*[@class='closeTooltip']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ProductListModule"> 
+		<properties>   
+			<xpath>//*[@data-component-type="PRODUCT_LISTING_LIST"]</xpath>
+			<xpath>//*[@class="divBorder"]</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="categoryFilter"> 
+		<properties> 
+			<xpath>//*[@class='facetedSingle facetedCategory bg-white']//*[@class='refinementImg'][&lt;index&gt;]/a</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="clothingExpanded"> 
+		<properties> 
+			<xpath>//*[@class="facetedMulti facetedBekleidungsart bg-white"]//*[@class="expanded"]</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="personExpanded"> 
+		<properties> 
+			<xpath>//*[@class="facetedMulti facetedPerson bg-white"]//*[@class="expanded"]</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="clothingTitle"> 
+		<properties> 
+			<xpath>//*[@class="facetedMulti facetedBekleidungsart bg-white"]//*[@class="expanded"]</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="personTitle"> 
+		<properties> 
+			<xpath>//*[@class="facetedMulti facetedPerson bg-white"]/h3</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="person"> 
+		<properties> 
+			<xpath>//*[@class="facetedMulti facetedPerson bg-white"]//*[@class="refinementImg"]//*[.="&lt;personValue&gt;"]</xpath>
+		</properties>
+	</TestObject>
+		<TestObject name="personFilter"> 
+		<properties> 
+			<xpath>//*[@class='facetedMulti facetedPerson bg-white']//*[@class='refinementImg'][&lt;index&gt;]/a</xpath>
+		</properties>
+	</TestObject>
+	<TestObject name="filterItemList"> 
+		<properties>   
+			<xpath>//*[contains(@class,"productGallery")]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="autoCorrectedText"> 
+		<properties>   
+			<xpath>//*[@class="searchResults"]//*[@class="correctWord"]</xpath>
+		</properties> 
+	</TestObject>
+		<TestObject name="1stSelectedResult"> 
+		<properties>   
+			<xpath>//*[@class="plControlPanel bg-white"]//*[@class="selectedResultFacets"]//li[1]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ProductTotalNum"> 
+		<properties>   
+			<xpath>//*[@class='inlineLabelLeftOfSelect']//strong</xpath>
+			<xpath>//*[@class="plControlPanel bg-white"]//*[@class="productPageNumbers"]//*[@class='panelPages']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ClearAllFilters"> 
+		<properties>   
+			<xpath>//*[@class="plControlPanel bg-white"]//*[@class="plSelectionPanel"]//*[@class="productResultFacets"]//*[contains(text(),'Alle Filter aufheben')]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="spotLightCarouselTitle">
+		<Properties>
+			<xpath>//*[@class="container headerText bg-white"]//*[@class="text-center"]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="spotLightCarouselproduct1">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][1]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="spotLightCarouselproduct1Des">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][1]//*[@class="productDesc"]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="spotLightCarouselproduct2">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][2]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="spotLightCarouselproduct2Des">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][2]//*[@class="productDesc"]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="spotLightCarouselproduct3">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][3]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselproduct3Des">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][3]//*[@class="productDesc"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselproduct4">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][4]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselproduct4Des">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][4]//*[@class="productDesc"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselproduct5">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][5]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselproduct5Des">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][5]//*[@class="productDesc"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselproduct6">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][6]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselproduct6Des">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][6]//*[@class="productDesc"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselRightArrow">
+		<Properties>
+			<xpath>//*[@title="Nach rechts scrollen"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselLeftArrow">
+		<Properties>
+			<xpath>//*[@title="Nach links scrollen"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselproduct1Img">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][1]//*[contains(@class,"productImg")]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselproduct1Price">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][1]//*[@class="priceSell"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselAfterproduct1">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][5]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselAfterproduct1Des">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][5]//*[@class="productDesc"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselAfterproduct2">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][6]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselAfterproduct2Des">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][6]//*[@class="productDesc"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselAfterproduct3">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][7]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselAfterproduct3Des">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][7]//*[@class="productDesc"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselAfterproduct4">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][8]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselAfterproduct4Des">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][8]//*[@class="productDesc"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselAfterproduct5">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][9]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselAfterproduct5Des">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][9]//*[@class="productDesc"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselAfterproduct6">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][10]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselAfterproduct6Des">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][10]//*[@class="productDesc"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselProduct">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][&lt;index&gt;]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="spotLightCarouselProductDes">
+		<Properties>
+			<xpath>//*[@class="carouselList row"]//*[@class="carouselItem col-sm-2"][&lt;index&gt;]//*[@class="productDesc"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="plpView"> 
+		<properties>   
+			<xpath>//*[@data-component-type='PRODUCT_CAROUSEL']</xpath>
+			<xpath>//*[@data-module-type='PRODUCT_LISTING']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="plpItem"> 
+		<properties>   
+			<xpath>//*[@data-component-type='PRODUCT_LISTING_LIST']//*[@class="col-tn-6 col-lg-4 galleryItem"][&lt;index&gt;]</xpath>			
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="UpperLeftArrow"> 
+		<properties>   
+			<xpath>//*[@class="productPanel"]//*[@class="prvsPage"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="UpperRightArrow"> 
+		<properties>   
+			<xpath>//*[@class="productPanel"]//*[@class="nxtPage"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="LowerLeftArrow"> 
+		<properties> 					
+			<xpath>//*[@class="row center"]//*[@class="pagination"]//*[@class="prvsPage"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="LowerRightArrow"> 
+		<properties>   
+			<xpath>//div[@class="row center"]//*[@class="pagination"]//img[@class="nxtPage"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="UpperLeftArrowDisable"> 
+		<properties>   
+			<xpath>//*[@class="productPanel"]//*[@class="disabled"]//*[@class="prvsPage"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="LowerLeftArrowDisable"> 
+		<properties>   
+			<xpath>//*[@class="row center"]//*[@class="pagination"]//*[@class="disabled"]//*[@class="prvsPage"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="LowerUnselected2ndPage"> 
+		<properties>   
+			<xpath>//*[@class="row center"]//*[@class="pagination"]//a[contains(text(),'2')]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="LowerSelectedPage"> 
+		<properties>   
+			<xpath>//*[@class="row center"]//*[@class="pagination"]//*[@class="active"]/a</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="collapseBrandTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedBrand bg-white"]//*[@class="refinementDiv" and @style="display: none;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="brand">
+		<Properties>
+			<xpath>//*[@class="refinementDiv"]//*[@class="refinementLnk "]//*[.="&lt;brandValue&gt;"]</xpath>
+			<xpath>//*[@class="refinementDiv"]//*[.="&lt;brandValue&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="applicationTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedAnwendung bg-white"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="application">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedAnwendung bg-white"]//*[@class="refinementImg"]//*[.="&lt;applicationValue&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="CategoryFilter">
+		<Properties>
+			<xpath>//*[@class="facetedSingle facetedCategory bg-white"]//*[@class='refinementImg']//span[.='&lt;filterName&gt;']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="BrandFilter">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedBrand bg-white"]//*[@class='refinementImg']//span[.='&lt;filterName&gt;']</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="InFocusFilter">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedIm Fokus bg-white"]//*[@class='refinementImg']//span[.='&lt;filterName&gt;']</xpath>
+			<xpath>//*[@class="col-md-9 col-sm-8 plWrapper"]//*[@class="selectedResultFacets"]//a[.='&lt;filterName&gt;']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="PriceFilter">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedPrice bg-white"]//*[@class='refinementImg']//span[.='&lt;filterName&gt;']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="BreadCrumbByIndexAndValue">
+		<Properties>
+			<xpath>//*[@class="breadcrumb pageBreadcrumb"]//li[&lt;index&gt;]//*[.='&lt;BreadCrumb&gt;']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="AnwendungTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedAnwendung bg-white"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="collapseAnwendungTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedAnwendung bg-white"]//*[@style="display: none;"]</xpath>
+			<xpath>//*[@class="facetedMulti facetedAnwendung bg-white"]//*[@class="refinementDiv" and @style="display: none;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="UsageTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedVerwendungszweck bg-white"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="collapseUsageTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedVerwendungszweck bg-white"]//*[@style="display: none;"]</xpath>
+			<xpath>//*[@class="facetedMulti facetedVerwendungszweck bg-white"]//*[@class="refinementDiv" and @style="display: none;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="UsageFilter">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedVerwendungszweck bg-white"]//*[@class="refinementImg"]//span[.="&lt;filterName&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="AnwendungFilter">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedAnwendung bg-white"]//*[@class="refinementImg"]//*[.="&lt;filterName&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="templateTypeTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedMuster bg-white"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="templateType">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedMuster bg-white"]//*[@class="refinementImg"]//*[.="&lt;templateValue&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="shopByBrand">
+		<Properties>
+			<xpath>//*[@class="shopByDDOpen"]//*[@class="flyoutSection"][3]//*[contains(text(),"&lt;shopByBrand&gt;")]</xpath>				
+			<xpath>//*[@class="shopByDDOpen"]//*[contains(@class,"flyoutSection")][3]//*[contains(text(),"&lt;shopByBrand&gt;")]</xpath>
+		</Properties>		
+	</TestObject>
+	<TestObject name="BreadCrumbByValue">
+		<Properties>
+			<xpath>//*[@class="breadcrumb pageBreadcrumb"]//*[.="&lt;BreadCrumb&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="collapseFeaturesTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedIm Fokus bg-white"]/h3[@class="" or not(@class)]</xpath>
+			<xpath>//*[@class="facetedMulti facetedIm Fokus bg-white"]//*[@class="refinementDiv" and @style="display: none;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="expandedFeaturesTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedIm Fokus bg-white"]//*[@class="expanded"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="featuresTitle">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedIm Fokus bg-white"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="features">
+		<Properties>
+			<xpath>//*[@class="facetedMulti facetedIm Fokus bg-white"]//*[@class="refinementImg"]//*[.="&lt;featuresValue&gt;"]</xpath>
+		</Properties>
+	</TestObject>
+	
+</Page>

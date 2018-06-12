@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="Payment" include="MastheadMain">
+	<TestObject name="PaymentMethodHeader" > 
+		<properties>   
+			<id>divPageTitle</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="openAccount"> 
+		<properties>   
+			<id>rbOpenAccount</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="continueCheckoutBtn"> 
+		<properties>   
+			<id>btnSubmitChanges</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="paymentTable"> 
+		<properties>   
+			<id>tblNewPaymentMethod</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="securityCodeTextbox"> 
+		<properties>   
+			<id>txtSecurityCodeCreditCard2</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="securityCodeTxt"> 
+		<properties>   
+			<css>div#fldSecurityCodeCreditCard2 > label</css>
+			<css>div#fldSecurityCodeCreditCard3 > label</css>
+		</properties> 
+	</TestObject>	
+	<TestObject name="newCardRadio"> 
+		<properties>   
+			<id>rbNewCard</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="newCardTypeList"> 
+		<properties>   
+			<id>selNewCardType</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="newCardNumWebEdit"> 
+		<properties>   
+			<id>txtNewCardNumber</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="newCardHolderWebEdit"> 
+		<properties>   
+			<id>txtCardHolderName</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="expirationDateList"> 
+		<properties>   
+			<id>selNewCard</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="securityCodeWebEdit"> 
+		<properties>   
+			<id>txtSecurityCodeNewCard</id>
+		</properties> 
+	</TestObject>
+
+</Page>

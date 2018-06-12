@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="SubmitOrderPage" include="MastheadMain">
+	<TestObject name="submitOrderHeader"> 
+		<properties>   
+			<id>divPageTitle</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="detailShipToAddressTxt"> 
+		<properties>   
+			<id>divOrderDetailShippingAddress</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="editShipToLink"> 
+		<properties>   
+			<linkText>Edit Ship-To Address</linkText>			
+		</properties>
+	</TestObject>
+	<TestObject name="editCartLink"> 
+		<properties>   
+			<id>editShoppingCart</id>	
+			<xpath>//*[@class="divOrderTotalButtons"]//a[@id="editShoppingCart"]</xpath>
+		</properties> 
+	</TestObject>	
+	<TestObject name="clickHereToSubmitOrderBtn"> 
+		<properties>   
+			 <xpath>//div[@class='divOrderTotalButtons']//input[@value='Click Here to Submit Order' or @value='Place Order']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="cancelOrderBtn"> 
+		<properties>   
+			<xpath>//input[@value='Cancel Order']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="paypayUnAuthorizeErrMsg"> 
+		<properties>   
+			<id>errConsole</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="cancelOrderHeader"> 
+		<properties>   
+			<id>cancelPageTitle</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="YesBtn"> 
+		<properties>   
+			<css>input.primaryButton</css>
+		</properties> 
+	</TestObject>
+	<TestObject name="NoBtn"> 
+		<properties>   
+			<css>input.secondaryButton</css>
+		</properties> 
+	</TestObject>
+	 <TestObject name="employeeRateTxt"> 
+		<properties>   
+			<xpath>//td[contains(.,'Employee Rate')]</xpath>
+		</properties> 
+	</TestObject>
+	 <TestObject name="employeeDiscountTxt"> 
+		<properties>   
+			<xpath>//td[contains(.,'Employee Discount')]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="BackToHomePage">
+		<Properties>			
+			<css>img[alt="QVC Logo"]</css>
+		</Properties>
+	</TestObject>	
+	<TestObject name="freeShipping_Txt">
+		<Properties>			
+			<css>.freeShipping</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="expressDeliveryTxt"> 
+		<properties>   
+			<xpath>//td[contains(.,'Express Delivery')]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="perishableFoodDeliveryTxt"> 
+		<properties>   
+			<xpath>//td[contains(.,'Perishable Food')]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="orderSummaryTable"> 
+		<properties>   
+			<xpath>//*[@class='orderTable']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="totalSHPrice"> 
+		<properties>   
+			<xpath>//div[@id='divInStockTotal']//tr[2]/td[@class='tdCurrency']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="shippingIncludePriceText">
+		<Properties>
+			<css>.shippingIncluded</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="shippingPrice">
+		<Properties>			
+			<css>.shippingOfferPrice</css>
+		</Properties>
+	</TestObject>	
+	<TestObject name="colorSizeEditLink"> 
+		<properties>   
+			<xpath>//*[@class='productSpecifications']/a</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="orderSubmitTotalInfo"> 
+		<properties>   
+			<xpath>//*[@class="tblOrderSubTotal"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstAmountBilledInTitleTxt"> 
+		<properties>   
+			<xpath>//*[@id='divEZInstallment']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstAmountBilledInTotalTxt"> 
+		<properties>   
+			<xpath>//*[@id='trEZInstall']</xpath>
+		</properties> 		
+	</TestObject>
+		<TestObject name="firstEZInstallmentAmountTxt"> 
+		<properties>   
+			<xpath>//*[@id='divOrderDetailItemInformation']//*[@class='ezInfo']</xpath>
+		</properties> 
+	</TestObject>
+
+	<TestObject name="firstAmountBilledpriceInTitleTxt"> 
+		<properties>   
+			<xpath>//*[@id='divEZInstallment']/p</xpath>
+		</properties> 
+	</TestObject> 
+	<TestObject name="firstAmountBilledpriceInTotalTxt"> 
+		<properties>   
+			<xpath>//*[@id='trEZInstall']/td</xpath>
+		</properties> 
+	</TestObject> 
+	<TestObject name="toolTipTitleTxt"> 
+		<properties>   
+			<xpath>//*[@id='trEZInstallToolTip']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="toolTipIndex">
+		<Properties>
+			<class>ttBtn</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="toolTipMessageTxt">
+		<Properties>
+			<xpath>//*[@id='toolTip']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="subTotal">
+		<Properties>
+			<xpath>//div[@class="itemInformationWrapper over_hidden"][1]//td[@class="tdCurrency1"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondSubTotal">
+		<Properties>
+			<xpath>//div[@class="itemInformationWrapper over_hidden"][2]//td[@class="tdCurrency1"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="bonusItemTxt">
+		<Properties>
+			<xpath>//*[@class="bonusItemtxt"][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="paymentMethodInfo">
+		<Properties>
+			<id>divOrderDetailPaymentInformation</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="paymentMethodDetail">
+		<Properties>
+			<xpath>//*[@id="divOrderDetailPaymentInformation"]/p</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productQTY">
+		<Properties>
+			<xpath>//div[@class="itemInformationWrapper over_hidden"][1]//td[@class="tdNumber"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondProductQTY">
+		<Properties>
+			<xpath>//div[@class="itemInformationWrapper over_hidden"][2]//td[@class="tdNumber"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productNumber">
+		<Properties>
+			<xpath>//*[@class="itemInformationWrapper over_hidden"][1]//*[@class="itemInfo"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondProductNumber">
+		<Properties>
+			<xpath>//*[@class="itemInformationWrapper over_hidden"][2]//*[@class="itemInfo"]/h3</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="editPaymentMethodLink"> 
+		<properties>   
+			<xpath>//*[contains(text(),'Edit Payment Method')]</xpath>			
+		</properties>
+	</TestObject>
+	<TestObject name="productPrice">
+		<Properties>
+			<xpath>//div[@class="itemInformationWrapper over_hidden"][1]//td[3]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondProductPrice">	
+		<Properties>
+			<xpath>//div[@class="itemInformationWrapper over_hidden"][2]//td[3]</xpath>
+			<xpath>//*[@id='divOrderDetailItemInformation'][2]//div[2]//td[3]</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="productSHFee">
+		<Properties>
+			<xpath>//div[@class="itemInformationWrapper over_hidden"][1]//span[@class="shippingOfferPrice"]</xpath>
+			<xpath>//div[@class="itemInformationWrapper over_hidden"][1]//span[@class="shippingIncluded"]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="secondProductSHFee">
+		<Properties>
+			<xpath>//div[@class="itemInformationWrapper over_hidden"][2]//span[@class="shippingOfferPrice"]</xpath>
+			<xpath>//div[@class="itemInformationWrapper over_hidden"][2]//span[@class="shippingIncluded"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="tax">
+		<Properties>
+			<xpath>//div[@class="itemInformationWrapper over_hidden"][1]//td[6]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="secondTax">
+		<Properties>
+			<xpath>//div[@class="itemInformationWrapper over_hidden"][2]//td[6]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="productTotalPrice">
+		<Properties>
+			<xpath>//table[@class="tblOrderSubTotal"]//tbody//tr[1]/td[@class="tdCurrency"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="totalTax">
+		<Properties>
+			<xpath>//table[@class="tblOrderSubTotal"]//tbody//tr[3]/td[@class="tdCurrency"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="orderTotal">
+		<Properties>
+			<xpath>//tr[@id="trOrderTotal"]//td[@class="tdCurrency"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="shipToAddressText">
+		<Properties>
+			<xpath>//*[@id='divOrderDetailShippingAddress']/p</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="editPersonalizedLink">
+		<Properties>
+			<class>productPersonalization</class>
+		</Properties>
+	</TestObject>
+</Page>

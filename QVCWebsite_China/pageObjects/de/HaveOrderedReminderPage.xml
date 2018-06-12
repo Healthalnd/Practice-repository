@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="HaveOrderedReminderPage" include="MastheadMain">
+
+	<TestObject name="OrderedReminderText"> 
+		<properties>   
+			<id>shownoAddaLineText</id>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="continueButton"> 
+		<properties>   
+			<xpath>//*[@class="primaryButton"]</xpath>
+		</properties> 
+	</TestObject>
+	
+</Page>

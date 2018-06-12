@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ReportInappropriatePage" include="MastheadMain">
+	
+	<TestObject name="reviewTitle">
+		<Properties>
+			<xpath>//*[@class="BVRRValue BVRRReviewTitle"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="reviewPerson">
+		<Properties>
+			<class>BVRRUserNicknameContainer</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="reviewRating">
+		<Properties>
+			<class>BVRROverallRatingContainer</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="reviewContent">
+		<Properties>
+			<class>BVRRReviewText</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="reviewRecommendQuestion">
+		<Properties>
+			<class>BVRRContextDataValuewouldRecommendPrefix</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="reviewRecommendAnswer">
+		<Properties>
+			<class>BVRRContextDataValuewouldRecommend</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="reportReasonTitle">
+		<Properties>
+			<id>BVRRFieldLabelReviewInappropriateReasontextID</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="reportReasonInputBox">
+		<Properties>
+			<id>BVRRFieldTextAreaReviewInappropriateReasontextID</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="reportTips">
+		<Properties>
+			<id>BVRRInappropriateFeedbackProcessingDelayID</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="submitBtn">
+		<Properties>
+			<id>BVRRSubmitInappropriateFeedbackButtonID</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="cancelBtn">
+		<Properties>
+			<id>BVRRCancelInappropriateFeedbackButtonID</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="returnToProductLink">
+		<Properties>
+			<linkText>Return to product</linkText>
+		</Properties>
+	</TestObject>
+	
+</Page>

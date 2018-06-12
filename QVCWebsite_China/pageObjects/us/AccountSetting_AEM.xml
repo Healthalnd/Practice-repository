@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ShoppingCartPage_AEM" include="MastheadMain" >
+	<TestObject name="myAccountTitle">
+		<Properties>
+			<xpath>//*[@class="breadcrumb pageBreadcrumb"]/li[2]/a</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="accountSettingTitle">
+		<Properties>
+			<xpath>//*[@class="active"]/h1</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="billingAddressMainHeader">
+		<Properties>
+			<xpath>//*[@id="billingAddressWr"]//a//div[contains(@class,"mainHeader")]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="billingAddressSubHeader">
+		<Properties>
+			<xpath>//*[@id="billingAddressWr"]//a//div[@class="subHeader"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="billingAddressEdit">
+		<Properties>
+			<xpath>//*[@id="billingAddressWr"]//a//div[@class="edit"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="billingAddressFormOpen">
+		<Properties>
+			<xpath>//*[@data-component-type="BILLING_ADDRESS_FORM"]//*[@class="accordionBox" and @style="display: block;"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="billingAddressTitletxt">
+		<Properties>
+			<xpath>//*[@id="billingOverlay"]//span[@data-for="title"]</xpath>
+			<xpath>//*[@id="billingOverlay"]//span[@data-for="titleSelect-label"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="billingAddressTitleSelector">
+		<Properties>
+			<xpath>//*[@id="billingOverlay"]//*[@class='select-options']//*[contains(text(),"&lt;TitleValue&gt;")]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="billingAddressFirstNametxt">
+		<Properties>
+			<xpath>//*[@id="billingOverlay"]//span[@data-for="firstName"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="billingAddressLastNametxt">
+		<Properties>
+			<xpath>//*[@id="billingOverlay"]//span[@data-for="lastName"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="billingAddressStreetAddresstxt">
+		<Properties>
+			<xpath>//*[@id="billingOverlay"]//span[@data-for="address1"]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="billingAddressOptionaltxt">
+		<Properties>
+			<xpath>//*[@class="form-group billingAddress"]//div[@class="col-tn-12"]/a</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="billingAddressStreetAddressErrMsg">
+		<Properties>
+			<xpath>//*[@id="billingOverlay"]//*[@id="address1-error"]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="billingAddressTitleValue">
+		<Properties>
+			<xpath>//*[@id="billingOverlay"]//*[contains(@class,'form-custom-select title has-success')]//*[@class="select-styled custom-select"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="billingAddressFirstNameValue">
+		<Properties>
+			<xpath>//*[@id="billingOverlay"]//input[@name="firstName"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="billingAddressLastNameValue">
+		<Properties>
+			<xpath>//*[@id="billingOverlay"]//input[@name="lastName"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="billingAddressStreetAddressValue">
+		<Properties>
+			<xpath>//*[@id="billingOverlay"]//input[@name="address1"]</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="billingAddressZipCodeValue">
+		<Properties>
+			<xpath>//*[@id="billingOverlay"]//input[@name="postCode"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="billingAddressOptionalBtn">
+		<Properties>
+			<xpath>//*[@class="btnAddrExtension iconBefore accIcon"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="billingAddressOptionalOpened">
+		<Properties>
+			<xpath>//*[@name="addrExtension"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="billingAddressZipCode">
+		<Properties>
+			<xpath>//*[@id="billingOverlay"]//span[@data-for="postCode"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="billingAddressSaveBtn">
+		<Properties>
+			<xpath>//*[@id="billingOverlay"]//button[@class="btn btn-primary btnSubmit"]/span</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="billingAddressCancelBtn">
+		<Properties>
+			<xpath>//*[@id="billingOverlay"]//button[@class="btn btn-secondary btnCancel"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="nicknameLine">
+			<Properties>
+				<id>nicknameWr</id>
+			</Properties>
+	</TestObject>
+	<TestObject name="nickMainHeader">
+			<Properties>
+				<xpath>//*[@data-component-type="NICKNAME_FORM"]//*[contains(@class,"mainHeader")]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="nickSubHeader">
+			<Properties>
+				<xpath>//*[@data-component-type="NICKNAME_FORM"]//*[@class="subHeader"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="nicknameEditLink">
+			<Properties>
+				<xpath>//*[@data-component-type="NICKNAME_FORM"]//*[@class="edit"]</xpath>
+				<xpath>//*[@data-component-type="NICKNAME_FORM"]//div[contains(class(),"edit"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="nicknameEditBox_opened">
+			<Properties>
+				<xpath>//*[@data-component-type="NICKNAME_FORM"]//*[@class="accordionBox" and @style="display: block;"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="nicknameEditBox_closed">
+			<Properties>
+				<xpath>//*[@data-component-type="NICKNAME_FORM"]//*[@class="accordionBox" and @style="display: none;"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="newNicknameInputBox">
+			<Properties>
+				<name>newNickname</name>
+			</Properties>
+	</TestObject>
+	<TestObject name="newNicknameText">
+			<Properties>
+				<xpath>//*[@id='nicknameForm']//*[@class="control-label"]</xpath>
+			</Properties>
+	</TestObject>
+	
+	<TestObject name="newNicknameInputBoxText">
+			<Properties>
+				<xpath>//*[@data-for="newNickname"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="newNicknameErrorMessage">
+			<Properties>
+				<xpath>//*[@id="newNickname-error"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="nicknameToolTipIcon">
+			<Properties>
+				<xpath>//*[@data-component-type="NICKNAME_FORM"]//*[@class="infoIcon acctSetInfo"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="nicknameToolTip">
+			<Properties>
+				<class>popover-content</class>
+			</Properties>
+	</TestObject>
+	<TestObject name="nicknameNote">
+			<Properties>
+				<xpath>//*[@data-component-type="NICKNAME_FORM"]//*[@class="txtFormNote"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="nicknameSaveBtn">
+			<Properties>
+				<xpath>//*[@data-component-type="NICKNAME_FORM"]//*[@class="btn btn-primary btnSubmit"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="nicknameCancelBtn">
+			<Properties>
+				<id>nicknameCancel</id>
+			</Properties>
+	</TestObject>
+	<TestObject name="nicknameEmpCancelBtn">
+			<Properties>
+				<id>nicknameEmpCancel</id>
+			</Properties>
+	</TestObject>
+	<TestObject name="signInToEditEmailLink">
+			<Properties>
+				<xpath>//*[@id="emailAccordion"]//*[@class="sign-in-to-edit"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="editEmailLink">
+			<Properties>
+				<xpath>//*[@id="emailWr"]//*[@class="edit"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="emailAddress">
+			<Properties>
+				<xpath>//*[@id="emailWr"]//*[@class="subHeader"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="emailAddressLabel">
+			<Properties>
+				<xpath>//*[@id="emailWr"]//*[@class="accordionBox"and @style="display: block;"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="newEmailTextbox">
+			<Properties>
+				<id>newEmailAddress</id>
+			</Properties>
+	</TestObject>	
+	<TestObject name="newEmailAddressContext">
+			<Properties>
+				<xpath>//*[@id='editEmailAddressForm']//*[@data-for="newEmailAddress"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="confirmEmailAddressTextbox">
+			<Properties>
+				<id>confirmEmailAddress</id>
+			</Properties>
+	</TestObject>
+	<TestObject name="confirmEmailAddressContext">
+			<Properties>
+				<xpath>//*[@data-for="confirmEmailAddress"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="newEmailAddresErrMsg">
+			<Properties>
+				<id>newEmailAddress-error</id>
+			</Properties>
+	</TestObject>
+	<TestObject name="confirmEmailAddresErrMsg">
+			<Properties>
+				<id>confirmEmailAddress-error</id>
+			</Properties>
+	</TestObject>
+	<TestObject name="emailAddressCollapsed">
+			<Properties>
+				<xpath>//*[@id="emailWr" and @class="accordion form-panel accordion_collapsed"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="emailAddressExpanded">
+			<Properties>
+				<xpath>//*[@id="emailWr" and @class="accordion form-panel accordion_expanded"]</xpath>
+			</Properties>
+	</TestObject>	
+	<TestObject name="emailLabelWarningMsg">
+			<Properties>
+				<xpath>//*[@id='editEmailAddressForm']//*[@class="txtFormNote"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="saveEmailBtn">
+			<Properties>
+				<xpath>//*[@id='editEmailAddressForm']//*[@class="btn btn-primary btnSubmit"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="emailCancelBtn">
+			<Properties>
+				<id>emailCancel</id>
+			</Properties>
+	</TestObject>
+	<TestObject name="PrimaryPhoneMainHeader">
+			<Properties>
+				<xpath>//*[@id="primaryPhoneWr"]//a//div[contains(@class,"mainHeader")]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="PrimaryPhoneSubHeader">
+			<Properties>
+				<xpath>//*[@id="primaryPhoneWr"]//a//div[@class="subHeader"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="PrimaryPhoneEdit">
+			<Properties>
+				<xpath>//*[@id="primaryPhoneWr"]//a//div[@class="edit"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="PrimaryPhoneFormOpen">
+			<Properties>
+				<xpath>//*[@data-component-type="PRIMARY_PHONE_NUMBER_FORM"]//*[@class="accordionBox" and @style="display: block;"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="PrimaryPhoneFormCollapsed">
+			<Properties>
+				<xpath>//*[@id="primaryPhoneWr" and contains(@class,"collapsed")]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="PrimaryPhoneInputTxt">
+			<Properties>
+				<xpath>//*[@id="primaryPhoneOverlay"]//span[@data-for="phoneNumber"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="PrimaryPhoneInputBox">
+			<Properties>
+				<xpath>//*[@id="primaryPhoneOverlay"]//input[@name="phoneNumber"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="PrimaryPhoneNote">
+			<Properties>
+				<xpath>//*[@id="primaryPhoneOverlay"]//div[@class="txtFormNote"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="PrimaryPhoneSaveBtn">
+			<Properties>
+				<xpath>//*[@id="primaryPhoneOverlay"]//button[@class="btn btn-primary btnSubmit"]/span</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="PrimaryPhoneCancelBtn">
+			<Properties>
+				<xpath>//*[@id="primaryPhoneOverlay"]//button[@class="btn btn-secondary btnCancel"]/span</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="MobilePhoneMainHeader">
+			<Properties>
+				<xpath>//*[@id="mobileNumberWr"]//a//div[contains(@class,"mainHeader")]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="MobilePhoneSubHeader">
+			<Properties>
+				<xpath>//*[@id="mobileNumberWr"]//a//div[contains(@class,"subHeader")]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="MobilePhoneInputBoxTxtValue">
+			<Properties>
+				<xpath>//*[@id="mobilePhoneOverlay"]//*[@name="phoneNumber" and @value='&lt;PhoneNumber&gt;']</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="MobilePhoneInputBox">
+			<Properties>
+				<xpath>//*[@id="mobilePhoneOverlay"]//*[@name="phoneNumber"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="MobilePhoneEdit">
+			<Properties>
+				<xpath>//*[@id="mobileNumberWr"]//a//div[@class="edit"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="MobilePhoneFormOpen">
+			<Properties>
+				<xpath>//*[@data-component-type="MOBILE_NUMBER_FORM"]//*[@class="accordionBox" and @style="display: block;"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="MobilePhoneInputBoxTxt">
+			<Properties>
+				<xpath>//*[@id="mobilePhoneOverlay"]//span[@data-for="phoneNumber"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="MobilePhoneSaveBtn">
+			<Properties>
+				<xpath>//*[@id="mobilePhoneOverlay"]//button[@class="btn btn-primary btnSubmit"]/span</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="MobilePhoneCancelBtn">
+			<Properties>
+				<xpath>//*[@id="mobilePhoneOverlay"]//button[@class="btn btn-secondary btnCancel"]/span</xpath>
+			</Properties>
+	</TestObject>
+	
+	<TestObject name="pinMainHeader">
+			<Properties>
+				<xpath>//*[@id="pinAccordion"]//*[@class="mainHeader"]</xpath>
+				<xpath>//*[@id="pinAccordion"]//*[@class="mainHeader separator"]</xpath>				
+			</Properties>
+	</TestObject>
+	<TestObject name="pinSubHeader">
+			<Properties>
+				<xpath>//*[@id="pinAccordion"]//*[@class="subHeader"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="pinEditBtn">
+			<Properties>
+				<xpath>//*[@id="pinAccordion"]//*[@class="edit"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="pinFormExpanded">
+			<Properties>
+				<xpath>//*[@id="pinWr" and @class='accordion form-panel accordion_expanded']</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="pinFormCollapsed">
+		<Properties>
+			<xpath>//*[@id='pinWr' and @class="accordion form-panel accordion_collapsed"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="currentPinInputBox">
+			<Properties>
+				<xpath>//*[contains(@class,"oldPinWr")]//*[contains(@class,'form-group floatLblWr oldPin errorRow')][1]//input</xpath>
+				<xpath>//*[@id='oldPin']</xpath>				
+			</Properties>
+	</TestObject>
+	<TestObject name="currentPinDefaultTxt">
+			<Properties>
+				<xpath>//*[contains(@class,"oldPinWr")]//*[contains(@class,'form-group floatLblWr oldPin errorRow')][1]//span</xpath>
+				<xpath>//*[@id='oldPin']/*[@class="control-label"]</xpath>	
+			</Properties>
+	</TestObject>
+	<TestObject name="currentPinInfoBtn">
+			<Properties>
+				<xpath>//*[contains(@class,"oldPinWr")]//*[contains(@class,'form-group floatLblWr oldPin errorRow')][1]//*[@class='infoIcon acctSetInfo']</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="forgotYourPin">
+			<Properties>
+				<xpath>//*[contains(@class,"forgotPin")]//a</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="newPinInputBox">
+			<Properties>
+				<xpath>//*[contains(@class,"newPinWr")]//*[contains(@class,'form-group floatLblWr pin errorRow')][1]//input</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="newPinDefaultTxt">
+			<Properties>
+				<xpath>//*[contains(@class,"newPinWr")]//*[contains(@class,'form-group floatLblWr pin errorRow')][1]//span</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="newPinInfoBtn">
+			<Properties>
+				<xpath>//*[contains(@class,"newPinWr")]//*[contains(@class,'form-group floatLblWr pin errorRow')][1]//*[@class='infoIcon acctSetInfo']</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="newPinTooltipText">
+			<Properties>
+				<xpath>//*[contains(@class,"newPinWr")]//*[contains(@class,'form-group floatLblWr pin errorRow')][1]//*[@class='popover fade bottom in']</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="confirmPinInputBox">
+			<Properties>
+				<xpath>//*[contains(@class,"newPinWr")]//*[contains(@class,'form-group floatLblWr pin errorRow')][2]//input</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="confirmPinDefaultTxt">
+			<Properties>
+				<xpath>//*[contains(@class,"newPinWr")]//*[contains(@class,'form-group floatLblWr pin errorRow')][2]//span</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="pinFormNote">
+			<Properties>
+				<xpath>//*[@id="pinForm"]//*[@class='txtFormNote']</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="pinSaveBtn">
+			<Properties>
+				<xpath>//*[@id="pinForm"]//button[@class="btn btn-primary btnSubmit"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="pinCancelBtn">
+			<Properties>
+				<xpath>//*[@id="pinForm"]//button[@class="btn btn-secondary btnCancel"]</xpath>
+				<xpath>//*[@id='pinCancel']</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="newPinErrMsg">
+			<Properties>
+				<xpath>//*[@id="newPin-error"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="confirmPinErrMsg">
+			<Properties>
+				<xpath>//*[@id="confirmPin-error"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="updatePinSuccessfullyMsg">
+			<Properties>
+				<xpath>//*[@class="alert alert-success dismissable qMsg"]</xpath>
+			</Properties>
+	</TestObject>
+	
+	<TestObject name="passwordMainHeader">
+			<Properties>
+				<xpath>//*[@id="passwordWr"]//a[@class="accordionTitle fancybox-form clearfix"]//div[contains(@class,"mainHeader")]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="passwordSubHeader">
+			<Properties>
+				<xpath>//*[@id="passwordWr"]//a[@class="accordionTitle fancybox-form clearfix"]//div[@class="subHeader"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="passwordEditLink">
+			<Properties>
+				<xpath>//*[@id="passwordWr"]//a[@class="accordionTitle fancybox-form clearfix"]//div[@class="edit"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="passwordEditOverlay">
+			<Properties>
+				<id>passwordOverlay</id>
+			</Properties>
+	</TestObject>
+	<TestObject name="currentPwLabel">
+			<Properties>
+				<xpath>//*[@id="passwordOverlay"]//*[@class="form-horizontal qForm myAccountSettingsPasswordForm"]//span[@class="control-label currentPWLeft"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="currentPwEditbox">
+			<Properties>
+				<xpath>//*[@id="passwordOverlay"]//*[@class="form-horizontal qForm myAccountSettingsPasswordForm"]//input[@name="currentPW"]</xpath>
+			</Properties>
+	</TestObject>	
+	<TestObject name="newPwLabel">
+			<Properties>
+				<xpath>//*[@id="passwordOverlay"]//*[@class="form-horizontal qForm myAccountSettingsPasswordForm"]//span[@data-for="newPW"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="newPwEditbox">
+			<Properties>
+				<xpath>//*[@id="passwordOverlay"]//*[@class="form-horizontal qForm myAccountSettingsPasswordForm"]//input[@name="newPW"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="newPwConfirmLabel">
+			<Properties>
+				<xpath>//*[@id="passwordOverlay"]//*[@class="form-horizontal qForm myAccountSettingsPasswordForm"]//span[@data-for="newPWconfirm"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="newPwConfirmEditbox">
+			<Properties>
+				<xpath>//*[@id="passwordOverlay"]//*[@class="form-horizontal qForm myAccountSettingsPasswordForm"]//input[@name="newPWconfirm"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="passwordRulesIndicator">
+			<Properties>
+				<xpath>//*[@id="passwordOverlay"]//*[@class="form-horizontal qForm myAccountSettingsPasswordForm"]//*[@class="row rulesIndicator"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="passwordSaveBtn">
+			<Properties>
+				<xpath>//*[@id="passwordOverlay"]//*[@class="btn btn-primary btnSubmit"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="passwordCancelBtn">
+			<Properties>
+				<xpath>//*[@id="passwordOverlay"]//*[@class="btn btn-secondary btnCancel"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="passwordAccordionCollapsed">
+			<Properties>
+				<xpath>//*[@id="passwordAccordion"]//*[@class="accordion form-panel accordion_collapsed"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="passwordAccordionExpanded">
+			<Properties>
+				<xpath>//*[@id="passwordAccordion"]//*[@class="accordion form-panel accordion_expanded"]</xpath>
+			</Properties>
+	</TestObject>
+	
+	<TestObject name="securityQuestionMainHeader">
+			<Properties>
+				<xpath>//*[@id="securityQuestionWr"]//div[contains(@class,"mainHeader")]</xpath>
+			</Properties>
+	</TestObject>
+	
+	<TestObject name="securityQuestionSignInToEditLink">
+			<Properties>
+				<xpath>//*[@id='securityQuestionWr']//*[@class='sign-in-to-edit']</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="securityQuestionEditLink">
+			<Properties>
+				<xpath>//*[@id="securityQuestionWr"]//*[@class="edit"]</xpath>
+			</Properties>
+	</TestObject>	
+
+	<TestObject name="securityQuestionClose">
+			<Properties>
+				<xpath>//*[@id='securityQuestionWr' and @class='accordion form-panel accordion_collapsed']</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="securityQuestionOpen">
+			<Properties>
+				<xpath>//*[@id='securityQuestionWr' and @class='accordion form-panel accordion_expanded']</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="securityQuestionOptionField">
+			<Properties>
+				<xpath>//*[@id='securityOverlay']//*[@style="display: block;" and @class="questionSection"]//*[contains(@class,"security-custom-select")]</xpath>
+			</Properties>
+	</TestObject>
+	
+	<TestObject name="securityQuestionOptionTitle">
+			<Properties>
+				<xpath>//*[@id='securityOverlay']//*[.='Security Question']</xpath>
+			</Properties>
+	</TestObject>
+	
+	<TestObject name="securityQuestionOptionText">
+			<Properties>
+				<xpath>//*[@id='securityOverlay']//*[@class='select-styled custom-select']/span</xpath>
+			</Properties>
+	</TestObject>
+	
+	<TestObject name="securityQuestionAnswerField">
+			<Properties>
+				<xpath>//*[@id='securityOverlay']//*[@name='answer0']</xpath>
+			</Properties>
+	</TestObject>
+		
+	<TestObject name="securityQuestionAnswerTitle">
+			<Properties>
+				<xpath>//*[@id='securityOverlay']//*[.='Answer']</xpath>
+			</Properties>
+	</TestObject>
+		<TestObject name="securityQuestionAddAnotherQuestion">
+			<Properties>
+				<xpath>//*[@class='addSecurityQuestion']</xpath>
+			</Properties>
+	</TestObject>
+			<TestObject name="securityQuestionSaveButton">
+			<Properties>
+				<xpath>//*[@id='securityOverlay']//button[@class='btn btn-primary btnSubmit']</xpath>
+			</Properties>
+	</TestObject>
+			<TestObject name="securityQuestionCancelButton">
+			<Properties>
+				<xpath>//*[@id='securityOverlay']//button[@class='btn btn-secondary btnCancel']</xpath>
+			</Properties>
+	</TestObject>
+
+	<TestObject name="PrimaryPhoneConfirmationMessage">
+		<Properties>
+			<xpath>//*[@id="pageMasthead"]//*[@class="qMsgOuterWr container dismissable"]//*[@class="copy"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="confirmationBanner">
+		<Properties>
+			<xpath>//*[@class="alert alert-success dismissable qMsg"]</xpath>
+			<xpath>//*[@class="alert alert-danger static qMsg"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="errorConfirmationBanner">
+		<Properties>
+			<xpath>//*[@class="alert alert-danger static qMsg"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="asteriskPinNum">
+		<Properties>
+			<xpath>//*[@id="pinAccordion"]//*[@class="subHeader"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="successMsg">
+		<Properties>
+			<xpath>//*[@class="alert alert-success dismissable qMsg"]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="errMsg">
+		<Properties>
+			<xpath>//*[@class="alert alert-info static qMsg"]</xpath>
+		</Properties>
+	</TestObject>
+
+	<TestObject name="currentPWErr">
+		<Properties>
+			<xpath>//*[@id="currentPW-error"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="signInPopUp">
+		<Properties>
+			<xpath>//*[@class="signInCont cont"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="signInPopUpAddressInbox">
+		<Properties>
+			<xpath>//*[@class="form-group email floatLblWr"]//*[@class="form-control"]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="signInPopUpPasswordInbox">
+		<Properties>
+			<xpath>//*[@class="form-group password floatLblWr"]//*[@class="form-control"]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="signInPopUpSignInBtn">
+		<Properties>
+			<xpath>//*[@class="btn btn-primary btnContinue"]</xpath>
+		</Properties>
+	</TestObject>
+		<TestObject name="AddsecurityQuestion1">
+		<Properties>
+			<xpath>//*[@class='questionSection'][2]//*[@class='select']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="securityQuestionSelectOption">
+		<Properties>
+			<xpath>//*[@class="questionSection" and @style="display: block;"]//*[@class="select-options"]//li[2]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="securityQuestionAnswerField1">
+			<Properties>
+				<xpath>//*[@class="questionSection" and @style="display: block;"][2]//*[@name='answer1']</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="securityQuestionExplanatoryText">
+			<Properties>
+				<xpath>//*[@class="securityQuestions"]//*[@class="txtFormNote"]</xpath>
+			</Properties>
+	</TestObject>
+		<TestObject name="securityQuestionSelectOptionField1">
+			<Properties>
+				<xpath>//*[@class="questionSection" and @style="display: block;"][2]//*[@class="select-styled custom-select"]/span</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="securityQuestionAnswerField2">
+			<Properties>
+				<xpath>//*[@class="questionSection" and @style="display: block;"][3]//*[@name='answer2']</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="securityQuestionSelectOptionField2">
+			<Properties>
+				<xpath>//*[@class="questionSection" and @style="display: block;"][3]//*[@class="select-styled custom-select"]/span</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="securityQuestionOption">
+			<Properties>
+				<xpath>//*[@class="questionSection" and @style="display: block;"]//*[@class="select-options"]//li[contains(text(),"&lt;OptionValue&gt;")]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="securityQuestionOptionSelected">
+			<Properties>
+				<xpath>//*[@class="questionSection" and @style="display: block;"][2]//*[@class="select-options"]//li[contains(text(),"&lt;OptionValue&gt;")]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="closeSelectOptionfield">
+			<Properties>
+				<xpath>//*[@class='select-styled custom-select active']/span</xpath>
+			</Properties>
+	</TestObject>
+
+	<TestObject name="securityQuestionBlankAnswerErrorMsg">
+			<Properties>
+				<xpath>//*[@id="answer1-error"]</xpath>
+			</Properties>
+	</TestObject>
+		<TestObject name="securityQuestionOptionPreSelected">
+			<Properties>
+				<xpath>//*[@class="select-styled custom-select"]/span</xpath>
+			</Properties>
+	</TestObject>
+
+	<TestObject name="securityQuestionAnswerPreSelectd">
+			<Properties>
+				<xpath>//*[@name="answer0"]</xpath>
+			</Properties>
+	</TestObject>
+	
+		
+</Page>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="Shoes Handbags Page" include="MastheadMain" >
+		
+	<TestObject name="shoesLink"> 
+		<properties>   
+			<xpath>//a[contains(.,'Shoes (')]</xpath>
+		</properties> 
+	</TestObject>
+	  
+	 <TestObject name="clogsAndMulesLink"> 
+		<properties>   
+			<xpath>//a[contains(.,'Clogs &amp; Mules (')]</xpath>			
+		</properties> 
+	</TestObject>
+	
+	 <TestObject name="productImg">
+		<Properties>
+			<xpath>(//img[@class='imageDimensions photo'])[1]</xpath>
+		</Properties>
+	</TestObject>
+
+</Page>

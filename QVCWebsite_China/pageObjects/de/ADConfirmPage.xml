@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ADConfirmPage" include="MastheadMain">
+
+	<TestObject name="Auto-diHeader"> 
+		<properties>   
+			<id>divPageTitle</id>
+			<xpath>//*[@id="divPageTitle"]/h1[contains(text(),'Artikel vorbestellen')]</xpath>
+			<xpath>//*[@id="divPageTitle"]/h1[contains(text(),'Vorbestellung bestätigen')]</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="btnYes"> 
+		<properties>   
+			<xpath>//*[@class='primaryButton buttonAlignVertical']</xpath>
+			<xpath>//*[@class='primaryButton']</xpath>
+		</properties> 
+	</TestObject>
+	
+	<TestObject name="yesBtn">
+		<Properties>
+			<xpath>/html/body/div[3]/div[5]/div[3]/form/div/span/input</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="cancelBtn">
+		<Properties>
+			<xpath>/html/body/div[2]/div[6]/div[3]/form/div/span[2]/input</xpath>
+		</Properties>
+	</TestObject>
+	
+</Page>
+

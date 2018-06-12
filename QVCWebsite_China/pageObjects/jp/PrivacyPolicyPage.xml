@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="PrivacyPolicyPage" include="MastheadMain">
+	
+	
+	<TestObject name="NortonPolicy">
+			<Properties>
+				<xpath>//*[@class="promote"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="OSTMainFrame">
+		<Properties>
+			<id>mainFrame</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="OSTPolicy">
+			<Properties>
+				<xpath>//img[@src='images/ostmark2.gif']</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="ISOPolicy">
+			<Properties>
+				<xpath>//*[@class="b12"]//*[@class="b14h"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="PrivacyPolicyTitle">
+			<Properties>
+				<xpath>//*[@class="p12h"]//*[@class="b14h" and text()='個人情報保護方針']</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="PersonalInfoHandlingTitle">
+			<Properties>
+				<xpath>//*[@class="p12h"]//*[@class="b14h" and text()='個人情報の取扱いについて']</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="MembershipAgreementTitle">
+			<Properties>
+				<xpath>//*[@class="p12h"]//*[@class="b12" and text()="第１条 会員"]</xpath>
+			</Properties>
+	</TestObject>
+	<TestObject name="AboutLinkTitle">
+			<Properties>
+				<xpath>//*[@class="p12h"]//*[@class="b12" and text()="■ qvc.jpへのリンクについて"]</xpath>
+			</Properties>
+	</TestObject>
+</Page>

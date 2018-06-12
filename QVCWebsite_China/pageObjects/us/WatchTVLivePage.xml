@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="WatchTVLivePage" include="MastheadMain">
+	  <TestObject name="TVHeader"> 
+        	<properties>   
+          		<class>active</class>          		
+        	</properties> 
+      	</TestObject>
+	 <TestObject name="channelSelector"> 
+        	<properties>   
+          		<id>ssmplive_html5_api</id>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="connectWithUsText"> 
+        	<properties>
+				<xpath>//h3[contains(text(),'Connect with Us')]</xpath> 
+        	</properties> 
+     </TestObject>
+	 <TestObject name="channelPanel"> 
+        	<properties>
+				<xpath>//*[@class="vjs-control-bar"]</xpath> 
+          		<id>ssmplive</id>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="qvcPlusLink"> 
+        	<properties> 
+				<xpath>//a[@data-channelname="QVC2"]</xpath>
+          		<xpath>//a[@data-channelname="QVC Plus"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="qvcLiveLink"> 
+        	<properties>   
+          		<xpath>//a[@data-channelname="QVC Live"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="beautyIQLink"> 
+        	<properties>   
+          		<xpath>//a[@data-channelname="Beauty iQ"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="beautyIQDescText"> 
+        	<properties>   
+          		<xpath>//*[@class="msg-STA"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="beautyIQEmailFooter"> 
+        	<properties>   
+          		<id>emailHeadingFooter</id>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="buyBoxLayerIOA"> 
+        	<properties>   
+          		<id>qProdOverlay</id>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IOAProductName"> 
+        	<properties>   
+          		<xpath>//*[@id="qProdOverlay"]//*[@class="productDesc"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IOAQVCPrice"> 
+        	<properties>   
+          		<xpath>//*[@id="qProdOverlay"]//*[@class="qvcPrice"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IOAPriceStrikeOut"> 
+        	<properties>   
+          		<xpath>//*[@id="qProdOverlay"]//*[@class="price strikeout"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IOARetailPrice"> 
+        	<properties>   
+          		<xpath>//*[@id="qProdOverlay"]//*[@class="rvPrice"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IOAFeaturePrice"> 
+        	<properties>   
+          		<xpath>//*[@id="qProdOverlay"]//*[@class="featuredPrice"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IOAShippingCost"> 
+        	<properties>   
+          		<xpath>//*[@id="qProdOverlay"]//*[@class="shPrice freeSH"]/..//label</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IOAEasyPayInfo"> 
+        	<properties>   
+          		<xpath>//*[@id="qProdOverlay"]//*[@class="easyPayInfo"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IOARating"> 
+        	<properties>   
+          		<xpath>//*[@id="qProdOverlay"]//*[@class="productRatings"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="IOAShopNowBtn"> 
+        	<properties>   
+          		<xpath>//*[@id="qProdOverlay"]//*[@class="btn btn-default"]</xpath>
+				<xpath>//*[@id="qProdOverlay"]//*[@class="btn btn-primary"]</xpath>   
+        	</properties> 
+     </TestObject>
+	 
+	 <TestObject name="activeState"> 
+        	<properties>   
+          		<xpath>//*[@id="liveTvChannelMenu"]//*[@class="btn btn-default activeChannel"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="inActiveStateQVCLive"> 
+        	<properties>   
+          		<xpath>//*[@id="liveTvChannelMenu"]//*[@class="btn btn-default" and @data-channelname="QVC Live"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="inActiveStateQVCPlus"> 
+        	<properties>   
+          		<xpath>//*[@id="liveTvChannelMenu"]//*[@class="btn btn-default" and @data-channelname="QVC Plus"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="inActiveStateBeautyIQ"> 
+        	<properties>   
+          		<xpath>//*[@id="liveTvChannelMenu"]//*[@class="btn btn-default" and @data-channelname="Beauty iQ"] </xpath>          		
+        	</properties> 
+     </TestObject>
+	<TestObject name="IROASeeAllItemBtn"> 
+        	<properties>   
+				<xpath>//*[@data-component-type="SHOP_LIVE_TV_IROA"]//*[@class="col-tn-12"]//a[@class="btn btn-primary"]</xpath>  
+        	</properties> 
+     </TestObject>
+</Page>

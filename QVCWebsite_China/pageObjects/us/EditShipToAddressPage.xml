@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="EditShipToAddressPage" include="MastheadMain">
+	<TestObject name="editShipToAddressHeader"> 
+		<properties>   
+			<id>divPageTitle</id>			
+		</properties> 
+	</TestObject>
+	<TestObject name="continuebtn"> 
+		<properties>   
+			<id>btnSubmitChanges</id>
+		</properties> 
+	</TestObject>	 
+	 <TestObject name="selectfromAddressBooktxt"> 
+		<properties>   
+			<id>tabNav-selectFromAddressBook</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="secondAddressRadio"> 
+		<properties>   
+			<xpath>//*[@id="rbName1"]</xpath>			
+		</properties> 
+	</TestObject>
+	<TestObject name="addressBookTxt"> 
+		<properties>   
+			<Xpath>//*[@id='divAddressBookAddresses']</Xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="continueAddressBookBtn"> 
+		<properties>   
+			<xpath>//*[@id='btnContinueAddressBook']</xpath>			
+		</properties> 
+	</TestObject>	
+	<TestObject name="secondshippingAddress"> 
+		<properties>   
+			<class>lblName1</class>
+		</properties> 
+	</TestObject>
+	<TestObject name="address1Textbox"> 
+		<properties>   
+			<id>txtAddress1</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="cityTextbox"> 
+		<properties>   
+			<id>txtCity</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="postalCodeTextbox"> 
+		<properties>   
+			<id>txtZipPostalCode</id>
+		</properties> 
+	</TestObject>
+</Page>

@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Built-By: 00926113
+Created-By: Apache Maven
+Build-Jdk: 1.7.0_45
+Extension-Name: SeleniumFrameworkPlugin
+Specification-Title: QVC Selenium Framework Plugin
+Specification-Vendor: QVC IT Services - Enable IT
+Implementation-Vendor: QVC IT Services - Enable IT
+Implementation-Title: SeleniumFrameworkPlugin
+Implementation-Version: ${RELEASE_NUMBER}.${BUILD_NUMBER}.${SVN_REVISI
+ ON}.-SNAPSHOT
+Group-Id: com.qvc.test.jenkins.plugin
+Short-Name: SeleniumFrameworkPlugin
+Long-Name: QVC Selenium Framework Plugin
+Url: http://jenkins-ci.org/plugin/SeleniumFrameworkPlugin/
+Plugin-Version: ${RELEASE_NUMBER}.${BUILD_NUMBER}.${SVN_REVISION}.-SNA
+ PSHOT (private-06/16/2015 11:27-00926113)
+Hudson-Version: 1.580.1
+Jenkins-Version: 1.580.1
+Plugin-Developers: 
+

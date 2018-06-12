@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="Lunchtime Specials Page" include="MastheadMain">
+	<TestObject name="LunchtimeSpecialsHeader">
+		<Properties>
+			<id>divPageTitle</id>
+		</Properties>
+	</TestObject>
+
+</Page>

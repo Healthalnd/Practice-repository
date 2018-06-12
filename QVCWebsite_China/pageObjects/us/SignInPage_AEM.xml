@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="SignInPage_AEM" include="MastheadMain">
+	<TestObject name="signInHeader">
+		<Properties>
+			<xpath>//*[@class="text-center"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="emailAddressTextbox">
+		<Properties>			
+			<xpath>//*[@name="email"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="continueBtn">
+		<Properties>
+			<xpath>//*[@class='btn btn-primary btnContinue']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="passwordTextbox">
+		<Properties>
+			<xpath>//*[@name="pw"]</xpath>			
+		</Properties>
+	</TestObject>	
+	<TestObject name="passwordInfo">
+		<Properties>
+			<xpath>//label[contains(@class,"password")]//*[@class="info"]</xpath>			
+		</Properties>
+	</TestObject>	
+	<TestObject name="passwordContentText">
+		<Properties>
+			<xpath>//label[contains(@class,"password")]//*[@class="control-label"]</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="emailInfo">
+		<Properties>
+			<xpath>//label[contains(@class,"email")]//*[@class="info"]</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="emailContentText">
+		<Properties>
+			<xpath>//label[contains(@class,"email")]//*[@class="control-label"]</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="passwordShowAndHideBtn">
+		<Properties>
+			<xpath>//label[contains(@class,"password")]//*[@class="btnShowPw"]</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="HidedPassword">
+		<Properties>
+			<xpath>//label[contains(@class,"password")]//*[@type="password" and @name="pw"]</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="ShowedPassword">
+		<Properties>
+			<xpath>//label[contains(@class,"password")]//*[@type="text" and @name="pw"]</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="passwordToolTip">
+		<Properties>
+			<xpath>//span[@data-toggle='popover']</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="passwordToolTipPopUp">
+		<Properties>
+			<xpath>//*[@class='popover-content']</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="passwordResetLink">
+		<Properties>
+			<xpath>//a[@class='arrow forgotPw']</xpath>			
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="continueAsNewCustomer">
+		<Properties>
+			<xpath>//div[@class='row newCust']//a</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="NewToQVC">
+		<Properties>
+			<xpath>//div[@class='row newCust']//strong</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="NPOField">
+		<Properties>
+			<xpath>//div[contains(@class,"npoWr")]</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="NPOContinueBtn">
+		<Properties>
+			<xpath>//div[contains(@class,"npoWr")]//button</xpath>			
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="errMsg">
+		<Properties>
+			<xpath>//div[@class='alert alert-danger static qMsg']</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="EmailErrMsg">
+		<Properties>
+			<xpath>//span[@id='email-error']</xpath>			
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="shopWishConfidenceArea">
+		<Properties>
+			<xpath>//*[contains(@class,"shopConfidence")]</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="shopWishConfidenceLink">
+		<Properties>
+			<xpath>//*[contains(@class,"shopConfidence")]//a</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="shopWishConfidencePopUp">
+		<Properties>
+			<xpath>//*[contains(@class,"fancybox-opened")]</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="shopWishConfidencePopUpTitle">
+		<Properties>
+			<xpath>//*[contains(@class,"fancybox-opened")]//h2</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="shopWishConfidencePopUpContent">
+		<Properties>
+			<xpath>//*[contains(@class,"fancybox-opened")]//*[@class="container"]</xpath>			
+		</Properties>
+	</TestObject>
+	<TestObject name="PopUpCloseBtn">
+		<Properties>
+			<xpath>//a[@class="fancybox-item fancybox-close"]</xpath>			
+		</Properties>
+	</TestObject>
+	
+</Page>
